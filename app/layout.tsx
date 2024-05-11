@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://leerob.io'),
   title: {
     default: 'Joe Ward',
-    template: '%s | Joe Ward',
+    template: 'Joe Ward | %s',
   },
   description: 'Efficiency | Creativity | Collaboration | Growth',
   openGraph: {

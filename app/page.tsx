@@ -1,5 +1,5 @@
 export const metadata = {
-  title: 'Home',
+  title: 'Joe Ward | Home',
   description: 'Read my thoughts on software development, design, and more.',
 };
 
