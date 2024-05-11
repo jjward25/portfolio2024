@@ -10,15 +10,15 @@ import { SandpackCSS } from './blog/[slug]/sandpack';
 export const metadata: Metadata = {
   metadataBase: new URL('https://leerob.io'),
   title: {
-    default: 'Lee Robinson',
-    template: '%s | Lee Robinson',
+    default: 'Joe Ward',
+    template: '%s | Joe Ward',
   },
-  description: 'Developer, writer, and creator.',
+  description: 'Efficiency | Creativity | Collaboration | Growth',
   openGraph: {
-    title: 'Lee Robinson',
+    title: 'Joe Ward',
     description: 'Developer, writer, and creator.',
     url: 'https://leerob.io',
-    siteName: 'Lee Robinson',
+    siteName: 'Joe Ward',
     locale: 'en_US',
     type: 'website',
   },
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     },
   },
   twitter: {
-    title: 'Lee Robinson',
+    title: 'Joe Ward',
     card: 'summary_large_image',
   },
   verification: {
