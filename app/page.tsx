@@ -1,8 +1,6 @@
-import collapsible from './components/collapsible'
-
 export const metadata = {
   title: 'Joe Ward | Home',
-  description: 'Read my thoughts on software development, design, and more.',
+  description: 'Read my thoughts on operational efficiency, business analytics, and more.',
 };
 
 export default function Page() {
@@ -34,7 +32,6 @@ export default function Page() {
       <p className="text-neutral-600 dark:text-neutral-400 text-sm">
         Joe Ward Joe Ward Joe Ward Joe Ward
       </p>
-      <collapsible/>
 
       <ul className="mt-80">
         <p className="mr-3 inline-flex items-center rounded border border-neutral-200 bg-neutral-50 p-1 text-sm leading-4 text-neutral-900 no-underline dark:border-neutral-700 dark:bg-neutral-800 dark:text-neutral-100">

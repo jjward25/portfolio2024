@@ -8,7 +8,7 @@ import { SpeedInsights } from '@vercel/speed-insights/next';
 import { SandpackCSS } from './blog/[slug]/sandpack';
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://leerob.io'),
+  metadataBase: new URL('https://joeward.io'),
   title: {
     default: 'Joe Ward',
     template: 'Joe Ward | %s',
@@ -16,8 +16,8 @@ export const metadata: Metadata = {
   description: 'Efficiency | Creativity | Collaboration | Growth',
   openGraph: {
     title: 'Joe Ward',
-    description: 'Developer, writer, and creator.',
-    url: 'https://leerob.io',
+    description: 'Efficiency | Creativity | Collaboration | Growth',
+    url: 'https://joeward.io',
     siteName: 'Joe Ward',
     locale: 'en_US',
     type: 'website',
