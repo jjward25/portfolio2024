@@ -22,5 +22,8 @@ export default {
   future: {
     hoverOnlyWhenSupported: true,
   },
+  variants: {
+    text: ['hover', 'focus'], // this line does the trick
+  },
   plugins: [typography],
 } satisfies Config;
