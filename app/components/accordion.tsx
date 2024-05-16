@@ -31,7 +31,7 @@ export default function MyAccordion() {
       <Accordion title="Operational Efficiency">
         Content for Section 1
       </Accordion>
-      <Accordion title="Growth Analytics">
+      <Accordion title="Growth & Analytics">
         Content for Section 2
       </Accordion>
       <Accordion title="Change & People Management">
