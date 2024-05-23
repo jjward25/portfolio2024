@@ -32,15 +32,15 @@ export function Navbar() {
             })}
           </div>
 
-          <div class="cursor-pointer relative w-auto overflow-hidden rounded-xl">
-            <div class="absolute -inset-3 bg-gradient-to-tr from-neutral-800 via-neutral-200 to-neutral-500 rounded-lg blur opacity-35"></div>
-            <div class="relative rounded-lg flex justify-start">
+          <div className="cursor-pointer relative w-auto overflow-hidden rounded-xl">
+            <div className="absolute -inset-3 bg-gradient-to-tr from-neutral-800 via-neutral-200 to-neutral-500 rounded-lg blur opacity-35"></div>
+            <div className="relative rounded-lg flex justify-start">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="5px" height="5px">
                 <path d="M0 0h24v24H0z" fill="none" />
                 <path d="M6.62 10.79a15.91 15.91 0 006.59 6.59l2.2-2.2a1.003 1.003 0 011.11-.27c1.12.45 2.33.69 3.58.69.56 0 1.01.45 1.01 1.01v3.49c0 .56-.45 1.01-1.01 1.01C10.92 21 3 13.07 3 3.99 3 3.44 3.45 3 4.01 3H7.5c.56 0 1.01.45 1.01 1.01 0 1.25.24 2.46.69 3.58.17.47.06 1.01-.27 1.11l-2.21 2.2z" fill="black"/>
               </svg>
-              <div class="px-2">
-                <p class="font-semibold text-white text-sm">Contact Me</p>
+              <div className="px-2">
+                <p className="font-semibold text-white text-sm">Contact Me</p>
               </div>
             </div>
           </div>
