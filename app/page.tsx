@@ -79,6 +79,9 @@ export default function Page() {
       <div className="w-full mx-auto mt-8">
         <DynamicAccordion/>
       </div>
+
+
+
     </section>
   );
 }

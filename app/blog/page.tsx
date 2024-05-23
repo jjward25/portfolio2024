@@ -1,7 +1,5 @@
 import Link from 'next/link';
 import { Suspense } from 'react';
-import ViewCounter from './view-counter';
-import { getViewsCount } from 'app/db/queries';
 import { getBlogPosts } from 'app/db/blog';
 
 export const metadata = {
@@ -56,21 +54,14 @@ export default function BlogPage() {
             href={`/blog/${post.slug}`}
           >
             <div className="w-full flex flex-col">
-              <p className="text-neutral-900 dark:text-neutral-100 tracking-tight">
+              <li className="text-neutral-900 dark:text-neutral-100 tracking-tight">
                 {post.metadata.title}
-              </p>
+              </li>
               <Suspense fallback={<p className="h-6" />}>
-                <Views slug={post.slug} />
               </Suspense>
             </div>
           </Link>
         ))}
     </section>
   );
-}
-
-async function Views({ slug }: { slug: string }) {
-  let views = await getViewsCount();
-
-  return <ViewCounter allViews={views} slug={slug} />;
 }
