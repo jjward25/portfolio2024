@@ -28,18 +28,28 @@ function Accordion({ title, children }) {
 export default function MyAccordion() {
   return (
     <div className="w-full mx-auto">
-      <Accordion title="Operational Efficiency">
+      <Accordion title="Operational Excellence">
         <ul className='text-neutral-100'>For the purposes of this site, let's think of business operations in terms of three major questions:
           <li>(1) What problem(s) need(s) solving? (User Focus)</li>
           <li>(2) Who will be involved? (People & Partnerships)</li>
           <li>(3) How will we do it? (Processes, Data, Tools)</li>
         </ul>
       </Accordion>
-      <Accordion title="Growth & Analytics">
+      <Accordion title="Growth & Business Intelligence">
         Content for Section 2
       </Accordion>
-      <Accordion title="Change & People Management">
-        Content for Section 3
+      <Accordion title="Data & Analytics Best Practices">
+        <p className='mb-2'>{`In my time leading Go-to-Market Analytics at Vercel I've found a few things core to our success.`}</p>
+        <p className='mb-4'>{`Of course everything here is dependent on variables like your company size, data engineering capabilities (how many sources can you pull from and model for use?), CRM/Tools used, Ops capabilities, etc.`}</p>
+        <Accordion title="Always keep Data Engineering and end-user Analytics separate">
+          Content for Section 2
+        </Accordion>
+        <Accordion title="Analytics teams should be centralized under 1 manager (but can have focus areas)">
+          Content for Section 2
+        </Accordion>
+        <Accordion title="Important to have transparent and robust processes (particularly around QA and prioritization)">
+          Content for Section 2
+        </Accordion>
       </Accordion>
     </div>
   );

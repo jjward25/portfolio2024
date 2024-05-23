@@ -76,8 +76,6 @@ export default function Page() {
         </div>
       </div>
 
-      <div className='mt-5 md:h-0.5 w-full  bg-gradient-to-r from-black to-amber-200'> </div>
-
       <div className="w-full mx-auto mt-8">
         <DynamicAccordion/>
       </div>
