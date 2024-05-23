@@ -13,8 +13,6 @@ export default function Page() {
       <h1 className="font-medium text-2xl tracking-tighter">Hey 👋 I'm Joe Ward</h1>
       <div className='mt-3 mb-3 h-0.5 w-full  bg-gradient-to-r from-amber-200 to-black'> </div>
 
-      <div className='h-svh md:h-auto flex flex-col justify-between'>
-
         <div className='flex my-8 md:my-14 flex-wrap place-content-center md:flex-nowrap '>
           <div className="flex-none w-32 h-32 ml-10 mr-10  rounded-full overflow-hidden">
             <img
@@ -60,7 +58,6 @@ export default function Page() {
         </div>
 
         <div className='mb-5 md:mb-0 h-0.5 md:h-0 w-full  bg-gradient-to-r from-black to-amber-200'> </div>
-      </div>
 
       <div className='flex flex-nowrap h-auto'>
         <div className='mt-1 md:mr-3 md:w-1 md:h-vh bg-gradient-to-b from-amber-200 to-neutral-950'> </div>
