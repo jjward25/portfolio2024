@@ -32,11 +32,8 @@ export function Navbar() {
             })}
           </div>
 
-          
-
           <div class="cursor-pointer relative w-auto overflow-hidden rounded-xl">
             <div class="absolute -inset-3 bg-gradient-to-tr from-neutral-800 via-neutral-200 to-neutral-500 rounded-lg blur opacity-35"></div>
-
             <div class="relative rounded-lg flex justify-start">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="5px" height="5px">
                 <path d="M0 0h24v24H0z" fill="none" />
