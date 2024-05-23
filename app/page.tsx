@@ -8,54 +8,59 @@ export const metadata = {
 
 export default function Page() {
   return (
-    <section>
+    <section w-full>
+      
       <h1 className="font-medium text-2xl tracking-tighter">Hey 👋 I'm Joe Ward</h1>
       <div className='mt-3 mb-3 h-0.5 w-full  bg-gradient-to-r from-amber-200 to-black'> </div>
-      
-      <div className='flex my-8 md:my-14 flex-wrap place-content-center md:flex-nowrap '>
-        <div className="flex-none w-32 h-32 ml-10 mr-10  rounded-full overflow-hidden">
-          <img
-            src='/prof.jpg'
-            alt='prof'
-            className="w-full h-full object-cover"
-          />
-        </div>
 
-        <div className='mt-8 md:m-auto w-full'>
-          <ul className="flex flex-nowrap w-full space-x-2 mb-3">
-            <div className='w-full h-10 text-center  justify-center items-center flex flex-nowrap rounded border p-1 text-xs leading-4 border-neutral-700 bg-neutral-800 text-neutral-100 no-underline hover:bg-gradient-to-r from-neutral-600 via-black to-neutral-600'>
-              <div className=''><img
-                  src='/lightbulb.png'
+      <div className='h-svh md:h-auto flex flex-col justify-between'>
+
+        <div className='flex my-8 md:my-14 flex-wrap place-content-center md:flex-nowrap '>
+          <div className="flex-none w-32 h-32 ml-10 mr-10  rounded-full overflow-hidden">
+            <img
+              src='/prof.jpg'
+              alt='prof'
+              className="w-full h-full object-cover"
+            />
+          </div>
+
+          <div className='mt-8 md:m-auto w-full'>
+            <ul className="flex flex-nowrap w-full space-x-2 mb-3">
+              <div className='w-full h-10 text-center  justify-center items-center flex flex-nowrap rounded border p-1 text-xs leading-4 border-neutral-700 bg-neutral-800 text-neutral-100 no-underline hover:bg-gradient-to-r from-neutral-600 via-black to-neutral-600'>
+                <div className=''><img
+                    src='/lightbulb.png'
+                    alt='prof'
+                    className="w-auto h-6 object-cover ml-2"
+                /></div>
+                <p className="w-full h-10 pl-4 inline-flex  items-center ">
+                    Operational Efficiency
+                </p>
+              </div>
+              <div className='w-full h-10 text-center  justify-center items-center flex flex-nowrap rounded border p-1 text-xs leading-4 border-neutral-700 bg-neutral-800 text-neutral-100 no-underline hover:bg-gradient-to-r from-neutral-600 via-black to-neutral-600'>
+                <div className=''><img
+                  src='/growth.png'
                   alt='prof'
-                  className="w-auto h-6 object-cover ml-2"
-              /></div>
-              <p className="w-full h-10 pl-4 inline-flex  items-center ">
-                  Operational Efficiency
-              </p>
-            </div>
-            <div className='w-full h-10 text-center  justify-center items-center flex flex-nowrap rounded border p-1 text-xs leading-4 border-neutral-700 bg-neutral-800 text-neutral-100 no-underline hover:bg-gradient-to-r from-neutral-600 via-black to-neutral-600'>
-              <div className=''><img
-                src='/growth.png'
-                alt='prof'
-                className="w-auto h-5 object-cover ml-2"
-              /></div>
-              <p className="w-full h-10 pl-4 inline-flex  items-center ">
-                Bus. Intelligence & Growth
-              </p>
-            </div>
-          </ul>
-          <ul className='w-full'>
-              <p className="w-full justify-center mb-3 inline-flex items-center rounded border  p-1 text-xs leading-4 border-neutral-700 bg-neutral-800 text-neutral-100 no-underline hover:bg-gradient-to-r from-neutral-600 to-black">
-                People & Project Manager
-              </p>
-              <p className="w-full justify-center  mb-3 inline-flex items-center rounded border  p-1 text-xs leading-4 border-neutral-700 bg-neutral-800 text-neutral-100 no-underline hover:bg-gradient-to-r from-neutral-600 to-black">
-                Executive Partner
-              </p>
-          </ul>
-        </div>
-      </div>
+                  className="w-auto h-5 object-cover ml-2"
+                /></div>
+                <p className="w-full h-10 pl-4 inline-flex  items-center ">
+                  Bus. Intelligence & Growth
+                </p>
+              </div>
+            </ul>
 
-      <div className='mb-5 h-0.5 md:h-0 w-full  bg-gradient-to-r from-black to-amber-200'> </div>
+            <ul className='w-full'>
+                <p className="w-full justify-center mb-3 inline-flex items-center rounded border  p-1 text-xs leading-4 border-neutral-700 bg-neutral-800 text-neutral-100 no-underline hover:bg-gradient-to-r from-neutral-600 to-black">
+                  People & Project Manager
+                </p>
+                <p className="w-full justify-center  mb-3 inline-flex items-center rounded border  p-1 text-xs leading-4 border-neutral-700 bg-neutral-800 text-neutral-100 no-underline hover:bg-gradient-to-r from-neutral-600 to-black">
+                  Executive Partner
+                </p>
+            </ul>
+          </div>
+        </div>
+
+        <div className='mb-5 md:mb-0 h-0.5 md:h-0 w-full  bg-gradient-to-r from-black to-amber-200'> </div>
+      </div>
 
       <div className='flex flex-nowrap h-auto'>
         <div className='mt-1 md:mr-3 md:w-1 md:h-vh bg-gradient-to-b from-amber-200 to-neutral-950'> </div>
