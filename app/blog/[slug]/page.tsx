@@ -120,9 +120,7 @@ export default function Blog({ params }) {
             {formatDate(post.metadata.publishedAt)}
           </p>
         </Suspense>
-        <Suspense fallback={<p className="h-5" />}>
-          <Views slug={post.slug} />
-        </Suspense>
+       
       </div>
       <article className="prose prose-quoteless prose-neutral dark:prose-invert">
         <CustomMDX source={post.content} />
