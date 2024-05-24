@@ -29,13 +29,24 @@ export default function MyAccordion() {
   return (
     <div className="w-full mx-auto">
       <Accordion title="Operational Excellence">
-        <ul className='text-neutral-100'>For the purposes of this site, let's think of business operations in terms of three major questions:
-          <li className='mt-2'>(1) What problem(s) need(s) solving? (User Focus)</li>
+        <p className='mb-2'>For the purposes of this site, let's think of business operations in terms of three major questions:</p>
+        <ul className='text-neutral-100 px-5'>
+          <li className='mt-2'>(1) What problem(s) need(s) solving? (User/Product Focus)</li>
           <li>(2) Who will be involved? (People & Partnerships)</li>
           <li>(3) How will we do it? (Processes, Data, Tools)</li>
         </ul>
+        <p className='my-2'>I take a data-driven, collaborative, and results oriented-approach to problems across these 3 levels of business operations.  Some examples of past work:</p>
+        
+        <div className='flex flex-row'>
+          <div className='w-auto'><img
+              src='/schwab.png'
+              alt='schwab'
+              className="rounded-lg p-1 w-[50px] object-cover"
+            /></div>
+          <div className='pl-2'>Work Experience</div>
+        </div>
       </Accordion>
-      
+
       <Accordion title="Revenue Growth & Business Intelligence">
         Content for Section 2
       </Accordion>
@@ -65,7 +76,7 @@ export default function MyAccordion() {
 
         </Accordion>
         <Accordion title="Processes & Documentation">
-        <p className='mb-2'>{`Accountability is king. You have to maintain trust as a data team, so working with Data Engineering to create views that flag QA issues for data pipelines, CRM inconsistencies, dead fields, etc. and ensuring you have agreed upon processes with all stakeholders who may have to own fixes (CRM owner, Data Engineering, Business Partners for manually input data) is non-negotiable.`}</p>
+        <p className='mb-2'>{`Accountability is king. You have to maintain trust as a data team, so working with Data Engineering to create views that flag QA issues for data pipelines, CRM inconsistencies, dead fields, etc. and ensuring you have agreed upon processes with all stakeholders who may have to own fixes (CRM owner, Data Engineering, Ops, and potentially Business Partners for manually input data) is non-negotiable.`}</p>
         </Accordion>
       </Accordion>
     </div>
