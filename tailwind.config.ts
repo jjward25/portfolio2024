@@ -19,7 +19,7 @@ export default {
     },
   },
   future: {
-    hoverOnlyWhenSupported: true,
+    hoverOnlyWhenSupported: false,
   },
   variants: {
     text: ['hover', 'focus'], // this line does the trick
