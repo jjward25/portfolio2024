@@ -63,7 +63,7 @@ export default function Page() {
         <div className='mt-1 md:mr-3 md:w-1 md:h-vh bg-gradient-to-b from-amber-200 to-neutral-950'> </div>
         <div className='flex flex-wrap'>
           <p className="prose prose-invert w-full">
-            I'm an <em className='not-italic bg-clip-text text-transparent bg-gradient-to-r from-neutral-400 via-neutral-100 to-neutral-300'>Operations swiss-army knife</em> - a detail-oriented and communicative business partner <em className='not-italic bg-clip-text text-transparent bg-gradient-to-r from-neutral-400 via-neutral-100 to-neutral-300'>helping teams from small non-profits to the Fortune 500 to cutting-edge tech companies do what they can to get the most from what they have, and chart the path forward.</em> 
+            I'm an <em className='not-italic bg-clip-text text-transparent bg-gradient-to-r from-neutral-400 via-neutral-100 to-neutral-300'>Operations swiss-army knife</em> - a detail-oriented and communicative business partner <em className='not-italic bg-clip-text text-transparent bg-gradient-to-r from-neutral-400 via-neutral-100 to-neutral-300'>helping teams from small non-profits</em><em className='not-italic bg-clip-text text-transparent bg-gradient-to-r from-neutral-400 via-neutral-100 to-neutral-300'> to the Fortune 500 to </em><em className='not-italic bg-clip-text text-transparent bg-gradient-to-r from-neutral-400 via-neutral-100 to-neutral-300'>cutting-edge tech companies do what they can to </em><em className='not-italic bg-clip-text text-transparent bg-gradient-to-r from-neutral-400 via-neutral-100 to-neutral-300'>get the most from what they have, and chart the path forward.</em> 
           </p>
           <div className='mx-auto my-2 h-0.5 w-5 bg-gradient-to-b from-neutral-400 via-neutral-950 to-neutral-400'></div>
           <p className="prose prose-invert w-full">
@@ -71,7 +71,7 @@ export default function Page() {
           </p>
           <div className='mx-auto my-2 h-0.5 w-5 bg-gradient-to-b from-neutral-400 via-neutral-950 to-neutral-400'></div>
           <p className="prose prose-invert w-full">
-            I can identify and shepherd complex and cross-functional initiatives to completion, own functions long-term, and lead teams of effective contributors.  
+          <em className='not-italic bg-clip-text text-transparent bg-gradient-to-r from-neutral-400 via-neutral-100 to-neutral-300'>I can identify and shepherd complex </em><em className='not-italic bg-clip-text text-transparent bg-gradient-to-r from-neutral-400 via-neutral-100 to-neutral-300'>and cross-functional initiatives to completion, </em><em className='not-italic bg-clip-text text-transparent bg-gradient-to-r from-neutral-400 via-neutral-100 to-neutral-300'>own functions long-term, and </em><em className='not-italic bg-clip-text text-transparent bg-gradient-to-r from-neutral-400 via-neutral-100 to-neutral-300'>lead teams of effective contributors.  </em> 
             My breadth of experience enables me to be a creative problem solver who can get their hands dirty in systems, with data, and also on more nuanced and qualitative issues that teams may face.    
           </p>
           <div className='mx-auto my-2 h-0.5 w-5 bg-gradient-to-b from-neutral-400 via-neutral-950 to-neutral-400'></div>
