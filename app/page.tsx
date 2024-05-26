@@ -24,7 +24,7 @@ export default function Page() {
 
           <div className='mt-8 md:m-auto w-full'>
             <ul className="flex flex-nowrap w-full space-x-2 mb-3">
-              <div className='w-full h-10 text-center justify-center items-center flex flex-nowrap rounded border p-1 text-xs leading-4 border-neutral-700 bg-neutral-800 text-neutral-100 no-underline hover:bg-gradient-to-r from-neutral-600 via-black to-neutral-600'>
+              <div className='cursor-pointer w-full h-10 text-center justify-center items-center flex flex-nowrap rounded border p-1 text-xs leading-4 border-neutral-700 hover:bg-neutral-800 text-neutral-100 no-underline bg-gradient-to-r from-neutral-800 via-black to-neutral-800'>
                 <div className=''><img
                     src='/lightbulb.png'
                     alt='prof'
@@ -34,7 +34,7 @@ export default function Page() {
                     Operational Efficiency
                 </p>
               </div>
-              <div className='w-full h-10 text-center  justify-center items-center flex flex-nowrap rounded border p-1 text-xs leading-4 border-neutral-700 bg-neutral-800 text-neutral-100 no-underline hover:bg-gradient-to-r from-neutral-600 via-black to-neutral-600'>
+              <div className='cursor-pointer w-full h-10 text-center  justify-center items-center flex flex-nowrap rounded border p-1 text-xs leading-4 border-neutral-700 hover:bg-neutral-800 text-neutral-100 no-underline bg-gradient-to-r from-neutral-800 via-black to-neutral-800'>
                 <div className=''><img
                   src='/growth.png'
                   alt='prof'
@@ -47,10 +47,10 @@ export default function Page() {
             </ul>
 
             <ul className='w-full'>
-                <p className="w-full justify-center mb-3 inline-flex items-center rounded border  p-1 text-xs leading-4 border-neutral-700 bg-neutral-800 text-neutral-100 no-underline hover:bg-gradient-to-r from-neutral-600 to-black">
+                <p className="cursor-pointer w-full justify-center mb-3 inline-flex items-center rounded border  p-1 text-xs leading-4 border-neutral-700 hover:bg-neutral-800 text-neutral-100 no-underline bg-gradient-to-r from-neutral-800 via-black to-neutral-800">
                   People & Project Manager
                 </p>
-                <p className="w-full justify-center  mb-3 inline-flex items-center rounded border  p-1 text-xs leading-4 border-neutral-700 bg-neutral-800 text-neutral-100 no-underline hover:bg-gradient-to-r from-neutral-600 to-black">
+                <p className="cursor-pointer w-full justify-center  mb-3 inline-flex items-center rounded border  p-1 text-xs leading-4 border-neutral-700 hover:bg-neutral-800 text-neutral-100 no-underline bg-gradient-to-r from-neutral-800 via-black to-neutral-800">
                   Executive Partner
                 </p>
             </ul>
