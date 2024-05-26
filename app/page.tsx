@@ -14,7 +14,7 @@ export default function Page() {
       <div className='mt-3 mb-3 h-0.5 w-full  bg-gradient-to-r from-amber-200 to-black'> </div>
 
         <div className='flex my-8 md:my-14 flex-wrap place-content-center md:flex-nowrap '>
-          <div className="flex-none w-32 h-32 ml-10 mr-10  rounded-full overflow-hidden">
+          <div className="flex-none w-32 h-32 ml-10 mr-10 rounded-full overflow-hidden">
             <img
               src='/prof.jpg'
               alt='prof'
@@ -24,7 +24,7 @@ export default function Page() {
 
           <div className='mt-8 md:m-auto w-full'>
             <ul className="flex flex-nowrap w-full space-x-2 mb-3">
-              <div className='w-full h-10 text-center  justify-center items-center flex flex-nowrap rounded border p-1 text-xs leading-4 border-neutral-700 bg-neutral-800 text-neutral-100 no-underline hover:bg-gradient-to-r from-neutral-600 via-black to-neutral-600'>
+              <div className='w-full h-10 text-center justify-center items-center flex flex-nowrap rounded border p-1 text-xs leading-4 border-neutral-700 bg-neutral-800 text-neutral-100 no-underline hover:bg-gradient-to-r from-neutral-600 via-black to-neutral-600'>
                 <div className=''><img
                     src='/lightbulb.png'
                     alt='prof'

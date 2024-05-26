@@ -54,7 +54,7 @@ export default function MyAccordion() {
       <Accordion title="Data & Analytics">
         <p className='mb-2'>{`In my time leading Go-to-Market Analytics at Vercel I've found a few things key to our success:`}</p>
         <p className='mb-4'><em>{`Of course everything here is dependent on myriad variables (company maturity/culture/people, existing tooling and processes, org structures, etc.).`}</em></p>
-        <Accordion title="Separate Makes Equal">
+        <Accordion title="Org Charts Matter">
         <p className='mb-2'>We have a model where Analytics is a centralized team but kept separate from Data Engineering, which has a few benefits.</p>
         <div className='w-full pt-5 pb-7 mx-auto max-auto max-w-[500px]'><img
               src='/analytics_org.png'
