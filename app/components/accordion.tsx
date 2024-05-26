@@ -57,7 +57,7 @@ export default function MyAccordion() {
         <Accordion title="Processes & Documentation">
         <p className='mb-2'>{`Accountability is king. You have to maintain trust as a data team, so working with Data Engineering to create views that flag QA issues for data pipelines, CRM inconsistencies, dead fields, etc. and ensuring you have agreed upon processes with all stakeholders who may have to own fixes (CRM owner, Data Engineering, Ops, and potentially Business Partners for manually input data) is non-negotiable.`}</p>
         </Accordion>
-        <Accordion title="Org Charts Matter">
+        <Accordion title="Team Structure">
         <p className='mb-2'>We have a model where Analytics is a centralized team but kept separate from Data Engineering, which has a few benefits.</p>
         <div className='w-full pt-5 pb-7 mx-auto max-auto max-w-[500px]'><img
               src='/analytics_org.png'

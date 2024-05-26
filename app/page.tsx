@@ -24,17 +24,7 @@ export default function Page() {
 
           <div className='mt-8 md:m-auto w-full'>
             <ul className="flex flex-nowrap w-full space-x-2 mb-3">
-              <div className='cursor-none w-full h-10 text-center justify-center items-center flex flex-nowrap rounded border p-1 text-xs leading-4 border-neutral-700 text-neutral-100 no-underline bg-gradient-to-r from-neutral-800 via-black to-neutral-800'>
-                <div className=''><img
-                    src='/lightbulb.png'
-                    alt='prof'
-                    className="w-auto h-6 object-cover ml-2"
-                /></div>
-                <p className="w-full h-10 pl-4 inline-flex  items-center ">
-                    Operational Efficiency
-                </p>
-              </div>
-              <div className='cursor-none w-full h-10 text-center  justify-center items-center flex flex-nowrap rounded border p-1 text-xs leading-4 border-neutral-700 text-neutral-100 no-underline bg-gradient-to-r from-neutral-800 via-black to-neutral-800'>
+            <div className='cursor-none w-full h-10 text-center  justify-center items-center flex flex-nowrap rounded border p-1 text-xs leading-4 border-neutral-700 text-neutral-100 no-underline bg-gradient-to-r from-neutral-800 via-black to-neutral-800'>
                 <div className=''><img
                   src='/growth.png'
                   alt='prof'
@@ -42,6 +32,16 @@ export default function Page() {
                 /></div>
                 <p className="w-full h-10 pl-4 inline-flex  items-center ">
                   Bus. Intelligence & Growth
+                </p>
+              </div>
+              <div className='cursor-none w-full h-10 text-center justify-center items-center flex flex-nowrap rounded border p-1 text-xs leading-4 border-neutral-700 text-neutral-100 no-underline bg-gradient-to-r from-neutral-800 via-black to-neutral-800'>
+                <div className=''><img
+                    src='/lightbulb.png'
+                    alt='prof'
+                    className="w-auto h-6 object-cover ml-2"
+                /></div>
+                <p className="w-full h-10 pl-4 inline-flex  items-center ">
+                    Operational Excellence
                 </p>
               </div>
             </ul>
@@ -63,16 +63,19 @@ export default function Page() {
         <div className='mt-1 md:mr-3 md:w-1 md:h-vh bg-gradient-to-b from-amber-200 to-neutral-950'> </div>
         <div className='flex flex-wrap'>
           <p className="prose prose-invert w-full">
-            I'm an Operations specialist experienced in process improvement, change management, analytics and business intelligence/growth strategy. I'm creative, hands-on, collaborative, and a results-oriented project manager. 
+            I'm an <em className='not-italic bg-clip-text text-transparent bg-gradient-to-r from-neutral-400 via-neutral-100 to-neutral-300'>Operations swiss-army knife</em> - a detail-oriented and communicative business partner <em className='not-italic bg-clip-text text-transparent bg-gradient-to-r from-neutral-400 via-neutral-100 to-neutral-300'>helping teams from small non-profits to the Fortune 500 to cutting-edge tech companies do what they can to get the most from what they have, and chart the path forward.</em> 
           </p>
           <div className='mx-auto my-2 h-0.5 w-5 bg-gradient-to-b from-neutral-400 via-neutral-950 to-neutral-400'></div>
           <p className="prose prose-invert w-full">
-            Can shepherd complex projects that implement and enable measurable efficiencies across multiple teams. 
+            Together we can establish ground-level ops (think identifying KPIs, process mapping, SOPs and enablement for core processes), and build up to world-class operations in any area by developing a culture of continuous improvement that enables teams to set and hit ever-more challenging targets.
           </p>
           <div className='mx-auto my-2 h-0.5 w-5 bg-gradient-to-b from-neutral-400 via-neutral-950 to-neutral-400'></div>
           <p className="prose prose-invert w-full">
-            Use analytics when needed, like to assess pricing, set sales targets, monitor ad returns or other performance results, etc. And be creative in using data to find opportunities for growth.  Also sit with teams to help enable the changes that will really make them most effective.  
+            I can identify and shepherd complex and cross-functional initiatives to completion, own functions long-term, and lead teams of effective contributors.  
+            My breadth of experience enables me to be a creative problem solver who can get their hands dirty in systems, with data, and also on more nuanced and qualitative issues that teams may face.    
           </p>
+          <div className='mx-auto my-2 h-0.5 w-5 bg-gradient-to-b from-neutral-400 via-neutral-950 to-neutral-400'></div>
+          <p className="prose prose-invert w-full">You can read more about my experiences with Operations, Growth and Analytics below:</p>
         </div>
       </div>
 
