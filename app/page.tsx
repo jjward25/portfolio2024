@@ -63,7 +63,7 @@ export default function Page() {
         <div className='mt-1 md:mr-3 md:w-1 md:h-vh bg-gradient-to-b from-amber-200 to-neutral-950'> </div>
         <div className='flex flex-wrap'>
           <p className="prose prose-invert w-full">
-            I'm a <em className='not-italic bg-clip-text text-transparent bg-gradient-to-r from-neutral-400 via-neutral-100 to-neutral-300'>swiss-army knife</em> - a detail-oriented business partner helping teams from small non-profits to the Fortune 500 to cutting-edge tech companies do what they can to get the most from what they have, and chart the path towards World Class. 
+            I'm a detail-oriented business partner helping teams from small non-profits to the Fortune 500 to cutting-edge tech companies do what they can to get the most from what they have, and chart the path towards World Class. 
           </p>
           <div className='mx-auto my-2 h-0.5 w-5 bg-gradient-to-b from-neutral-400 via-neutral-950 to-neutral-400'></div>
           <p className="prose prose-invert w-full">
@@ -76,7 +76,7 @@ export default function Page() {
           </p>
           <div className='mx-auto my-2 h-0.5 w-5 bg-gradient-to-b from-neutral-400 via-neutral-950 to-neutral-400'></div>
           <p className="prose prose-invert w-full">
-            You can read more about my experiences with Operations, Growth and Analytics below:
+            Read more about my experiences with Operations, Growth and Analytics below:
           </p>
         </div>
       </div>
