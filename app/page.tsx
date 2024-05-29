@@ -57,10 +57,10 @@ export default function Page() {
           </div>
         </div>
 
-        <div className='mb-5 md:mb-0 h-0.5 md:h-0 w-full  bg-gradient-to-r from-black to-amber-200'> </div>
+        <div className='mb-5 md:mb-0 h-0.5 md:h-0 w-full  bg-gradient-to-r from-white to-amber-200'> </div>
 
       <div className='flex flex-nowrap h-auto'>
-        <div className='mt-1 md:mr-3 md:w-1 md:h-vh bg-gradient-to-b from-amber-200 to-neutral-950'> </div>
+        <div className='mt-1 md:mr-3 md:w-2 dark:md:w-1 md:h-vh bg-gradient-to-b from-amber-200 to-neutral-100'> </div>
         <div className='flex flex-wrap'>
           <p className="prose prose-invert w-full text-black dark:text-white">
             I'm a detail-oriented business partner helping teams from small non-profits to the Fortune 500 to cutting-edge tech companies do what they can to get the most from what they have, and chart the path towards World Class. 

@@ -42,7 +42,7 @@ export function Navbar() {
           </div>
         </nav>
         
-        <div className='mt-2 mb-3 h-0.5 md:mt-0 md:mb-0 md:h-0 w-vw bg-gradient-to-r from-neutral-200 to-black'> </div>
+        <div className='mt-2 mb-3 h-0.5 md:mt-0 md:mb-0 md:h-0 w-vw bg-gradient-to-r from-white to-black'> </div>
       </div>
       
     </aside>
