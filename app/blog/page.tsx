@@ -4,7 +4,7 @@ import { getBlogPosts } from 'app/db/blog';
 
 export const metadata = {
   title: 'Blog',
-  description: 'Read my thoughts on software development, design, and more.',
+  description: 'Read my thoughts on operational excellence, data, growth, and more.',
 };
 
 export default function BlogPage() {

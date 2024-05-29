@@ -24,7 +24,7 @@ export function Navbar() {
                 <Link
                   key={path}
                   href={path}
-                  className="transition-all hover:text-neutral-800 dark:hover:text-neutral-200 flex align-middle relative pr-4 py-1 after:bg-gradient-to-r from-amber-200 to-neutral-900 after:absolute after:h-0.5 after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300"
+                  className="transition-all text-neutral-800 dark:text-neutral-200 dark:hover:text-neutral-200 flex align-middle relative pr-4 py-1 after:bg-gradient-to-r from-amber-200 to-white dark:after:bg-gradient-to-r from-amber-200 to-neutral-900 after:absolute after:h-0.5 after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300"
                 >
                   {name}
                 </Link>
@@ -32,17 +32,17 @@ export function Navbar() {
             })}
           </div>
 
-          <div className="cursor-pointer relative w-auto overflow-hidden rounded-xl my-1 h-full">
-            <div className="absolute -inset-3 bg-gradient-to-tr from-neutral-900 via-neutral-100 to-neutral-900 blur opacity-35"></div>
-            <div className="relative rounded-lg flex justify-around">
+          <div className="cursor-pointer relative rounded-lg w-auto overflow-hidden my-1 h-full">
+            <div className="absolute -inset-3  bg-gradient-to-tr from-cyan-300 via-neutral-300 to-cyan-300 dark:bg-black blur opacity-90"></div>
+            <div className="relative rounded-lg flex justify-around border-2 border-cyan-200">
               <div className="px-2">
-                <p className="font-semibold text-white text-sm ">Contact Me</p>
+                <p className="font-semibold text-cyan-700 dark:text-cyan-900 hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-br from-cyan-900 via-neutral-600 to-cyan-700 text-sm">Contact Me</p>
               </div>
             </div>
           </div>
         </nav>
         
-        <div className='mt-2 mb-3 h-0.5 md:mt-0 md:mb-0 md:h-0 w-vw  bg-gradient-to-r from-neutral-200 to-black'> </div>
+        <div className='mt-2 mb-3 h-0.5 md:mt-0 md:mb-0 md:h-0 w-vw bg-gradient-to-r from-neutral-200 to-black'> </div>
       </div>
       
     </aside>
