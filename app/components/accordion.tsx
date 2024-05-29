@@ -11,7 +11,7 @@ function Accordion({ title, children }) {
   return (
     <div className="border border-white hover:border-neutral-400 rounded-lg mb-4 w-full bg-grad">
       <div className={`hover:bg-neutral-800 bg-black  cursor-pointer flex items-center justify-between round p-5 leading-4 h-9 ${isOpen ? 'border-b-2 border-b-neutral-600 bg-gradient-to-r from-black to-neutral-600 rounded-tl-lg rounded-tr-lg' : 'rounded-lg'}`} onClick={toggleAccordion}>
-        <h3 className={`h-auto text-md no-underline bg-clip-text text-transparent bg-gradient-to-r from-neutral-300 via-neutral-100 to-neutral-300 ${isOpen ? 'bg-clip-text text-transparent bg-gradient-to-r from-neutral-500 via-amber-200 to-neutral-200' : ''}`}>{title}</h3>
+        <h3 className={`h-auto text-md no-underline bg-clip-text text-transparent bg-gradient-to-r from-neutral-300 via-neutral-100 to-neutral-300 ${isOpen ? 'bg-clip-text text-transparent bg-gradient-to-r from-neutral-300 via-amber-200 to-neutral-300' : ''}`}>{title}</h3>
         <svg className={`ml-2 w-5 h-5 text-white transition-transform duration-6000 transform ${isOpen ? 'rotate-180' : ''}`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
         </svg>
