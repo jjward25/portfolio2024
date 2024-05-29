@@ -1,5 +1,5 @@
 "use client"
-import * as NBAIcons from 'react-nba-logos';
+//import * as NBAIcons from 'react-nba-logos'; <NBAIcons.TOR/>
 import { useState } from 'react';
 
 function Accordion({ title, children }) {
@@ -39,7 +39,7 @@ export default function NbaPost() {
       <div className='flex flex-col'>
         <div className="mt-4 mb-4 flex flex-row">
           <p className="mr-3 inline-flex items-center rounded border  p-1 text-sm leading-4 border-neutral-700 bg-neutral-800 text-neutral-100 no-underline hover:bg-gradient-to-r from-neutral-500 to-black">
-            <NBAIcons.TOR/>
+            
           </p>
           <div className="w-full mr-3 items-center rounded border  p-1 text-sm leading-4 border-neutral-700 bg-neutral-800 text-neutral-100 no-underline hover:bg-gradient-to-r from-neutral-500 to-black">
             <h3 className='mb-2'>Atlanta Hawks</h3>
