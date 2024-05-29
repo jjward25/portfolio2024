@@ -72,11 +72,11 @@ export default function Page() {
           <div className='mx-auto my-2 h-0.5 w-5 bg-gradient-to-b from-neutral-400 via-neutral-950 to-neutral-400'></div>
           <p className="prose prose-invert w-full text-black dark:text-white">
             My breadth of experience enables me to be a creative problem solver who can get their hands dirty in systems, with data, and also on more nuanced and qualitative issues that teams may face.
-            I’m a shepherd for complex and cross-functional initiatives, who can pro-actively identify solutions, own functions long-term, and lead teams of effective contributors across a wide range of functions.    
+            I’m a shepherd for complex and cross-functional initiatives, who can pro-actively identify solutions, own functions long-term, and lead teams of effective contributors.    
           </p>
           <div className='mx-auto my-2 h-0.5 w-5 bg-gradient-to-b from-neutral-400 via-neutral-950 to-neutral-400'></div>
           <p className="prose prose-invert w-full text-black dark:text-white">
-            Read more about my experiences with Operations, Growth and Analytics below:
+            Read more about my experiences below:
           </p>
         </div>
       </div>
