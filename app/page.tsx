@@ -24,6 +24,16 @@ export default function Page() {
 
           <div className='mt-8 md:m-auto w-full'>
             <ul className="flex flex-nowrap w-full space-x-2 mb-3">
+            <div className='cursor-none w-full h-10 text-center justify-center items-center flex flex-nowrap rounded border p-1 text-xs leading-4 border-neutral-700 text-neutral-100 no-underline bg-gradient-to-r from-neutral-800 via-black to-neutral-800'>
+                <div className=''><img
+                    src='/lightbulb.png'
+                    alt='prof'
+                    className="w-auto h-6 object-cover ml-2"
+                /></div>
+                <p className="w-full h-10 pl-4 inline-flex  items-center ">
+                    Operational Excellence
+                </p>
+            </div>
             <div className='cursor-none w-full h-10 text-center  justify-center items-center flex flex-nowrap rounded border p-1 text-xs leading-4 border-neutral-700 text-neutral-100 no-underline bg-gradient-to-r from-neutral-800 via-black to-neutral-800'>
                 <div className=''><img
                   src='/growth.png'
@@ -32,16 +42,6 @@ export default function Page() {
                 /></div>
                 <p className="w-full h-10 pl-4 inline-flex  items-center ">
                   Bus. Intelligence & Growth
-                </p>
-              </div>
-              <div className='cursor-none w-full h-10 text-center justify-center items-center flex flex-nowrap rounded border p-1 text-xs leading-4 border-neutral-700 text-neutral-100 no-underline bg-gradient-to-r from-neutral-800 via-black to-neutral-800'>
-                <div className=''><img
-                    src='/lightbulb.png'
-                    alt='prof'
-                    className="w-auto h-6 object-cover ml-2"
-                /></div>
-                <p className="w-full h-10 pl-4 inline-flex  items-center ">
-                    Operational Excellence
                 </p>
               </div>
             </ul>
