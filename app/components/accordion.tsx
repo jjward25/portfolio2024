@@ -31,12 +31,32 @@ export default function MyAccordion() {
       <Accordion title="Operational Excellence">
         <p className='mb-2'>For the purposes of this site, let's think of business operations in terms of three major questions:</p>
         <ul className='text-neutral-100 px-5'>
-          <li className='mt-2'>(1) What problem(s) need(s) solving? (User/Product Focus)</li>
+          <li className='mt-2'>(1) What problem(s) are we solving? (Products & Users)</li>
           <li>(2) Who will be involved? (People & Partnerships)</li>
-          <li>(3) How will we do it? (Processes, Data, Tools)</li>
+          <li>(3) How will we do it? (Processes, Data, & Tools)</li>
         </ul>
-        <p className='my-2'>I take a data-driven, collaborative, and results oriented-approach to problems across these 3 levels of business operations.  Some examples of past work:</p>
-        
+        <p className='my-2'>I take a data-driven, collaborative, and results oriented-approach to problems in all 3 buckets.</p>
+        <div className='mx-auto mt-4 my-2 h-0.5 w-5 bg-gradient-to-b from-neutral-400 via-neutral-950 to-neutral-400'></div>
+        <h3 className='text-lg mt-4'>Product & Users</h3>
+        <div className='flex flex-row'>
+          <div className='w-auto'><img
+              src='/schwab.png'
+              alt='schwab'
+              className="rounded-lg p-1 w-[50px] object-cover"
+            /></div>
+          <div className='pl-2'>Work Experience</div>
+        </div>
+        <h3 className='text-lg mt-4'>People & Partners</h3>
+        <em>*Often just a function of what's available.</em>
+        <div className='flex flex-row'>
+          <div className='w-auto'><img
+              src='/schwab.png'
+              alt='schwab'
+              className="rounded-lg p-1 w-[50px] object-cover"
+            /></div>
+          <div className='pl-2'>Work Experience</div>
+        </div>
+        <h3 className='text-lg mt-4'>Processes, Data, & Tools</h3>
         <div className='flex flex-row'>
           <div className='w-auto'><img
               src='/schwab.png'
