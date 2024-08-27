@@ -1,7 +1,5 @@
-import dynamic from 'next/dynamic';
 import Timeline from './components/timeline';
-
-const DynamicAccordion = dynamic(() => import('./components/accordion'), { ssr: false });
+import ProjectCarousel from './components/sideProjects/carousel';
 
 export const metadata = {
   title: 'Joe Ward | Home',
@@ -26,33 +24,34 @@ export default function Page() {
 
           <div className='mt-8 md:m-auto w-full'>
             <ul className="flex flex-nowrap w-full space-x-2 mb-3">
-            <div className='hover:shadow-md hover:scale-105 w-full h-10 text-center justify-center items-center flex flex-nowrap rounded border p-1 text-xs leading-4 border-neutral-700 text-neutral-100 no-underline bg-gradient-to-r from-neutral-800 via-black to-neutral-800'>
+
+            <div className='cursor-pointer hover:shadow-md hover:scale-105 w-full h-10 bg-black text-center justify-center items-center flex flex-nowrap rounded border p-1 text-xs leading-4 border-neutral-700 no-underline bg-[linear-gradient(45deg,transparent_25%,rgba(255,255,255,.2)_50%,transparent_75%,transparent_100%)] bg-[length:250%_250%,100%_100%] bg-[position:-100%_0,0_0] bg-no-repeat shadow-xl transition-[background-position_0s_ease] hover:bg-[position:200%_0,0_0] hover:duration-[2000ms]'>
                 <div className=''><img
                     src='/lightbulb.png'
                     alt='prof'
                     className="w-auto h-6 object-cover ml-2"
                 /></div>
-                <p className="w-full h-10 pl-4 inline-flex  items-center ">
+                <p className="w-full h-10 pl-4 md:pl-6 inline-flex  items-center ">
                     Operational Excellence
                 </p>
             </div>
-            <div className='hover:shadow-md hover:scale-105 w-full h-10 text-center  justify-center items-center flex flex-nowrap rounded border p-1 text-xs leading-4 border-neutral-700 text-neutral-100 no-underline bg-gradient-to-r from-neutral-800 via-black to-neutral-800'>
+            <div className='cursor-pointer hover:shadow-md hover:scale-105 w-full h-10 bg-black text-center justify-center items-center flex flex-nowrap rounded border p-1 text-xs leading-4 border-neutral-700 no-underline bg-[linear-gradient(45deg,transparent_25%,rgba(255,255,255,.2)_50%,transparent_75%,transparent_100%)] bg-[length:250%_250%,100%_100%] bg-[position:-100%_0,0_0] bg-no-repeat shadow-xl transition-[background-position_0s_ease] hover:bg-[position:200%_0,0_0] hover:duration-[2000ms]'>
                 <div className=''><img
                   src='/growth.png'
                   alt='prof'
                   className="w-auto h-5 object-cover ml-2"
                 /></div>
-                <p className="w-full h-10 pl-4 inline-flex  items-center ">
+                <p className="w-full h-10 pl-4 md:pl-6 inline-flex  items-center ">
                   Bus. Intelligence & Growth
                 </p>
               </div>
             </ul>
 
             <ul className='w-full'>
-                <p className="hover:shadow-md hover:scale-105 w-full justify-center mb-3 inline-flex items-center rounded border  p-1 text-xs leading-4 border-neutral-700  text-neutral-100 no-underline bg-gradient-to-r from-neutral-800 via-black to-neutral-800">
+                <p className="cursor-pointer hover:shadow-md bg-black hover:scale-105 w-full justify-center mb-3 inline-flex items-center rounded border  p-1 text-xs leading-4 border-neutral-700 no-underline bg-[linear-gradient(45deg,transparent_25%,rgba(255,255,255,.2)_50%,transparent_75%,transparent_100%)] bg-[length:250%_250%,100%_100%] bg-[position:-100%_0,0_0] bg-no-repeat shadow-xl transition-[background-position_0s_ease] hover:bg-[position:200%_0,0_0] hover:duration-[2000ms]">
                   People & Project Manager
                 </p>
-                <p className="hover:shadow-md hover:scale-105 w-full justify-center inline-flex items-center rounded border  p-1 text-xs leading-4 border-neutral-700  text-neutral-100 no-underline bg-gradient-to-r from-neutral-800 via-black to-neutral-800">
+                <p className="cursor-pointer hover:shadow-md bg-black hover:scale-105 w-full justify-center inline-flex items-center rounded border  p-1 text-xs leading-4 border-neutral-700 no-underline bg-[linear-gradient(45deg,transparent_25%,rgba(255,255,255,.2)_50%,transparent_75%,transparent_100%)] bg-[length:250%_250%,100%_100%] bg-[position:-100%_0,0_0] bg-no-repeat shadow-xl transition-[background-position_0s_ease] hover:bg-[position:200%_0,0_0] hover:duration-[2000ms]">
                   Executive Partner
                 </p>
             </ul>
@@ -82,8 +81,8 @@ export default function Page() {
 
       <Timeline/>
 
-      <div className="w-full mx-auto mt-4 text-orange-400">
-      Other Project Carousel
+      <div className="w-full mx-auto mt-4 text-black">
+        <ProjectCarousel/>
       </div>
 
 
