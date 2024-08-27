@@ -24,7 +24,7 @@ export function Navbar() {
                 <Link
                   key={path}
                   href={path}
-                  className="transition-all text-neutral-800 dark:text-neutral-200 dark:hover:text-neutral-200 flex align-middle relative pr-4 py-1 after:bg-gradient-to-r from-amber-200 to-white dark:after:bg-gradient-to-r from-amber-200 to-neutral-900 after:absolute after:h-0.5 after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300"
+                  className="transition-all text-neutral-800 dark:text-neutral-200 dark:hover:text-neutral-200 flex align-middle relative pr-4 py-1 after:bg-gradient-to-r after:from-amber-200 after:to-white dark:after:bg-gradient-to-r dark:after:from-amber-200 dark:after:to-neutral-900 after:absolute after:h-0.5 after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300"
                 >
                   {name}
                 </Link>

@@ -1,4 +1,6 @@
 import dynamic from 'next/dynamic';
+import Timeline from './components/timeline';
+
 const DynamicAccordion = dynamic(() => import('./components/accordion'), { ssr: false });
 
 export const metadata = {
@@ -83,6 +85,8 @@ export default function Page() {
       </div>
 
       <div className='text-red-800'>Other Project Carousel</div>
+
+      <Timeline/>
 
     </section>
   );
