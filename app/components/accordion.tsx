@@ -28,21 +28,70 @@ function Accordion({ title, children }) {
 export default function MyAccordion() {
   return (
     <div className="w-full mx-auto">
-      <Accordion title="Operational Excellence">
-        <p className='mb-2'>For the purposes of this site, let's think of business operations in terms of three major questions:</p>
-        <ul className='text-neutral-100 px-5'>
-          <li className='mt-2'>(1) What problem(s) are we solving? (Products & Users)</li>
-          <li>(2) Who will be involved? (People & Partnerships)</li>
-          <li>(3) How will we do it? (Processes, Data, & Tools)</li>
-        </ul>
-        <p className='my-2'>I take a data-driven, collaborative, and results oriented-approach to problems in all 3 buckets.</p>
+      <Accordion title="My Career">
+        <p className='mb-2'>I love learning new things! I'm grateful to have been able to experience work across different sectors in my career; and at any place I work I take a data-driven, collaborative, and results oriented-approach to problems of all stripes and sizes.</p>
+        
         <div className='mx-auto mt-4 my-2 h-0.5 w-5 bg-gradient-to-b from-neutral-400 via-neutral-950 to-neutral-400'></div>
+        <h3 className='text-lg mt-4'>Vercel</h3>
+        <em className='text-xs text-gray-400'>2022-Present</em>
+        <div className='flex flex-row mt-2'>
+          <div className='w-auto border border-white rounded-lg'><img
+              src='/vercel.png'
+              alt='schwab'
+              className="w-[50px] h-[50px] object-cover rounded-lg"
+            /></div>
+          <div className='pl-2'>Work Experience</div>
+        </div>
+
+        <h3 className='text-lg mt-4'>Charles Schwab</h3>
+        <em className='text-xs text-gray-400'>2020-2022</em>
+        <div className='flex flex-row mt-2'>
+          <div className='w-auto border border-white rounded-lg'><img
+              src='/schwab.png'
+              alt='schwab'
+              className="w-[50px] h-[50px] object-cover rounded-lg"
+            /></div>
+          <div className='pl-2'>Work Experience</div>
+        </div>
+
+        <h3 className='text-lg mt-4'>Practice Makes Perfect</h3>
+        <em className='text-xs text-gray-400'>2015-16</em>
+        <div className='flex flex-row mt-2'>
+          <div className='w-auto border border-white rounded-lg'><img
+              src='/pmp.png'
+              alt='schwab'
+              className="w-[50px] h-[50px] object-cover rounded-lg"
+            /></div>
+          <div className='pl-2'>Work Experience</div>
+        </div>
+
+        <h3 className='text-lg mt-4'>TD Ameritrade</h3>
+        <em className='text-xs text-gray-400'>2013-2020</em>
+        <div className='flex flex-row mt-2'>
+          <div className='w-auto border border-white rounded-lg m-auto mt-0'><img
+              src='/tda.png'
+              alt='schwab'
+              className="w-[50px] h-[50px] object-cover rounded-lg"
+            /></div>
+          <div className='pl-3 pr-21 flex flex-col w-full text-xs'>
+            <em>I joined TD Ameritrade as a poli-sci major looking to learn. In their rotational program I was the sole analyst on a Lean/Six-Sigma Sales revamp; learned SQL and Tableau while monitoring our Retail educational products; and learned basic Project Management.</em>
+            <em className='mt-2'>After the rotational program, I helped transform the Procurement department. At first, every contract was handled the same and everything was manually tracked in Sharepoint.  After a couple years of collaboration and development we had multiple sourcing channels that reduced risk and increased time for Strategic Sourcing, auto-routed new cases to Category Managers, and gave business partners total visibility into their contract requests (Risk scoring, Current Stage + Notes).</em>
+            <div className='mx-auto mt-4 my-2 h-0.5 w-5 bg-gradient-to-b from-neutral-400 via-neutral-950 to-neutral-400'></div>
+            <li className='mt-2'>{`Increased Client-facing (call) Time by `}<em className='text-green-400'>~5%</em>{` for national sales branch by restructuring coaching cadence.`}</li>
+            <li className='mt-2'>{`Increased customer retention in Educational products by `}<em className='text-green-400'>~5%</em>{` by identifying correlation between short, daily courses or long, in-person courses and retention.`}</li>
+            <li className='mt-2'>{`Automated all Procurement related reporting with SQL and Tableau`}</li>
+          </div>
+        </div>
+      </Accordion>
+
+      <Accordion title="GTM Deep Dive">
+        <p>Test</p>
         <h3 className='text-lg mt-4'>Product & Users</h3>
         <div className='flex flex-row'>
           <div className='w-auto'><img
               src='/schwab.png'
               alt='schwab'
-              className="rounded-lg p-1 w-[50px] object-cover"
+              className="w-[50px] object-cover"
             /></div>
           <div className='pl-2'>Work Experience</div>
         </div>
@@ -52,7 +101,7 @@ export default function MyAccordion() {
           <div className='w-auto'><img
               src='/schwab.png'
               alt='schwab'
-              className="rounded-lg p-1 w-[50px] object-cover"
+              className="w-[50px] object-cover"
             /></div>
           <div className='pl-2'>Work Experience</div>
         </div>
@@ -61,17 +110,13 @@ export default function MyAccordion() {
           <div className='w-auto'><img
               src='/schwab.png'
               alt='schwab'
-              className="rounded-lg p-1 w-[50px] object-cover"
+              className="w-[50px] object-cover"
             /></div>
           <div className='pl-2'>Work Experience</div>
         </div>
       </Accordion>
 
-      <Accordion title="Revenue Growth & Business Intelligence">
-        Content for Section 2
-      </Accordion>
-
-      <Accordion title="Data & Analytics">
+      <Accordion title="Analytics & Growth">
         <p className='mb-2'>{`In my time leading Go-to-Market Analytics at Vercel I've found a few things key to our success:`}</p>
         <p className='mb-4'><em>{`Of course everything here is dependent on myriad variables (company maturity/culture, existing tooling and processes, org structures, etc.).`}</em></p>
         <Accordion title="Processes & Documentation">

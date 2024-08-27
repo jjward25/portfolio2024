@@ -11,7 +11,7 @@ const navItems = {
 
 export function Navbar() {
   return (
-    <aside className="md:mb-12 tracking-tight">
+    <aside className="md:mb-16 tracking-tight">
       <div className="lg:sticky lg:top-20 h-auto">
 
         <nav
