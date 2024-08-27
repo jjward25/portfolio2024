@@ -82,16 +82,10 @@ export default function Page() {
 
       <Timeline/>
 
-      <div className="w-full mx-auto mt-4">
-        <DynamicAccordion/>
+      <div className="w-full mx-auto mt-4 text-orange-400">
+      Other Project Carousel
       </div>
 
-      <div className='text-red-800'>Other Project Carousel</div>
-      <div className='text-red-800'>Other Project Carousel</div>
-      <div className='text-red-800'>Other Project Carousel</div>
-      <div className='text-red-800'>Other Project Carousel</div>
-      <div className='text-red-800'>Other Project Carousel</div>
-      <div className='text-red-800'>Other Project Carousel</div>
 
     </section>
   );
