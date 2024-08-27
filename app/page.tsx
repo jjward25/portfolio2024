@@ -80,13 +80,13 @@ export default function Page() {
         </div>
       </div>
 
+      <Timeline/>
+      
       <div className="w-full mx-auto mt-4">
         <DynamicAccordion/>
       </div>
 
       <div className='text-red-800'>Other Project Carousel</div>
-
-      <Timeline/>
 
     </section>
   );

@@ -74,11 +74,10 @@ export default function MyAccordion() {
               className="w-[50px] h-[50px] object-cover rounded-lg"
             /></div>
           <div className='pl-3 pr-21 flex flex-col w-full text-xs'>
-            <em>I joined TD Ameritrade as a poli-sci major looking to learn. In their rotational program I was the sole analyst on a Lean/Six-Sigma Sales revamp; learned SQL and Tableau while monitoring our Retail educational products; and learned basic Project Management.</em>
+            
             <em className='mt-2'>After the rotational program, I helped transform the Procurement department. At first, every contract was handled the same and everything was manually tracked in Sharepoint.  After a couple years of collaboration and development we had multiple sourcing channels that reduced risk and increased time for Strategic Sourcing, auto-routed new cases to Category Managers, and gave business partners total visibility into their contract requests (Risk scoring, Current Stage + Notes).</em>
             <div className='mx-auto mt-4 my-2 h-0.5 w-5 bg-gradient-to-b from-neutral-400 via-neutral-950 to-neutral-400'></div>
-            <li className='mt-2'>{`Increased Client-facing (call) Time by `}<em className='text-green-400'>~5%</em>{` for national sales branch by restructuring coaching cadence.`}</li>
-            <li className='mt-2'>{`Increased customer retention in Educational products by `}<em className='text-green-400'>~5%</em>{` by identifying correlation between short, daily courses or long, in-person courses and retention.`}</li>
+            
             <li className='mt-2'>{`Automated all Procurement related reporting with SQL and Tableau`}</li>
           </div>
         </div>

@@ -9,23 +9,21 @@ export default function Timeline() {
     
       <div className="flex flex-row max-w-full overflow-x-scroll md:overflow-visible hover:pb-45 no-scrollbar pb-3">
         
-        <div className="flex flex-col relative z-20">
+        <div className="flex flex-col z-20 overflow-visible">
           {/* Company Logo & Tooltip */}
           <div className="mx-auto">
-            <div className="group relative">
+            <div className="group overflow-visible">
               <img
                 src="/tda.png"
                 alt="tda"
-                className="group relative duration-300 w-6 my-2 mx-auto rounded-2xl object-cover hover:scale-125 hover:duration-500 transition-all ease-in-out "
+                className="group duration-300 w-6 my-2 mx-auto rounded-2xl object-cover hover:scale-125 hover:duration-500 transition-all ease-in-out "
               />
               <div
-                className="z-50 bg-slate-200 border border-black p-2 px-3 rounded-lg pointer-events-none absolute -top-0 left-10 w-[250px] md:w-[450px] opacity-0 transition-opacity group-hover:opacity-100 text-sm"
+                className="z-50 min-h-10 bg-slate-200 border border-black p-2 px-3 rounded-lg pointer-events-none absolute m-auto left-0 right-0 w-[250px] md:w-[450px] opacity-0 transition-opacity group-hover:opacity-100 hover:pb-5 md:hover:pb-0 text-sm"
               >
-                This is a button. This is a button. This is a button. This is a button. This is a button. This is a button.
-                This is a button. This is a button. This is a button. This is a button. This is a button. This is a button.
-                This is a button. This is a button. This is a button. This is a button. This is a button. This is a button.
-                This is a button. This is a button. This is a button. This is a button. This is a button. This is a button.
-                test.
+                <em>I joined TD Ameritrade as a poli-sci major looking to learn. In their rotational program I was the sole analyst on a Lean/Six-Sigma Sales revamp; learned SQL and Tableau while monitoring our Retail educational products; and learned basic Project Management.</em>
+                <li className='mt-2'>{`Increased Client-facing (call) Time by `}<em className='text-green-400'>~5%</em>{` for national sales branch by restructuring coaching cadence.`}</li>
+                <li className='mt-2'>{`Increased customer retention in Educational products by `}<em className='text-green-400'>~5%</em>{` by identifying correlation between short, daily courses or long, in-person courses and retention.`}</li>    
               </div>
             </div>
           </div>
