@@ -146,7 +146,7 @@ export default function Timeline() {
             </div>
           </div>
           {/* Year Badge */}
-          <div className="z-0  min-w-[45px] hover:scale-105 focus:scale-95 cursor-pointer relative rounded-lg w-full overflow-hidden h-full mb-0 my-auto">
+          <div className={`${isTDA2Open ? 'z-50' : 'z-0'} min-w-[45px] hover:scale-105 focus:scale-95 cursor-pointer relative rounded-lg w-full overflow-hidden h-full mb-0 my-auto`}>
             <div className="absolute -inset-1 bg-gradient-to-tr from-cyan-300 via-neutral-300 to-cyan-300 dark:bg-black blur opacity-90"></div>
             <div className="relative rounded-lg flex justify-around border-2 border-cyan-200">
               <p className="px-1 text-center font-semibold text-cyan-700 dark:text-cyan-900 hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-br from-cyan-900 via-neutral-600 to-cyan-700 text-xs">
