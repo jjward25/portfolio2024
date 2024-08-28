@@ -37,17 +37,17 @@ export default function Timeline() {
       <div className={`flex flex-row max-w-full pb-3 ${isTDAOpen ? 'overflow-y-visible' : 'overflow-x-scroll'} no-scroll`}>
         
         {/* Year Column */}
-        <div className="flex flex-col z-0 hover:z-20 group">
+        <div className={`flex flex-col z-0 hover:z-20 group ${isTDAOpen ? 'overflow-y-visible' : 'overflow-x-scroll'}`}>
           {/* Company Logo & Tooltip */}
           <div className="mx-auto">
-            <div className="group">
+            <div className={`${isTDAOpen ? 'overflow-y-visible' : 'overflow-x-scroll'}`}>
                 <img
                     src="/tda.png"
                     alt="tda"
                     className="group duration-300 w-6 my-2 mx-auto rounded-2xl object-cover hover:scale-125 hover:duration-500 transition-all ease-in-out"
                     onClick={toggleTDA}
                 />
-                <div onClick={toggleTDA} className='z-40 fixed left-0 right-0 top-1/4 bottom-0 h-0 group-hover:h-[340px] bg-white opacity-0 transition-opacity group-hover:opacity-100 bg-opacity-30 backdrop-blur-md drop-shadow-sm'>
+                <div onClick={toggleTDA} className='z-40 absolute left-0 right-0 top-1/4 bottom-0 h-0 group-hover:h-[340px] bg-white opacity-0 transition-opacity group-hover:opacity-100 bg-opacity-30 backdrop-blur-md drop-shadow-sm'>
                     <div className="z-50 absolute m-auto my-[20px] left-0 right-0 w-[300px] md:w-[350px] min-h-10 group-hover:h-[300px] bg-slate-200 border border-black p-3 rounded-lg pointer-events-none opacity-0 transition-opacity group-hover:opacity-100 text-sm">
                         <h3 className='mb-2'>TD Ameritrade Rotational Program</h3>
                         <p className='text-xs'>I joined TD Ameritrade as a poli-sci major looking to learn. In their rotational program I was the sole analyst on a Lean/Six-Sigma Sales revamp; learned SQL and Tableau while monitoring our Retail educational products; and learned basic Project Management.</p>
