@@ -59,12 +59,12 @@ export default function Timeline() {
   };
 
   return (
-    <div className={`w-full max-w-full mx-auto mt-8 mb-8 bg-slate-100 rounded-xl p-4 text-black z-0 relative overflow-x-scroll ${isCardOpen ? 'h-[450px]' : ''}`}
+    <div className={`w-full max-w-full mx-auto mt-8 mb-8 bg-slate-100 rounded-xl p-4 text-black z-0 relative ${isCardOpen ? 'h-[450px]' : 'overflow-x-scroll'}`}
       onClick={toggleClose}>
 
       <p className="font-semibold">Timeline</p>
 
-      <div className={`flex flex-row max-w-full pb-3 overflow-x-scroll ${isCardOpen ? '' : ''} no-scroll`}>
+      <div className={`flex flex-row max-w-full pb-3 ${isCardOpen ? 'overflow-y-visible' : 'overflow-x-scroll'} no-scroll`}>
         
         {/* Year Column */}
         <div className={`flex flex-col z-0 ${isTDAOpen ? 'overflow-y-visible z-40' : ''}`}>
@@ -74,7 +74,7 @@ export default function Timeline() {
                 <img
                     src="/tda.png"
                     alt="tda"
-                    className={`${isTDAOpen ? 'z-40' : ''} duration-300 w-6 mt-2 mb-[16px] mx-auto rounded-2xl object-cover hover:scale-125 hover:duration-500 transition-all ease-in-out ${isTDA2Open ? 'opacity-0' : ''}${isSchwabOpen ? 'opacity-0' : ''}${isVercelOpen ? 'opacity-0' : ''}${isVercel2Open ? 'opacity-0' : ''}`}
+                    className={`${isTDAOpen ? 'z-40' : ''} duration-300 w-6 mt-2 mb-[14px] mx-auto rounded-2xl object-cover hover:scale-125 hover:duration-500 transition-all ease-in-out ${isTDA2Open ? 'opacity-0' : ''}${isSchwabOpen ? 'opacity-0' : ''}${isVercelOpen ? 'opacity-0' : ''}${isVercel2Open ? 'opacity-0' : ''}`}
                     onClick={toggleTDA}
                 />
                 <div onClick={toggleTDA} className={`${isTDAOpen ? 'z-40 h-[340px]' : 'h-0 overflow-hidden'} absolute left-0 right-0 bg-white bg-opacity-30 backdrop-blur-md drop-shadow-sm`}>
@@ -131,7 +131,7 @@ export default function Timeline() {
                 <img
                     src="/tda.png"
                     alt="tda"
-                    className={`${isTDA2Open ? 'z-40' : ''} duration-300 w-6 mt-2 mb-[16px] mx-auto rounded-2xl object-cover hover:scale-125 hover:duration-500 transition-all ease-in-out ${isTDAOpen ? 'opacity-0' : ''}${isSchwabOpen ? 'opacity-0' : ''}${isVercelOpen ? 'opacity-0' : ''}${isVercel2Open ? 'opacity-0' : ''}`}
+                    className={`${isTDA2Open ? 'z-40' : ''} duration-300 w-6 mt-2 mb-[14px] mx-auto rounded-2xl object-cover hover:scale-125 hover:duration-500 transition-all ease-in-out ${isTDAOpen ? 'opacity-0' : ''}${isSchwabOpen ? 'opacity-0' : ''}${isVercelOpen ? 'opacity-0' : ''}${isVercel2Open ? 'opacity-0' : ''}`}
                     onClick={toggleTDA2}
                 />
                 <div onClick={toggleTDA2} className={`${isTDA2Open ? 'z-40 h-[340px]' : 'h-0 overflow-hidden'} absolute left-0 right-0 bg-white bg-opacity-30 backdrop-blur-md drop-shadow-sm`}>
