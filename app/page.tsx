@@ -12,7 +12,7 @@ export default function Page() {
     <section w-full>
       
       <h1 className="font-medium text-2xl tracking-tighter text-black dark:text-white flex flex-row">Hey <p className='hover:rotate-45 hover:duration-500 transition-all ease-out'>👋</p> I'm Joe Ward</h1>
-      <div className='mt-3 mb-3 h-0.5 w-full  bg-gradient-to-r from-amber-200 to-white'> </div>
+      <div className='mt-3 mb-3 h-0.5 w-full  bg-gradient-to-r from-amber-200 to-white'/>
 
         <div className='flex my-8 md:my-8 flex-wrap place-content-center md:flex-nowrap '>
           <div className="flex-none w-32 h-32 ml-10 mr-10 rounded-full overflow-hidden border-black dark:border-white border-2">

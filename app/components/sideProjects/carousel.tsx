@@ -8,11 +8,10 @@ export default function ProjectCarousel() {
 
   return (
     <section>
-      <div className='mt-3 mb-3 h-auto w-full border-2 border-neutral-700'></div>
-      <h1 className="font-medium text-2xl mb-3 tracking-tighter text-black dark:text-white">
+      <div className='mt-3 mb-3 h-0.5 w-full bg-gradient-to-r from-amber-200 to-white'/>
+      <h1 className="font-medium text-2xl pt-3 mb-6 tracking-tighter text-black dark:text-white">
         Side Projects
       </h1>
-      <div className='mt-3 mb-6 h-auto w-full border-2 border-neutral-700'></div>
       
       {/* Project Carousel */}
       <div className="flex flex-row gap-4">
