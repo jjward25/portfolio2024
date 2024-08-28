@@ -24,5 +24,21 @@ export default {
   variants: {
     text: ['hover', 'focus'], // this line does the trick
   },
-  plugins: [typography],
+  plugins: [typography,(function ({ addUtilities }) {
+    addUtilities({
+      '.scrollbar-hide': {
+        /* IE and Edge */
+        '-ms-overflow-style': 'none',
+
+        /* Firefox */
+        'scrollbar-width': 'none',
+
+        /* Safari and Chrome */
+        '&::-webkit-scrollbar': {
+          display: 'none'
+        }
+      }
+    }
+    )
+  })],
 } satisfies Config;
