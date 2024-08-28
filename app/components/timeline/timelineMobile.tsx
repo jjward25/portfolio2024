@@ -2,12 +2,39 @@
 import { useState } from 'react';
 
 export default function Timeline() {
+  const [isTDAOpen, setIsTDAOpen] = useState(false);
+  const [isTDA2Open, setIsTDA2Open] = useState(false);
+  const [isSchwabOpen, setIsSchwabOpen] = useState(false);
+  const [isVercelOpen, setIsVercelOpen] = useState(false);
+  const [isVercel2Open, setIsVercel2Open] = useState(false);
+
+  const toggleTDA = () => {
+    setIsTDAOpen(!isTDAOpen);
+  };
+
+  const toggleTDA2 = () => {
+    setIsTDA2Open(!isTDA2Open);
+  };
+
+  const toggleSchwab = () => {
+    setIsSchwabOpen(!isSchwabOpen);
+  };
+
+  const toggleVercel = () => {
+    setIsVercelOpen(!isVercelOpen);
+  };
+
+  const toggleVercel2 = () => {
+    setIsVercel2Open(!isVercel2Open);
+  };
+
+
   return (
-    <div className="w-full max-w-full mx-auto mt-8 mb-8 bg-slate-100 rounded-xl p-4 text-black z-0 ">
+    <div className="w-full max-w-full mx-auto mt-8 mb-8 bg-slate-100 rounded-xl p-4 text-black z-0 relative">
 
       <p className="font-semibold">Timeline</p>
 
-      <div className="flex flex-row max-w-full pb-3 overflow-auto relative no-scroll group-hover:h-[400px]">
+      <div className={`flex flex-row max-w-full pb-3 ${isTDAOpen ? 'overflow-visible' : 'overflow-auto'} no-scroll`}>
         
         {/* Year Column */}
         <div className="flex flex-col z-0 hover:z-20 group">
@@ -17,9 +44,10 @@ export default function Timeline() {
                 <img
                     src="/tda.png"
                     alt="tda"
-                    className="group duration-300 w-6 my-2 mx-auto rounded-2xl object-cover hover:scale-125 hover:duration-500 transition-all ease-in-out "
+                    className="group duration-300 w-6 my-2 mx-auto rounded-2xl object-cover hover:scale-125 hover:duration-500 transition-all ease-in-out"
+                    onClick={toggleTDA}
                 />
-                <div className='z-40 fixed left-0 right-0 top-1/4 bottom-0 h-0 group-hover:h-[340px] bg-white opacity-0 transition-opacity group-hover:opacity-100 bg-opacity-30 backdrop-blur-md drop-shadow-sm'>
+                <div onClick={toggleTDA} className='z-40 fixed left-0 right-0 top-1/4 bottom-0 h-0 group-hover:h-[340px] bg-white opacity-0 transition-opacity group-hover:opacity-100 bg-opacity-30 backdrop-blur-md drop-shadow-sm'>
                     <div className="z-50 absolute m-auto my-[20px] left-0 right-0 w-[300px] md:w-[350px] min-h-10 group-hover:h-[300px] bg-slate-200 border border-black p-3 rounded-lg pointer-events-none opacity-0 transition-opacity group-hover:opacity-100 text-sm">
                         <h3 className='mb-2'>TD Ameritrade Rotational Program</h3>
                         <p className='text-xs'>I joined TD Ameritrade as a poli-sci major looking to learn. In their rotational program I was the sole analyst on a Lean/Six-Sigma Sales revamp; learned SQL and Tableau while monitoring our Retail educational products; and learned basic Project Management.</p>
