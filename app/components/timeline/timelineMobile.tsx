@@ -80,6 +80,7 @@ export default function Timeline() {
                 <div onClick={toggleTDA} className={`${isTDAOpen ? 'z-40 h-[340px]' : 'h-0 overflow-hidden'} absolute left-0 right-0 bg-white bg-opacity-30 backdrop-blur-md drop-shadow-sm`}>
                     <div className={`${isTDAOpen ? 'z-50' : ''} absolute m-auto my-[25px] left-0 right-0 w-[300px] md:w-[350px] h-[300px] bg-white border-2 border-black p-3 rounded-lg pointer-events-none text-sm`}>
                         <h3 className='mb-2'>TD Ameritrade Rotational Program</h3>
+                        <div className='mt-3 mb-3 h-0.5 w-full bg-gradient-to-r from-amber-200 to-white'/>
                         <p className='text-xs'>I joined TD Ameritrade as a poli-sci major looking to learn. In their rotational program I was the sole analyst on a Lean/Six-Sigma Sales revamp; learned SQL and Tableau while monitoring our Retail educational products; and learned basic Project Management.</p>
                         <div className='w-4 h-[1px] my-2 bg-black m-auto'/>
                         <li className='mt-2 text-xs'>{`Increased Client-facing (call) Time by `}<em className='text-green-400'>~5%</em>{` for national sales branch by restructuring coaching cadence.`}</li>
@@ -137,6 +138,7 @@ export default function Timeline() {
                 <div onClick={toggleTDA2} className={`${isTDA2Open ? 'z-40 h-[340px]' : 'h-0 overflow-hidden'} absolute left-0 right-0 bg-white bg-opacity-30 backdrop-blur-md drop-shadow-sm`}>
                 <div className={`${isTDA2Open ? 'z-50' : ''} absolute m-auto my-[25px] left-0 right-0 w-[300px] md:w-[350px] h-[300px] bg-white border-2 border-black p-3 rounded-lg pointer-events-none text-sm`}>
                 <h3 className='mb-2'>TD Ameritrade Procurement</h3>
+                <div className='mt-3 mb-3 h-0.5 w-full bg-gradient-to-r from-amber-200 to-white'/>
                         <p className='text-xs'>I joined TD Ameritrade as a poli-sci major looking to learn. In their rotational program I was the sole analyst on a Lean/Six-Sigma Sales revamp; learned SQL and Tableau while monitoring our Retail educational products; and learned basic Project Management.</p>
                         <div className='w-4 h-[1px] my-2 bg-black m-auto'/>
                         <li className='mt-2 text-xs'>{`Increased Client-facing (call) Time by `}<em className='text-green-400'>~5%</em>{` for national sales branch by restructuring coaching cadence.`}</li>
@@ -205,6 +207,7 @@ export default function Timeline() {
                 <div onClick={toggleSchwab} className={`${isSchwabOpen ? 'z-40 h-[340px]' : 'h-0 overflow-hidden'} absolute left-0 right-0 bg-white bg-opacity-30 backdrop-blur-md drop-shadow-sm`}>
                 <div className={`${isSchwabOpen ? 'z-50' : ''} absolute m-auto my-[25px] left-0 right-0 w-[300px] md:w-[350px] h-[300px] bg-white border-2 border-black p-3 rounded-lg pointer-events-none text-sm`}>
                 <h3 className='mb-2'>Charles Schwab Procurement</h3>
+                <div className='mt-3 mb-3 h-0.5 w-full bg-gradient-to-r from-amber-200 to-white'/>
                         <p className='text-xs'>I joined TD Ameritrade as a poli-sci major looking to learn. In their rotational program I was the sole analyst on a Lean/Six-Sigma Sales revamp; learned SQL and Tableau while monitoring our Retail educational products; and learned basic Project Management.</p>
                         <div className='w-4 h-[1px] my-2 bg-black m-auto'/>
                         <li className='mt-2 text-xs'>{`Increased Client-facing (call) Time by `}<em className='text-green-400'>~5%</em>{` for national sales branch by restructuring coaching cadence.`}</li>
@@ -251,6 +254,7 @@ export default function Timeline() {
                 <div onClick={toggleVercel} className={`${isVercelOpen ? 'z-40 h-[340px]' : 'h-0 overflow-hidden'} absolute left-0 right-0 bg-white bg-opacity-30 backdrop-blur-md drop-shadow-sm`}>
                 <div className={`${isVercelOpen ? 'z-50' : ''} absolute m-auto my-[25px] left-0 right-0 w-[300px] md:w-[350px] h-[300px] bg-white border-2 border-black p-3 rounded-lg pointer-events-none text-sm`}>
                 <h3 className='mb-2'>Vercel: CS Ops</h3>
+                <div className='mt-3 mb-3 h-0.5 w-full bg-gradient-to-r from-amber-200 to-white'/>
                         <p className='text-xs'>I joined TD Ameritrade as a poli-sci major looking to learn. In their rotational program I was the sole analyst on a Lean/Six-Sigma Sales revamp; learned SQL and Tableau while monitoring our Retail educational products; and learned basic Project Management.</p>
                         <div className='w-4 h-[1px] my-2 bg-black m-auto'/>
                         <li className='mt-2 text-xs'>{`Increased Client-facing (call) Time by `}<em className='text-green-400'>~5%</em>{` for national sales branch by restructuring coaching cadence.`}</li>
@@ -285,7 +289,8 @@ export default function Timeline() {
                 />
                 <div onClick={toggleVercel2} className={`${isVercel2Open ? 'z-40 h-[340px]' : 'h-0 overflow-hidden'} absolute left-0 right-0 bg-white bg-opacity-30 backdrop-blur-md drop-shadow-sm`}>
                 <div className={`${isVercel2Open ? 'z-50' : ''} absolute m-auto my-[25px] left-0 right-0 w-[300px] md:w-[350px] h-[300px] bg-white border-2 border-black p-3 rounded-lg pointer-events-none text-sm`}>
-                <h3 className='mb-2'>Vercel: CS Ops</h3>
+                <h3 className='mb-2'>Vercel: GTM Analytics</h3>
+                <div className='mt-3 mb-3 h-0.5 w-full bg-gradient-to-r from-amber-200 to-white'/>
                         <p className='text-xs'>I joined TD Ameritrade as a poli-sci major looking to learn. In their rotational program I was the sole analyst on a Lean/Six-Sigma Sales revamp; learned SQL and Tableau while monitoring our Retail educational products; and learned basic Project Management.</p>
                         <div className='w-4 h-[1px] my-2 bg-black m-auto'/>
                         <li className='mt-2 text-xs'>{`Increased Client-facing (call) Time by `}<em className='text-green-400'>~5%</em>{` for national sales branch by restructuring coaching cadence.`}</li>

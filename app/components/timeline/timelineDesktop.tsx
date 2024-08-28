@@ -77,13 +77,14 @@ export default function Timeline() {
                     className="group duration-300 w-6 my-2 mx-auto rounded-2xl object-cover hover:scale-125 hover:duration-500 transition-all ease-in-out "
                 />
                 <div className='z-40 absolute bg-white opacity-0 transition-opacity group-hover:opacity-100 bg-opacity-30 backdrop-blur-md drop-shadow-sm w-lvw left-0 h-0 group-hover:h-[340px]'>
-                <div className="z-50 absolute m-auto mt-[20px] left-0 right-0 w-[300px] md:w-[350px] min-h-10 group-hover:h-[300px] bg-white border-2 border-black p-3 rounded-lg pointer-events-none opacity-0 transition-opacity group-hover:opacity-100 text-sm">
-                <h3 className='mb-2'>TD Ameritrade Procurement Dept</h3>
-                        <p className='text-xs'>I joined TD Ameritrade as a poli-sci major looking to learn. In their rotational program I was the sole analyst on a Lean/Six-Sigma Sales revamp; learned SQL and Tableau while monitoring our Retail educational products; and learned basic Project Management.</p>
-                        <div className='w-4 h-[1px] my-2 bg-black m-auto'/>
-                        <li className='mt-2 text-xs'>{`Increased Client-facing (call) Time by `}<em className='text-green-400'>~5%</em>{` for national sales branch by restructuring coaching cadence.`}</li>
-                        <li className='mt-2 text-xs'>{`Increased customer retention in Educational products by `}<em className='text-green-400'>~5%</em>{` by identifying correlation between short, daily courses or long, in-person courses and retention.`}</li>    
-                    </div>
+                  <div className="z-50 absolute m-auto mt-[20px] left-0 right-0 w-[300px] md:w-[350px] min-h-10 group-hover:h-[300px] bg-white border-2 border-black p-3 rounded-lg pointer-events-none opacity-0 transition-opacity group-hover:opacity-100 text-sm">
+                    <h3 className='mb-2'>TD Ameritrade Procurement Dept</h3>
+                    <div className='mt-3 mb-3 h-0.5 w-full bg-gradient-to-r from-amber-200 to-white'/>
+                    <p className='text-xs'>I joined TD Ameritrade as a poli-sci major looking to learn. In their rotational program I was the sole analyst on a Lean/Six-Sigma Sales revamp; learned SQL and Tableau while monitoring our Retail educational products; and learned basic Project Management.</p>
+                    <div className='w-4 h-[1px] my-2 bg-black m-auto'/>
+                    <li className='mt-2 text-xs'>{`Increased Client-facing (call) Time by `}<em className='text-green-400'>~5%</em>{` for national sales branch by restructuring coaching cadence.`}</li>
+                    <li className='mt-2 text-xs'>{`Increased customer retention in Educational products by `}<em className='text-green-400'>~5%</em>{` by identifying correlation between short, daily courses or long, in-person courses and retention.`}</li>    
+                  </div>
                 </div>
             </div>
           </div>
@@ -146,6 +147,7 @@ export default function Timeline() {
                 <div className='z-40 absolute bg-white opacity-0 transition-opacity group-hover:opacity-100 bg-opacity-30 backdrop-blur-md drop-shadow-sm w-lvw left-0 h-0 group-hover:h-[340px]'>
                 <div className="z-50 absolute m-auto mt-[20px] left-0 right-0 w-[300px] md:w-[350px] min-h-10 group-hover:h-[300px] bg-white border-2 border-black p-3 rounded-lg pointer-events-none opacity-0 transition-opacity group-hover:opacity-100 text-sm">
                 <h3 className='mb-2'>Charles Schwab Procurement</h3>
+                <div className='mt-3 mb-3 h-0.5 w-full bg-gradient-to-r from-amber-200 to-white'/>
                         <p className='text-xs'>I joined TD Ameritrade as a poli-sci major looking to learn. In their rotational program I was the sole analyst on a Lean/Six-Sigma Sales revamp; learned SQL and Tableau while monitoring our Retail educational products; and learned basic Project Management.</p>
                         <div className='w-4 h-[1px] my-2 bg-black m-auto'/>
                         <li className='mt-2 text-xs'>{`Increased Client-facing (call) Time by `}<em className='text-green-400'>~5%</em>{` for national sales branch by restructuring coaching cadence.`}</li>
@@ -191,6 +193,7 @@ export default function Timeline() {
                 <div className='z-40 absolute bg-white opacity-0 transition-opacity group-hover:opacity-100 bg-opacity-30 backdrop-blur-md drop-shadow-sm w-lvw left-0 h-0 group-hover:h-[340px]'>
                 <div className="z-50 absolute m-auto mt-[20px] left-0 right-0 w-[300px] md:w-[350px] min-h-10 group-hover:h-[300px] bg-white border-2 border-black p-3 rounded-lg pointer-events-none opacity-0 transition-opacity group-hover:opacity-100 text-sm">
                 <h3 className='mb-2'>Vercel: CS Ops</h3>
+                <div className='mt-3 mb-3 h-0.5 w-full bg-gradient-to-r from-amber-200 to-white'/>
                         <p className='text-xs'>I joined TD Ameritrade as a poli-sci major looking to learn. In their rotational program I was the sole analyst on a Lean/Six-Sigma Sales revamp; learned SQL and Tableau while monitoring our Retail educational products; and learned basic Project Management.</p>
                         <div className='w-4 h-[1px] my-2 bg-black m-auto'/>
                         <li className='mt-2 text-xs'>{`Increased Client-facing (call) Time by `}<em className='text-green-400'>~5%</em>{` for national sales branch by restructuring coaching cadence.`}</li>
@@ -225,6 +228,7 @@ export default function Timeline() {
                 <div className='z-40 absolute bg-white opacity-0 transition-opacity group-hover:opacity-100 bg-opacity-30 backdrop-blur-md drop-shadow-sm w-lvw left-0 h-0 group-hover:h-[340px]'>
                 <div className="z-50 absolute m-auto mt-[20px] left-0 right-0 w-[300px] md:w-[350px] min-h-10 group-hover:h-[300px] bg-white border-2 border-black p-3 rounded-lg pointer-events-none opacity-0 transition-opacity group-hover:opacity-100 text-sm">
                 <h3 className='mb-2'>Vercel: GTM Analytics</h3>
+                <div className='mt-3 mb-3 h-0.5 w-full bg-gradient-to-r from-amber-200 to-white'/>
                         <p className='text-xs'>I joined TD Ameritrade as a poli-sci major looking to learn. In their rotational program I was the sole analyst on a Lean/Six-Sigma Sales revamp; learned SQL and Tableau while monitoring our Retail educational products; and learned basic Project Management.</p>
                         <div className='w-4 h-[1px] my-2 bg-black m-auto'/>
                         <li className='mt-2 text-xs'>{`Increased Client-facing (call) Time by `}<em className='text-green-400'>~5%</em>{` for national sales branch by restructuring coaching cadence.`}</li>
