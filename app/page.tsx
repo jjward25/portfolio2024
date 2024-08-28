@@ -1,4 +1,5 @@
-import Timeline from './components/timeline';
+import TimelineDesktop from './components/timeline/timelineDesktop';
+import TimelineMobile from './components/timeline/timelineMobile';
 import ProjectCarousel from './components/sideProjects/carousel';
 
 export const metadata = {
@@ -25,7 +26,7 @@ export default function Page() {
           <div className='mt-8 md:m-auto w-full'>
             <ul className="flex flex-nowrap w-full space-x-2 mb-3">
 
-            <div className='cursor-pointer hover:shadow-md hover:scale-105 w-full h-10 bg-black text-center justify-center items-center flex flex-nowrap rounded border p-1 text-xs leading-4 border-neutral-700 no-underline bg-[linear-gradient(45deg,transparent_25%,rgba(255,255,255,.2)_50%,transparent_75%,transparent_100%)] bg-[length:250%_250%,100%_100%] bg-[position:-100%_0,0_0] bg-no-repeat shadow-xl transition-[background-position_0s_ease] hover:bg-[position:200%_0,0_0] hover:duration-[2000ms]'>
+            <div className='cursor-pointer hover:shadow-md hover:scale-105 w-full h-10 bg-black text-center justify-center items-center flex flex-nowrap rounded border text-xs leading-4 border-neutral-700 no-underline bg-[linear-gradient(45deg,transparent_25%,rgba(255,255,255,.2)_50%,transparent_75%,transparent_100%)] bg-[length:250%_250%,100%_100%] bg-[position:-100%_0,0_0] bg-no-repeat shadow-xl transition-[background-position_0s_ease] hover:bg-[position:200%_0,0_0] hover:duration-[2000ms]'>
                 <div className=''><img
                     src='/lightbulb.png'
                     alt='prof'
@@ -35,7 +36,7 @@ export default function Page() {
                     Operational Excellence
                 </p>
             </div>
-            <div className='cursor-pointer hover:shadow-md hover:scale-105 w-full h-10 bg-black text-center justify-center items-center flex flex-nowrap rounded border p-1 text-xs leading-4 border-neutral-700 no-underline bg-[linear-gradient(45deg,transparent_25%,rgba(255,255,255,.2)_50%,transparent_75%,transparent_100%)] bg-[length:250%_250%,100%_100%] bg-[position:-100%_0,0_0] bg-no-repeat shadow-xl transition-[background-position_0s_ease] hover:bg-[position:200%_0,0_0] hover:duration-[2000ms]'>
+            <div className='cursor-pointer hover:shadow-md hover:scale-105 w-full h-10 bg-black text-center justify-center items-center flex flex-nowrap rounded border text-xs leading-4 border-neutral-700 no-underline bg-[linear-gradient(45deg,transparent_25%,rgba(255,255,255,.2)_50%,transparent_75%,transparent_100%)] bg-[length:250%_250%,100%_100%] bg-[position:-100%_0,0_0] bg-no-repeat shadow-xl transition-[background-position_0s_ease] hover:bg-[position:200%_0,0_0] hover:duration-[2000ms]'>
                 <div className=''><img
                   src='/growth.png'
                   alt='prof'
@@ -79,7 +80,12 @@ export default function Page() {
         </div>
       </div>
 
-      <Timeline/>
+      <div className='h-0 md:h-auto overflow-hidden'>
+        <TimelineDesktop/>
+      </div>
+      <div className='h-auto md:h-0 overflow-hidden'>
+        <TimelineMobile/>
+      </div>
 
       <div className="w-full mx-auto mt-4 text-black">
         <ProjectCarousel/>
