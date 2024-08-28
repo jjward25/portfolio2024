@@ -3,11 +3,11 @@ import { useState } from 'react';
 
 export default function Timeline() {
   return (
-    <div className="w-full max-w-full mx-auto mt-8 mb-8 bg-slate-100 rounded-xl p-4 text-black z-0 overflow-auto">
+    <div className="w-full max-w-full mx-auto mt-8 mb-8 bg-slate-100 rounded-xl p-4 text-black z-0">
 
       <p className="font-semibold">Timeline</p>
 
-      <div className="flex flex-row max-w-full hover:pb-45 no-scrollbar pb-3">
+      <div className="flex flex-row max-w-full pb-3 overflow-auto no-scrollba group-hover:h-[400px]">
         
         {/* Year Column */}
         <div className="flex flex-col z-0 hover:z-20 group">
