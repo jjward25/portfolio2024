@@ -199,7 +199,7 @@ export default function Timeline() {
                 <img
                     src="/schwab.png"
                     alt="schwab"
-                    className={`${isSchwabOpen ? 'z-40' : ''} duration-300 w-6 mt-2 mb-[11px] mx-auto rounded-2xl object-cover hover:scale-125 hover:duration-500 transition-all ease-in-out ${isTDAOpen ? 'opacity-0' : ''}${isTDA2Open ? 'opacity-0' : ''}${isVercelOpen ? 'opacity-0' : ''}${isVercel2Open ? 'opacity-0' : ''}`}
+                    className={`${isSchwabOpen ? 'z-40' : ''} duration-300 w-6 mt-2 mb-[14px] mx-auto rounded-2xl object-cover hover:scale-125 hover:duration-500 transition-all ease-in-out ${isTDAOpen ? 'opacity-0' : ''}${isTDAOpen ? 'opacity-0' : ''}${isVercelOpen ? 'opacity-0' : ''}${isVercel2Open ? 'opacity-0' : ''}`}
                     onClick={toggleSchwab}
                 />
                 <div onClick={toggleSchwab} className={`${isSchwabOpen ? 'z-40 h-[340px]' : 'h-0 overflow-hidden'} absolute left-0 right-0 bg-white bg-opacity-30 backdrop-blur-md drop-shadow-sm`}>
@@ -214,7 +214,7 @@ export default function Timeline() {
             </div>
           </div>
           {/* Year Badge */}
-          <div className="z-0 min-w-[45px] hover:scale-105 focus:scale-95 cursor-pointer relative rounded-lg w-full overflow-hidden h-full mb-0 my-auto">
+          <div className={`${isSchwabOpen ? 'z-50' : 'z-0'} min-w-[45px] hover:scale-105 focus:scale-95 cursor-pointer relative rounded-lg w-full overflow-hidden h-full mb-0 my-auto`}>
             <div className="absolute -inset-1 bg-gradient-to-tr from-cyan-300 via-neutral-300 to-cyan-300 dark:bg-black blur opacity-90"></div>
             <div className="relative rounded-lg flex justify-around border-2 border-cyan-200">
               <p className="px-1 text-center font-semibold text-cyan-700 dark:text-cyan-900 hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-br from-cyan-900 via-neutral-600 to-cyan-700 text-xs">
@@ -245,7 +245,7 @@ export default function Timeline() {
                 <img
                     src="/vercel.png"
                     alt="vercel"
-                    className={`${isVercelOpen ? 'z-40' : ''} duration-300 w-6 mt-2 mb-[11px] mx-auto rounded-2xl object-cover hover:scale-125 hover:duration-500 transition-all ease-in-out ${isTDAOpen ? 'opacity-0' : ''}${isSchwabOpen ? 'opacity-0' : ''}${isTDA2Open ? 'opacity-0' : ''}${isVercel2Open ? 'opacity-0' : ''}`}
+                    className={`${isVercelOpen ? 'z-40' : ''} duration-300 w-6 mt-2 mb-[14px] mx-auto rounded-2xl object-cover hover:scale-125 hover:duration-500 transition-all ease-in-out ${isTDAOpen ? 'opacity-0' : ''}${isTDAOpen ? 'opacity-0' : ''}${isSchwabOpen ? 'opacity-0' : ''}${isVercel2Open ? 'opacity-0' : ''}`}
                     onClick={toggleVercel}
                 />
                 <div onClick={toggleVercel} className={`${isVercelOpen ? 'z-40 h-[340px]' : 'h-0 overflow-hidden'} absolute left-0 right-0 bg-white bg-opacity-30 backdrop-blur-md drop-shadow-sm`}>
@@ -260,7 +260,7 @@ export default function Timeline() {
             </div>
           </div>
           {/* Year Badge */}
-          <div className="z-0 min-w-[45px] hover:scale-105 focus:scale-95 cursor-pointer relative rounded-lg w-full overflow-hidden h-full mb-0 my-auto">
+          <div className={`${isVercelOpen ? 'z-50' : 'z-0'} min-w-[45px] hover:scale-105 focus:scale-95 cursor-pointer relative rounded-lg w-full overflow-hidden h-full mb-0 my-auto`}>
             <div className="absolute -inset-1 bg-gradient-to-tr from-cyan-300 via-neutral-300 to-cyan-300 dark:bg-black blur opacity-90"></div>
             <div className="relative rounded-lg flex justify-around border-2 border-cyan-200">
               <p className="px-1 text-center font-semibold text-cyan-700 dark:text-cyan-900 hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-br from-cyan-900 via-neutral-600 to-cyan-700 text-xs">
@@ -280,12 +280,12 @@ export default function Timeline() {
                 <img
                     src="/vercel.png"
                     alt="vercel"
-                    className={`${isVercel2Open ? 'z-40' : ''} duration-300 w-6 mt-2 mb-[11px] mx-auto rounded-2xl object-cover hover:scale-125 hover:duration-500 transition-all ease-in-out ${isTDAOpen ? 'opacity-0' : ''}${isSchwabOpen ? 'opacity-0' : ''}${isVercelOpen ? 'opacity-0' : ''}${isTDA2Open ? 'opacity-0' : ''}`}
+                    className={`${isVercel2Open ? 'z-40' : ''} duration-300 w-6 mt-2 mb-[14px] mx-auto rounded-2xl object-cover hover:scale-125 hover:duration-500 transition-all ease-in-out ${isTDAOpen ? 'opacity-0' : ''}${isTDAOpen ? 'opacity-0' : ''}${isSchwabOpen ? 'opacity-0' : ''}${isVercelOpen ? 'opacity-0' : ''}`}
                     onClick={toggleVercel2}
                 />
                 <div onClick={toggleVercel2} className={`${isVercel2Open ? 'z-40 h-[340px]' : 'h-0 overflow-hidden'} absolute left-0 right-0 bg-white bg-opacity-30 backdrop-blur-md drop-shadow-sm`}>
                     <div className={`${isVercel2Open ? 'z-50' : ''} absolute m-auto my-[25px] left-0 right-0 w-[300px] md:w-[350px] h-[300px] bg-slate-200 border border-black p-3 rounded-lg pointer-events-none text-sm`}>
-                        <h3 className='mb-2'>Vercel: GTM Analytics</h3>
+                        <h3 className='mb-2'>Vercel: CS Ops</h3>
                         <p className='text-xs'>I joined TD Ameritrade as a poli-sci major looking to learn. In their rotational program I was the sole analyst on a Lean/Six-Sigma Sales revamp; learned SQL and Tableau while monitoring our Retail educational products; and learned basic Project Management.</p>
                         <div className='w-4 h-[1px] my-2 bg-black m-auto'/>
                         <li className='mt-2 text-xs'>{`Increased Client-facing (call) Time by `}<em className='text-green-400'>~5%</em>{` for national sales branch by restructuring coaching cadence.`}</li>
@@ -295,7 +295,7 @@ export default function Timeline() {
             </div>
           </div>
           {/* Year Badge */}
-          <div className="z-0 min-w-[45px] hover:scale-105 focus:scale-95 cursor-pointer relative rounded-lg w-full overflow-hidden h-full mb-0 my-auto">
+          <div className={`${isVercel2Open ? 'z-50' : 'z-0'} min-w-[45px] hover:scale-105 focus:scale-95 cursor-pointer relative rounded-lg w-full overflow-hidden h-full mb-0 my-auto`}>
             <div className="absolute -inset-1 bg-gradient-to-tr from-cyan-300 via-neutral-300 to-cyan-300 dark:bg-black blur opacity-90"></div>
             <div className="relative rounded-lg flex justify-around border-2 border-cyan-200">
               <p className="px-1 text-center font-semibold text-cyan-700 dark:text-cyan-900 hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-br from-cyan-900 via-neutral-600 to-cyan-700 text-xs">
