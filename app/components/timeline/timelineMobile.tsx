@@ -64,10 +64,10 @@ export default function Timeline() {
 
       <p className="font-semibold">Timeline</p>
 
-      <div className={`flex flex-row max-w-full pb-3 ${isCardOpen ? 'overflow-y-visible' : 'overflow-x-scroll'} no-scroll`}>
+      <div className={`flex flex-row max-w-full pb-3 overflow-x-scroll ${isCardOpen ? '' : ''} no-scroll`}>
         
         {/* Year Column */}
-        <div className={`flex flex-col z-0 ${isTDAOpen ? 'overflow-y-visible z-40' : ''}`}>
+        <div className={`flex flex-col z-0 overflow-y-visible ${isTDAOpen ? 'z-40' : ''}`}>
           {/* Company Logo & Tooltip */}
           <div className="mx-auto">
             <div className={``}>
