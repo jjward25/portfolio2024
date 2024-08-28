@@ -30,11 +30,11 @@ export default function Timeline() {
 
 
   return (
-    <div className="w-full max-w-full mx-auto mt-8 mb-8 bg-slate-100 rounded-xl p-4 text-black z-0 relative">
+    <div className={`w-full max-w-full mx-auto mt-8 mb-8 bg-slate-100 rounded-xl p-4 text-black z-0 relative ${isTDAOpen ? 'overflow-y-visible' : 'overflow-x-scroll'}`}>
 
       <p className="font-semibold">Timeline</p>
 
-      <div className={`flex flex-row max-w-full pb-3 ${isTDAOpen ? 'overflow-visible' : 'overflow-auto'} no-scroll`}>
+      <div className={`flex flex-row max-w-full pb-3 ${isTDAOpen ? 'overflow-y-visible' : 'overflow-x-scroll'} no-scroll`}>
         
         {/* Year Column */}
         <div className="flex flex-col z-0 hover:z-20 group">
