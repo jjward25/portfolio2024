@@ -64,7 +64,7 @@ export default function Timeline() {
 
       <p className="font-semibold">Timeline</p>
 
-      <div className={`flex flex-row max-w-full pb-3 ${isTDAOpen ? 'overflow-y-visible' : 'overflow-x-scroll'} no-scroll`}>
+      <div className={`flex flex-row max-w-full pb-3 ${isCardOpen ? 'overflow-y-visible' : 'overflow-x-scroll'} no-scroll`}>
         
         {/* Year Column */}
         <div className={`flex flex-col z-0 ${isTDAOpen ? 'overflow-y-visible z-40' : ''}`}>
