@@ -32,7 +32,7 @@ export default function Page() {
                     alt='prof'
                     className="w-auto h-6 object-cover ml-2"
                 /></div>
-                <p className="w-full h-10 pl-4 md:pl-6 inline-flex  items-center ">
+                <p className="w-full h-10 pl-2 md:pl-6 inline-flex  items-center ">
                     Operational Excellence
                 </p>
             </div>
@@ -42,7 +42,7 @@ export default function Page() {
                   alt='prof'
                   className="w-auto h-5 object-cover ml-2"
                 /></div>
-                <p className="w-full h-10 pl-4 md:pl-6 inline-flex  items-center ">
+                <p className="w-full h-10 pl-2 md:pl-6 inline-flex  items-center ">
                   Bus. Intelligence & Growth
                 </p>
               </div>
