@@ -1,6 +1,4 @@
 import Link from 'next/link';
-import { Suspense } from 'react';
-import { getBlogPosts } from 'app/db/blog';
 import dynamic from 'next/dynamic';
 import ProjectCarousel from 'app/components/sideProjects/carousel';
 
@@ -12,7 +10,6 @@ export const metadata = {
 };
 
 export default function BlogPage() {
-  let allBlogs = getBlogPosts();
 
   return (
     <section>
@@ -45,40 +42,21 @@ export default function BlogPage() {
       </div>
 
       {/*Site Blog Links*/}
-      <div>
-        {allBlogs
-          .sort((a, b) => {
-            if (
-              new Date(a.metadata.publishedAt) > new Date(b.metadata.publishedAt)
-            ) {
-              return -1;
-            }
-            return 1;
-          })
-          .map((post) => (
-            <Link
-              key={post.slug}
-              className="flex flex-col space-y-1 mb-4"
-              href={`/blog/${post.slug}`}
-            >
-              <div className="w-full flex flex-col">
-                <li className="text-neutral-900 dark:text-neutral-100 tracking-tight">
-                  {post.metadata.title}
-                </li>
-                <Suspense fallback={<p className="h-6" />}>
-                </Suspense>
-              </div>
-            </Link>
-          ))}
-        </div>
+      <div className='w-full flex flex-col text-black'>
+        <h3 className='text-lg'>Articles</h3>
+        <li><Link key={''} href={"/blog/articles/test"} className="">
+              Test Blog</Link></li>
+      </div>
 
-        <div className="w-full mx-auto mt-4">
-          <DynamicAccordion/>
-        </div>
+        
 
-        <div className="w-full mx-auto mt-4 text-black">
-          <ProjectCarousel/>
-        </div>
+      <div className="w-full mx-auto mt-4">
+        <DynamicAccordion/>
+      </div>
+
+      <div className="w-full mx-auto mt-4 text-black">
+        <ProjectCarousel/>
+      </div>
 
     </section>
   );

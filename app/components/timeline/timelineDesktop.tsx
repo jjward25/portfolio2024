@@ -3,9 +3,9 @@ import { useState } from 'react';
 
 export default function Timeline() {
   return (
-    <div className="w-full max-w-full mx-auto mt-8 mb-8 bg-slate-100 border border-black shadow-lg rounded-xl p-4 text-black z-0 overflow-x-scroll md:overflow-auto">
+    <div className="w-full max-w-full mx-auto mt-8 mb-8 bg-gradient-to-r from-cyan-950 via-slate-800 to-cyan-950 border border-black shadow-lg rounded-xl p-4 text-black z-0 overflow-x-scroll md:overflow-auto">
 
-      <p className="font-semibold mb-2">Timeline</p>
+      <p className="font-semibold mb-2 text-white">Timeline</p>
 
       <div className="flex flex-row max-w-full overflow-visible md:overflow-visible hover:pb-45 no-scrollbar pb-3">
         
@@ -17,10 +17,10 @@ export default function Timeline() {
                 <img
                     src="/tda.png"
                     alt="tda"
-                    className="group duration-300 w-6 h-6 my-2 mx-auto rounded-2xl object-cover hover:scale-125 transition-all ease-in-out "
+                    className="group border-2 border-yellow-200 duration-300 w-7 h-7 mb-3 mx-auto rounded-2xl object-cover hover:scale-125 transition-all ease-in-out "
                 />
                 <div className='z-40 absolute w-lvw left-0 h-0 group-hover:h-[340px] bg-white opacity-0 transition-opacity group-hover:opacity-100 bg-opacity-30 backdrop-blur-md drop-shadow-sm'>
-                    <div className="z-50 absolute m-auto mt-[20px] left-0 right-0 md:w-[400px] min-h-10 group-hover:h-[300px] bg-white border-2 border-black p-3 rounded-lg pointer-events-none opacity-0 transition-opacity group-hover:opacity-100 text-sm">
+                    <div className="z-50 absolute m-auto mt-[20px] left-0 right-0 md:w-[420px] min-h-10 group-hover:h-[300px] bg-white border-2 border-black p-3 rounded-lg pointer-events-none opacity-0 transition-opacity group-hover:opacity-100 text-sm">
                         <h3 className='mb-2'>TD Ameritrade Rotational Program</h3>
                         <div className='mt-3 mb-3 h-0.5 w-full bg-gradient-to-r from-amber-200 to-white'/>
                         <p className='text-xs'>As a poli-sci major (aka graduating undecided), TD Ameritrade's rotational program stuck out for the broad exposure it promised.  And I've been building on the tools I learned in this program ever since.</p>
@@ -34,9 +34,9 @@ export default function Timeline() {
           </div>
           {/* Year Badge */}
           <div className="z-0 group-hover:z-50 min-w-[45px] hover:scale-105 focus:scale-95 cursor-pointer relative rounded-lg w-full overflow-hidden h-full mb-0 my-auto">
-            <div className="absolute -inset-1 bg-gradient-to-tr from-cyan-300 via-neutral-300 to-cyan-300 dark:bg-black blur opacity-90"></div>
-            <div className="relative rounded-lg flex justify-around border-2 border-cyan-200">
-              <p className="px-1 text-center font-semibold text-cyan-700 dark:text-cyan-900 hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-br from-cyan-900 via-neutral-600 to-cyan-700 text-xs">
+            <div className="absolute -inset-1 bg-gradient-to-tr from-yellow-300 via-neutral-300 to-yellow-300 dark:bg-black blur opacity-90"></div>
+            <div className="relative rounded-lg flex justify-around border-2 border-yellow-200">
+              <p className="px-1 text-center font-semibold text-yellow-700 dark:text-yellow-900 hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-br from-yellow-900 via-neutral-600 to-yellow-700 text-xs">
                 2013
               </p>
             </div>
@@ -74,10 +74,10 @@ export default function Timeline() {
                 <img
                     src="/pmp.png"
                     alt="pmp"
-                    className="group duration-300 w-6 max-h-6 my-2 mx-auto rounded-2xl object-cover hover:scale-125 transition-all ease-in-out "
+                    className="group border-2 border-yellow-200 duration-300 w-7 h-7 mb-3 mx-auto rounded-2xl object-cover hover:scale-125 transition-all ease-in-out "
                 />
                 <div className='z-40 absolute bg-white opacity-0 transition-opacity group-hover:opacity-100 bg-opacity-30 backdrop-blur-md drop-shadow-sm w-lvw left-0 h-0 group-hover:h-[340px]'>
-                  <div className="z-50 absolute m-auto mt-[20px] left-0 right-0 w-[400px] min-h-10 group-hover:h-[300px] bg-white border-2 border-black p-3 rounded-lg pointer-events-none opacity-0 transition-opacity group-hover:opacity-100 text-sm">
+                  <div className="z-50 absolute m-auto mt-[20px] left-0 right-0 w-[420px] min-h-10 group-hover:h-[300px] bg-white border-2 border-black p-3 rounded-lg pointer-events-none opacity-0 transition-opacity group-hover:opacity-100 text-sm">
                     <h3 className='mb-2'>Practice Benefit Corp.</h3>
                     <div className='mt-3 mb-3 h-0.5 w-full bg-gradient-to-r from-amber-200 to-white'/>
                     <p className='text-xs'>At the time at non-profit called Practice Makes Perfect where I had previously volunteered; I joined full-time to help professionalize operations and implement best practices while working towards Educational Equity.</p>
@@ -90,9 +90,9 @@ export default function Timeline() {
           </div>
           {/* Year Badge */}
           <div className="z-0 group-hover:z-50  min-w-[45px] hover:scale-105 focus:scale-95 cursor-pointer relative rounded-lg w-full overflow-hidden h-full mb-0 my-auto">
-            <div className="absolute -inset-1 bg-gradient-to-tr from-cyan-300 via-neutral-300 to-cyan-300 dark:bg-black blur opacity-90"></div>
-            <div className="relative rounded-lg flex justify-around border-2 border-cyan-200">
-              <p className="px-1 text-center font-semibold text-cyan-700 dark:text-cyan-900 hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-br from-cyan-900 via-neutral-600 to-cyan-700 text-xs">
+            <div className="absolute -inset-1 bg-gradient-to-tr from-yellow-300 via-neutral-300 to-yellow-300 dark:bg-black blur opacity-90"></div>
+            <div className="relative rounded-lg flex justify-around border-2 border-yellow-200">
+              <p className="px-1 text-center font-semibold text-yellow-700 dark:text-yellow-900 hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-br from-yellow-900 via-neutral-600 to-yellow-700 text-xs">
                 2016
               </p>
             </div>
@@ -109,10 +109,10 @@ export default function Timeline() {
                 <img
                     src="/tda.png"
                     alt="tda"
-                    className="group duration-300 w-6 h-6 my-2 mx-auto rounded-2xl object-cover hover:scale-125 transition-all ease-in-out "
+                    className="group border-2 border-yellow-200 duration-300 w-7 h-7 mb-3 mx-auto rounded-2xl object-cover hover:scale-125 transition-all ease-in-out "
                 />
                 <div className='z-40 absolute bg-white opacity-0 transition-opacity group-hover:opacity-100 bg-opacity-30 backdrop-blur-md drop-shadow-sm w-lvw left-0 h-0 group-hover:h-[340px]'>
-                  <div className="z-50 absolute m-auto mt-[20px] left-0 right-0 w-[400px] min-h-10 group-hover:h-[300px] bg-white border-2 border-black p-3 rounded-lg pointer-events-none opacity-0 transition-opacity group-hover:opacity-100 text-sm">
+                  <div className="z-50 absolute m-auto mt-[20px] left-0 right-0 w-[420px] min-h-10 group-hover:h-[300px] bg-white border-2 border-black p-3 rounded-lg pointer-events-none opacity-0 transition-opacity group-hover:opacity-100 text-sm">
                     <h3 className='mb-2'>TD Ameritrade Procurement</h3>
                     <div className='mt-3 mb-3 h-0.5 w-full bg-gradient-to-r from-amber-200 to-white'/>
                     <p className='text-xs'>After PMP switched to for-profit status I returned to TDA, opting to help my old manager build up the Procurement department over re-joining the Lean team.</p>
@@ -126,9 +126,9 @@ export default function Timeline() {
           </div>
           {/* Year Badge */}
           <div className="z-0 group-hover:z-50  min-w-[45px] hover:scale-105 focus:scale-95 cursor-pointer relative rounded-lg w-full overflow-hidden h-full mb-0 my-auto">
-            <div className="absolute -inset-1 bg-gradient-to-tr from-cyan-300 via-neutral-300 to-cyan-300 dark:bg-black blur opacity-90"></div>
-            <div className="relative rounded-lg flex justify-around border-2 border-cyan-200">
-              <p className="px-1 text-center font-semibold text-cyan-700 dark:text-cyan-900 hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-br from-cyan-900 via-neutral-600 to-cyan-700 text-xs">
+            <div className="absolute -inset-1 bg-gradient-to-tr from-yellow-300 via-neutral-300 to-yellow-300 dark:bg-black blur opacity-90"></div>
+            <div className="relative rounded-lg flex justify-around border-2 border-yellow-200">
+              <p className="px-1 text-center font-semibold text-yellow-700 dark:text-yellow-900 hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-br from-yellow-900 via-neutral-600 to-yellow-700 text-xs">
                 2017
               </p>
             </div>
@@ -167,10 +167,10 @@ export default function Timeline() {
                 <img
                     src="/schwab.png"
                     alt="schwab"
-                    className="group duration-300 w-6 h-6 my-2 mx-auto rounded-2xl object-cover hover:scale-125 transition-all ease-in-out "
+                    className="group border-2 border-yellow-200 duration-300 w-7 h-7 mb-3 mx-auto rounded-2xl object-cover hover:scale-125 transition-all ease-in-out "
                 />
                 <div className='z-40 absolute bg-white opacity-0 transition-opacity group-hover:opacity-100 bg-opacity-30 backdrop-blur-md drop-shadow-sm w-lvw left-0 h-0 group-hover:h-[340px]'>
-                <div className="z-50 absolute m-auto mt-[20px] left-0 right-0 w-[400px] min-h-10 group-hover:h-[300px] bg-white border-2 border-black p-3 rounded-lg pointer-events-none opacity-0 transition-opacity group-hover:opacity-100 text-sm">
+                <div className="z-50 absolute m-auto mt-[20px] left-0 right-0 w-[420px] min-h-10 group-hover:h-[300px] bg-white border-2 border-black p-3 rounded-lg pointer-events-none opacity-0 transition-opacity group-hover:opacity-100 text-sm">
                 <h3 className='mb-2'>Charles Schwab Procurement</h3>
                 <div className='mt-3 mb-3 h-0.5 w-full bg-gradient-to-r from-amber-200 to-white'/>
                         <p className='text-xs'>Schwab bought TD Ameritrade and, not wanting to be weighed down by even more regulations and red-tape, I began looking.</p>
@@ -184,9 +184,9 @@ export default function Timeline() {
           </div>
           {/* Year Badge */}
           <div className="z-0 group-hover:z-50 min-w-[45px] hover:scale-105 focus:scale-95 cursor-pointer relative rounded-lg w-full overflow-hidden h-full mb-0 my-auto">
-            <div className="absolute -inset-1 bg-gradient-to-tr from-cyan-300 via-neutral-300 to-cyan-300 dark:bg-black blur opacity-90"></div>
-            <div className="relative rounded-lg flex justify-around border-2 border-cyan-200">
-              <p className="px-1 text-center font-semibold text-cyan-700 dark:text-cyan-900 hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-br from-cyan-900 via-neutral-600 to-cyan-700 text-xs">
+            <div className="absolute -inset-1 bg-gradient-to-tr from-yellow-300 via-neutral-300 to-yellow-300 dark:bg-black blur opacity-90"></div>
+            <div className="relative rounded-lg flex justify-around border-2 border-yellow-200">
+              <p className="px-1 text-center font-semibold text-yellow-700 dark:text-yellow-900 hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-br from-yellow-900 via-neutral-600 to-yellow-700 text-xs">
                 2020
               </p>
             </div>
@@ -214,10 +214,10 @@ export default function Timeline() {
                 <img
                     src="/vercel.png"
                     alt="vercel"
-                    className="group duration-300 h-6 w-6 my-2 mx-auto rounded-2xl object-cover hover:scale-125 transition-all ease-in-out "
+                    className="group border-2 border-yellow-200 duration-300 h-7 w-7 mb-3 mx-auto rounded-2xl object-cover hover:scale-125 transition-all ease-in-out "
                 />
                 <div className='z-40 absolute bg-white opacity-0 transition-opacity group-hover:opacity-100 bg-opacity-30 backdrop-blur-md drop-shadow-sm w-lvw left-0 h-0 group-hover:h-[340px]'>
-                <div className="z-50 absolute m-auto mt-[20px] left-0 right-0 w-[400px] min-h-10 group-hover:h-[300px] bg-white border-2 border-black p-3 rounded-lg pointer-events-none opacity-0 transition-opacity group-hover:opacity-100 text-sm">
+                <div className="z-50 absolute m-auto mt-[20px] left-0 right-0 w-[420px] min-h-10 group-hover:h-[300px] bg-white border-2 border-black p-3 rounded-lg pointer-events-none opacity-0 transition-opacity group-hover:opacity-100 text-sm">
                 <h3 className='mb-2'>Vercel: CS Ops</h3>
                 <div className='mt-3 mb-3 h-0.5 w-full bg-gradient-to-r from-amber-200 to-white'/>
                         <p className='text-xs'>{`After the Schwab transition was complete, I moved to Vercel, which I had been using to learn to code (and use to host this website).`}</p>
@@ -232,9 +232,9 @@ export default function Timeline() {
           </div>
           {/* Year Badge */}
           <div className="z-0 group-hover:z-50 min-w-[45px] hover:scale-105 focus:scale-95 cursor-pointer relative rounded-lg w-full overflow-hidden h-full mb-0 my-auto">
-            <div className="absolute -inset-1 bg-gradient-to-tr from-cyan-300 via-neutral-300 to-cyan-300 dark:bg-black blur opacity-90"></div>
-            <div className="relative rounded-lg flex justify-around border-2 border-cyan-200">
-              <p className="px-1 text-center font-semibold text-cyan-700 dark:text-cyan-900 hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-br from-cyan-900 via-neutral-600 to-cyan-700 text-xs">
+            <div className="absolute -inset-1 bg-gradient-to-tr from-yellow-300 via-neutral-300 to-yellow-300 dark:bg-black blur opacity-90"></div>
+            <div className="relative rounded-lg flex justify-around border-2 border-yellow-200">
+              <p className="px-1 text-center font-semibold text-yellow-700 dark:text-yellow-900 hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-br from-yellow-900 via-neutral-600 to-yellow-700 text-xs">
                 2022
               </p>
             </div>
@@ -251,10 +251,10 @@ export default function Timeline() {
                 <img
                     src="/vercel.png"
                     alt="vercel"
-                    className="group duration-300 h-6 w-6 my-2 mx-auto rounded-2xl object-cover hover:scale-125 transition-all ease-in-out "
+                    className="group border-2 border-yellow-200 duration-300 h-7 w-7 mb-3 mx-auto rounded-2xl object-cover hover:scale-125 transition-all ease-in-out "
                 />
                 <div className='z-40 absolute bg-white opacity-0 transition-opacity group-hover:opacity-100 bg-opacity-30 backdrop-blur-md drop-shadow-sm w-lvw left-0 h-0 group-hover:h-[340px]'>
-                <div className="z-50 absolute m-auto mt-[20px] left-0 right-0 w-[400px] min-h-10 group-hover:h-[300px] bg-white border-2 border-black p-3 rounded-lg pointer-events-none opacity-0 transition-opacity group-hover:opacity-100 text-sm">
+                <div className="z-50 absolute m-auto mt-[20px] left-0 right-0 w-[420px] min-h-10 group-hover:h-[300px] bg-white border-2 border-black p-3 rounded-lg pointer-events-none opacity-0 transition-opacity group-hover:opacity-100 text-sm">
                 <h3 className='mb-2'>Vercel: GTM Analytics</h3>
                 <div className='mt-3 mb-3 h-0.5 w-full bg-gradient-to-r from-amber-200 to-white'/>
                         <p className='text-xs'>When our Director of RevOps left I inherited her team, with a mandate to provide analytics and strategic support to the field.</p>
@@ -270,9 +270,9 @@ export default function Timeline() {
           </div>
           {/* Year Badge */}
           <div className="z-0 group-hover:z-50 min-w-[45px] hover:scale-105 focus:scale-95 cursor-pointer relative rounded-lg w-full overflow-hidden h-full mb-0 my-auto">
-            <div className="absolute -inset-1 bg-gradient-to-tr from-cyan-300 via-neutral-300 to-cyan-300 dark:bg-black blur opacity-90"></div>
-            <div className="relative rounded-lg flex justify-around border-2 border-cyan-200">
-              <p className="px-1 text-center font-semibold text-cyan-700 dark:text-cyan-900 hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-br from-cyan-900 via-neutral-600 to-cyan-700 text-xs">
+            <div className="absolute -inset-1 bg-gradient-to-tr from-yellow-300 via-neutral-300 to-yellow-300 dark:bg-black blur opacity-90"></div>
+            <div className="relative rounded-lg flex justify-around border-2 border-yellow-200">
+              <p className="px-1 text-center font-semibold text-yellow-700 dark:text-yellow-900 hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-br from-yellow-900 via-neutral-600 to-yellow-700 text-xs">
                 2023
               </p>
             </div>

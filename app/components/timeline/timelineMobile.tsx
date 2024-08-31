@@ -69,10 +69,10 @@ export default function Timeline() {
   };
 
   return (
-    <div className={`w-full max-w-full mx-auto mt-8 mb-8 bg-slate-100 rounded-xl p-4 text-black z-0 relative ${isCardOpen ? 'h-[540px]' : 'overflow-x-scroll'}`}
+    <div className={`w-full max-w-full mx-auto mt-8 mb-8 bg-gradient-to-r from-slate-800 via-slate-800 to-slate-800 rounded-xl p-4 text-black z-0 relative ${isCardOpen ? 'h-[540px]' : 'overflow-x-scroll'}`}
       onClick={toggleClose}>
 
-      <p className="font-semibold">Timeline</p>
+      <p className="font-semibold text-white">Timeline</p>
 
       <div className={`flex flex-row max-w-full pb-3 ${isCardOpen ? 'overflow-y-visible' : 'overflow-x-scroll'} no-scroll`}>
         
@@ -84,7 +84,7 @@ export default function Timeline() {
                 <img
                     src="/tda.png"
                     alt="tda"
-                    className={`${isTDAOpen ? 'z-40' : ''} duration-300 w-6 h-6 my-2 mx-auto rounded-2xl object-cover hover:scale-125 hover:duration-500 transition-all ease-in-out ${isTDA2Open ? 'opacity-0' : ''}${isPMPOpen ? 'opacity-0' : ''}${isSchwabOpen ? 'opacity-0' : ''}${isVercelOpen ? 'opacity-0' : ''}${isVercel2Open ? 'opacity-0' : ''}`}
+                    className={`${isTDAOpen ? 'z-40' : ''} duration-300 w-7 h-7 my-2 border-2 border-yellow-200 mx-auto rounded-2xl object-cover hover:scale-125 hover:duration-500 transition-all ease-in-out ${isTDA2Open ? 'opacity-0' : ''}${isPMPOpen ? 'opacity-0' : ''}${isSchwabOpen ? 'opacity-0' : ''}${isVercelOpen ? 'opacity-0' : ''}${isVercel2Open ? 'opacity-0' : ''}`}
                     onClick={toggleTDA}
                 />
                 <div onClick={toggleTDA} className={`${isTDAOpen ? 'z-40 h-[380px]' : 'h-0 overflow-hidden'} absolute left-0 right-0 bg-white bg-opacity-30 backdrop-blur-md drop-shadow-sm`}>
@@ -102,9 +102,9 @@ export default function Timeline() {
           </div>
           {/* Year Badge */}
           <div className={`${isTDAOpen ? 'z-50' : 'z-0'} min-w-[45px] hover:scale-105 focus:scale-95 cursor-pointer relative rounded-lg w-full overflow-hidden h-full mb-0 my-auto`}>
-            <div className="absolute -inset-1 bg-gradient-to-tr from-cyan-300 via-neutral-300 to-cyan-300 dark:bg-black blur opacity-90"></div>
-            <div className="relative rounded-lg flex justify-around border-2 border-cyan-200">
-              <p className="px-1 text-center font-semibold text-cyan-700 dark:text-cyan-900 hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-br from-cyan-900 via-neutral-600 to-cyan-700 text-xs">
+            <div className="absolute -inset-1 bg-gradient-to-tr from-yellow-300 via-neutral-300 to-yellow-300 dark:bg-black blur opacity-90"></div>
+            <div className="relative rounded-lg flex justify-around border-2 border-yellow-200">
+              <p className="px-1 text-center font-semibold text-yellow-700 dark:text-yellow-900 hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-br from-yellow-900 via-neutral-600 to-yellow-700 text-xs">
                 2013
               </p>
             </div>
@@ -142,10 +142,10 @@ export default function Timeline() {
                 <img
                     src="/pmp.png"
                     alt="pmp"
-                    className={`${isPMPOpen ? 'z-40' : ''} duration-300 w-6 h-6 my-2 mx-auto rounded-2xl object-cover hover:scale-125 hover:duration-500 transition-all ease-in-out ${isTDAOpen ? 'opacity-0' : ''}${isTDA2Open ? 'opacity-0' : ''}${isSchwabOpen ? 'opacity-0' : ''}${isVercelOpen ? 'opacity-0' : ''}${isVercel2Open ? 'opacity-0' : ''}`}
+                    className={`${isPMPOpen ? 'z-40' : ''} duration-300 w-7 h-7 my-2 border-2 border-yellow-200 mx-auto rounded-2xl object-cover hover:scale-125 hover:duration-500 transition-all ease-in-out ${isTDAOpen ? 'opacity-0' : ''}${isTDA2Open ? 'opacity-0' : ''}${isSchwabOpen ? 'opacity-0' : ''}${isVercelOpen ? 'opacity-0' : ''}${isVercel2Open ? 'opacity-0' : ''}`}
                     onClick={togglePMP}
                 />
-                <div onClick={togglePMP} className={`${isPMPOpen ? 'z-40 h-[340px]' : 'h-0 overflow-hidden'} absolute left-0 right-0 bg-white bg-opacity-30 backdrop-blur-md drop-shadow-sm`}>
+                <div onClick={togglePMP} className={`${isPMPOpen ? 'z-40 h-[480px]' : 'h-0 overflow-hidden'} absolute left-0 right-0 bg-white bg-opacity-30 backdrop-blur-md drop-shadow-sm`}>
                 <div className={`${isPMPOpen ? 'z-50' : ''} absolute m-auto my-[25px] left-0 right-0 w-[300px] h-[420px] bg-white border-2 border-black p-3 rounded-lg pointer-events-none text-sm`}>
                 <h3 className='mb-2'>Practice Benefit Corp.</h3>
                 <div className='mt-3 mb-3 h-0.5 w-full bg-gradient-to-r from-amber-200 to-white'/>
@@ -159,9 +159,9 @@ export default function Timeline() {
           </div>
           {/* Year Badge */}
           <div className={`${isPMPOpen ? 'z-50' : 'z-0'} min-w-[45px] hover:scale-105 focus:scale-95 cursor-pointer relative rounded-lg w-full overflow-hidden h-full mb-0 my-auto`}>
-            <div className="absolute -inset-1 bg-gradient-to-tr from-cyan-300 via-neutral-300 to-cyan-300 dark:bg-black blur opacity-90"></div>
-            <div className="relative rounded-lg flex justify-around border-2 border-cyan-200">
-              <p className="px-1 text-center font-semibold text-cyan-700 dark:text-cyan-900 hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-br from-cyan-900 via-neutral-600 to-cyan-700 text-xs">
+            <div className="absolute -inset-1 bg-gradient-to-tr from-yellow-300 via-neutral-300 to-yellow-300 dark:bg-black blur opacity-90"></div>
+            <div className="relative rounded-lg flex justify-around border-2 border-yellow-200">
+              <p className="px-1 text-center font-semibold text-yellow-700 dark:text-yellow-900 hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-br from-yellow-900 via-neutral-600 to-yellow-700 text-xs">
                 2016
               </p>
             </div>
@@ -178,10 +178,10 @@ export default function Timeline() {
                 <img
                     src="/tda.png"
                     alt="tda"
-                    className={`${isTDA2Open ? 'z-40' : ''} duration-300 w-6 h-6 my-2 mx-auto rounded-2xl object-cover hover:scale-125 hover:duration-500 transition-all ease-in-out ${isTDAOpen ? 'opacity-0' : ''}${isPMPOpen ? 'opacity-0' : ''}${isSchwabOpen ? 'opacity-0' : ''}${isVercelOpen ? 'opacity-0' : ''}${isVercel2Open ? 'opacity-0' : ''}`}
+                    className={`${isTDA2Open ? 'z-40' : ''} duration-300 w-7 h-7 my-2 border-2 border-yellow-200 mx-auto rounded-2xl object-cover hover:scale-125 hover:duration-500 transition-all ease-in-out ${isTDAOpen ? 'opacity-0' : ''}${isPMPOpen ? 'opacity-0' : ''}${isSchwabOpen ? 'opacity-0' : ''}${isVercelOpen ? 'opacity-0' : ''}${isVercel2Open ? 'opacity-0' : ''}`}
                     onClick={toggleTDA2}
                 />
-                <div onClick={toggleTDA2} className={`${isTDA2Open ? 'z-40 h-[340px]' : 'h-0 overflow-hidden'} absolute left-0 right-0 bg-white bg-opacity-30 backdrop-blur-md drop-shadow-sm`}>
+                <div onClick={toggleTDA2} className={`${isTDA2Open ? 'z-40 h-[480px]' : 'h-0 overflow-hidden'} absolute left-0 right-0 bg-white bg-opacity-30 backdrop-blur-md drop-shadow-sm`}>
                 <div className={`${isTDA2Open ? 'z-50' : ''} absolute m-auto my-[25px] left-0 right-0 w-[300px] h-[420px] bg-white border-2 border-black p-3 rounded-lg pointer-events-none text-sm`}>
                 <h3 className='mb-2'>TD Ameritrade Procurement</h3>
                 <div className='mt-3 mb-3 h-0.5 w-full bg-gradient-to-r from-amber-200 to-white'/>
@@ -196,9 +196,9 @@ export default function Timeline() {
           </div>
           {/* Year Badge */}
           <div className={`${isTDA2Open ? 'z-50' : 'z-0'} min-w-[45px] hover:scale-105 focus:scale-95 cursor-pointer relative rounded-lg w-full overflow-hidden h-full mb-0 my-auto`}>
-            <div className="absolute -inset-1 bg-gradient-to-tr from-cyan-300 via-neutral-300 to-cyan-300 dark:bg-black blur opacity-90"></div>
-            <div className="relative rounded-lg flex justify-around border-2 border-cyan-200">
-              <p className="px-1 text-center font-semibold text-cyan-700 dark:text-cyan-900 hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-br from-cyan-900 via-neutral-600 to-cyan-700 text-xs">
+            <div className="absolute -inset-1 bg-gradient-to-tr from-yellow-300 via-neutral-300 to-yellow-300 dark:bg-black blur opacity-90"></div>
+            <div className="relative rounded-lg flex justify-around border-2 border-yellow-200">
+              <p className="px-1 text-center font-semibold text-yellow-700 dark:text-yellow-900 hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-br from-yellow-900 via-neutral-600 to-yellow-700 text-xs">
                 2017
               </p>
             </div>
@@ -237,10 +237,10 @@ export default function Timeline() {
                 <img
                     src="/schwab.png"
                     alt="schwab"
-                    className={`${isSchwabOpen ? 'z-40' : ''} duration-300 w-6 h-6 my-2 mx-auto rounded-2xl object-cover hover:scale-125 hover:duration-500 transition-all ease-in-out ${isTDAOpen ? 'opacity-0' : ''}${isPMPOpen ? 'opacity-0' : ''}${isTDAOpen ? 'opacity-0' : ''}${isVercelOpen ? 'opacity-0' : ''}${isVercel2Open ? 'opacity-0' : ''}`}
+                    className={`${isSchwabOpen ? 'z-40' : ''} duration-300 w-7 h-7 my-2 border-2 border-yellow-200 mx-auto rounded-2xl object-cover hover:scale-125 hover:duration-500 transition-all ease-in-out ${isTDAOpen ? 'opacity-0' : ''}${isPMPOpen ? 'opacity-0' : ''}${isTDAOpen ? 'opacity-0' : ''}${isVercelOpen ? 'opacity-0' : ''}${isVercel2Open ? 'opacity-0' : ''}`}
                     onClick={toggleSchwab}
                 />
-                <div onClick={toggleSchwab} className={`${isSchwabOpen ? 'z-40 h-[340px]' : 'h-0 overflow-hidden'} absolute left-0 right-0 bg-white bg-opacity-30 backdrop-blur-md drop-shadow-sm`}>
+                <div onClick={toggleSchwab} className={`${isSchwabOpen ? 'z-40 h-[480px]' : 'h-0 overflow-hidden'} absolute left-0 right-0 bg-white bg-opacity-30 backdrop-blur-md drop-shadow-sm`}>
                 <div className={`${isSchwabOpen ? 'z-50' : ''} absolute m-auto my-[25px] left-0 right-0 w-[300px] h-[420px] bg-white border-2 border-black p-3 rounded-lg pointer-events-none text-sm`}>
                 <h3 className='mb-2'>Charles Schwab Procurement</h3>
                 <div className='mt-3 mb-3 h-0.5 w-full bg-gradient-to-r from-amber-200 to-white'/>
@@ -255,9 +255,9 @@ export default function Timeline() {
           </div>
           {/* Year Badge */}
           <div className={`${isSchwabOpen ? 'z-50' : 'z-0'} min-w-[45px] hover:scale-105 focus:scale-95 cursor-pointer relative rounded-lg w-full overflow-hidden h-full mb-0 my-auto`}>
-            <div className="absolute -inset-1 bg-gradient-to-tr from-cyan-300 via-neutral-300 to-cyan-300 dark:bg-black blur opacity-90"></div>
-            <div className="relative rounded-lg flex justify-around border-2 border-cyan-200">
-              <p className="px-1 text-center font-semibold text-cyan-700 dark:text-cyan-900 hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-br from-cyan-900 via-neutral-600 to-cyan-700 text-xs">
+            <div className="absolute -inset-1 bg-gradient-to-tr from-yellow-300 via-neutral-300 to-yellow-300 dark:bg-black blur opacity-90"></div>
+            <div className="relative rounded-lg flex justify-around border-2 border-yellow-200">
+              <p className="px-1 text-center font-semibold text-yellow-700 dark:text-yellow-900 hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-br from-yellow-900 via-neutral-600 to-yellow-700 text-xs">
                 2020
               </p>
             </div>
@@ -285,10 +285,10 @@ export default function Timeline() {
                 <img
                     src="/vercel.png"
                     alt="vercel"
-                    className={`${isVercelOpen ? 'z-40' : ''} duration-300 w-6 h-6 my-2 mx-auto rounded-2xl object-cover hover:scale-125 hover:duration-500 transition-all ease-in-out ${isTDAOpen ? 'opacity-0' : ''}${isPMPOpen ? 'opacity-0' : ''}${isTDAOpen ? 'opacity-0' : ''}${isSchwabOpen ? 'opacity-0' : ''}${isVercel2Open ? 'opacity-0' : ''}`}
+                    className={`${isVercelOpen ? 'z-40' : ''} duration-300 w-7 h-7 my-2 border-2 border-yellow-200 mx-auto rounded-2xl object-cover hover:scale-125 hover:duration-500 transition-all ease-in-out ${isTDAOpen ? 'opacity-0' : ''}${isPMPOpen ? 'opacity-0' : ''}${isTDAOpen ? 'opacity-0' : ''}${isSchwabOpen ? 'opacity-0' : ''}${isVercel2Open ? 'opacity-0' : ''}`}
                     onClick={toggleVercel}
                 />
-                <div onClick={toggleVercel} className={`${isVercelOpen ? 'z-40 h-[340px]' : 'h-0 overflow-hidden'} absolute left-0 right-0 bg-white bg-opacity-30 backdrop-blur-md drop-shadow-sm`}>
+                <div onClick={toggleVercel} className={`${isVercelOpen ? 'z-40 h-[480px]' : 'h-0 overflow-hidden'} absolute left-0 right-0 bg-white bg-opacity-30 backdrop-blur-md drop-shadow-sm`}>
                 <div className={`${isVercelOpen ? 'z-50' : ''} absolute m-auto my-[25px] left-0 right-0 w-[300px] h-[420px] bg-white border-2 border-black p-3 rounded-lg pointer-events-none text-sm`}>
                 <h3 className='mb-2'>Vercel: CS Ops</h3>
                 <div className='mt-3 mb-3 h-0.5 w-full bg-gradient-to-r from-amber-200 to-white'/>
@@ -304,9 +304,9 @@ export default function Timeline() {
           </div>
           {/* Year Badge */}
           <div className={`${isVercelOpen ? 'z-50' : 'z-0'} min-w-[45px] hover:scale-105 focus:scale-95 cursor-pointer relative rounded-lg w-full overflow-hidden h-full mb-0 my-auto`}>
-            <div className="absolute -inset-1 bg-gradient-to-tr from-cyan-300 via-neutral-300 to-cyan-300 dark:bg-black blur opacity-90"></div>
-            <div className="relative rounded-lg flex justify-around border-2 border-cyan-200">
-              <p className="px-1 text-center font-semibold text-cyan-700 dark:text-cyan-900 hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-br from-cyan-900 via-neutral-600 to-cyan-700 text-xs">
+            <div className="absolute -inset-1 bg-gradient-to-tr from-yellow-300 via-neutral-300 to-yellow-300 dark:bg-black blur opacity-90"></div>
+            <div className="relative rounded-lg flex justify-around border-2 border-yellow-200">
+              <p className="px-1 text-center font-semibold text-yellow-700 dark:text-yellow-900 hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-br from-yellow-900 via-neutral-600 to-yellow-700 text-xs">
                 2022
               </p>
             </div>
@@ -323,10 +323,10 @@ export default function Timeline() {
                 <img
                     src="/vercel.png"
                     alt="vercel"
-                    className={`${isVercel2Open ? 'z-40' : ''} duration-300 w-6 h-6 my-2 mx-auto rounded-2xl object-cover hover:scale-125 hover:duration-500 transition-all ease-in-out ${isTDAOpen ? 'opacity-0' : ''}${isPMPOpen ? 'opacity-0' : ''}${isTDAOpen ? 'opacity-0' : ''}${isSchwabOpen ? 'opacity-0' : ''}${isVercelOpen ? 'opacity-0' : ''}`}
+                    className={`${isVercel2Open ? 'z-40' : ''} duration-300 w-7 h-7 my-2 border-2 border-yellow-200 mx-auto rounded-2xl object-cover hover:scale-125 hover:duration-500 transition-all ease-in-out ${isTDAOpen ? 'opacity-0' : ''}${isPMPOpen ? 'opacity-0' : ''}${isTDAOpen ? 'opacity-0' : ''}${isSchwabOpen ? 'opacity-0' : ''}${isVercelOpen ? 'opacity-0' : ''}`}
                     onClick={toggleVercel2}
                 />
-                <div onClick={toggleVercel2} className={`${isVercel2Open ? 'z-40 h-[340px]' : 'h-0 overflow-hidden'} absolute left-0 right-0 bg-white bg-opacity-30 backdrop-blur-md drop-shadow-sm`}>
+                <div onClick={toggleVercel2} className={`${isVercel2Open ? 'z-40 h-[480px]' : 'h-0 overflow-hidden'} absolute left-0 right-0 bg-white bg-opacity-30 backdrop-blur-md drop-shadow-sm`}>
                 <div className={`${isVercel2Open ? 'z-50' : ''} absolute m-auto my-[25px] left-0 right-0 w-[300px] h-[420px] bg-white border-2 border-black p-3 rounded-lg pointer-events-none text-sm`}>
                 <h3 className='mb-2'>Vercel: GTM Analytics</h3>
                 <div className='mt-3 mb-3 h-0.5 w-full bg-gradient-to-r from-amber-200 to-white'/>
@@ -342,9 +342,9 @@ export default function Timeline() {
           </div>
           {/* Year Badge */}
           <div className={`${isVercel2Open ? 'z-50' : 'z-0'} min-w-[45px] hover:scale-105 focus:scale-95 cursor-pointer relative rounded-lg w-full overflow-hidden h-full mb-0 my-auto`}>
-            <div className="absolute -inset-1 bg-gradient-to-tr from-cyan-300 via-neutral-300 to-cyan-300 dark:bg-black blur opacity-90"></div>
-            <div className="relative rounded-lg flex justify-around border-2 border-cyan-200">
-              <p className="px-1 text-center font-semibold text-cyan-700 dark:text-cyan-900 hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-br from-cyan-900 via-neutral-600 to-cyan-700 text-xs">
+            <div className="absolute -inset-1 bg-gradient-to-tr from-yellow-300 via-neutral-300 to-yellow-300 dark:bg-black blur opacity-90"></div>
+            <div className="relative rounded-lg flex justify-around border-2 border-yellow-200">
+              <p className="px-1 text-center font-semibold text-yellow-700 dark:text-yellow-900 hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-br from-yellow-900 via-neutral-600 to-yellow-700 text-xs">
                 2023
               </p>
             </div>
