@@ -3,7 +3,7 @@ import { useState } from 'react';
 
 export default function Timeline() {
   return (
-    <div className="w-full max-w-full mx-auto mt-8 mb-8 bg-gradient-to-r from-cyan-950 via-slate-800 to-cyan-950 border border-black shadow-lg rounded-xl p-4 text-black z-0 overflow-x-scroll md:overflow-auto">
+    <div className="w-full max-w-full mx-auto my-8 bg-gradient-to-r from-cyan-950 via-slate-800 to-cyan-950 border border-black shadow-lg rounded-xl px-4 pt-2 pb-0 text-black z-0 overflow-x-scroll md:overflow-auto">
 
       <p className="font-semibold mb-2 text-white">Timeline</p>
 
