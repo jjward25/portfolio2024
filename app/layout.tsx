@@ -53,7 +53,7 @@ export default function RootLayout({
     >
       <head>
       </head>
-      <body className="antialiased w-full md:max-w-2xl mb-40 flex flex-col md:flex-row mx-4 md:mx-auto mt-2 overflow-x-hidden">
+      <body className="antialiased w-full max-w-full md:max-w-2xl mb-40 flex flex-col md:flex-row mx-auto mt-2 overflow-x-hidden">
         <main className="flex-auto min-w-0 mt-4 flex flex-col px-2 md:px-0">
           <Navbar />
           {children}
