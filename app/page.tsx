@@ -71,8 +71,8 @@ export default function Page() {
             {`Together, we can establish ground-level ops `}<em className='text-neutral-500'>(ex: process mapping, identifying KPIs and leading indicators, defining SOPs and enablement)</em>{`, or identify and tackle the more complex and tailored Operations improvements needed to hit ever-more challenging targets `}<em className='text-neutral-500'>(ex: Lead Scoring & Attribution, ICP/Churn/Expansion analyses, tool migrations, or other large projects)</em>{`.`}
           </p>
           <p className="pb-4 prose prose-invert w-full text-black dark:text-white">
-            I can get my hands dirty in systems and with data, but also on more nuanced and qualitative issues that teams may face.
-            I’m a shepherd for complex and cross-functional initiatives who can pro-actively identify solutions, own functions long-term, individually contribute on multiple levels, and lead teams of effective contributors.    
+            I can get my hands dirty in systems and with data, and on the more nuanced issues teams face.
+            I’m a shepherd for complex and cross-functional initiatives who can pro-actively identify solutions, own functions long-term, individually contribute on multiple levels, and lead a team of effective contributors.    
           </p>
           <p className="pb-4 prose prose-invert w-full text-black dark:text-white">
             Read more about my experiences below:

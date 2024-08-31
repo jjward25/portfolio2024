@@ -173,7 +173,7 @@ export default function Timeline() {
                 <div className="z-50 absolute m-auto mt-[20px] left-0 right-0 w-[400px] min-h-10 group-hover:h-[300px] bg-white border-2 border-black p-3 rounded-lg pointer-events-none opacity-0 transition-opacity group-hover:opacity-100 text-sm">
                 <h3 className='mb-2'>Charles Schwab Procurement</h3>
                 <div className='mt-3 mb-3 h-0.5 w-full bg-gradient-to-r from-amber-200 to-white'/>
-                        <p className='text-xs'>Schwab bought TD Ameritrade and I raised my hand for severance, not wanting to be weighed down by even more regulations and red-tape bloat.</p>
+                        <p className='text-xs'>Schwab bought TD Ameritrade and, not wanting to be weighed down by even more regulations and red-tape, I began looking.</p>
                         <div className='w-4 h-[1px] my-2 bg-black m-auto'/>
                         <li className='mt-2 text-xs'>Handled all procurement-related regulatory reporting, providing the SEC and others reports to assess conflicts of interest, etc.</li>
                         <li className='mt-2 text-xs'>Partner for Vendor synergies analsysis and strategy.</li>
@@ -220,10 +220,10 @@ export default function Timeline() {
                 <div className="z-50 absolute m-auto mt-[20px] left-0 right-0 w-[400px] min-h-10 group-hover:h-[300px] bg-white border-2 border-black p-3 rounded-lg pointer-events-none opacity-0 transition-opacity group-hover:opacity-100 text-sm">
                 <h3 className='mb-2'>Vercel: CS Ops</h3>
                 <div className='mt-3 mb-3 h-0.5 w-full bg-gradient-to-r from-amber-200 to-white'/>
-                        <p className='text-xs'>{`After the Schwab transition was complete and severance was granted, I moved to Vercel, which I had been using to learn to code (and use to host this website).`}</p>
+                        <p className='text-xs'>{`After the Schwab transition was complete, I moved to Vercel, which I had been using to learn to code (and use to host this website).`}</p>
                         <div className='w-4 h-[1px] my-2 bg-black m-auto'/>
-                        <li className='mt-2 text-xs'>Led CSM migration to Salesforce. Designed and tested new environment, led enablement and post-launch hypermonitoring.</li>
-                        <li className='mt-2 text-xs'>Designed and enabled new Renewals process, ensuring the renewals process is kicked off for all contracts 120 days out.</li>
+                        <li className='mt-2 text-xs'>Led CSM migration to Salesforce - Design, testing, enablement, and post-launch monitoring.</li>
+                        <li className='mt-2 text-xs'>Designed and enabled new Renewals process, ensuring the process is kicked off for all contracts 120 days out.</li>
                         <li className='mt-2 text-xs'>Solved for long-standing lack of data by getting Snowflake + DBT access and creating views for AEs and CSMs to understand how a customer is using our product, see if they're on pace for overages, and understand their broader portfolios better as well.</li>
                         <li className='mt-2 text-xs'>Platform admin for Salesforce, Gong, Fivetran.</li>
                     </div>
