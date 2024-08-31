@@ -77,14 +77,15 @@ export default function Timeline() {
                     className={`${isTDAOpen ? 'z-40' : ''} duration-300 w-6 mt-2 mb-[16px] mx-auto rounded-2xl object-cover hover:scale-125 hover:duration-500 transition-all ease-in-out ${isTDA2Open ? 'opacity-0' : ''}${isSchwabOpen ? 'opacity-0' : ''}${isVercelOpen ? 'opacity-0' : ''}${isVercel2Open ? 'opacity-0' : ''}`}
                     onClick={toggleTDA}
                 />
-                <div onClick={toggleTDA} className={`${isTDAOpen ? 'z-40 h-[340px]' : 'h-0 overflow-hidden'} absolute left-0 right-0 bg-white bg-opacity-30 backdrop-blur-md drop-shadow-sm`}>
-                    <div className={`${isTDAOpen ? 'z-50' : ''} absolute m-auto my-[25px] left-0 right-0 w-[300px] md:w-[350px] h-[300px] bg-white border-2 border-black p-3 rounded-lg pointer-events-none text-sm`}>
+                <div onClick={toggleTDA} className={`${isTDAOpen ? 'z-40 h-[380px]' : 'h-0 overflow-hidden'} absolute left-0 right-0 bg-white bg-opacity-30 backdrop-blur-md drop-shadow-sm`}>
+                    <div className={`${isTDAOpen ? 'z-50' : ''} absolute m-auto my-[25px] left-0 right-0 mx-4 w-auto h-[340px] bg-white border-2 border-black p-3 rounded-lg pointer-events-none text-sm`}>
                         <h3 className='mb-2'>TD Ameritrade Rotational Program</h3>
                         <div className='mt-3 mb-3 h-0.5 w-full bg-gradient-to-r from-amber-200 to-white'/>
-                        <p className='text-xs'>I joined TD Ameritrade as a poli-sci major looking to learn. In their rotational program I was the sole analyst on a Lean/Six-Sigma Sales revamp; learned SQL and Tableau while monitoring our Retail educational products; and learned basic Project Management.</p>
+                        <p className='text-xs'>For a poli-sci major (aka graduating undecided), TD Ameritrade's rotational program stuck out to me for the broad exposure it promised.  I've been building on the tools I learned in this program ever since.</p>
                         <div className='w-4 h-[1px] my-2 bg-black m-auto'/>
-                        <li className='mt-2 text-xs'>{`Increased Client-facing (call) Time by `}<em className='text-green-400'>~5%</em>{` for national sales branch by restructuring coaching cadence.`}</li>
-                        <li className='mt-2 text-xs'>{`Increased customer retention in Educational products by `}<em className='text-green-400'>~5%</em>{` by identifying correlation between short, daily courses or long, in-person courses and retention.`}</li>    
+                        <li className='mt-2 text-xs'><b>Lean Consulting: </b>{`Increased Client-facing (call) Time by `}<b className='text-green-400'>~5%</b>{` for national sales branch after analyzing call and response patterns.`}</li>
+                        <li className='mt-2 text-xs'><b>Retail Strategy & Ops: </b>{`Increased customer retention in Educational products by `}<b className='text-green-400'>{`>5%`}</b>{` by identifying correlation between short, daily courses or long, in-person courses and retention.`}</li>
+                        <li className='mt-2 text-xs'><b>Project Portfolio Mgt: </b>{`Converted `}<b className='text-green-400'>100%</b>{` of existing reporting from Sharepoint to a SQL schema I managed, visualized and auto-refreshed in Tableau.`}</li>
                     </div>
                 </div>
             </div>
