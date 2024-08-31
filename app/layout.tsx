@@ -46,15 +46,15 @@ export default function RootLayout({
     <html
       lang="en"
       className={cx(
-        ' text-white bg-white dark:bg-black w-full max-w-full overflow-x-hidden',
+        ' text-white bg-white dark:bg-black',
         GeistSans.variable,
         GeistMono.variable
       )}
     >
       <head>
       </head>
-      <body className="antialiased w-full md:max-w-2xl mb-40 flex flex-col md:flex-row mx-4 md:mx-auto mt-2 overflow-x-hidden">
-        <main className="flex-auto min-w-0 mt-4 flex flex-col px-2 md:px-0">
+      <body className="antialiased w-full md:max-w-2xl mb-40 flex flex-col md:flex-row mt-2 overflow-x-hidden">
+        <main className="flex-auto min-w-0 mt-4 flex flex-col px-2 md:px-0 mx-4 md:mx-auto overflow-x-hidden">
           <Navbar />
           {children}
           <Analytics />
