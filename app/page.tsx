@@ -1,6 +1,5 @@
 import TimelineDesktop from './components/timeline/timelineDesktop';
 import TimelineMobile from './components/timeline/timelineMobile';
-import ProjectCarousel from './components/sideProjects/carousel';
 
 export const metadata = {
   title: 'Joe Ward | Home',
@@ -86,11 +85,6 @@ export default function Page() {
       <div className='h-auto md:h-0 overflow-hidden'>
         <TimelineMobile/>
       </div>
-
-      <div className="w-full mx-auto mt-4 text-black">
-        <ProjectCarousel/>
-      </div>
-
 
     </section>
   );

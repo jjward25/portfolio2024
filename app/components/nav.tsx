@@ -1,3 +1,5 @@
+"use client"
+import { useState } from 'react';
 import Link from 'next/link';
 
 const navItems = {
@@ -10,6 +12,28 @@ const navItems = {
 };
 
 export function Navbar() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleContactMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  }
+
+  const emailAddress = "Joseph.Ward@Outlook.com";
+  const phone = "908-839-5438"
+
+  const subject = "I saw your site";
+  const body = "I wanted to get in touch with you about your car's extended warranty.";
+
+  const handleCopyEmail = () => {
+    navigator.clipboard.writeText(emailAddress);
+    alert('Email copied to clipboard, talk soon!');
+  };
+
+  const handleCopyPhone = () => {
+    navigator.clipboard.writeText(emailAddress);
+    alert('Phone number copied to clipboard, talk soon!');
+  };
+
   return (
     <aside className="md:mb-16 tracking-tight">
       <div className="lg:sticky lg:top-20 h-auto">
@@ -32,18 +56,69 @@ export function Navbar() {
             })}
           </div>
 
-          <div className="hover:scale-105 focus:scale-95 cursor-pointer relative rounded-lg w-auto overflow-hidden my-1 h-full">
-            <div className="absolute -inset-3  bg-gradient-to-tr from-cyan-300 via-neutral-300 to-cyan-300 dark:bg-black blur opacity-90"></div>
-            <div className="relative rounded-lg flex justify-around border-2 border-cyan-200">
-              <div className="px-2">
-                <p className="font-semibold text-cyan-700 dark:text-cyan-900 hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-br from-cyan-900 via-neutral-600 to-cyan-700 text-sm">
-                  Contact Me</p>
+          {/** Contact Me */}
+          <div className='flex flex-col h-8 overflow-hidden hover:h-30 hover:overflow-visible'>
+          {/** Contact Me Button */}
+            <div className="hover:scale-105 focus:scale-95 cursor-pointer relative rounded-lg w-auto overflow-hidden my-1 h-full">
+              <div className="absolute -inset-3  bg-gradient-to-tr from-cyan-300 via-neutral-300 to-cyan-300 dark:bg-black blur opacity-90"></div>
+              <div className="relative rounded-lg flex justify-around border-2 border-cyan-200">
+                <div className="px-2">
+                  <p className="font-semibold text-cyan-700 dark:text-cyan-900 hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-br from-cyan-900 via-neutral-600 to-cyan-700 text-sm"
+                      onClick={toggleContactMenu}>
+                    Contact Me</p>
+                </div>
               </div>
             </div>
+
           </div>
+
+
+
         </nav>
         
         <div className='mt-2 mb-3 h-0.5 md:mt-0 md:mb-0 md:h-0 w-vw bg-gradient-to-r from-white to-black'> </div>
+      </div>
+
+      <div className={`fixed top-0 left-0 w-full h-full bg-gradient-to-tr from-neutral-200 via-white to-neutral-200 ${isMenuOpen? 'z-50 opacity-98 transition-all ease-out duration-500':'-z-50 opacity-0 transition-all ease-out duration-500'}`}>
+        <div className="w-auto h-svh m-auto my-auto flex flex-col">
+
+          <div className='absolute top-4 right-4 md:top-8 md:right-8 cursor-pointer font-semibold text-black hover:text-cyan-700 transition-all ease-in-out' onClick={toggleContactMenu}>X</div>
+
+          <div className='absolute top-1/3 left-0 right-0 flex flex-col gap-4 text-center w-auto h-auto m-auto'>
+            
+            <div className="flex-none w-16 h-16 mx-auto rounded-full overflow-hidden border-black dark:border-white border-2">
+              <img
+                src='/prof.jpg'
+                alt='prof'
+                className="w-full h-full object-cover hover:rotate-180 hover:duration-500 transition-all ease-out"
+              />
+            </div>
+
+            <a href="#" 
+              onClick={(e) => { e.preventDefault(); handleCopyEmail(); }}
+              className="text-black hover:text-cyan-500 font-semibold"
+              title="Joseph.Ward@Outlook.com"
+            >
+              Copy Email
+            </a>
+
+            <a href={`mailto:${emailAddress}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`}
+              className="text-black hover:text-cyan-500 font-semibold"
+            >
+              Send Email
+            </a>
+
+            <a href="#" 
+              onClick={(e) => { e.preventDefault(); handleCopyPhone(); }}
+              className="text-black hover:text-cyan-500 font-semibold"
+              title="908-839-5438"
+            >
+              Copy Cell
+            </a>
+
+          </div>
+        </div>
+
       </div>
       
     </aside>
