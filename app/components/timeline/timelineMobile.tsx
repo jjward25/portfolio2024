@@ -69,7 +69,7 @@ export default function Timeline() {
   };
 
   return (
-    <div className={`w-full max-w-full mx-auto mt-8 mb-8 bg-gradient-to-r from-slate-800 via-slate-800 to-slate-800 rounded-xl p-4 text-black z-0 relative ${isCardOpen ? 'h-[540px]' : 'overflow-x-scroll'}`}
+    <div className={`w-full max-w-full mx-auto mt-8 mb-8 bg-gradient-to-r from-slate-800 via-slate-800 to-slate-800 rounded-xl p-4 text-black z-0 relative overflow-x-scroll ${isCardOpen ? 'h-[580px]' : ''}`}
       onClick={toggleClose}>
 
       <p className="font-semibold text-white">Timeline</p>
@@ -182,15 +182,15 @@ export default function Timeline() {
                     onClick={toggleTDA2}
                 />
                 <div onClick={toggleTDA2} className={`${isTDA2Open ? 'z-40 h-[480px]' : 'h-0 overflow-hidden'} absolute left-0 right-0 bg-white bg-opacity-30 backdrop-blur-md drop-shadow-sm`}>
-                <div className={`${isTDA2Open ? 'z-50' : ''} absolute m-auto my-[25px] left-0 right-0 w-[300px] h-[420px] bg-white border-2 border-black p-3 rounded-lg pointer-events-none text-sm`}>
-                <h3 className='mb-2'>TD Ameritrade Procurement</h3>
-                <div className='mt-3 mb-3 h-0.5 w-full bg-gradient-to-r from-amber-200 to-white'/>
-                        <p className='text-xs'>After PMP switched to for-profit status I returned to TDA, opting to help my old manager build up the Procurement department over re-joining the Lean team.</p>
-                        <div className='w-4 h-[1px] my-2 bg-black m-auto'/>
-                        <li className='mt-2 text-xs'>Saved another team from Sharepoint - PMed the development of an app where partners could submit vendor requests, creating total visibility for us and our partners (including RFP status, risk scoring), and <b className='text-green-700'>drastically</b> reducing admin times for all requests.</li>
-                    <li className='mt-2 text-xs'>{`Led an initiative to diversify spend channels - working with Legal, risk teams, and more to carve out PO-only exceptions (no MSA) for Facilities emergencies, create new self-serve Catalogues, and make other policy updates.
-                    Overall, reduced administrative weight of ~10% of purchases and `}<b className='text-green-700'>$120m</b>{` in spend by up to `}<b className='text-green-700'>100%</b>{`, while reducing risk and increasing time for Strategic Sourcing.`}</li>
-                    </div>
+                  <div className={`${isTDA2Open ? 'z-50' : ''} absolute m-auto my-[25px] left-0 right-0 w-[300px] h-[420px] bg-white border-2 border-black p-3 rounded-lg pointer-events-none text-sm`}>
+                    <h3 className='mb-2'>TD Ameritrade Procurement</h3>
+                    <div className='mt-3 mb-3 h-0.5 w-full bg-gradient-to-r from-amber-200 to-white'/>
+                      <p className='text-xs'>After PMP switched to for-profit status I returned to TDA, opting to help my old manager build up the Procurement department over re-joining the Lean team.</p>
+                      <div className='w-4 h-[1px] my-2 bg-black m-auto'/>
+                      <li className='mt-2 text-xs'>Saved another team from Sharepoint - PMed the development of an app where partners could submit vendor requests, creating total visibility for us and our partners (including RFP status, risk scoring), and <b className='text-green-700'>drastically</b> reducing admin times for all requests.</li>
+                      <li className='mt-2 text-xs'>{`Led an initiative to diversify spend channels - working with Legal, risk teams, and more to carve out PO-only exceptions (no MSA) for Facilities emergencies, create new self-serve Catalogues, and make other policy updates.
+                      Overall, reduced administrative weight of ~10% of purchases and `}<b className='text-green-700'>$120m</b>{` in spend by up to `}<b className='text-green-700'>100%</b>{`, while reducing risk and increasing time for Strategic Sourcing.`}</li>
+                  </div>
                 </div>
             </div>
           </div>
