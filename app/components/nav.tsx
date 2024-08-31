@@ -79,47 +79,7 @@ export function Navbar() {
         <div className='mt-2 mb-3 h-0.5 md:mt-0 md:mb-0 md:h-0 w-vw bg-gradient-to-r from-white to-black'> </div>
       </div>
 
-      <div className={`absolute flex top-0 left-0 w-full max-w-full overflow-hidden h-full bg-gradient-to-tr from-neutral-200 via-white to-neutral-200 ${isMenuOpen? 'z-50 opacity-98 transition-all ease-in':'-z-50 opacity-0 transition-all ease-in'}`}>
-        <div className="w-auto max-w-full overflow-hidden h-full m-auto my-auto flex flex-col">
-
-          <div className='absolute top-4 right-4 md:top-8 md:right-8 cursor-pointer font-semibold text-black hover:text-cyan-700 transition-all ease-in-out' onClick={toggleContactMenu}>X</div>
-
-          <div className='max-w-full top-1/3 flex flex-col gap-4 text-center w-auto h-auto m-auto'>
-            
-            <div className="flex-none w-16 h-16 mx-auto rounded-full overflow-hidden border-black dark:border-white border-2">
-              <img
-                src='/prof.jpg'
-                alt='prof'
-                className="w-full h-full object-cover hover:rotate-180 hover:duration-500 transition-all ease-out"
-              />
-            </div>
-
-            <a href="#" 
-              onClick={(e) => { e.preventDefault(); handleCopyEmail(); }}
-              className="text-black hover:text-cyan-500 font-semibold w-auto m-auto"
-              title="Joseph.Ward@Outlook.com"
-            >
-              Copy Email
-            </a>
-
-            <a href={`mailto:${emailAddress}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`}
-              className="text-black hover:text-cyan-500 font-semibold w-auto m-auto"
-            >
-              Send Email
-            </a>
-
-            <a href="#" 
-              onClick={(e) => { e.preventDefault(); handleCopyPhone(); }}
-              className="text-black hover:text-cyan-500 font-semibold w-auto m-auto"
-              title="908-839-5438"
-            >
-              Copy Cell
-            </a>
-
-          </div>
-        </div>
-
-      </div>
+     
       
     </aside>
   );
