@@ -80,7 +80,7 @@ export function Navbar() {
       </div>
 
       <div className={`fixed top-0 left-0 w-full max-w-screen overflow-hidden h-full bg-gradient-to-tr from-neutral-200 via-white to-neutral-200 ${isMenuOpen? 'z-50 opacity-98 transition-all ease-in':'-z-50 opacity-0 transition-all ease-in'}`}>
-        <div className="w-auto h-svh m-auto my-auto flex flex-col">
+        <div className="w-auto max-w-screen overflow-hidden h-svh m-auto my-auto flex flex-col">
 
           <div className='absolute max-w-lvw top-4 right-4 md:top-8 md:right-8 cursor-pointer font-semibold text-black hover:text-cyan-700 transition-all ease-in-out' onClick={toggleContactMenu}>X</div>
 
