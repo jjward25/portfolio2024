@@ -80,7 +80,7 @@ export default function Timeline() {
                   <div className="z-50 absolute m-auto mt-[20px] left-0 right-0 w-[420px] min-h-10 group-hover:h-[300px] bg-white border-2 border-black p-3 rounded-lg pointer-events-none opacity-0 transition-opacity group-hover:opacity-100 text-sm">
                     <h3 className='mb-2'>Practice Benefit Corp.</h3>
                     <div className='mt-3 mb-3 h-0.5 w-full bg-gradient-to-r from-amber-200 to-white'/>
-                    <p className='text-xs'>At the time at non-profit called Practice Makes Perfect where I had previously volunteered; I joined full-time to help professionalize operations and implement best practices while working towards Educational Equity.</p>
+                    <p className='text-xs'>At the time a non-profit called Practice Makes Perfect where I had previously volunteered; I joined full-time to help professionalize operations and implement best practices while working towards Educational Equity.</p>
                     <div className='w-4 h-[1px] my-2 bg-black m-auto'/>
                     <li className='mt-2 text-xs'>{`Created Value Stream Maps for all roles, which where then used for hiring (what aspects are you familiar with, what would you change?) and quarterly reviews for continuous improvement.`}</li>
                     <li className='mt-2 text-xs'>{`Swapped payroll providers and led 401k enrollments; Led hiring and onboarding for all new hires; Created annual sales calendar; and otherwise contributed as needed.`}</li>
