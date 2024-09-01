@@ -86,6 +86,8 @@ export default function Page() {
         <TimelineMobile/>
       </div>
 
+      <div className='block w-full md:h-96 bg-white'></div>
+
     </section>
   );
 }

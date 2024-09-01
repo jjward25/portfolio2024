@@ -7,7 +7,7 @@ export default function Timeline() {
 
       <p className="font-semibold mb-2 text-white">Timeline</p>
 
-      <div className="flex flex-row max-w-full overflow-x-auto hover:pb-45 scrollbar-hide pb-3">
+      <div className="flex flex-row max-w-full overflow-x-auto scrollbar-hide pb-3">
         
         {/* Year Column */}
         <div className="flex flex-col z-0 hover:z-20 group overflow-visible">
@@ -20,7 +20,7 @@ export default function Timeline() {
                     className="group border-2 border-yellow-200 duration-300 w-7 h-7 mt-1 mb-3 mx-auto rounded-2xl object-cover hover:scale-125 transition-all ease-in-out "
                 />
                 <div className='z-40 absolute w-full left-0 h-0 group-hover:h-[340px] bg-white opacity-0 transition-opacity group-hover:opacity-100 bg-opacity-30 backdrop-blur-md drop-shadow-sm'>
-                    <div className="z-50 absolute m-auto mt-[20px] left-0 right-0 md:w-[420px] min-h-10 group-hover:h-[300px] bg-white border-2 border-black p-3 rounded-lg pointer-events-none opacity-0 transition-opacity group-hover:opacity-100 text-sm">
+                    <div className="z-50 absolute m-auto mt-[20px] left-0 right-0 w-[420px] min-h-10 group-hover:h-[300px] bg-white border-2 border-black p-3 rounded-lg pointer-events-none opacity-0 transition-opacity group-hover:opacity-100 text-sm">
                         <h3 className='mb-2'>TD Ameritrade Rotational Program</h3>
                         <div className='mt-3 mb-3 h-0.5 w-full bg-gradient-to-r from-amber-200 to-white'/>
                         <p className='text-xs'>As a poli-sci major (aka graduating undecided), TD Ameritrade's rotational program stuck out for the broad exposure it promised.  And I've been building on the tools I learned in this program ever since.</p>
