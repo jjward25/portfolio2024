@@ -8,7 +8,7 @@ export const metadata = {
 
 export default function Page() {
   return (
-    <section w-full>
+    <section className=''>
       
       <h1 className="font-medium text-2xl tracking-tighter text-black dark:text-white flex flex-row">Hey <p className='hover:rotate-45 hover:duration-500 transition-all ease-out mx-1'>👋</p> I'm Joe Ward</h1>
       <div className='mt-3 mb-3 h-0.5 w-full  bg-gradient-to-r from-amber-200 to-white'/>
@@ -79,10 +79,10 @@ export default function Page() {
         </div>
       </div>
 
-      <div className='h-0 md:h-auto overflow-hidden'>
+      <div className='hidden md:block md:w-full md:max-w-full'>
         <TimelineDesktop/>
       </div>
-      <div className='h-auto md:h-0 overflow-hidden'>
+      <div className='block md:hidden'>
         <TimelineMobile/>
       </div>
 
