@@ -64,7 +64,7 @@ export default function Page() {
         <div className='mt-1 md:mr-3 md:w-2 dark:md:w-1 md:h-vh bg-gradient-to-b from-amber-200 to-neutral-100'> </div>
         <div className='flex flex-wrap'>
           <p className="pb-4 prose prose-invert w-full text-black dark:text-white">
-            I'm a creative, detail-oriented, and technical business partner who's worked with teams from small non-profits to the Fortune 500 to cutting-edge tech companies and helped them get the most from what they have, and chart the path ahead. 
+            I'm a creative, detail-oriented, and technical business partner who's worked with teams from small non-profits to the Fortune 500 to cutting-edge tech companies, and helped them get the most from what they have, and chart the path ahead. 
           </p>
           <p className="md:pb-4 prose prose-invert w-full text-black dark:text-white h-0 overflow-hidden md:h-auto">
             {`Together, we can establish ground-level ops `}<em className='text-neutral-500'>(ex: process mapping, identifying KPIs and leading indicators, defining SOPs and enablement)</em>{`, or identify and tackle the more complex and tailored Operations improvements needed to hit ever-more challenging targets `}<em className='text-neutral-500'>(ex: Lead Scoring & Attribution, ICP/Churn/Expansion analyses, tool migrations, or other large projects)</em>{`.`}
