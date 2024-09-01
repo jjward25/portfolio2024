@@ -18,7 +18,7 @@ export default function Page() {
             <img
               src='/prof.jpg'
               alt='prof'
-              className="w-full h-full object-cover hover:rotate-180 hover:duration-500 transition-all ease-out"
+              className="w-full h-full object-cover hover:scale-105 hover:duration-500 transition-all ease-out"
             />
           </div>
 
