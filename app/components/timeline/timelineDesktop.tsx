@@ -3,11 +3,11 @@ import { useState } from 'react';
 
 export default function Timeline() {
   return (
-    <div className="w-full max-w-full mx-auto my-8 bg-gradient-to-r from-cyan-950 via-slate-800 to-cyan-950 border border-black shadow-lg rounded-xl px-4 pt-2 pb-0 text-black z-0 overflow-x-scroll md:overflow-auto">
+    <div className="max-w-full mx-auto my-8 bg-gradient-to-r from-cyan-950 via-slate-800 to-cyan-950 border border-black shadow-lg rounded-xl px-4 pt-2 pb-0 text-black z-0 overflow-hidden">
 
       <p className="font-semibold mb-2 text-white">Timeline</p>
 
-      <div className="flex flex-row max-w-full overflow-visible md:overflow-visible hover:pb-45 no-scrollbar pb-3">
+      <div className="flex flex-row max-w-full overflow-x-auto hover:pb-45 scrollbar-hide pb-3">
         
         {/* Year Column */}
         <div className="flex flex-col z-0 hover:z-20 group overflow-visible">
@@ -17,9 +17,9 @@ export default function Timeline() {
                 <img
                     src="/tda.png"
                     alt="tda"
-                    className="group border-2 border-yellow-200 duration-300 w-7 h-7 mb-3 mx-auto rounded-2xl object-cover hover:scale-125 transition-all ease-in-out "
+                    className="group border-2 border-yellow-200 duration-300 w-7 h-7 mt-1 mb-3 mx-auto rounded-2xl object-cover hover:scale-125 transition-all ease-in-out "
                 />
-                <div className='z-40 absolute w-lvw left-0 h-0 group-hover:h-[340px] bg-white opacity-0 transition-opacity group-hover:opacity-100 bg-opacity-30 backdrop-blur-md drop-shadow-sm'>
+                <div className='z-40 absolute w-full left-0 h-0 group-hover:h-[340px] bg-white opacity-0 transition-opacity group-hover:opacity-100 bg-opacity-30 backdrop-blur-md drop-shadow-sm'>
                     <div className="z-50 absolute m-auto mt-[20px] left-0 right-0 md:w-[420px] min-h-10 group-hover:h-[300px] bg-white border-2 border-black p-3 rounded-lg pointer-events-none opacity-0 transition-opacity group-hover:opacity-100 text-sm">
                         <h3 className='mb-2'>TD Ameritrade Rotational Program</h3>
                         <div className='mt-3 mb-3 h-0.5 w-full bg-gradient-to-r from-amber-200 to-white'/>
@@ -74,9 +74,9 @@ export default function Timeline() {
                 <img
                     src="/pmp.png"
                     alt="pmp"
-                    className="group border-2 border-yellow-200 duration-300 w-7 h-7 mb-3 mx-auto rounded-2xl object-cover hover:scale-125 transition-all ease-in-out "
+                    className="group border-2 border-yellow-200 duration-300 w-7 h-7 mt-1 mb-3 mx-auto rounded-2xl object-cover hover:scale-125 transition-all ease-in-out "
                 />
-                <div className='z-40 absolute bg-white opacity-0 transition-opacity group-hover:opacity-100 bg-opacity-30 backdrop-blur-md drop-shadow-sm w-lvw left-0 h-0 group-hover:h-[340px]'>
+                <div className='z-40 absolute bg-white opacity-0 transition-opacity group-hover:opacity-100 bg-opacity-30 backdrop-blur-md drop-shadow-sm w-full left-0 h-0 group-hover:h-[340px]'>
                   <div className="z-50 absolute m-auto mt-[20px] left-0 right-0 w-[420px] min-h-10 group-hover:h-[300px] bg-white border-2 border-black p-3 rounded-lg pointer-events-none opacity-0 transition-opacity group-hover:opacity-100 text-sm">
                     <h3 className='mb-2'>Practice Benefit Corp.</h3>
                     <div className='mt-3 mb-3 h-0.5 w-full bg-gradient-to-r from-amber-200 to-white'/>
@@ -109,9 +109,9 @@ export default function Timeline() {
                 <img
                     src="/tda.png"
                     alt="tda"
-                    className="group border-2 border-yellow-200 duration-300 w-7 h-7 mb-3 mx-auto rounded-2xl object-cover hover:scale-125 transition-all ease-in-out "
+                    className="group border-2 border-yellow-200 duration-300 w-7 h-7 mt-1 mb-3 mx-auto rounded-2xl object-cover hover:scale-125 transition-all ease-in-out "
                 />
-                <div className='z-40 absolute bg-white opacity-0 transition-opacity group-hover:opacity-100 bg-opacity-30 backdrop-blur-md drop-shadow-sm w-lvw left-0 h-0 group-hover:h-[340px]'>
+                <div className='z-40 absolute bg-white opacity-0 transition-opacity group-hover:opacity-100 bg-opacity-30 backdrop-blur-md drop-shadow-sm w-full left-0 h-0 group-hover:h-[340px]'>
                   <div className="z-50 absolute m-auto mt-[20px] left-0 right-0 w-[420px] min-h-10 group-hover:h-[300px] bg-white border-2 border-black p-3 rounded-lg pointer-events-none opacity-0 transition-opacity group-hover:opacity-100 text-sm">
                     <h3 className='mb-2'>TD Ameritrade Procurement</h3>
                     <div className='mt-3 mb-3 h-0.5 w-full bg-gradient-to-r from-amber-200 to-white'/>
@@ -167,9 +167,9 @@ export default function Timeline() {
                 <img
                     src="/schwab.png"
                     alt="schwab"
-                    className="group border-2 border-yellow-200 duration-300 w-7 h-7 mb-3 mx-auto rounded-2xl object-cover hover:scale-125 transition-all ease-in-out "
+                    className="group border-2 border-yellow-200 duration-300 w-7 h-7 mt-1 mb-3 mx-auto rounded-2xl object-cover hover:scale-125 transition-all ease-in-out "
                 />
-                <div className='z-40 absolute bg-white opacity-0 transition-opacity group-hover:opacity-100 bg-opacity-30 backdrop-blur-md drop-shadow-sm w-lvw left-0 h-0 group-hover:h-[340px]'>
+                <div className='z-40 absolute bg-white opacity-0 transition-opacity group-hover:opacity-100 bg-opacity-30 backdrop-blur-md drop-shadow-sm w-full left-0 h-0 group-hover:h-[340px]'>
                 <div className="z-50 absolute m-auto mt-[20px] left-0 right-0 w-[420px] min-h-10 group-hover:h-[300px] bg-white border-2 border-black p-3 rounded-lg pointer-events-none opacity-0 transition-opacity group-hover:opacity-100 text-sm">
                 <h3 className='mb-2'>Charles Schwab Procurement</h3>
                 <div className='mt-3 mb-3 h-0.5 w-full bg-gradient-to-r from-amber-200 to-white'/>
@@ -214,9 +214,9 @@ export default function Timeline() {
                 <img
                     src="/vercel.png"
                     alt="vercel"
-                    className="group border-2 border-yellow-200 duration-300 h-7 w-7 mb-3 mx-auto rounded-2xl object-cover hover:scale-125 transition-all ease-in-out "
+                    className="group border-2 border-yellow-200 duration-300 h-7 w-7 mt-1 mb-3 mx-auto rounded-2xl object-cover hover:scale-125 transition-all ease-in-out "
                 />
-                <div className='z-40 absolute bg-white opacity-0 transition-opacity group-hover:opacity-100 bg-opacity-30 backdrop-blur-md drop-shadow-sm w-lvw left-0 h-0 group-hover:h-[340px]'>
+                <div className='z-40 absolute bg-white opacity-0 transition-opacity group-hover:opacity-100 bg-opacity-30 backdrop-blur-md drop-shadow-sm w-full left-0 h-0 group-hover:h-[340px]'>
                 <div className="z-50 absolute m-auto mt-[20px] left-0 right-0 w-[420px] min-h-10 group-hover:h-[300px] bg-white border-2 border-black p-3 rounded-lg pointer-events-none opacity-0 transition-opacity group-hover:opacity-100 text-sm">
                 <h3 className='mb-2'>Vercel: CS Ops</h3>
                 <div className='mt-3 mb-3 h-0.5 w-full bg-gradient-to-r from-amber-200 to-white'/>
@@ -251,9 +251,9 @@ export default function Timeline() {
                 <img
                     src="/vercel.png"
                     alt="vercel"
-                    className="group border-2 border-yellow-200 duration-300 h-7 w-7 mb-3 mx-auto rounded-2xl object-cover hover:scale-125 transition-all ease-in-out "
+                    className="group border-2 border-yellow-200 duration-300 h-7 w-7 mt-1 mb-3 mx-auto rounded-2xl object-cover hover:scale-125 transition-all ease-in-out "
                 />
-                <div className='z-40 absolute bg-white opacity-0 transition-opacity group-hover:opacity-100 bg-opacity-30 backdrop-blur-md drop-shadow-sm w-lvw left-0 h-0 group-hover:h-[340px]'>
+                <div className='z-40 absolute bg-white opacity-0 transition-opacity group-hover:opacity-100 bg-opacity-30 backdrop-blur-md drop-shadow-sm w-full left-0 h-0 group-hover:h-[340px]'>
                 <div className="z-50 absolute m-auto mt-[20px] left-0 right-0 w-[420px] min-h-10 group-hover:h-[300px] bg-white border-2 border-black p-3 rounded-lg pointer-events-none opacity-0 transition-opacity group-hover:opacity-100 text-sm">
                 <h3 className='mb-2'>Vercel: GTM Analytics</h3>
                 <div className='mt-3 mb-3 h-0.5 w-full bg-gradient-to-r from-amber-200 to-white'/>
