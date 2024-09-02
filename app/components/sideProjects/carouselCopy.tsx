@@ -24,14 +24,14 @@ export default function ProjectCarousel2() {
                         { url: '/skill-dbt.png', title: 'DBT' },
                         { url: '/skill-bigquery.png', title: 'Big Query' },                        
                       ]}
-                    link=''
+                    link='https://learn.getdbt.com/courses/dbt-fundamentals'
                     />
 
                 {/** Project */}
                 <TestBox 
                     title='Personal App'
                     description= 'Task tracking and journaling app made with NextJS, MongoDB and D3.'
-                    imageUrl= '/appthumb.png'
+                    imageUrl= '/projects/personalApp/appthumb.png'
                     skills={[
                         { url: '/skill-nextjs.png', title: 'NextJS' },
                         { url: '/skill-mongodb.svg', title: 'MongoDB' },

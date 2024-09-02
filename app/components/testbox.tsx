@@ -1,5 +1,10 @@
 import React from 'react';
 
+interface Skill {
+  url: string;
+  title: string;
+}
+
 interface CardProps {
   title: string;
   description: string;
