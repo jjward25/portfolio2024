@@ -11,7 +11,7 @@ export default function ProjectCarousel2() {
   return (
     <section>
       
-        <div className="flex flex-col bg-black rounded-xl -mx-10 p-4 pt-6 pb-3 w-2/1">
+        <div className="flex flex-col bg-black md:rounded-xl -mx-10 p-4 pt-6 pb-3 w-2/1">
             {/** Project Container */}
             <div className="flex flex-row text-black gap-4 overflow-auto md:scrollbar-hide">
 

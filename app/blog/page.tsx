@@ -14,16 +14,17 @@ export default function BlogPage() {
 
   return (
     <section>
-      <h1 className="font-medium text-2xl mb-4 tracking-tighter text-black dark:text-white">
+      <h1 className="font-medium text-2xl mb-4 mt-2 tracking-tighter text-black dark:text-white">
         Links & Samples
       </h1>
-      <div className='mt-3 mb-6 h-auto w-full border-2 border-neutral-700'></div>
+      <div className='hidden md:block mt-3 mb-6 h-auto w-full border-2 border-neutral-700'></div>
 
       {/*Badges*/}
       <div className='flex flex-col'>
         {/*Carousel*/}
         <ProjectCarousel2/>
-        <div className='mt-6 mb-4 h-auto w-full border-2 border-neutral-700'></div>
+        <div className='hidden md:block mt-6 mb-4 h-auto w-full border-2 border-neutral-700'></div>
+        <div className='md:hidden mt-6 mb-4 h-0.5 w-vw bg-gradient-to-l from-white to-black'> </div>
       </div>
 
       
