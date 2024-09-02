@@ -58,13 +58,13 @@ const TestBoxScroll: React.FC<CardProps> = ({ title, description, imageUrls, ski
       {/* Navigation Buttons */}
       <button
         onClick={handlePrevImage}
-        className="z-50 absolute left-0 top-1/2 transform -translate-y-1/2 bg-opacity-50 hover:bg-opacity-75 text-neutral-400 p-2 rounded-r-md focus:outline-none"
+        className="z-40 absolute left-0 top-1/2 transform -translate-y-1/2 bg-opacity-50 hover:bg-opacity-75 text-neutral-400 p-2 rounded-r-md focus:outline-none hover:text-white"
       >
         &#8592;
       </button>
       <button
         onClick={handleNextImage}
-        className="z-50 absolute right-0 top-1/2 transform -translate-y-1/2 bg-opacity-50 hover:bg-opacity-75 text-neutral-400 p-2 rounded-l-md focus:outline-none"
+        className="z-40 absolute right-0 top-1/2 transform -translate-y-1/2 bg-opacity-50 hover:bg-opacity-75 text-neutral-400 p-2 rounded-l-md focus:outline-none hover:text-white"
       >
         &#8594;
       </button>
