@@ -24,7 +24,7 @@ export default function ProjectCarousel() {
                         { url: '/skill-dbt.png', title: 'DBT' },
                         { url: '/skill-bigquery.png', title: 'Big Query' },                        
                       ]}
-                    link='/projects/dbtFundamentals'
+                    link='/projects/dbtfundamentals'
                     />
 
                 {/** Project */}
