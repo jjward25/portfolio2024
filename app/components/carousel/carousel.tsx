@@ -1,12 +1,12 @@
-import TestBox from "../testbox";
-import TestBoxScroll from "../testboxScroll";
+import PrjBox from "./prjBox";
+import PrjBoxScroll from "./prjBoxScroll";
 
 export const metadata = {
   title: 'Projects',
   description: 'Personal Projects.',
 };
 
-export default function ProjectCarousel2() {
+export default function ProjectCarousel() {
 
   return (
     <section>
@@ -16,7 +16,7 @@ export default function ProjectCarousel2() {
             <div className="flex flex-row text-black gap-4 overflow-auto md:scrollbar-hide">
 
                 {/** Project */}
-                <TestBoxScroll
+                <PrjBoxScroll
                     title='DBT Fundamentals'
                     description= 'Official DBT fundamentals course from learn.getdbt.com using Big Query dataset.'
                     imageUrls= {['/projects/dbtFundamentals/dbtf-materializing-views.png','/projects/dbtFundamentals/dbtf-production-run.png','/projects/dbtFundamentals/dbtf-yml-tests.png']}
@@ -24,11 +24,11 @@ export default function ProjectCarousel2() {
                         { url: '/skill-dbt.png', title: 'DBT' },
                         { url: '/skill-bigquery.png', title: 'Big Query' },                        
                       ]}
-                    link='https://learn.getdbt.com/courses/dbt-fundamentals'
+                    link='/projects/dbtFundamentals'
                     />
 
                 {/** Project */}
-                <TestBox 
+                <PrjBox 
                     title='Personal App'
                     description= 'Task tracking and journaling app made with NextJS, MongoDB and D3.'
                     imageUrl= '/projects/personalApp/appthumb.png'
@@ -43,7 +43,7 @@ export default function ProjectCarousel2() {
 
                 
                 {/** Project */}
-                <TestBoxScroll
+                <PrjBoxScroll
                     title='Topic Tournament'
                     description= 'A game for debating the best (or worst) of a given topic.'
                     imageUrls= {['/projects/bracketGame/home.png','/projects/bracketGame/newGame.png','/projects/bracketGame/finals.png','/projects/bracketGame/categories.png']}

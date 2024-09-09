@@ -13,7 +13,7 @@ interface CardProps {
   link:string;
 }
 
-const TestBox: React.FC<CardProps> = ({ title, description, imageUrl, skills, link }) => {
+const PrjBox: React.FC<CardProps> = ({ title, description, imageUrl, skills, link }) => {
   return (
     <div className="relative w-full min-h-[250px] min-w-[350px] overflow-hidden rounded-lg shadow-lg">
       <img src={imageUrl} alt={title} className="absolute inset-0 w-full h-full object-cover" />
@@ -41,4 +41,4 @@ const TestBox: React.FC<CardProps> = ({ title, description, imageUrl, skills, li
   );
 };
 
-export default TestBox;
+export default PrjBox;

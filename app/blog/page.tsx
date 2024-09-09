@@ -1,7 +1,6 @@
 import Link from 'next/link';
 import dynamic from 'next/dynamic';
-import ProjectCarousel from 'app/components/sideProjects/carousel';
-import ProjectCarousel2 from 'app/components/sideProjects/carouselCopy';
+import ProjectCarousel from 'app/components/carousel/carousel';
 
 const DynamicAccordion = dynamic(() => import('../components/accordion'), { ssr: false });
 
@@ -22,7 +21,7 @@ export default function BlogPage() {
       {/*Badges*/}
       <div className='flex flex-col'>
         {/*Carousel*/}
-        <ProjectCarousel2/>
+        <ProjectCarousel/>
         <div className='hidden md:block mt-6 mb-4 h-auto w-full border-2 border-neutral-700'></div>
         <div className='md:hidden mt-6 mb-4 h-0.5 w-vw bg-gradient-to-l from-white to-black'> </div>
       </div>

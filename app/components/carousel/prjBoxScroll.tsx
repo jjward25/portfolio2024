@@ -14,7 +14,7 @@ interface CardProps {
   link: string;
 }
 
-const TestBoxScroll: React.FC<CardProps> = ({ title, description, imageUrls, skills, link }) => {
+const PrjBoxScroll: React.FC<CardProps> = ({ title, description, imageUrls, skills, link }) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   const handleNextImage = () => {
@@ -72,4 +72,4 @@ const TestBoxScroll: React.FC<CardProps> = ({ title, description, imageUrls, ski
   );
 };
 
-export default TestBoxScroll;
+export default PrjBoxScroll;
