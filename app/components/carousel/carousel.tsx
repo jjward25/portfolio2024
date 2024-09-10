@@ -13,7 +13,7 @@ export default function ProjectCarousel() {
       
         <div className="flex flex-col bg-black md:rounded-xl -mx-10 p-4 pt-6 pb-3 w-2/1">
             {/** Project Container */}
-            <div className="flex flex-row text-black gap-4 overflow-auto md:scrollbar-hide">
+            <div className="flex flex-row text-black gap-4 overflow-auto pb-5 mb-1">
 
                 {/** Project */}
                 <PrjBoxScroll

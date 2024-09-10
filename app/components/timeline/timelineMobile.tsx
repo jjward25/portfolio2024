@@ -69,7 +69,7 @@ export default function Timeline() {
   };
 
   return (
-    <div className={`w-full max-w-full mx-auto mt-8 mb-8 bg-gradient-to-r from-slate-800 via-slate-800 to-slate-800 rounded-xl p-4 text-black z-0 relative overflow-x-scroll ${isCardOpen ? 'h-[580px]' : ''}`}
+    <div className={`w-full max-w-full mx-auto mt-8 mb-8 bg-gradient-to-r from-slate-800 via-slate-800 to-slate-800 rounded-xl p-4 pb-0 text-black z-0 relative overflow-x-scroll ${isCardOpen ? 'h-[580px]' : ''}`}
       onClick={toggleClose}>
 
       <p className="font-semibold text-white">Timeline</p>
