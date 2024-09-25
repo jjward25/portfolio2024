@@ -108,12 +108,13 @@ export function Navbar() {
               Send Email
             </a>
 
-            <a href="#" 
+            <a href="https://www.linkedin.com/in/joe-ward1/"
+              target='_blank' 
               onClick={(e) => { e.preventDefault(); handleCopyPhone(); }}
               className="text-black hover:text-cyan-500 font-semibold w-auto m-auto"
-              title="908-839-5438"
+              title="LinkedIn"
             >
-              Copy Cell
+              LinkedIn
             </a>
 
           </div>
