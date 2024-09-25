@@ -29,11 +29,6 @@ export function Navbar() {
     alert('Email copied to clipboard, talk soon!');
   };
 
-  const handleCopyPhone = () => {
-    navigator.clipboard.writeText(emailAddress);
-    alert('Phone number copied to clipboard, talk soon!');
-  };
-
   return (
     <aside className="md:mb-16 tracking-tight">
       <div className="lg:sticky lg:top-20 h-auto">
@@ -114,6 +109,14 @@ export function Navbar() {
               title="LinkedIn"
             >
               LinkedIn
+            </a>
+
+            <a href="https://github.com/jjward25"
+              target='_blank' 
+              className="text-black hover:text-cyan-500 font-semibold w-auto m-auto"
+              title="Github"
+            >
+              Github
             </a>
 
           </div>
