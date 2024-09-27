@@ -11,9 +11,12 @@ export default function Accordion({ title, children, isOpenByDefault = false }) 
     <div className="mb-4">
       <button
         onClick={toggleAccordion}
-        className="flex justify-between items-center w-full text-left px-4 bg-gray-100 dark:bg-neutral-800 rounded-xl focus:outline-none focus:ring-1 focus:ring-black transition-colors"
+        className="flex justify-start w-full text-left dark:bg-neutral-800 pl-[0.5px]   "
       >
-        <span className="text-lg font-semibold text-black dark:text-white">{title}</span>
+        <svg width="6" height="6" viewBox="0 0 8 8" xmlns="http://www.w3.org/2000/svg" className='my-auto'>
+          <circle cx="3.5" cy="3.5" r="3.5" fill="currentColor" />
+        </svg>
+        <span className="text-md text-black dark:text-white pl-4 align-middle my-auto w-full hover:text-cyan-500">{title}</span>
         <motion.svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
@@ -34,7 +37,7 @@ export default function Accordion({ title, children, isOpenByDefault = false }) 
         transition={{ duration: 0.3, ease: 'easeInOut' }}
         className="overflow-hidden"
       >
-        <div className="p-4 text-black dark:text-white">{children}</div>
+        <div className="p-4 pt-0 text-black dark:text-white">{children}</div>
       </motion.div>
     </div>
   );
