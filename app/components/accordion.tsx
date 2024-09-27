@@ -11,7 +11,7 @@ export default function Accordion({ title, children, isOpenByDefault = false }) 
     <div className="mb-4">
       <button
         onClick={toggleAccordion}
-        className="flex justify-between items-center w-full text-left px-4 bg-gray-100 dark:bg-neutral-800 rounded-xl focus:outline-none focus:ring-1 focus:ring-black transition-colors"
+        className="flex justify-between items-center w-full text-left px-4 drop-shadow-lg dark:bg-neutral-800 rounded-xl  ring-1 ring-black md:ring-0  md:hover:ring-1 md:hover:ring-black transition-colors"
       >
         <span className="text-lg font-semibold text-black dark:text-white">{title}</span>
         <motion.svg
