@@ -15,7 +15,7 @@ export default function ProjectCarousel() {
             {/** Project Container */}
             <div className="flex flex-row text-black gap-4 overflow-auto pb-5 mb-1">
 
-                {/** Project */}
+                {/** Project: DBTF */}
                 <PrjBoxScroll
                     title='DBT Fundamentals'
                     description= 'Official DBT fundamentals course from learn.getdbt.com using Big Query dataset.'
@@ -27,22 +27,21 @@ export default function ProjectCarousel() {
                     link='/blog/projects/dbtfundamentals'
                     />
 
-                {/** Project */}
-                <PrjBox 
+                {/** Project: Personal App */}
+                <PrjBoxScroll
                     title='Personal App'
-                    description= 'Task tracking and journaling app made with NextJS, MongoDB and D3.'
-                    imageUrl= '/projects/personalApp/appthumb.png'
+                    description= 'Feature-rich planner app using NextJS, MongoDB and D3.'
+                    imageUrls= {['/projects/personalApp/appthumb.png','/projects/personalApp/TaskBacklog.png','/projects/personalApp/ProjectPage.png','/projects/personalApp/workout1.png','/projects/personalApp/workout2.png']}
                     skills={[
-                        { url: '/skill-nextjs.png', title: 'NextJS' },
-                        { url: '/skill-mongodb.svg', title: 'MongoDB' },
-                        { url: '/skill-d3.svg', title: 'D3' },
-                        { url: '/skill-api.png', title: 'APIs' },
+                      { url: '/skill-nextjs.png', title: 'NextJS' },
+                      { url: '/skill-mongodb.svg', title: 'MongoDB' },
+                      { url: '/skill-d3.svg', title: 'D3' },
+                      { url: '/skill-api.png', title: 'APIs' },                       
                       ]}
-                    link='https://youtu.be/guVl-h9NWZE'
+                    link='/blog/projects/personalApp'
                     />
-
                 
-                {/** Project */}
+                {/** Project: Topic Tournament */}
                 <PrjBoxScroll
                     title='Topic Tournament'
                     description= 'A game for debating the best (or worst) of a given topic.'
