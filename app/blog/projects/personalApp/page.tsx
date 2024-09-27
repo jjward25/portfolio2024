@@ -21,7 +21,7 @@ const Papp = () => {
 
             <img
                 src='/projects/personalApp/appthumb.png'
-                alt='Home PAge'
+                alt='Home Page'
                 className="w-full md:w-1/2 h-full object-cover hover:scale-150 hover:duration-500 transition-all ease-out mb-0 border border-neutral-500"
               />
           </div>
