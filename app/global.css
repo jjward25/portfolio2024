@@ -174,7 +174,7 @@ table {
 
       /* Handle */
       ::-webkit-scrollbar-thumb {
-        background: #888;
+        background: #424242;
         border-radius: 5px;
       }
 
