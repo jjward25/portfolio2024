@@ -34,7 +34,7 @@ const PrjBoxScroll: React.FC<CardProps> = ({ title, description, imageUrls, skil
         alt={title}
         className="absolute inset-0 w-full h-full object-cover transition-opacity duration-500"
       />
-      <a href={link} target='_blank'>
+      <a href={link} >
       <div className="relative w-[350px] h-[250px] z-10 p-6 pt-0 bg-gradient-to-b from-transparent to-black bg-opacity-70 text-white">
         <div className='h-1/2'/>
         <h2 className="text-xl font-bold">{title}</h2>

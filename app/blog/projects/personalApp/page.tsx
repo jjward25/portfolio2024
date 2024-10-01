@@ -3,7 +3,14 @@ const Papp = () => {
   return (
     <section className="w-full h-full flex flex-col text-black">
         <h1 className="font-semibold text-xl">My Task App</h1>
-        <p className="text-neutral-500 text-sm mt-2">I used NextJS, TailwindCSS, MongoDB, and D3 to create a task tracking app. It includes one-off tasks for the day, and a daily routine tracker that includes a daily journal input.</p>
+        <p className="text-neutral-500 text-sm mt-2">{`I used `}
+          <a href="https://www.youtube.com/watch?v=Sklc_fQBmcs" title="NextJS in 100 seconds" target="_blank" className="text-sm text-cyan-700 hover:text-amber-500 w-auto mr-auto mt-2">NextJS</a>{`, `}
+          <a href="https://www.youtube.com/watch?v=mr15Xzb1Ook" title="Tailwind in 100 seconds" target="_blank" className="text-sm text-cyan-700 hover:text-amber-500 w-auto mr-auto mt-2">TailwindCSS</a>
+          {`, `}
+          <a href="https://www.mongodb.com/" target="_blank" className="text-sm text-cyan-700 hover:text-amber-500 w-auto mr-auto mt-2">MongoDB</a>
+          {`, and `}
+          <a href="https://www.youtube.com/watch?v=bp2GF8XcJdY" title="D3 in 100 seconds" target="_blank" className="text-sm text-cyan-700 hover:text-amber-500 w-auto mr-auto mt-2">D3</a> 
+          {` to create a task tracking app. It includes one-off tasks for the day, and a daily routine tracker that includes a daily journal input.`}</p>
         <p className="text-neutral-500 text-sm mt-2">Progress is shown in D3 charts. There's also a page for longer term projects, and a workout tracker that tells me what weights to use in my workout based on my previous session.</p>
 
         <div className="flex flex-col">
@@ -13,11 +20,11 @@ const Papp = () => {
 
           <div className="w-full flex flex-col md:flex-row">
             
-            <iframe
-              src="https://www.youtube.com/embed/qVek72z3F1U?si=DS4rLzYW51Ukj3aG"
-              frameBorder="0"
-              allowFullScreen
-            />
+          <div className="mx-auto">
+              <video width="full" height="full" controls muted autoPlay loop>
+                <source src="/projects/personalApp/homeVid.mp4" type="video/mp4" />
+              </video>
+            </div>
 
             <img
                 src='/projects/personalApp/appthumb.png'
@@ -25,7 +32,7 @@ const Papp = () => {
                 className="w-full md:w-1/2 h-full object-cover hover:scale-150 hover:duration-500 transition-all ease-out mb-0 border border-neutral-500"
               />
           </div>
-          <p className="text-neutral-500 text-xs mt-2 md:mt-4 px-4">On the homepage you can see Today's and Tomorrow's assigned tasks, your Event Calendar, and a Daily Check-in.  Data is stored in a MongoDB database.  It also uses a public API to give the local weather. <a href="https://www.youtube.com/watch?v=-DWIQTAeGSQ" title="clip" className="text-cyan-950 hover:text-cyan-500">Video</a> </p>
+          <p className="text-neutral-500 text-xs mt-2 md:mt-4 px-4">On the homepage you can see Today's and Tomorrow's assigned tasks, your Event Calendar, and a Daily Check-in.  Data is stored in a MongoDB database.  It also uses a public API to give the local weather.</p>
 
           {/**Section 2: Project & Backlog */}
           <h2 className="text-lg font-semibold mt-12">2. Project and Backlog Pages</h2>
@@ -57,13 +64,27 @@ const Papp = () => {
                 className="w-full md:w-1/2 h-full object-cover hover:scale-150 hover:duration-500 transition-all ease-out my-2 mb-0 border border-neutral-500"
               />
               </div>
-            <p className="text-neutral-500 text-xs my-2 md:mt-4 px-4">The workout tracker takes your previous performance for the exercise and automatically sets your weights for the next workout. <a href="https://www.youtube.com/watch?v=1pL5zFjwPn0" title="clip" className="text-cyan-950 hover:text-cyan-500">Video</a></p>
+            <p className="text-neutral-500 text-xs my-2 md:mt-4 px-4">The workout tracker takes your previous performance for the exercise and automatically sets your weights for the next workout.</p>
             
-            <iframe
-              src="https://www.youtube.com/embed/1pL5zFjwPn0?si=9W2pn_wQk2Wz3tv7"
-              frameBorder="0"
-              allowFullScreen
-            />
+            <video width="full" height="full" controls muted autoPlay loop>
+                <source src="/projects/personalApp/WorkoutApp.mp4" type="video/mp4" />
+              </video>
+
+            {/**Section 4: Mongo */}
+          <h2 className="text-lg font-semibold mt-12">4. Mongo Backend</h2>
+          <div className="w-full flex flex-col md:flex-row">
+          <img
+                src='/projects/personalApp/MongoTop.png'
+                alt='MongoDB'
+                className="w-full md:w-1/2 h-full object-cover hover:scale-150 hover:duration-500 transition-all ease-out my-2 mb-0 border border-neutral-500"
+              />
+          <img
+                src='/projects/personalApp/Mongo2.png'
+                alt='MongoDB'
+                className="w-full md:w-1/2 h-full object-cover hover:scale-150 hover:duration-500 transition-all ease-out my-2 mb-0 border border-neutral-500"
+              />
+              </div>
+            <p className="text-neutral-500 text-xs my-2 md:mt-4 px-4">The MongoDB collections behind the app.</p>
 
         </div>
 
