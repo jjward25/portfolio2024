@@ -18,7 +18,7 @@ const Papp = () => {
           <div className="w-full flex flex-col mx-auto justify-center mt-6">
             
             <div className="mx-auto">
-              <video width="full" height="full" controls muted autoPlay loop>
+              <video width="full" height="full" controls muted loop>
                 <source src="https://public-docs2.s3.amazonaws.com/scraper.mp4" type="video/mp4" />
               </video>
             </div>
