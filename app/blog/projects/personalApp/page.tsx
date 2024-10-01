@@ -16,7 +16,7 @@ const Papp = () => {
         <div className="flex flex-col">
 
           {/**Section 1: App Homepage */}
-          <h2 className="text-lg font-semibold mt-12">1. The Home Page</h2>
+          <h2 className="text-lg font-semibold mt-12">1. The Home Page</h2> 
 
           <div className="w-full flex flex-col md:flex-row">
             
