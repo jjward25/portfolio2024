@@ -19,7 +19,7 @@ const Papp = () => {
             
             <div className="mx-auto">
               <video width="full" height="full" controls muted autoPlay loop>
-                <source src="/projects/scrapers/scraper.mp4" type="video/mp4" />
+                <source src="https://public-docs2.s3.amazonaws.com/scraper.mp4" type="video/mp4" />
               </video>
             </div>
 
