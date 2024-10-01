@@ -151,7 +151,7 @@ export default function Timeline() {
                 <div className='mt-3 mb-3 h-0.5 w-full bg-gradient-to-r from-amber-200 to-white'/>
                         <p className='text-xs'>At the time a non-profit called Practice Makes Perfect where I had previously volunteered; I joined full-time to help professionalize operations and implement best practices while working towards Educational Equity.</p>
                         <div className='w-4 h-[1px] my-2 bg-black m-auto'/>
-                        <li className='mt-2 text-xs'>{`Created Value Stream Maps for all roles, which where then used for hiring (what aspects are you familiar with, what would you change?) and quarterly reviews for continuous improvement.`}</li>
+                        <li className='mt-2 text-xs'>{`Created Value Stream Maps and KPIs for all roles, which where then used for hiring (what aspects are you familiar with, what would you change?) and quarterly reviews (for identifying continuous improvement opportunities).`}</li>
                         <li className='mt-2 text-xs'>{`Swapped payroll providers and led 401k enrollments; Led hiring and onboarding for all new hires; Created annual sales calendar; and otherwise contributed as needed.`}</li>
                     </div>
                 </div>
@@ -187,9 +187,9 @@ export default function Timeline() {
                     <div className='mt-3 mb-3 h-0.5 w-full bg-gradient-to-r from-amber-200 to-white'/>
                       <p className='text-xs'>After PMP switched to for-profit status I returned to TDA, opting to help my old manager build up the Procurement department over re-joining the Lean team.</p>
                       <div className='w-4 h-[1px] my-2 bg-black m-auto'/>
-                      <li className='mt-2 text-xs'>Saved another team from Sharepoint - PMed the development of an app where partners could submit vendor requests, creating total visibility for us and our partners (including RFP status, risk scoring), and <b className='text-green-700'>drastically</b> reducing admin times for all requests.</li>
-                      <li className='mt-2 text-xs'>{`Led an initiative to diversify spend channels - working with Legal, risk teams, and more to carve out PO-only exceptions (no MSA) for Facilities emergencies, create new self-serve Catalogues, and make other policy updates.
-                      Overall, reduced administrative weight of ~10% of purchases and `}<b className='text-green-700'>$120m</b>{` in spend by up to `}<b className='text-green-700'>100%</b>{`, while reducing risk and increasing time for Strategic Sourcing.`}</li>
+                      <li className='mt-2 text-xs'>PMed the development of an internal webapp where anyone could submit new vendor requests. This created total visibility and automated data capture for us and our partners (including RFP status, risk scoring, cycle times by stage), and removed <b className='text-green-700'>multiple hours</b> of weekly admin times for all Category Managers (~40) and partner Risk teams.</li>
+                      <li className='mt-2 text-xs'>{`Led an initiative to diversify spend channels - working with Legal, risk teams, and more to carve out PO-only exceptions (no MSA for specific cases like Facilities emergencies), create new self-serve Catalogues, and make other policy updates.
+                      Overall, reduced administrative weight of ~10% of purchases and `}<b className='text-green-700'>$120m</b>{` in spend `}<b className='text-green-700'>by up to 100%</b>{`, allowing the team to spend more time on Strategic Sourcing opportunities.`}</li>
                   </div>
                 </div>
             </div>
@@ -244,10 +244,10 @@ export default function Timeline() {
                 <div className={`${isSchwabOpen ? 'z-50' : ''} absolute m-auto my-[25px] left-0 right-0 w-[300px] h-[420px] bg-white border-2 border-black p-3 rounded-lg pointer-events-none text-sm`}>
                 <h3 className='mb-2'>Charles Schwab Procurement</h3>
                 <div className='mt-3 mb-3 h-0.5 w-full bg-gradient-to-r from-amber-200 to-white'/>
-                        <p className='text-xs'>Schwab bought TD Ameritrade, and - after helping with regulatory reporting for the merger, identifying contract redundancies, and setting up the newly combined reporting environment - I began looking.</p>
+                        <p className='text-xs'>Schwab bought TD Ameritrade, and - after helping with regulatory reporting for the merger, identifying contract redundancies, and setting up the newly combined reporting environment - I began learning to code and looking for roles.</p>
                         <div className='w-4 h-[1px] my-2 bg-black m-auto'/>
                         <li className='mt-2 text-xs'>Handled all procurement-related regulatory reporting, providing the SEC and others reports to assess conflicts of interest, etc.</li>
-                        <li className='mt-2 text-xs'>Partner for Vendor synergies analysis and strategy.</li>
+                        <li className='mt-2 text-xs'>Partner for Vendor synergies analysis and strategy - identifying contractual overlap and obligations, and options for which contracts to renegotiate, terminate, or otherwise prioritize for renewal.</li>
                         <li className='mt-2 text-xs'>Automated combined Schwab+TDA procurement reporting with Alteryx.</li>
                     </div>
                 </div>
