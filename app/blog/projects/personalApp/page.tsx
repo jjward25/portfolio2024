@@ -29,7 +29,7 @@ const Papp = () => {
             <img
                 src='/projects/personalApp/appthumb.png'
                 alt='Home Page' 
-                className="w-full md:w-1/2 h-full object-cover hover:scale-150 hover:duration-500 transition-all ease-out mb-0 border border-neutral-500"
+                className="w-full md:w-1/2 h-full object-cover md:hover:scale-150 hover:duration-500 transition-all ease-out mb-0 border border-neutral-500"
               />
           </div>
           <p className="text-neutral-500 text-xs mt-2 md:mt-4 px-4">On the homepage you can see Today's and Tomorrow's assigned tasks, your Event Calendar, and a Daily Check-in.  Data is stored in a MongoDB database.  It also uses a public API to give the local weather.</p>
@@ -40,12 +40,12 @@ const Papp = () => {
           <img
                 src='/projects/personalApp/TaskBacklog.png'
                 alt='Project Page'
-                className="w-full md:w-1/2 h-full object-cover hover:scale-150 hover:duration-500 transition-all ease-out my-2 mb-0 border border-neutral-500"
+                className="w-full md:w-1/2 h-full object-cover md:hover:scale-150 hover:duration-500 transition-all ease-out my-2 mb-0 border border-neutral-500"
               />
           <img
                 src='/projects/personalApp/ProjectPage.png'
                 alt='Project Page'
-                className="w-full md:w-1/2 h-full object-cover hover:scale-150 hover:duration-500 transition-all ease-out my-2 mb-0 border border-neutral-500"
+                className="w-full md:w-1/2 h-full object-cover md:hover:scale-150 hover:duration-500 transition-all ease-out my-2 mb-0 border border-neutral-500"
               />
               </div>
             <p className="text-neutral-500 text-xs mt-2 md:mt-4 px-4">Use the backlog to see all historical tasks, or the Project tracker for longer-term goal setting.</p>
@@ -56,12 +56,12 @@ const Papp = () => {
           <img
                 src='/projects/personalApp/workout1.png'
                 alt='Workout1'
-                className="w-full md:w-1/2 h-full object-cover hover:scale-150 hover:duration-500 transition-all ease-out my-2 mb-0 border border-neutral-500"
+                className="w-full md:w-1/2 h-full object-cover md:hover:scale-150 hover:duration-500 transition-all ease-out my-2 mb-0 border border-neutral-500"
               />
           <img
                 src='/projects/personalApp/workout2.png'
                 alt='Workout2'
-                className="w-full md:w-1/2 h-full object-cover hover:scale-150 hover:duration-500 transition-all ease-out my-2 mb-0 border border-neutral-500"
+                className="w-full md:w-1/2 h-full object-cover md:hover:scale-150 hover:duration-500 transition-all ease-out my-2 mb-0 border border-neutral-500"
               />
               </div>
             <p className="text-neutral-500 text-xs my-2 md:mt-4 px-4">The workout tracker takes your previous performance for the exercise and automatically sets your weights for the next workout.</p>
@@ -76,12 +76,12 @@ const Papp = () => {
           <img
                 src='/projects/personalApp/MongoTop.png'
                 alt='MongoDB'
-                className="w-full md:w-1/2 h-full object-cover hover:scale-150 hover:duration-500 transition-all ease-out my-2 mb-0 border border-neutral-500"
+                className="w-full md:w-1/2 h-full object-cover md:hover:scale-150 hover:duration-500 transition-all ease-out my-2 mb-0 border border-neutral-500"
               />
           <img
                 src='/projects/personalApp/Mongo2.png'
                 alt='MongoDB'
-                className="w-full md:w-1/2 h-full object-cover hover:scale-150 hover:duration-500 transition-all ease-out my-2 mb-0 border border-neutral-500"
+                className="w-full md:w-1/2 h-full object-cover md:hover:scale-150 hover:duration-500 transition-all ease-out my-2 mb-0 border border-neutral-500"
               />
               </div>
             <p className="text-neutral-500 text-xs my-2 md:mt-4 px-4">The MongoDB collections behind the app.</p>

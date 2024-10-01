@@ -27,7 +27,7 @@ const Papp = () => {
               <img
                   src='/projects/scrapers/scraperOutput.png'
                   alt='Home Page'
-                  className="mt-4 w-full h-full object-cover hover:scale-150 hover:duration-500 transition-all ease-out mb-0 border border-neutral-500"
+                  className="mt-4 w-full h-full object-cover md:hover:scale-150 hover:duration-500 transition-all ease-out mb-0 border border-neutral-500"
                 />
             </div>
 
