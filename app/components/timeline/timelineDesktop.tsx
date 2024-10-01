@@ -173,11 +173,11 @@ export default function Timeline() {
                 <div className="z-50 absolute m-auto mt-[20px] left-0 right-0 w-[450px] min-h-10 group-hover:h-[325px] bg-white border-2 border-black py-3 px-6 rounded-lg pointer-events-none opacity-0 transition-opacity group-hover:opacity-100 text-sm">
                 <h3 className='mb-2'>Charles Schwab Procurement</h3>
                 <div className='mt-3 mb-3 h-0.5 w-full bg-gradient-to-r from-amber-200 to-white'/>
-                        <p className='text-xs'>Schwab bought TD Ameritrade and, not wanting to be weighed down by even more regulations and red-tape, I began looking.</p>
+                        <p className='text-xs'>Schwab bought TD Ameritrade, and - after helping with regulatory reporting for the merger, identifying contract redundancies, and setting up the newly combined reporting environment - I began looking.</p>
                         <div className='w-4 h-[1px] my-2 bg-black m-auto'/>
                         <li className='mt-2 text-xs'>Handled all procurement-related regulatory reporting, providing the SEC and others reports to assess conflicts of interest, etc.</li>
-                        <li className='mt-2 text-xs'>Partner for Vendor synergies analsysis and strategy.</li>
-                        <li className='mt-2 text-xs'>Automated Schwab's reporting with Alteryx.</li>
+                        <li className='mt-2 text-xs'>Partner for Vendor synergies analysis and strategy.</li>
+                        <li className='mt-2 text-xs'>Automated combined Schwab+TDA procurement reporting with Alteryx.</li>
                     </div>
                 </div>
             </div>
