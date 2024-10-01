@@ -27,7 +27,7 @@ export default function ProjectCarousel() {
       <div className="relative flex flex-col bg-black md:rounded-xl -mx-6 md:-mx-[62px] md:px-10 px-8 pt-6 pb-3 ">
         {/** Left Scroll Button */}
         <button
-          className="absolute left-0 md:ml-1 top-1/2 transform -translate-y-1/2 md:bg-gray-800 hover:text-cyan-200 text-cyan-700 p-2 h-16 w-8 rounded-l-full transition"
+          className="absolute left-0 md:ml-1 top-1/2 transform -translate-y-1/2 md:bg-gray-800 hover:text-yellow-200 text-cyan-700 p-2 h-16 w-8 rounded-l-full transition"
           onClick={scrollLeft}
           style={{
             borderTopRightRadius: "0",
@@ -121,7 +121,7 @@ export default function ProjectCarousel() {
 
         {/** Right Scroll Button */}
         <button
-          className="absolute md:mr-1 right-0 top-1/2 transform -translate-y-1/2 md:bg-gray-800 hover:text-cyan-200 text-cyan-700 p-2 h-16 w-8 rounded-r-full transition"
+          className="absolute md:mr-1 right-0 top-1/2 transform -translate-y-1/2 md:bg-gray-800 hover:text-yellow-200 text-cyan-700 p-2 h-16 w-8 rounded-r-full transition"
           onClick={scrollRight}
           style={{
             borderTopLeftRadius: "0",

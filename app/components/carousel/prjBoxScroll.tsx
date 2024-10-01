@@ -59,7 +59,7 @@ const PrjBoxScroll: React.FC<CardProps> = ({ title, description, imageUrls, skil
       
       {/** Left Scroll Button */}
       <button
-          className="z-40 ml-1 absolute left-0 top-1/2 transform -translate-y-1/2 bg-cyan-950 text-cyan-700 p-[6px] rounded-full hover:bg-gray-600 transition border border-cyan-700"
+          className="z-40 ml-1 absolute left-0 top-1/2 transform -translate-y-1/2 bg-cyan-950 text-cyan-700 p-[6px] rounded-full hover:text-yellow-200 transition border border-cyan-700"
           onClick={handlePrevImage}
         >
           <svg
@@ -79,7 +79,7 @@ const PrjBoxScroll: React.FC<CardProps> = ({ title, description, imageUrls, skil
 
       {/** Right Scroll Button */}
       <button
-          className="z-40 mr-1 absolute right-0 top-1/2 transform -translate-y-1/2 bg-cyan-950 text-cyan-700 p-1 rounded-full hover:bg-gray-600 transition border border-cyan-700"
+          className="z-40 mr-1 absolute right-0 top-1/2 transform -translate-y-1/2 bg-cyan-950 text-cyan-700 p-1 rounded-full hover:text-yellow-200 transition border border-cyan-700"
           onClick={handleNextImage}
         >
           <svg
