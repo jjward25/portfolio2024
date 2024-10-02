@@ -66,7 +66,7 @@ const Papp = () => {
             <p className="text-neutral-500 text-xs my-2 md:mt-4 px-4">The workout tracker takes your previous performance for the exercise and automatically sets your weights for the next workout.</p>
             
             <video width="full" height="full" controls muted loop>
-                <source src="https://public-docs2.s3.amazonaws.com/app_workoutNew.mp4" type="video/mp4" />
+                <source src="https://public-docs2.s3.amazonaws.com/app_workoutNew2.mp4" type="video/mp4" />
               </video>
 
             {/**Section 4: Mongo */}
