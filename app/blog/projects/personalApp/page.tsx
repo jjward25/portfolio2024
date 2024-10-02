@@ -19,13 +19,11 @@ const Papp = () => {
           <h2 className="text-lg font-semibold mt-12">1. The Home Page</h2> 
 
           <div className="w-full flex flex-col md:flex-row">
-            
           <div className="mx-auto">
               <video width="full" height="full" controls muted loop>
                 <source src="https://public-docs2.s3.amazonaws.com/app_homeNew.mp4" type="video/mp4" />
               </video>
             </div>
-
             <img
                 src='/projects/personalApp/appthumb.png'
                 alt='Home Page' 
@@ -38,18 +36,18 @@ const Papp = () => {
           <h2 className="text-lg font-semibold mt-12">2. Project and Backlog Pages</h2>
           
           <div className="w-full flex flex-col md:flex-row">
-            <div className="mx-auto">
+            <div className="mx-auto mt-2">
               <video width="full" height="full" controls muted loop>
                 <source src="https://public-docs2.s3.amazonaws.com/app_projectPage.mp4" type="video/mp4" />
               </video>
             </div>
             <img
-              src='/projects/personalApp/TaskBacklog.png'
+              src='/projects/personalApp/ProjectPage.png'
               alt='Project Page'
-              className="w-full md:w-1/2 h-full object-cover md:hover:scale-150 hover:duration-500 transition-all ease-out my-2 mb-0 border border-neutral-500"
+              className="w-full md:w-1/2 h-auto object-cover md:hover:scale-150 hover:duration-500 transition-all ease-out my-2 mb-0 border border-neutral-500"
             />
-              </div>
-            <p className="text-neutral-500 text-xs mt-2 md:mt-4 px-4">Use the backlog to see all historical tasks, or the Project tracker for longer-term goal setting.</p>
+          </div>
+          <p className="text-neutral-500 text-xs mt-2 md:mt-4 px-4">Use the backlog to see all historical tasks, or the Project tracker for longer-term goal setting.</p>
 
             {/**Section 3: Workout Tracker */}
           <h2 className="text-lg font-semibold mt-12">3. Workout App</h2>
