@@ -36,12 +36,13 @@ const Papp = () => {
 
           {/**Section 2: Project & Backlog */}
           <h2 className="text-lg font-semibold mt-12">2. Project and Backlog Pages</h2>
+          
           <div className="w-full flex flex-col md:flex-row">
-          <img
-                src='/projects/personalApp/ProjectPage.png'
-                alt='Project Page'
-                className="w-full md:w-1/2 h-full object-cover md:hover:scale-150 hover:duration-500 transition-all ease-out my-2 mb-0 border border-neutral-500"
-              />
+            <div className="mx-auto">
+              <video width="full" height="full" controls muted loop>
+                <source src="https://public-docs2.s3.amazonaws.com/app_projectPage.mp4" type="video/mp4" />
+              </video>
+            </div>
             <img
               src='/projects/personalApp/TaskBacklog.png'
               alt='Project Page'
