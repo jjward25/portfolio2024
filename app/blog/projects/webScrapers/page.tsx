@@ -12,6 +12,9 @@ const Papp = () => {
         <p className="text-neutral-500 text-sm mt-2">{`Scraping like this requires (1) inspecting the target sites and understanding how their HTML is structured, then (2) telling python to fetch the exact HTML tags you want - and finally (3) using python to convert the fetched data to a readable csv output.`}</p>
         <a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vQFCQN-ae5K6j7SVTkfTNr667HJ5nqr7cCkpjDOt9mtUlFtrXN3IlCUsyEUywGD2EhEG5aaWEPzjJwx/pubhtml" 
           className="text-sm text-cyan-700 hover:text-amber-500 w-auto mr-auto mt-2" target="_blank">Sample Output CSV</a>
+        <a href="https://github.com/jjward25/python.scrapers_daily_update" 
+          className="text-sm text-cyan-700 hover:text-amber-500 w-auto mr-auto mt-2" target="_blank">Github Repo</a>
+          
         <div className="flex flex-col">
 
           {/**Section 1 */}
