@@ -51,21 +51,6 @@ export default function ProjectCarousel() {
 
         {/** Project Container */}
         <div ref={carouselRef} className="flex flex-row text-black gap-4 overflow-auto md:pb-5 mb-1">
-          {/** Project: DBTF */}
-          <PrjBoxScroll
-            title="DBT Fundamentals"
-            description="Official DBT fundamentals course from learn.getdbt.com, using a Big Query dataset."
-            imageUrls={[
-              "/projects/dbtFundamentals/dbtf-materializing-views.png",
-              "/projects/dbtFundamentals/dbtf-production-run.png",
-              "/projects/dbtFundamentals/dbtf-yml-tests.png",
-            ]}
-            skills={[
-              { url: "/skill/dbt.png", title: "DBT" },
-              { url: "/skill/bigquery.png", title: "Big Query" },
-            ]}
-            link="/blog/projects/dbtfundamentals"
-          />
 
           {/** Project: Web Scrapers */}
           <PrjBoxScroll
@@ -99,6 +84,22 @@ export default function ProjectCarousel() {
               { url: "/skill/api.png", title: "APIs" },
             ]}
             link="/blog/projects/personalApp"
+          />
+
+          {/** Project: DBTF */}
+          <PrjBoxScroll
+            title="DBT Fundamentals"
+            description="Official DBT fundamentals course from learn.getdbt.com, using a Big Query dataset."
+            imageUrls={[
+              "/projects/dbtFundamentals/dbtf-materializing-views.png",
+              "/projects/dbtFundamentals/dbtf-production-run.png",
+              "/projects/dbtFundamentals/dbtf-yml-tests.png",
+            ]}
+            skills={[
+              { url: "/skill/dbt.png", title: "DBT" },
+              { url: "/skill/bigquery.png", title: "Big Query" },
+            ]}
+            link="/blog/projects/dbtfundamentals"
           />
 
           {/** Project: Topic Tournament */}
