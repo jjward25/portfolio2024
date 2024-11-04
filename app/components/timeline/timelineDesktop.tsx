@@ -80,7 +80,7 @@ export default function Timeline() {
                   <div className="z-50 absolute m-auto mt-[20px] left-0 right-0 w-[450px] min-h-10 group-hover:h-[325px] bg-white border-2 border-black py-3 px-6 rounded-lg pointer-events-none opacity-0 transition-opacity group-hover:opacity-100 text-sm">
                     <h3 className='mb-2'>Practice Benefit Corp.</h3>
                     <div className='mt-3 mb-3 h-0.5 w-full bg-gradient-to-r from-amber-200 to-white'/>
-                    <p className='text-xs'>At the time a non-profit called Practice Makes Perfect where I had previously volunteered; I joined full-time to help professionalize operations and implement best practices while working towards Educational Equity.</p>
+                    <p className='text-xs'>At the time a non-profit called Practice Makes Perfect where I had previously volunteered; I joined as a consultant to help professionalize operations and implement best practices while working towards Educational Equity.</p>
                     <div className='w-4 h-[1px] my-2 bg-black m-auto'/>
                     <li className='mt-2 text-xs'>{`Created Value Stream Maps and KPIs for all roles, which where then used for hiring `}<em>(what aspects are you familiar with, what would you change?)</em>{` and quarterly reviews (for identifying continuous improvement opportunities).`}</li>
                     <li className='mt-2 text-xs'>{`Swapped payroll providers and led 401k enrollments; Led hiring and onboarding for all new hires; Created annual sales calendar; and otherwise contributed as needed.`}</li>
@@ -115,7 +115,7 @@ export default function Timeline() {
                   <div className="z-50 absolute m-auto mt-[20px] left-0 right-0 w-[450px] min-h-10 group-hover:h-[325px] bg-white border-2 border-black py-3 px-6 rounded-lg pointer-events-none opacity-0 transition-opacity group-hover:opacity-100 text-sm">
                     <h3 className='mb-2'>TD Ameritrade Procurement</h3>
                     <div className='mt-3 mb-3 h-0.5 w-full bg-gradient-to-r from-amber-200 to-white'/>
-                    <p className='text-xs'>After PMP went for-profit I returned to TDA, opting to help my old manager build up their Procurement ops over re-joining the Lean team.</p>
+                    <p className='text-xs'>After two years in the Project Management office, I opted to help my old manager build up their Procurement ops over re-joining the Lean team.</p>
                     <div className='w-4 h-[1px] my-2 bg-black m-auto'/>
                     <li className='mt-2 text-xs'>PMed the development of an internal webapp where anyone could submit new vendor requests. This created total visibility and automated data capture for us and our partners (including RFP status, risk scoring, cycle times by stage), and removed <b className='text-green-700'>multiple hours</b> of weekly admin times for all Category Managers (~40) and partner Risk teams.</li>
                     <li className='mt-2 text-xs'>{`As PM, worked with risk and legal teams and other relevant partners to carve out PO-only exceptions (no MSA for specific cases like Facilities emergencies), create new self-serve Catalogues, and make other policy updates.
