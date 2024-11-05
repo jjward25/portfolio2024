@@ -28,6 +28,7 @@ export default function BlogPage() {
 
       {/* Business Articles Accordion */}
       <DynamicAccordion title="Relevant Articles" isOpenByDefault={true}>
+      <li><Link target="_blank" href="/blog/articles/nbamvp" className="cursor-pointer hover:text-yellow-600 text-sm md:text-md">Data Science: Predicting the NBA MVP with Public Datasets</Link></li>
         <li><Link target="_blank" href="https://medium.com/cultural-commentary/strategic-resiliency-in-large-corporations-6003c35f98f6" className="cursor-pointer hover:text-yellow-600 text-sm md:text-md">Strategic Resiliency in Large Corporations</Link></li>
         <li><Link target="_blank" href="https://medium.com/cultural-commentary/continuous-improvement-via-operational-awareness-dc0278ff9923" className="cursor-pointer hover:text-yellow-600 text-sm md:text-md">Continuous Improvement via Operational Awareness</Link></li>
         <li><Link target="_blank" href="https://medium.com/cultural-commentary/the-biggest-question-in-crypto-whats-the-right-multiplier-932254d1f39c" className="cursor-pointer hover:text-yellow-600 text-sm md:text-md">Crypto: What's it worth?</Link></li>
