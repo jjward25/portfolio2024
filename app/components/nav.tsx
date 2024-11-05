@@ -7,7 +7,7 @@ const navItems = {
     name: 'home',
   },
   '/blog': {
-    name: 'links',
+    name: 'posts',
   },
 };
 

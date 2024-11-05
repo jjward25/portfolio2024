@@ -69,7 +69,7 @@ export default function ProjectCarousel() {
           {/** Project: DBTF */}
           <PrjBoxScroll
             title="DBT Fundamentals"
-            description="Official DBT fundamentals course from learn.getdbt.com, using a Big Query dataset."
+            description="Analyics Engineering project work from learn.getdbt.com: setting up a new data modeling environment."
             imageUrls={[
               "/projects/dbtFundamentals/dbtf-materializing-views.png",
               "/projects/dbtFundamentals/dbtf-production-run.png",
