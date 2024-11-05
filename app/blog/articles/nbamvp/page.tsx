@@ -79,7 +79,7 @@ export default function TestBlogPost() {
 
         {/** Features */}
         <DynamicAccordion title={`2. Feature Testing`} isOpenByDefault={false}>
-          <p className="">{`It's important to test for feature importance, especially when pulling a lot of potentially redundant features (like Total Points and Points per Game).`}</p>
+          <p className="">{`Thankfully there were no null features in this dataset and only a few special characters in players' names to account for.  But it's important to test for feature importance, especially when pulling a lot of potentially redundant features (like Total Points and Points per Game).`}</p>
           <p className=""><a href="https://machinelearningmastery.com/rfe-feature-selection-in-python/">Recursive Feature Elimination</a> and <a href="https://scikit-learn.org/stable/modules/permutation_importance.html">Permutation Importance</a>
                           {` are two common and simple methods for checking the impact of features on a test. In this case we used RFE, along with a Correlation Matrix and Scree plot.`}</p>
                           <div className='mt-4 w-full flex flex-row'>
@@ -112,10 +112,10 @@ export default function TestBlogPost() {
           /></div>
           <p className="">{`The models appear overfitted, but they aren't predicting past winners and it is producing unique new players that we would want and expect to see, in Jayson Tatum and Anthony Davis.`}</p>
           <p className="">{`To reach these predictions, I chose three different models:`}</p>
-            <li className=''>Random Forest: </li>
-            <li className=''>Gradient Boosting: </li>
-            <li className=''>XGBoost: </li>
-          <p className="">{`And there you have a simple model for predicting the NBA MVP! If you break the exercise down into parts like this you can easily work with an AI bot to find public data sources, and pull and analyze them.`}</p>
+            <li className=''>Random Forest: These models essentially create multiple large decision trees and find the most likely path.  Usually better for a more complex and resource-intensive dataset but still useful here.</li>
+            <li className=''>Gradient Boosting: Slower than Random Forest if training large models, but typically provides better prediction accuracy.</li>
+            <li className=''>XGBoost: Incorporates L1 and L2 regularization to reduce overfitting, but can be sensitive to outliers.</li>
+          <p className="">{`And there you have a simple model for predicting the NBA MVP!`}</p>
         </DynamicAccordion>
 
         <p className="">{``}</p>
