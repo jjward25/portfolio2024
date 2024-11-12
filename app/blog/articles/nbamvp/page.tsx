@@ -60,7 +60,7 @@ export default function TestBlogPost() {
         <div className='mt-4'><a href="https://github.com/jjward25/nbaMvpPredictor">Github Repo</a></div>
         <p className="">{`In the image above we have the Vegas odds for NBA MVP as of November 5th, 2024.  We're going to see if we can make a low-effort model that approximates this list, with minor exceptions.`}</p>
         <p className="">{`Note: These are betting odds so they take into account peoples' irrational behaviours, like voting Anthony Edwards for MVP.  Statistically, based on age and overall performance I think he's an outlier on this list.`}</p>
-        <p className="mb-8">{`Similarly, Jokic has won 3 of the last 4 and his team is likely to severely underperform this year.  If Denver's Win Percentage is still top 4 in the conference then the model should rate the Joker highly, but I don't expect Ant or Jokic to top our charts.`}</p>
+        <p className="mb-8">{`Similarly, Jokic has won 3 of the last 4 and his team is likely to underperform this year.  If Denver's Win Percentage top 4 in the conference at the end of the year then the model should rate the Joker more highly, but I don't expect Ant or Jokic to top our charts.`}</p>
 
         {/** Data */}
         <DynamicAccordion title={`1. Gathering Data`} isOpenByDefault={false}>
