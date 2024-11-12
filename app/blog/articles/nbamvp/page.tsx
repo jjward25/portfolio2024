@@ -116,7 +116,7 @@ export default function TestBlogPost() {
             <li className='mb-2'><b>Random Forest:</b> These models essentially create multiple large decision trees and find the most likely path.  Usually better for a more complex and resource-intensive dataset but still useful here.</li>
             <li className='mb-2'><b>Gradient Boosting:</b> Slower than Random Forest if training large models, but typically provides better prediction accuracy.</li>
             <li className='mb-2'><b>XGBoost:</b> Incorporates L1 and L2 regularization to reduce overfitting, but can be sensitive to outliers.</li>
-          <p className="">{`Since all of these predict Tatum (pre-season favorite on the consensus best team) or Anthony Davis (off to a very hot start), I feel good about our features. For more complex forecasting we'd likely have more to do on cleaning and prepping the data, and would evaluate our chosen models more closely - but for a quick and dirty project, we've now got ourselves a simple model for predicting the NBA MVP that we can have some confidence in.`}</p>
+          <p className="">{`Since all of these predict Tatum (pre-season favorite on the consensus best team) or Anthony Davis (off to a very hot start), I feel good about our chosen features. For more complex forecasting we'd likely have more to do on cleaning and prepping the data, and would evaluate our chosen models more closely - but for a quick and dirty project, we've now got ourselves a simple model for predicting the NBA MVP that we can have some confidence in.`}</p>
         </DynamicAccordion>
 
         <p className="">{``}</p>
