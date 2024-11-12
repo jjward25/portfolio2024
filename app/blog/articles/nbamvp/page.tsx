@@ -112,11 +112,11 @@ export default function TestBlogPost() {
                 title="titlepic"
           /></div>
           <p className="">{`The models appear overfitted, but they aren't predicting past winners and it is producing unique new players that we would want and expect to see, in Jayson Tatum and Anthony Davis.`}</p>
-          <p className="">{`To reach these predictions, I chose three different models:`}</p>
+          <p className="">{`To reach these predictions, we used three different models:`}</p>
             <li className='mb-2'><b>Random Forest:</b> These models essentially create multiple large decision trees and find the most likely path.  Usually better for a more complex and resource-intensive dataset but still useful here.</li>
             <li className='mb-2'><b>Gradient Boosting:</b> Slower than Random Forest if training large models, but typically provides better prediction accuracy.</li>
             <li className='mb-2'><b>XGBoost:</b> Incorporates L1 and L2 regularization to reduce overfitting, but can be sensitive to outliers.</li>
-          <p className="">{`And there you have a simple model for predicting the NBA MVP!`}</p>
+          <p className="">{`Since all of these predict Tatum (pre-season favorite on the consensus best team) or Anthony Davis (off to a very hot start), I feel good about our features. For more complex forecasting we'd likely have more to do on cleaning and prepping the data, and would evaluate our chosen models more closely - but for a quick and dirty project, we've now got ourselves a simple model for predicting the NBA MVP that we can have some confidence in.`}</p>
         </DynamicAccordion>
 
         <p className="">{``}</p>
