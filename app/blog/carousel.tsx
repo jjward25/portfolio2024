@@ -54,7 +54,7 @@ export default function ProjectCarousel() {
 
           {/** Project: NBA MVP */}
           <PrjBoxScroll
-            title="Predicting the NBA MVP with Public"
+            title="Predicting the NBA MVP"
             description="A quick and easy predictive model using public datasets."
             imageUrls={[
               "/projects/NbaMvp/vegasOdds.png",
