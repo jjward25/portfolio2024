@@ -52,6 +52,21 @@ export default function ProjectCarousel() {
         {/** Project Container */}
         <div ref={carouselRef} className="flex flex-row text-black gap-4 overflow-auto md:pb-5 mb-1">
 
+          {/** Project: NBA MVP */}
+          <PrjBoxScroll
+            title="Predicting the NBA MVP with Public"
+            description="A quick and easy predictive model using public datasets."
+            imageUrls={[
+              "/projects/NbaMvp/vegasOdds.png",
+              "/projects/NbaMvp/prediction.png",
+              "/projects/NbaMvp/correlationMatrix.png",
+              "/projects/NbaMvp/playerPopFinal.png",
+              
+            ]}
+            skills={[{ url: "/skill/python.png", title: "Python: Beautiful Soup, Selenium, Pandas" }]}
+            link="/blog/projects/nbaMVP"
+          />
+
           {/** Project: Web Scrapers */}
           <PrjBoxScroll
             title="Daily News Webscrapers"

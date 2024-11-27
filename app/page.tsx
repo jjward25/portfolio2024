@@ -66,13 +66,13 @@ export default function Page() {
           <p className="pb-4 prose prose-invert w-full text-black dark:text-white">
             I'm a creative, detail-oriented, and technical business partner who's worked with teams from small non-profits, to the Fortune 500, to cutting-edge tech companies - helping them implement sustainable ops and get the most from what they have. 
           </p>
-          <p className="md:pb-4 prose prose-invert w-full text-black dark:text-white h-0 overflow-hidden md:h-auto">
-            {`Together, we can establish ground-level ops `}<em className='text-neutral-500'>{`(ex: process mapping; identifying KPIs and leading indicators (and building useful views); defining and enabling SOPs)`}</em>{`, or identify and tackle the more complex and tailored Operations improvements needed to hit ever-more challenging targets `}<em className='text-neutral-500'>(ex: Deep-Dives and Forecasting; Tool or Process Evaluation + Migration; or other large projects)</em>{`.`}
+          <p className="md:pb-4 prose prose-invert w-full text-black dark:text-white h-0 overflow-hidden h-auto">
+            {`Together, we can establish ground-level ops `}
+            <em className='text-neutral-600'>{`(ex: process mapping; identifying KPIs and leading indicators (and building useful views); defining and enabling SOPs)`}</em>
+            {`, or identify and tackle the more complex and tailored Operations improvements needed to hit ever-more challenging targets `}
+            <em className='text-neutral-600'>(ex: Deep-Dives and Forecasting; Tool or Process Evaluation + Migration; or other large projects)</em>{`.`}
           </p>
-          <p className="pb-4 prose prose-invert w-full text-black dark:text-white">
-            I can get my hands dirty in systems and with data, and on the more nuanced issues teams face.
-            I’m a shepherd for complex, cross-functional initiatives who can pro-actively identify solutions, own functions long-term, individually contribute on multiple levels, and lead teams of effective contributors.    
-          </p>
+        
           <p className="pb-4 prose prose-invert w-full text-black dark:text-white">
             Read more about my experiences below:
           </p>
