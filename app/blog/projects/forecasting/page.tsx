@@ -74,15 +74,15 @@ export default function TestBlogPost() {
           {/** Model and Evaluate */}
           <h3 className=''>{`2. Model and Evaluate`}</h3>
           <p className=''>{`First I use ChatGPT to create a `}<a href="https://github.com/jjward25/gtmSalesForecasting/blob/main/OppsLikelyToClose" title="Final Code" target="_blank">scaffold</a>{` for a model, with some minor adjustments.`}</p>
-          <p className=''>{`We're using the XGBoost model.  We could try KNN, which predicts outcomes based on previous similar cases, but we don't have a lot of complex features that would best take advantage of KNN.  
-            XGBoost is like an optimized Random Forest model, where multiple tests are run except the results are weighed for a final prediction.`}</p>
+          <p className=''>{`We're using the XGBoost model.  We could try KNN, which predicts outcomes based on previous similar cases, but we don't have a lot of complex features that would take advantage of KNN.  
+            XGBoost is a highly efficient model, where multiple tests are run with slight variations, and the results are weighed for a final prediction.`}</p>
           <img
             src='/projects/forecasting/firstPred.png'
             alt='Prediction'
             className="w-full h-auto object-cover cursor-pointer rounded-md border border-black"
             title="Prediction"
             />
-            <p className="">{`At first our results are not great...  Our win rate in FY24 was 26%, and it seems based on Precision and Recall that the model is just guessing most opportunities will be Lost in FY25.`}</p>
+            <p className="">{`At first our results are not great...  Our win rate in FY24 was 26%, and it seems that the model is just guessing that most opportunities will be Lost in FY25.`}</p>
             <p className="">{`The top "0" row is "Lost" opportunities.  Specifically looking at Recall, 87% of Lost opportunities were correctly predicted but only 10% of Won opportunities were correctly predicted.  This is a telltale sign of over-fitting from imbalance.`}</p>
             <img
             src='/projects/forecasting/lastPred.png'
@@ -119,17 +119,25 @@ export default function TestBlogPost() {
 
         {/** 2. Forecasting Sales*/}
         <DynamicAccordion title={`Creating the Forecast`} isOpenByDefault={true}>
-          <p className="">{`At its most basic, we can forecast Sales for next year by just taking our growth from last year and projecting it out... Using our growth rate since April, we'd project to just about double our revenue next year.`}</p>
+          <p className="">{`To start, we can forecast Sales by taking our growth from last year and projecting it out... With our growth rate since April, we'd expect to basically double revenue in FY25.`}</p>
           <img
             src='/projects/forecasting/linear.png'
             alt='Linear Forecast'
             className="w-full h-auto object-cover cursor-pointer rounded-md border border-black p-2"
             title="Linear Forecast"
             />
-          <p className="">{`I used the `}<em className='not-italic text-green-700'>Average Since April</em>{` instead of the 35% because April was a clear anomaly.`}</p>
-          <p className="">{`That said, if we have validated and feel comfortable about the challenges presented by our model, we can boost our target to a full 100% YoY growth ($1.8m ending ARR). That would only be an extra $91k, and 6.5% monthly growth instead of 6.0% -- or about 4 extra deals closing across the whole year.`}</p>
-          <p className="">{`More can be done to assess Lead flow (do we expect to have enough pipeline to support these projections?) and other tangential concerns - but for now we now have a V1 of our Sales Forecast model that can be used for further territory and headcount planning.`}</p>
-          <p className="">{`For territory planning we can follow a similar process: set baseline expectations based on linear growth rates, then create a model using enrichment data, external data, etc. and evaluate our model based on the patterns identified in the model, and what we already know about our regions and customers and product.`}</p>
+          <p className="text-xs text-neutral-500">{`I used the Average Since April instead of the 35% because April was a clear anomaly.`}</p>
+          <p className="">{`That said, if we have validated and feel comfortable about the challenges presented by our model, we can boost our target to 6.5% monthly growth instead of 6% ($1.8m ending ARR). That would only be an extra $100k, or about 4-5 extra deals closing across the whole year.`}</p>
+          <div className='flex justify-center'>
+          <img
+            src='/projects/forecasting/growth.png'
+            alt='Aggressive Forecast'
+            className="w-1/2 mx-auto h-auto object-cover cursor-pointer rounded-md border border-black p-2"
+            title="Aggressive Forecast"
+            />
+            </div>
+          <p className="">{`More can be done to assess Lead flow (do we expect to have enough pipeline to support these projections?) and other related concerns - but for now we now have a V1 of our Sales Forecast model that can be used for territory and headcount planning.`}</p>
+          <p className="">{`For territory planning we can follow a similar process: set baseline expectations based on linear growth rates, then create a model using enrichment data, external data, etc. and evaluate our linear forecasts based on patterns we identify in the model, and what we already know about our regions and customers and products.`}</p>
         </DynamicAccordion>
 
         <p className="">{``}</p>
