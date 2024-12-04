@@ -52,7 +52,7 @@ export default function TestBlogPost() {
 
         {/** Title */}
         <h1 className="font-bold mb-0">Sales Forecasting</h1>
-        <p className="font-semibold text-green-700">{`We're late on planning... It's the last day of the Fiscal Year so we know everything that closed last year, but we still need to set our targets for the upcoming year!`}</p>
+        <p className="font-semibold text-green-700">{`We're late on planning... It's the last day of the Fiscal Year so we know everything that closed, but we still need to set our targets for the upcoming year!`}</p>
         <p className="mb-12">{`We'll start by creating a mock dataset for analysis, then testing and selecting a forecasting model. Finally, we'll use the new forecast to help set targets for the upcoming year.`}</p>
         
         {/** 1. Data Processing + Modeling */}
@@ -126,9 +126,10 @@ export default function TestBlogPost() {
             className="w-full h-auto object-cover cursor-pointer rounded-md border border-black p-2"
             title="Linear Forecast"
             />
-          <p className="">{`I used the `}<em className='not-italic text-green-700'>Average Since April</em>{` instead of the 35% overall growth because April was a clear anomaly.`}</p>
-          <p className="">{`That said, if we have validated and feel comfortable about the challenges presented in our model, we can boost our projections a bit to a full 100% YoY growth. That would only be an extra $91k, or about 4 more deals closing.`}</p>
-          <p className="">{`We now have a V1 of our Sales Forecast model that can be used for further territory and headcount planning.`}</p>    
+          <p className="">{`I used the `}<em className='not-italic text-green-700'>Average Since April</em>{` instead of the 35% because April was a clear anomaly.`}</p>
+          <p className="">{`That said, if we have validated and feel comfortable about the challenges presented by our model, we can boost our target to a full 100% YoY growth ($1.8m ending ARR). That would only be an extra $91k, and 6.5% monthly growth instead of 6.0% -- or about 4 extra deals closing across the whole year.`}</p>
+          <p className="">{`More can be done to assess Lead flow (do we expect to have enough pipeline to support these projections?) and other tangential concerns - but for now we now have a V1 of our Sales Forecast model that can be used for further territory and headcount planning.`}</p>
+          <p className="">{`For territory planning we can follow a similar process: set baseline expectations based on linear growth rates, then create a model using enrichment data, external data, etc. and evaluate our model based on the patterns identified in the model, and what we already know about our regions and customers and product.`}</p>
         </DynamicAccordion>
 
         <p className="">{``}</p>

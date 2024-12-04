@@ -52,6 +52,21 @@ export default function ProjectCarousel() {
         {/** Project Container */}
         <div ref={carouselRef} className="flex flex-row text-black gap-4 overflow-auto md:pb-5 mb-1">
 
+          {/** Project: Sales Forecasting */}
+          <PrjBoxScroll
+            title="Sales Forecasting"
+            description="A sample Sales Forecasting model."
+            imageUrls={[
+              "/projects/forecasting/linear.png",
+              "/projects/forecasting/shapFinal.png",
+              "/projects/forecasting/lastPred.png",
+              "/projects/forecasting/gsheet.png",
+              
+            ]}
+            skills={[{ url: "/skill/python.png", title: "Python: Pandas, ScitKit Learn, Matplot, XGBoost" }]}
+            link="/blog/projects/forecasting"
+          />
+          
           {/** Project: NBA MVP */}
           <PrjBoxScroll
             title="Predicting the NBA MVP"
@@ -63,7 +78,7 @@ export default function ProjectCarousel() {
               "/projects/NbaMvp/playerPopFinal.png",
               
             ]}
-            skills={[{ url: "/skill/python.png", title: "Python: Beautiful Soup, Selenium, Pandas" }]}
+            skills={[{ url: "/skill/python.png", title: "Python: Pandas, ScitKit Learn" },{ url: "/skill/api.png", title: "APIs" }]}
             link="/blog/projects/nbaMVP"
           />
 
