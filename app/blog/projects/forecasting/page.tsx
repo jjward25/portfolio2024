@@ -136,7 +136,7 @@ export default function TestBlogPost() {
             title="Aggressive Forecast"
             />
             </div>
-          <p className="">{`More can be done to assess Lead flow (do we expect to have enough pipeline to support these projections? When does our model expect existing Opps to close?) and other related concerns - but for now we now have a V1 of our Sales Forecast that can be used for territory and headcount planning.`}</p>
+          <p className="">{`More can be done to assess Lead flow (Do we expect to have enough pipeline to support these projections? When does our model expect existing Opps to close?) and other related concerns - but for now we now have a V1 of our Sales Forecast that can be used for territory and headcount planning.`}</p>
           <p className="">{`For territory planning we can follow a similar process: set baseline expectations based on linear growth rates, then create a model using enrichment data, external data, etc. and evaluate our linear forecasts based on patterns we identify in the model, and what we already know about our regions and customers and products.`}</p>
         </DynamicAccordion>
 
