@@ -119,7 +119,7 @@ export default function TestBlogPost() {
 
         {/** 2. Forecasting Sales*/}
         <DynamicAccordion title={`Creating the Forecast`} isOpenByDefault={true}>
-          <p className="">{`To start, we can forecast Sales by taking our growth from last year and projecting it out... With our growth rate since April, we'd expect to basically double revenue in FY25.`}</p>
+          <p className="">{`To begin our forecasting, we can take our growth from last year and project it out linearly (what if we just keep doing this?)... With our growth rate since April, we'd expect to basically double revenue in FY25.`}</p>
           <img
             src='/projects/forecasting/linear.png'
             alt='Linear Forecast'
