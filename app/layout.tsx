@@ -7,7 +7,7 @@ import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from '@vercel/speed-insights/next';
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://joeward.io'),
+  metadataBase: new URL('https://joeward.me'),
   title: {
     default: 'Joe Ward',
     template: 'Joe Ward | %s',
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Joe Ward',
     description: 'Efficiency | Creativity | Collaboration | Growth',
-    url: 'https://joeward.io',
+    url: 'https://joeward.me',
     siteName: 'Joe Ward',
     locale: 'en_US',
     type: 'website',
