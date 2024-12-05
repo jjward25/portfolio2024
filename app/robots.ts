@@ -6,6 +6,6 @@ export default function robots() {
       },
     ],
     sitemap: 'https://joeward.io/sitemap.xml',
-    host: 'https://joeward.io',
+    host: 'https://joeward.me',
   };
 }
