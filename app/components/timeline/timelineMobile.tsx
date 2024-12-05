@@ -295,7 +295,7 @@ export default function Timeline() {
                         <p className='text-xs'>{`After the Schwab transition was complete, I moved to Vercel, which I had been using to learn to code (and use to host this website).`}</p>
                         <div className='w-4 h-[1px] my-2 bg-black m-auto'/>
                         <li className='mt-2 text-xs'>Led CSM migration to Salesforce - Design, testing, enablement, and post-launch monitoring.</li>
-                        <li className='mt-2 text-xs'>Designed and enabled new Renewals process, ensuring the process is kicked off for all contracts 120 days out.</li>
+                        <li className='mt-2 text-xs'>Designed and enabled new Renewals process to solve for high-volume of late renewals.</li>
                         <li className='mt-2 text-xs'>Solved for long-standing lack of data by getting Snowflake + DBT access and creating views for AEs and CSMs to understand how a customer is using our product, see if they're on pace for overages, and understand their broader portfolios better as well.</li>
                         <li className='mt-2 text-xs'>Platform admin for Salesforce, Gong, Fivetran.</li>
                     </div>
