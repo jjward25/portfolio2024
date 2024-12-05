@@ -5,7 +5,7 @@ export default function robots() {
         userAgent: '*',
       },
     ],
-    sitemap: 'https://joeward.io/sitemap.xml',
+    sitemap: 'https://joeward.me/sitemap.xml',
     host: 'https://joeward.me',
   };
 }
