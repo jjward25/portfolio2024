@@ -75,7 +75,7 @@ export default function TestBlogPost() {
           <h3 className=''>{`2. Model and Evaluate`}</h3>
           <p className=''>{`First I use ChatGPT to create a `}<a href="https://github.com/jjward25/gtmSalesForecasting/blob/main/OppsLikelyToClose" title="Final Code" target="_blank">scaffold</a>{` for a model, with some minor adjustments.`}</p>
           <p className=''>{`We're using the XGBoost model.  We could try KNN, which predicts outcomes based on previous similar cases, but we don't have a lot of complex features that would take advantage of KNN.  
-            XGBoost is a highly efficient model, where multiple tests are run with slight variations, and the results are weighed for a final prediction.`}</p>
+            Instead, XGBoost will run multiple tests with slight variations, and weight the results for a final prediction.`}</p>
           <img
             src='/projects/forecasting/firstPred.png'
             alt='Prediction'
