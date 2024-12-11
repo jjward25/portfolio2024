@@ -83,7 +83,7 @@ export default function TestBlogPost() {
             title="Prediction"
             />
             <p className="">{`At first our results are not great...  Our win rate in FY24 was 26%, and it seems that the model is just guessing that most opportunities will be Lost in FY25.`}</p>
-            <p className="">{`The top "0" row is "Lost" opportunities.  Specifically looking at Recall, 87% of Lost opportunities were correctly predicted but only 10% of Won opportunities were correctly predicted.  This is a telltale sign of over-fitting from imbalance.`}</p>
+            <p className="">{`The top "0" row is "Lost" opportunities.  Specifically looking at Recall, 87% of Lost opportunities were correctly predicted but only 10% of Won opportunities were correctly predicted.  This is a telltale sign of over-fitting from imbalance (guessing).`}</p>
             <img
             src='/projects/forecasting/lastPred.png'
             alt='Prediction2'
@@ -97,16 +97,16 @@ export default function TestBlogPost() {
 
         {/** 2. Reviewing Output*/}
         <DynamicAccordion title={`Evaluating the Model Output`} isOpenByDefault={false}>
-          <p className=''>{`With Shapley summaries, we can review the output for patterns (to be tested later).`}</p>
+          <p className=''>{`With Shapley summaries, we can review the output for patterns.`}</p>
           <img
             src='/projects/forecasting/shapFinal.png'
             alt='ShapleySummary'
             className="w-full h-auto object-cover cursor-pointer rounded-md border border-black"
             title="ShapleySummary"
             />
-          <p className='text-xs text-neutral-500'>{`Each dot is an Opportunity.  Dots to the Left on the chart are less likely to close.  Red vs Blue indicates high/low values for the metric.  Categorical features like UseCase were manually encoded as shown below.`}</p>
+          <p className='text-xs text-neutral-500'>{`Each dot is an Opportunity.  Dots to the Left on the chart are less likely to close.  Red vs Blue indicates high/low values for the metric (ie: $33k ACV = red, $20k = blue).  Categorical features like UseCase were manually encoded as shown below.`}</p>
         <p className="">{`We can see (1) deals that take longer than average are much more likely to be Lost, and (2) At first glance ACV seems a bit unrelated, but I know Use Cases are related to ACV and we seem to have a problem with high-value Use Cases.`}</p>  
-        <p className="">{`UseCases that correlate with higher ACVs are encoded to be higher in "Feature Value".  So the red dots in UseCase are higher ACV customers, suggesting the high-ACV accounts we're closing may be closely tied to the success with higher discounts.`}</p>
+        <p className="">{`UseCases that correlate with higher ACVs are encoded to be higher in "Feature Value".  So the red dots in UseCase are higher ACV customers, suggesting the high-value accounts we're closing may be closely tied to the success seen with higher discounts.`}</p>
         <img
             src='/projects/forecasting/manualEncoding.png'
             alt='titlepic'
@@ -127,7 +127,7 @@ export default function TestBlogPost() {
             title="Linear Forecast"
             />
           <p className="text-xs text-neutral-500">{`I used the Average Since April instead of the 35% because April was a clear anomaly.`}</p>
-          <p className="">{`That said, if we have validated and feel comfortable about the challenges presented by our model, we can boost our target to 6.5% monthly growth instead of 6% ($1.8m ending ARR). That would only be an extra $100k, or about 4-5 extra deals closing across the whole year.`}</p>
+          <p className="">{`That said, if we have validated and feel comfortable about the challenges presented by our model, we can boost our target to 6.5% monthly growth instead of 6% ($1.8m ending ARR), or higher if we're in hypergrowth and investing in growth. At 6.5%, it would only be an extra $100k, or about 4-5 extra deals closing across the whole year.`}</p>
           <div className='flex justify-center'>
           <img
             src='/projects/forecasting/growth.png'
