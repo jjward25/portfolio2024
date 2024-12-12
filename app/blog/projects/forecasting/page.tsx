@@ -90,9 +90,9 @@ export default function TestBlogPost() {
             className="w-full h-auto object-cover cursor-pointer rounded-md border border-black"
             title="Prediction2"
             />
-            <p className=''>{`To account for this, we test several changes.  We create custom features (like is the decision maker a 'Champion'), remove some features, and tune the model.`}</p>
-            <p className=''>{`The big adjustment here was using SMOTE to create duplicative "Won" opportunities to help balance the dataset.  Along with removing some redundant features (UseCases are directly tied to ACV here), this got us to about 60% correct for both Won and Lost.`}</p>
-            <p className=''>{`Normally we would refine this further but we would also have more data, so we'll take this and move on with the Sales Forecasting Process.`}</p>
+            <p className=''>{`To account for this, we test several changes.  We create custom features, remove some features, and tune the model.`}</p>
+            <p className=''>{`The big adjustment was using SMOTE to create duplicative "Won" opportunities to balance the dataset. SMOTE creates new, fake examples that are similar to existing minority examples (ie: Closed Won Opps). This risks over-fitting the model based on limited examples that may not represent reality if we had more data, so here's where I might recommend having multiple models to evaluate over time.`}</p>
+            <p className=''>{`Along with removing some redundant features (UseCases are directly tied to ACV here), this got us to about 60% correct for both Won and Lost. Normally we would refine this further but we would also have more data, so we'll take this and move on with the Sales Forecasting Process.`}</p>
         </DynamicAccordion>
 
         {/** 2. Reviewing Output*/}
