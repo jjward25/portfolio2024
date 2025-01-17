@@ -257,7 +257,7 @@ export default function Timeline() {
                 <div className="z-50 absolute m-auto mt-[20px] left-0 right-0 w-[450px] min-h-10 group-hover:h-[325px] bg-white border-2 border-black py-3 px-6 rounded-lg pointer-events-none opacity-0 transition-opacity group-hover:opacity-100 text-sm">
                 <h3 className='mb-2'>Vercel: GTM Analytics</h3>
                 <div className='mt-3 mb-3 h-0.5 w-full bg-gradient-to-r from-amber-200 to-white'/>
-                        <p className='text-xs'>When our Director of RevOps left I inherited her team, with a mandate to provide analytics and strategic support to the field.</p>
+                        <p className='text-xs'>Manage a team of 3 analysts, with a mandate to provide analytics and strategic support to the GTM field teams.</p>
                         <div className='w-4 h-[1px] my-2 bg-black m-auto'/>
                         <li className='mt-2 text-xs'>Built base views for partners (Sales, CS, Marketing) before expanding to views for experiments, campaigns, lead conversions...</li>
                         <li className='mt-2 text-xs'>{`Pricing Analyses: Single-product forecasts and a deep-dive for full pricing revamp (April 2024), IDing how many and who would see increases/decreases and helping field teams plan accordingly.`}</li>
