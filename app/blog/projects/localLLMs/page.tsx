@@ -53,7 +53,7 @@ const Papp = () => {
             </p> 
 
           <p className="text-neutral-500 text-sm mb-0">In the video below you'll see two basic chatbots:</p>
-          <ol className="text-neutral-500 text-sm my-0"> 
+          <ol className="text-neutral-500 text-sm my-0 mt-2"> 
             <li>A personal assistant that can help you with your tasks and schedule, and answer general questions.</li>
             <li>Specialty bots that save entire chat histories and retain context across spanish lessons, therapy sessions, meal preps and more.</li>
           </ol>
@@ -68,8 +68,8 @@ const Papp = () => {
 
 
         <p className="text-neutral-500 text-sm mt-2 mb-0">{`The personal assistant has more complex CRUD commands that can be triggered by specific phrases.  These alert the agent to update the task.txt file to create/complete/add/delete tasks.  The other chatbots bulk save conversations to 'Memory' when you complete a session ('cmd quit').`}</p>
-        <p className="text-neutral-500 text-sm mt-2 mb-0">{`This setup can work with any model downloaded from Ollama that your set up is able to run.  In the video below I am running these on an HP laptop with no GPU using Mistral.`}</p>
-        <p className="text-neutral-500 text-sm mt-2 mb-0">{`If you need additional speed, you adjust this to send your requests to a remote API like OpenAI or Anthropic.  You can also limit how many past conversations are kept in memory.`}</p>
+        <p className="text-neutral-500 text-sm mt-4 mb-0">{`This setup can work with any model downloaded from Ollama that your set up is able to run.  In the video below I am running these on an HP laptop with no GPU using Mistral.`}</p>
+        <p className="text-neutral-500 text-sm mt-4 mb-0">{`If you need additional speed, you adjust this to send your requests to a remote API like OpenAI or Anthropic.  You can also limit how many past conversations are kept in memory.`}</p>
 
         <div className="flex flex-col">
 
