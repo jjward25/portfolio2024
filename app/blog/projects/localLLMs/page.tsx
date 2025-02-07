@@ -68,7 +68,7 @@ const Papp = () => {
 
 
         <p className="text-neutral-500 text-sm mt-2 mb-0">{`The personal assistant has more complex CRUD commands that can be triggered by specific phrases.  These alert the agent to update the task.txt file to create/complete/add/delete tasks.  The other chatbots bulk save conversations to 'Memory' when you complete a session ('cmd quit').`}</p>
-        <p className="text-neutral-500 text-sm mt-4 mb-0">{`This setup can work with any model downloaded from Ollama that your set up is able to run.  In the video below I am running these on an HP laptop with no GPU using Mistral.`}</p>
+        <p className="text-neutral-500 text-sm mt-4 mb-0">{`This style of script can work with any model downloaded from Ollama as long as your computer can run it.  In the video below I am running these on an HP laptop with no GPU using Mistral.`}</p>
         <p className="text-neutral-500 text-sm mt-4 mb-0">{`If you need additional speed, you adjust this to send your requests to a remote API like OpenAI or Anthropic.  You can also limit how many past conversations are kept in memory.`}</p>
 
         <div className="flex flex-col">
