@@ -8,12 +8,13 @@ export default function Accordion({ title, children, isOpenByDefault = false }) 
   const toggleAccordion = () => setIsOpen(!isOpen);
 
   return (
-    <div className="mb-8">
+    <div className="mb-4">
       <button
         onClick={toggleAccordion}
-        className="flex justify-between items-center w-full text-left px-2 py-1 drop-shadow-lg dark:bg-neutral-800 rounded-xl  ring-1 ring-black  hover:ring-1 md:hover:ring-cyan-700 transition-colors"
+        className="flex justify-between items-center w-full text-left px-4 drop-shadow-lg dark:bg-neutral-800 rounded-xl  ring-1 ring-black md:ring-0  md:hover:ring-1 md:hover:ring-black transition-colors"
       >
-        <span className="text-xl text-black dark:text-white">{title}</span>
+      <h1 className="font-medium text-xl mb-2 mt-2 tracking-tighter text-black dark:text-white">
+                {title}</h1>
         <motion.svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
@@ -34,7 +35,7 @@ export default function Accordion({ title, children, isOpenByDefault = false }) 
         transition={{ duration: 0.3, ease: 'easeInOut' }}
         className="overflow-hidden"
       >
-        <div className="px-4 text-black dark:text-white">{children}</div>
+        <div className="p-4 pt-2 text-black dark:text-white">{children}</div>
       </motion.div>
     </div>
   );

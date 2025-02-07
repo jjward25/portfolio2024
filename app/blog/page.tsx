@@ -1,9 +1,9 @@
 import Link from 'next/link';
 import dynamic from 'next/dynamic';
-import ProjectCarousel from './carousel';
+import ProjectCarousel from '../components/carousel/carousel';
 
-const DynamicAccordion = dynamic(() => import('../components/accordion'), { ssr: false });
-const DynamicAccordionNested = dynamic(() => import('../components/accordionNested'), { ssr: false });
+const DynamicAccordion = dynamic(() => import('../components/accordions/accordion'), { ssr: false });
+const DynamicAccordionNested = dynamic(() => import('../components/accordions/accordionNested'), { ssr: false });
 
 export const metadata = {
   title: 'Blog',

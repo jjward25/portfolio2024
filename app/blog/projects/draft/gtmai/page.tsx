@@ -1,6 +1,6 @@
 import dynamic from 'next/dynamic';
 import Link from 'next/link';
-const DynamicAccordion = dynamic(() => import('../../../components/accordionAlt'), { ssr: false });
+const DynamicAccordion = dynamic(() => import('../../../../components/accordions/accordionAlt'), { ssr: false });
 
 function formatDate(date) {
       
@@ -37,7 +37,7 @@ function formatDate(date) {
 
 export default function TestBlogPost() {
 
-  let postDate = '2024-11-08'
+  let postDate = '2024-10-31'
 
   return (
     <section>
@@ -50,16 +50,15 @@ export default function TestBlogPost() {
 
       <article className="prose prose-quoteless prose-neutral dark:prose-invert">
         {/** Title */}
-        <h1 className="font-bold mb-8">Go-to-Market Strategy: Identifying and Focusing on the Right Relationships</h1>
+        <h1 className="font-bold mb-8">Go-to-Market Strategy: Growth via ICPs</h1>
         <img
             src='/articles/gtm/bizplan.png'
             alt='titlepic'
             className="w-full h-auto object-cover cursor-pointer rounded-md"
             title="titlepic"
             />
-        <p className="">{`In a high-paced environment, keeping the Same Team energy helps keep a hot motor running.`}</p>
-        <p className="mb-8">{`The model below reflects a way of thinking about GTM strategy in a way that lends itself towards collaboration betweem teams.`}</p>
-        <p className="mb-8">{`Focusing collaboration and friction points around the same, shared areas of the business helps alleviate some finger pointing; I also think it's a helpful way to think about the business.`}</p>
+        <p className="">{`The sum is greater than the parts -from Product through Customer Success (and even Finance and Ops), how we collaborate can make or break a growing company. That said, each team of course has its own core functions to hone...`}</p>
+        <p className="mb-8">{`How do we set everyone up for success? Collaboration happens in many ways, but this post focuses on collaboration around ICP profiles, and how strong processes around ICPs can supercharge RevOPs.`}</p>
         
         {/** Marketing */}
         <DynamicAccordion title={`Marketing // Growth`} isOpenByDefault={false}>
@@ -68,6 +67,8 @@ export default function TestBlogPost() {
           <p className="">{`The collaboration metrics are the bulk of pipeline calls and cross-functional discussion, with the core functions serving as a bulwark for trust in each team.`}</p>
           <p className="">{`For example - "Pipeline is pacing slightly below target but we're still strong in this high CVR channel, and seeing a higher volume of leads from our new campaign that we'll be nurturing to MQL and getting SDR feedback (Qualification) on in the coming weeks."`}</p>
         </DynamicAccordion>
+
+        <div className="w-1/4 mb-8 mx-auto h-0.5 bg-black"/>
 
         {/** Sales */}
         <DynamicAccordion title={`Sales // Sales Development`} isOpenByDefault={false}>
@@ -82,6 +83,8 @@ export default function TestBlogPost() {
           <p className="">{`So SDRs provide golden context, letting us know if a lead looked like an ICP, but after enrichment we see this DQing factor.. Or after a call they ID this other factor we didn't think of that Marketing can now use to exclude leads from their campaigns.`}</p>
           <p className="">{`If all goes well to this point, our AEs just need to be consistent, prioritize, and close.  They know our prospects' value props and how to nurture their leads.`}</p>
         </DynamicAccordion>
+
+        <div className="w-1/4 mb-8 mx-auto h-0.5 bg-black"/>
 
         {/** Customer Success */}
         <DynamicAccordion title={`Customer Success`} isOpenByDefault={false}>

@@ -5,10 +5,7 @@ import Link from 'next/link';
 const navItems = {
   '/': {
     name: 'home',
-  },
-  '/blog': {
-    name: 'posts',
-  },
+  }
 };
 
 export function Navbar() {

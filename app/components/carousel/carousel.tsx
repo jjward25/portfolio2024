@@ -1,6 +1,7 @@
 "use client"
 import React, { useRef } from 'react';
-import PrjBoxScroll from "../components/carousel/prjBoxScroll";
+import PrjBoxScroll from "./prjBoxScroll";
+import PrjBox from "./prjBox";
 
 export const metadata = {
   title: 'Projects',
@@ -24,10 +25,10 @@ export default function ProjectCarousel() {
 
   return (
     <section>
-      <div className="relative flex flex-col bg-black md:rounded-xl -mx-6 md:-mx-[62px] md:px-10 px-8 pt-6 pb-3 ">
+      <div className="relative flex flex-col md:rounded-xl -mx-6 md:px-10 px-8 pt-3 ">
         {/** Left Scroll Button */}
         <button
-          className="absolute left-0 md:ml-1 top-1/2 transform -translate-y-1/2 md:bg-gray-800 hover:text-yellow-200 text-cyan-700 p-2 h-16 w-8 rounded-l-full transition"
+          className="absolute left-0 md:ml-1 top-1/2 transform -translate-y-1/2  hover:text-yellow-200 text-cyan-700 p-2 h-16 w-8 rounded-l-full transition"
           onClick={scrollLeft}
           style={{
             borderTopRightRadius: "0",
@@ -36,7 +37,7 @@ export default function ProjectCarousel() {
         >
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        width="12"
+        width="18"
         height="48" // Further increased height
         fill="none"
         stroke="currentColor"
@@ -45,12 +46,28 @@ export default function ProjectCarousel() {
         strokeLinejoin="round"
         className="feather feather-chevron-left"
       >
-        <polyline points="12 46 4 24 12 2" /> // Adjusted points for even taller chevron
+        <polyline points="16 46 4 24 16 2" /> 
       </svg>
         </button>
 
         {/** Project Container */}
         <div ref={carouselRef} className="flex flex-row text-black gap-4 overflow-auto md:pb-5 mb-1">
+
+         {/** Project: Local LLMs */}
+         <PrjBox
+            title="Local Chatbots with Memory"
+            description="Simple, single-file python scripts for command-line chatbots with memory."
+            imageUrl={
+              "/projects/localLLMs/dualLLMs.png"
+              
+            }
+            skills={[{ url: "/skill/python.png", title: "Python" },
+              { url: "/skill/ollama.png", title: "Ollama" },
+              { url: "/skill/huggingface.png", title: "HuggingFace" }
+            ]}
+            link="/blog/projects/localLLMs"
+          />
+
 
           {/** Project: Sales Forecasting */}
           <PrjBoxScroll
@@ -152,7 +169,7 @@ export default function ProjectCarousel() {
 
         {/** Right Scroll Button */}
         <button
-          className="absolute md:mr-1 right-0 top-1/2 transform -translate-y-1/2 md:bg-gray-800 hover:text-yellow-200 text-cyan-700 p-2 h-16 w-8 rounded-r-full transition"
+          className="absolute md:mr-1 right-0 top-1/2 transform -translate-y-1/2  hover:text-yellow-200 text-cyan-700 p-2 h-16 w-8 rounded-r-full transition"
           onClick={scrollRight}
           style={{
             borderTopLeftRadius: "0",
@@ -161,7 +178,7 @@ export default function ProjectCarousel() {
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="12" // Width remains the same
+            width="18" // Width remains the same
             height="48" // Height set to 48
             fill="none"
             stroke="currentColor"
@@ -170,7 +187,7 @@ export default function ProjectCarousel() {
             strokeLinejoin="round"
             className="feather feather-chevron-right"
           >
-            <polyline points="0 2 8 24 0 46" /> // Adjusted points to match proportions
+            <polyline points="0 2 12 24 0 46" /> 
           </svg>
         </button>
 

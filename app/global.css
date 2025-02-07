@@ -74,7 +74,7 @@ html {
 .prose pre code {
   @apply p-0;
   border: initial;
-  line-height: 1.5;
+  line-height: 1;
 }
 
 .prose code span {
@@ -98,8 +98,8 @@ h4 {
 
 .prose > :first-child {
   /* Override removing top margin, causing layout shift */
-  margin-top: 1.25em !important;
-  margin-bottom: 1.25em !important;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
 }
 
 pre::-webkit-scrollbar {
@@ -164,7 +164,7 @@ table {
       /* width */
       ::-webkit-scrollbar {
         width: 2px;
-        height: 4px;
+        height: 0px;
       }
 
       /* Track */

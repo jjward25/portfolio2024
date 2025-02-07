@@ -34,12 +34,12 @@ const PrjBoxScroll: React.FC<CardProps> = ({ title, description, imageUrls, skil
         alt={title}
         className="absolute inset-0 w-full h-full object-cover transition-opacity duration-500"
       />
-      <a href={link} >
+      <a href={link} target="_blank">
       <div className="relative w-[310px] h-[300px] md:w-[350px] md:h-[250px] z-10 px-10 pt-0 bg-gradient-to-b from-transparent to-black bg-opacity-70 text-white">
         <div className='h-1/4'/>
         <h2 className="text-xl font-bold">{title}</h2>
         <p className="mt-2 text-sm">{description}</p>
-        <div className='mt-4 flex flex-row justify-evenly hover:bg-yellow-800 hover:rounded-xl hover:bg-opacity-70'>
+        <div className='mt-4 flex flex-row justify-evenly hover:bg-cyan-800 py-1 hover:rounded-xl hover:bg-opacity-70'>
           {skills.map((skill, index) => (
             <img
               key={index}

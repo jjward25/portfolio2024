@@ -1,10 +1,14 @@
 import TimelineDesktop from './components/timeline/timelineDesktop';
 import TimelineMobile from './components/timeline/timelineMobile';
+import ProjectCarousel from './components/carousel/carousel';
+import DynamicAccordion from './components/accordions/accordion';
+import Link from 'next/link';
 
 export const metadata = {
   title: 'Joe Ward | Home',
   description: 'Read my thoughts on operational efficiency, business analytics, and more.',
 };
+
 
 export default function Page() {
   return (
@@ -79,6 +83,7 @@ export default function Page() {
         </div>
       </div>
 
+      {/* Timeline */}
       <div className='hidden md:block md:w-full md:max-w-full'>
         <TimelineDesktop/>
       </div>
@@ -86,7 +91,29 @@ export default function Page() {
         <TimelineMobile/>
       </div>
 
-      <div className='block w-full md:h-96 bg-white'></div>
+      {/* Links & Samples */}
+      <div className='flex flex-col'>
+        <div className='mt-3 mb-1 h-0.5 w-full bg-gradient-to-r from-amber-200 via-neutral-200 to-cyan-950'/>
+        <h1 className="font-medium text-xl mt-3 mb-1 tracking-tighter text-black dark:text-white">
+          Links & Samples
+        </h1>
+
+        {/* Badges */}
+        <div className='flex flex-col'>
+          {/* Carousel */}
+          <ProjectCarousel />
+        </div>
+
+        {/* Business Articles Accordion */}
+        <div className='mt-1 mb-3 h-0.5 w-full  bg-gradient-to-l from-amber-200 via-neutral-200 to-cyan-950'/>
+        <DynamicAccordion title="Other Content" isOpenByDefault={false}>
+          <li><Link target="_blank" href="https://medium.com/cultural-commentary/strategic-resiliency-in-large-corporations-6003c35f98f6" className="cursor-pointer hover:text-yellow-600 text-sm md:text-md">Strategic Resiliency in Large Corporations</Link></li>
+          <li><Link target="_blank" href="https://medium.com/cultural-commentary/continuous-improvement-via-operational-awareness-dc0278ff9923" className="cursor-pointer hover:text-yellow-600 text-sm md:text-md">Continuous Improvement via Operational Awareness</Link></li>
+          <li><Link target="_blank" href="https://medium.com/cultural-commentary/the-biggest-question-in-crypto-whats-the-right-multiplier-932254d1f39c" className="cursor-pointer hover:text-yellow-600 text-sm md:text-md">Crypto: What's it worth?</Link></li>
+          <li><Link target="_blank" href="https://medium.com/cultural-commentary/the-important-differences-between-idos-and-ipos-680f1f85900a" className="cursor-pointer hover:text-yellow-600 text-sm md:text-md">The Important Difference Between IDOs and IPOs</Link></li>
+          <li><Link target="_blank" href="https://medium.com/cultural-commentary/the-impact-of-impact-investing-86feafb14266" className="cursor-pointer hover:text-yellow-600 text-sm md:text-md">The Impact of Impact Investing</Link></li>
+        </DynamicAccordion>
+        </div>
 
     </section>
   );
