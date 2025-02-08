@@ -53,7 +53,7 @@ export default function ProjectCarousel() {
         {/** Project Container */}
         <div ref={carouselRef} className="flex flex-row text-black gap-4 overflow-auto md:pb-5 mb-1">
 
-         {/** Project: Local LLMs */}
+         {/** Project: Local LLMs 
          <PrjBox
             title="Local Chatbots with Memory"
             description="Simple, single-file python scripts for command-line chatbots with memory."
@@ -67,7 +67,7 @@ export default function ProjectCarousel() {
             ]}
             link="/blog/projects/localLLMs"
           />
-
+        */}
 
           {/** Project: Sales Forecasting */}
           <PrjBoxScroll
