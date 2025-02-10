@@ -163,7 +163,7 @@ export default function ProjectCarousel() {
               { url: "/skill/nextjs.png", title: "NextJS" },
               { url: "/skill/aws.png", title: "AWS" },
             ]}
-            link="https://www.topictournaments.com/"
+            link="https://topictourny.vercel.app/"
           />
         </div>
 
