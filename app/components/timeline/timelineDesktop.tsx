@@ -115,11 +115,11 @@ export default function Timeline() {
                   <div className="z-50 absolute m-auto mt-[20px] left-0 right-0 w-[450px] min-h-10 group-hover:h-[325px] bg-white border-2 border-black py-3 px-6 rounded-lg pointer-events-none opacity-0 transition-opacity group-hover:opacity-100 text-sm">
                     <h3 className='mb-2'>TD Ameritrade Procurement</h3>
                     <div className='mt-3 mb-3 h-0.5 w-full bg-gradient-to-r from-amber-200 to-white'/>
-                    <p className='text-xs'>After two years in the Project Management office, I opted to help my old manager build up their Procurement ops over re-joining the Lean team.</p>
+                    <p className='text-xs'>Next, I opted to help my old manager build up TDA's Procurement operations over re-joining the Lean team.</p>
                     <div className='w-4 h-[1px] my-2 bg-black m-auto'/>
-                    <li className='mt-2 text-xs'>PMed the development of an internal webapp where anyone could submit new vendor requests. This created total visibility and automated data capture for us and our partners (including RFP status, risk scoring, cycle times by stage), and removed <b className='text-green-700'>multiple hours</b> of weekly admin times for all Category Managers (~40) and partner Risk teams.</li>
-                    <li className='mt-2 text-xs'>{`As PM, worked with risk and legal teams and other relevant partners to carve out PO-only exceptions (no MSA for specific cases like Facilities emergencies), create new self-serve Catalogues, and make other policy updates.
-                    Overall, reduced administrative weight of ~10% of purchases and `}<b className='text-green-700'>$120m</b>{` in spend `}<b className='text-green-700'>by up to 100%</b>{`, allowing the team to spend more time on Strategic Sourcing opportunities.`}</li>
+                    <li className='mt-2 text-xs'>PMed the development and release of an internal app where anyone globally could submit new vendor requests. This created <b className='text-green-700'>total process visibility</b>, automating data capture for us and our partners (including RFP status, risk scoring, contract value, cycle times by stage) that used to be manually tracked in Sharepoint or not tracked at all, and saving <b className='text-green-700'> hours</b> of weekly admin time for Category Managers (~40) and partners.</li>
+                    <li className='mt-2 text-xs'>{`Led Spend Channel Optimization, working with risk, legal and other relevant partners to carve out PO-only exceptions (no MSA for specific cases like Facilities emergencies), create new self-serve Catalogues, and make other global purchase policy updates.
+                    Overall, reduced CM work on ~10% of purchases and `}<b className='text-green-700'>$120m</b>{` in spend `}<b className='text-green-700'>by up to 100%</b>{`, allowing the team to spend more time on Strategic Sourcing.`}</li>
                   </div>
                 </div>
             </div>
@@ -170,15 +170,15 @@ export default function Timeline() {
                     className="group border-2 border-yellow-200 duration-300 w-7 h-7 mt-1 mb-3 mx-auto rounded-2xl object-cover hover:scale-125 transition-all ease-in-out "
                 />
                 <div className='z-40 absolute bg-white opacity-0 transition-opacity group-hover:opacity-100 bg-opacity-30 backdrop-blur-md drop-shadow-sm w-full left-0 h-0 group-hover:h-[350px]'>
-                <div className="z-50 absolute m-auto mt-[20px] left-0 right-0 w-[450px] min-h-10 group-hover:h-[325px] bg-white border-2 border-black py-3 px-6 rounded-lg pointer-events-none opacity-0 transition-opacity group-hover:opacity-100 text-sm">
-                <h3 className='mb-2'>Charles Schwab Procurement</h3>
-                <div className='mt-3 mb-3 h-0.5 w-full bg-gradient-to-r from-amber-200 to-white'/>
-                        <p className='text-xs'>Schwab bought TD Ameritrade, and - after helping with regulatory reporting for the merger, identifying contract redundancies, and setting up the newly combined reporting environment - I began learning to code and looking for roles.</p>
-                        <div className='w-4 h-[1px] my-2 bg-black m-auto'/>
-                        <li className='mt-2 text-xs'>Handled all procurement-related regulatory reporting, providing the SEC and others reports to assess conflicts of interest, etc.</li>
-                        <li className='mt-2 text-xs'>Partner for Vendor synergies analysis and strategy - identifying contractual overlap and obligations, and options for which contracts to renegotiate, terminate, or otherwise prioritize for renewal.</li>
-                        <li className='mt-2 text-xs'>Automated combined Schwab+TDA procurement reporting with Alteryx.</li>
-                    </div>
+                  <div className="z-50 absolute m-auto mt-[20px] left-0 right-0 w-[450px] min-h-10 group-hover:h-[325px] bg-white border-2 border-black py-3 px-6 rounded-lg pointer-events-none opacity-0 transition-opacity group-hover:opacity-100 text-sm">
+                    <h3 className='mb-2'>Charles Schwab Procurement</h3>
+                    <div className='mt-3 mb-3 h-0.5 w-full bg-gradient-to-r from-amber-200 to-white'/>
+                    <p className='text-xs'>Schwab bought TD Ameritrade, and - after helping the procurement department transition through the two-year merger - I raised my hand for severance and began looking for opportunities with less regulatory red tape.</p>
+                    <div className='w-4 h-[1px] my-2 bg-black m-auto'/>
+                    <li className='mt-2 text-xs'>Handled all procurement-related regulatory reporting, providing the SEC and others with reports to assess conflicts of interest, etc.</li>
+                    <li className='mt-2 text-xs'>Partner for Vendor synergies analysis - identifying contractual overlap and obligations, and options for which contracts to renegotiate, terminate, or otherwise prioritize for renewal.</li>
+                    <li className='mt-2 text-xs'>Automated combined Schwab+TDA procurement reporting with Alteryx.</li>
+                  </div>
                 </div>
             </div>
           </div>
@@ -217,14 +217,15 @@ export default function Timeline() {
                     className="group border-2 border-yellow-200 duration-300 h-7 w-7 mt-1 mb-3 mx-auto rounded-2xl object-cover hover:scale-125 transition-all ease-in-out "
                 />
                 <div className='z-40 absolute bg-white opacity-0 transition-opacity group-hover:opacity-100 bg-opacity-30 backdrop-blur-md drop-shadow-sm w-full left-0 h-0 group-hover:h-[350px]'>
-                <div className="z-50 absolute m-auto mt-[20px] left-0 right-0 w-[450px] min-h-10 group-hover:h-[325px] bg-white border-2 border-black py-3 px-6 rounded-lg pointer-events-none opacity-0 transition-opacity group-hover:opacity-100 text-sm">
+                <div className="z-50 absolute m-auto mt-[20px] left-0 right-0 w-[450px] min-h-10 group-hover:h-[365px] bg-white border-2 border-black py-3 px-6 rounded-lg pointer-events-none opacity-0 transition-opacity group-hover:opacity-100 text-sm">
                 <h3 className='mb-2'>Vercel: CS Ops</h3>
                 <div className='mt-3 mb-3 h-0.5 w-full bg-gradient-to-r from-amber-200 to-white'/>
-                        <p className='text-xs'>{`After the Schwab transition was complete, I moved to Vercel, which I had been using to learn to code (and use to host this website).`}</p>
+                        <p className='text-xs'>{`After the Schwab transition was complete, I moved to Vercel, which I had been using to learn to code (and currently use to host this website).`}</p>
                         <div className='w-4 h-[1px] my-2 bg-black m-auto'/>
-                        <li className='mt-2 text-xs'>Led CSM migration to Salesforce - Design, testing, enablement, and post-launch monitoring.</li>
-                        <li className='mt-2 text-xs'>Designed and enabled new Renewals processto solve for high-volume of late renewals.</li>
-                        <li className='mt-2 text-xs'>Solved for long-standing lack of data by getting Snowflake + DBT access and creating views for AEs and CSMs to understand how a customer is using our product, see if they're on pace for overages, and understand their broader portfolios better as well.</li>
+                        <li className='mt-2 text-xs'>{`Led CSM migration to Salesforce - Design, testing, enablement, migration in 30 days (+ post-launch monitoring)`}.</li>
+                        <li className='mt-2 text-xs'>Designed and enabled new Renewals process to solve for high-volume of late renewals.</li>
+                        <li className='mt-2 text-xs'>Designed and enabled new Customer Tiering to make CS operations scalable.</li>
+                        <li className='mt-2 text-xs'>Solved for a long-standing lack of product-usage data by getting Snowflake + DBT access, and personally creating a schema and end-user views for AEs, CSMs and Executives to better understand customer account usage, see who's on pace for overages or not using what they bought, and generally understand our accounts and product better.</li>
                         <li className='mt-2 text-xs'>Platform admin for Salesforce, Gong, Fivetran.</li>
                     </div>
                 </div>
