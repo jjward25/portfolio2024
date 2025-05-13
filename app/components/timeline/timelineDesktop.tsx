@@ -255,15 +255,20 @@ export default function Timeline() {
                     className="group border-2 border-yellow-200 duration-300 h-7 w-7 mt-1 mb-3 mx-auto rounded-2xl object-cover hover:scale-125 transition-all ease-in-out "
                 />
                 <div className='z-40 absolute bg-white opacity-0 transition-opacity group-hover:opacity-100 bg-opacity-30 backdrop-blur-md drop-shadow-sm w-full left-0 h-0 group-hover:h-[350px]'>
-                <div className="z-50 absolute m-auto mt-[20px] left-0 right-0 w-[450px] min-h-10 group-hover:h-[325px] bg-white border-2 border-black py-3 px-6 rounded-lg pointer-events-none opacity-0 transition-opacity group-hover:opacity-100 text-sm">
+                <div className="z-50 absolute m-auto mt-[20px] left-0 right-0 w-[450px] min-h-10 group-hover:h-[400px] bg-white border-2 border-black py-3 px-6 rounded-lg pointer-events-none opacity-0 transition-opacity group-hover:opacity-100 text-sm">
                 <h3 className='mb-2'>Vercel: GTM Analytics</h3>
                 <div className='mt-3 mb-3 h-0.5 w-full bg-gradient-to-r from-amber-200 to-white'/>
                         <p className='text-xs'>Manage a team of 3 analysts, with a mandate to provide analytics and strategic support to the GTM field teams.</p>
                         <div className='w-4 h-[1px] my-2 bg-black m-auto'/>
-                        <li className='mt-2 text-xs'>Built base views for partners (Sales, CS, Marketing) before expanding to views for experiments, campaigns, lead conversions...</li>
+                        <li className='mt-2 text-xs'>Built base views for partners before expanding to views for experiments, lead scoring, new product monitoring and more.</li>
+                        
+                        <p className='mt-2 text-xs pl-5'>Marketing (lead conversion, site traffic)</p>
+                        <p className='mt-2 text-xs pl-5'>Sales (win rates, activities, lead lists)</p>
+                        <p className='mt-2 text-xs pl-5'>CS (health scoring, ticket analysis)</p>
+
                         <li className='mt-2 text-xs'>{`Pricing Analyses: Single-product forecasts and a deep-dive for full pricing revamp (April 2024), IDing how many and who would see increases/decreases and helping field teams plan accordingly.`}</li>
-                        <li className='mt-2 text-xs'>Developed logic to ID customer production launches with ~80% accuracy; used Koala and other tools to tweak Lead scoring and partnered with Marketing + SDRs on new Lead Attribution model.</li>
-                        <li className='mt-2 text-xs'>Support needs for Board calls, quarterly planning, pipeline reviews, and regularly present findings to teams.</li>
+                        <li className='mt-2 text-xs'>Developed a model to ID customer production launches for pro-active CS outreach; used Koala and other tools to tweak Lead scoring and partnered with Marketing + SDRs on new Lead Attribution model.</li>
+                        <li className='mt-2 text-xs'>Support needs for Board calls, quarterly planning, pipeline reviews, and regularly present findings to partner teams.</li>
                         
                     </div>
                 </div>
