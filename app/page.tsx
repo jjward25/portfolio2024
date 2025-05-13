@@ -68,13 +68,13 @@ export default function Page() {
         <div className='mt-1 md:mr-3 md:w-2 dark:md:w-1 md:h-vh bg-gradient-to-b from-amber-200 to-neutral-100'> </div>
         <div className='flex flex-wrap'>
           <p className="pb-4 prose prose-invert w-full text-black dark:text-white">
-            {`I'm a creative, detail-oriented, and technical business partner who's worked with teams from small non-profits, to the Fortune 500, to cutting-edge tech companies - helping them implement sustainable ops and get the most from what they have.`} 
+            {`I'm a creative, detail-oriented, and technical business partner who's worked with teams from small non-profits, to the Fortune 500, to cutting-edge tech companies - helping them design and implement scalable operations, and get the most from what they have.`} 
           </p>
           <p className="md:pb-4 prose prose-invert w-full text-black dark:text-white overflow-hidden h-auto">
             {`Together, we can establish ground-level ops `}
             <em className='text-neutral-600'>{`(ex: process mapping; identifying KPIs and leading indicators (and building useful views); defining and enabling SOPs)`}</em>
             {`, or identify and tackle the more complex and tailored Operations improvements needed to hit ever-more challenging targets `}
-            <em className='text-neutral-600'>(ex: Deep-Dives and Forecasting; Tool or Process Evaluation + Migration; or other large projects)</em>{`.`}
+            <em className='text-neutral-600'>(ex: Deep-Dives and Forecasting; Tool or Process Evaluation + Migration; Customer Tiering, or other large projects)</em>{`.`}
           </p>
         
           <p className="pb-4 prose prose-invert w-full text-black dark:text-white">
