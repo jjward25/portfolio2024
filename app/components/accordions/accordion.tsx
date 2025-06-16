@@ -8,12 +8,12 @@ export default function Accordion({ title, children, isOpenByDefault = false }) 
   const toggleAccordion = () => setIsOpen(!isOpen);
 
   return (
-    <div className="mb-4">
+    <div className="mb-2">
       <button
         onClick={toggleAccordion}
-        className="flex justify-between items-center w-full text-left px-4 drop-shadow-lg dark:bg-neutral-800 rounded-xl  ring-1 ring-black md:ring-0  md:hover:ring-1 md:hover:ring-black transition-colors"
+        className="flex justify-between items-center w-full text-left text-black drop-shadow-lg dark:bg-neutral-800 rounded-xl hover:text-cyan-600 transition-colors"
       >
-      <h1 className="font-medium text-xl mb-2 mt-2 tracking-tighter text-black dark:text-white">
+      <h1 className="font-medium text-xl mb-2 mt-2 tracking-tighter  dark:text-white">
                 {title}</h1>
         <motion.svg
           xmlns="http://www.w3.org/2000/svg"

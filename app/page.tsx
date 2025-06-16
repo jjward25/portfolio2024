@@ -91,29 +91,78 @@ export default function Page() {
         <TimelineMobile/>
       </div>
 
+      {/* Projects */}
+      <div className='flex flex-col'>
+        <div className='mt-3 mb-3 h-0.5 w-full bg-gradient-to-r from-amber-200 via-neutral-200 to-cyan-950'/>
+        <h1 className="font-medium text-xl mt-3 mb-1 tracking-tighter text-black dark:text-white">
+          RevOps Related
+        </h1>
+        {/* Forecast Image and Summary */}
+        <div className="flex flex-col items-center my-4">
+          <a href="https://crm-teal-chi.vercel.app/forecast" target="_blank" rel="noopener noreferrer">
+            <img
+              src="/revops/forecast.png"
+              alt="Sales Forecast Dashboard"
+              className="w-full max-w-3xl rounded-lg shadow-lg border border-cyan-700 object-cover transition hover:shadow-2xl hover:scale-150"
+            />
+          </a>
+          <p className="mt-3 text-sm text-black dark:text-white max-w-2xl text-center">
+            <a href="https://crm-teal-chi.vercel.app/forecast" target="_blank" rel="noopener noreferrer"><b className='hover:text-yellow-600 text-cyan-700'>Sales Forecast Dashboard:</b></a> An interactive widget for visualizing the impact of new targets on expected pipeline.
+          </p>
+        </div>
+
+        {/* Account View & CRM Dashboard Images and Summary */}
+        <div className="flex flex-col items-center my-4">
+          <a
+            href="https://crm-teal-chi.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex w-full max-w-3xl gap-2 group"
+          >
+            <img
+              src="/revops/acctView.png"
+              alt="Account View"
+              className="w-1/2 rounded-lg shadow-lg border border-cyan-700 object-cover transition hover:shadow-2xl hover:scale-150"
+              style={{ maxHeight: '320px' }}
+            />
+            <img
+              src="/revops/crmDash.png"
+              alt="CRM Dashboard"
+              className="w-1/2 rounded-lg shadow-lg border border-cyan-700 object-cover transition hover:shadow-2xl hover:scale-150"
+              style={{ maxHeight: '320px' }}
+            />
+          </a>
+          <p className="mt-3 text-sm text-black dark:text-white max-w-2xl text-center">
+            <a
+              href="https://crm-teal-chi.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-yellow-600 text-cyan-700 transition font-bold"
+            >
+              Account & CRM Dashboards:
+            </a>
+            {" "}These views provide actionable insights into account health and CRM activity, enabling teams to quickly identify opportunities, monitor engagement, and drive better outcomes across the sales funnel.
+          </p>
+        </div>
+      </div>
+
       {/* Links & Samples */}
       <div className='flex flex-col'>
-        <div className='mt-3 mb-1 h-0.5 w-full bg-gradient-to-r from-amber-200 via-neutral-200 to-cyan-950'/>
-        <h1 className="font-medium text-xl mt-3 mb-1 tracking-tighter text-black dark:text-white">
-          Links & Samples
-        </h1>
-
-        {/* Badges */}
-        <div className='flex flex-col'>
-          {/* Carousel */}
-          <ProjectCarousel />
-        </div>
-
-        {/* Business Articles Accordion */}
-        <div className='mt-1 mb-3 h-0.5 w-full  bg-gradient-to-l from-amber-200 via-neutral-200 to-cyan-950'/>
-        <DynamicAccordion title="Other Content" isOpenByDefault={false}>
-          <li><Link target="_blank" href="https://medium.com/cultural-commentary/strategic-resiliency-in-large-corporations-6003c35f98f6" className="cursor-pointer hover:text-yellow-600 text-sm md:text-md">Strategic Resiliency in Large Corporations</Link></li>
-          <li><Link target="_blank" href="https://medium.com/cultural-commentary/continuous-improvement-via-operational-awareness-dc0278ff9923" className="cursor-pointer hover:text-yellow-600 text-sm md:text-md">Continuous Improvement via Operational Awareness</Link></li>
-          <li><Link target="_blank" href="https://medium.com/cultural-commentary/the-biggest-question-in-crypto-whats-the-right-multiplier-932254d1f39c" className="cursor-pointer hover:text-yellow-600 text-sm md:text-md">Crypto: What's it worth?</Link></li>
-          <li><Link target="_blank" href="https://medium.com/cultural-commentary/the-important-differences-between-idos-and-ipos-680f1f85900a" className="cursor-pointer hover:text-yellow-600 text-sm md:text-md">The Important Difference Between IDOs and IPOs</Link></li>
-          <li><Link target="_blank" href="https://medium.com/cultural-commentary/the-impact-of-impact-investing-86feafb14266" className="cursor-pointer hover:text-yellow-600 text-sm md:text-md">The Impact of Impact Investing</Link></li>
+        <div className='mt-4 mb-3 h-0.5 w-full bg-gradient-to-r from-amber-200 via-neutral-200 to-cyan-950'/>
+        <DynamicAccordion title="Other Links & Samples" isOpenByDefault={false}>
+          {/* Badges */}
+          <div className='flex flex-col'>
+            {/* Carousel */}
+            <ProjectCarousel />
+          </div>
+        <p className='font-semibold text-md mb-2'>Articles</p>
+        <li><Link target="_blank" href="https://medium.com/cultural-commentary/strategic-resiliency-in-large-corporations-6003c35f98f6" className="cursor-pointer hover:text-yellow-600 text-sm md:text-md">Strategic Resiliency in Large Corporations</Link></li>
+        <li><Link target="_blank" href="https://medium.com/cultural-commentary/continuous-improvement-via-operational-awareness-dc0278ff9923" className="cursor-pointer hover:text-yellow-600 text-sm md:text-md">Continuous Improvement via Operational Awareness</Link></li>
+        <li><Link target="_blank" href="https://medium.com/cultural-commentary/the-biggest-question-in-crypto-whats-the-right-multiplier-932254d1f39c" className="cursor-pointer hover:text-yellow-600 text-sm md:text-md">Crypto: What's it worth?</Link></li>
+        <li><Link target="_blank" href="https://medium.com/cultural-commentary/the-important-differences-between-idos-and-ipos-680f1f85900a" className="cursor-pointer hover:text-yellow-600 text-sm md:text-md">The Important Difference Between IDOs and IPOs</Link></li>
+        <li><Link target="_blank" href="https://medium.com/cultural-commentary/the-impact-of-impact-investing-86feafb14266" className="cursor-pointer hover:text-yellow-600 text-sm md:text-md">The Impact of Impact Investing</Link></li>
         </DynamicAccordion>
-        </div>
+      </div>
 
     </section>
   );
