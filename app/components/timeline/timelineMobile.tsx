@@ -93,9 +93,9 @@ export default function Timeline() {
                         <div className='mt-3 mb-3 h-0.5 w-full bg-gradient-to-r from-amber-200 to-white'/>
                         <p className='text-xs'>As a poli-sci major (aka graduating undecided), TD Ameritrade's rotational program stuck out for the broad exposure it promised.  And I've been building on the tools I learned in this program ever since.</p>
                         <div className='w-4 h-[1px] my-2 bg-black m-auto'/>
-                        <li className='mt-2 text-xs'><b>Lean (Six-Sigma) Consulting: </b>{`Increased Client-facing (call) Time by `}<b className='text-green-700'>~5%</b>{` for national sales branch after analyzing call and response patterns.`}</li>
+                        <li className='mt-2 text-xs'><b>Lean (Six-Sigma) Consulting: </b>{`Increased Client-facing (call) Time by `}<b className='text-green-700'>~5%</b>{` for national sales teams after analyzing call and response patterns and moving coaching/1:1s to lower volume call times (ie: Friday afternoon).`}</li>
                         <li className='mt-2 text-xs'><b>Retail Strategy & Ops: </b>{`Increased Education products' retention by `}<b className='text-green-700'>{`~10%`}</b>{` for new users by IDing correlation between course types and retention. President's Club award.`}</li>
-                        <li className='mt-2 text-xs'><b>Project Portfolio Mgt: </b>{`Converted `}<b className='text-green-700'>100%</b>{` of existing reporting from Sharepoint to a SQL schema I managed; data visualized and auto-refreshed in Tableau. T2 Spot award.`}</li>
+                        <li className='mt-2 text-xs'><b>Project Portfolio Mgt: </b>{`Converted `}<b className='text-green-700'>100%</b>{` of existing reporting from Sharepoint to a SQL schema I managed; visualized data in Tableau. T2 Spot award.`}</li>
                     </div>
                 </div>
             </div>
@@ -152,7 +152,7 @@ export default function Timeline() {
                     <p className='text-xs'>At the time a non-profit called Practice Makes Perfect where I had previously volunteered; I joined as a consultant to help professionalize operations and implement best practices while working towards Educational Equity.</p>
                         <div className='w-4 h-[1px] my-2 bg-black m-auto'/>
                         <li className='mt-2 text-xs'>{`Created Value Stream Maps and KPIs for all roles, which where then used for hiring `}<em>(what aspects are you familiar with, what would you change?)</em>{` and quarterly reviews (for identifying continuous improvement opportunities).`}</li>
-                        <li className='mt-2 text-xs'>{`Swapped payroll providers and led 401k enrollments; Led hiring and onboarding for all new hires; Created annual sales calendar; and otherwise contributed as needed.`}</li>
+                        <li className='mt-2 text-xs'>{`Swapped payroll providers and led 401k enrollments; Led hiring and onboarding for all new hires (8); Created annual sales calendar; and otherwise contributed as needed.`}</li>
                     </div>
                 </div>
             </div>
@@ -185,11 +185,11 @@ export default function Timeline() {
                   <div className={`${isTDA2Open ? 'z-50' : ''} absolute m-auto my-[25px] left-0 right-0 w-[300px] h-[420px] bg-white border-2 border-black p-3 rounded-lg pointer-events-none text-sm`}>
                     <h3 className='mb-2'>TD Ameritrade Procurement</h3>
                     <div className='mt-3 mb-3 h-0.5 w-full bg-gradient-to-r from-amber-200 to-white'/>
-                    <p className='text-xs'>Next, I opted to help my old manager build up TDA's Procurement operations over re-joining the Lean team.</p>
+                    <p className='text-xs'>After 6 months I opted to return to TD Ameritrade to help my old manager build up TDA's Procurement operations.</p>
                       <div className='w-4 h-[1px] my-2 bg-black m-auto'/>
-                      <li className='mt-2 text-xs'>PMed the development and release of an internal app where anyone globally could submit new vendor requests. This created <b className='text-green-700'>total process visibility</b>, automating data capture for us and our partners (including RFP status, risk scoring, contract value, cycle times by stage) that used to be manually tracked in Sharepoint or not tracked at all, and saving <b className='text-green-700'> hours</b> of weekly admin time for Category Managers (~40) and partners.</li>
-                    <li className='mt-2 text-xs'>{`Led Spend Channel Optimization, working with risk, legal and other relevant partners to carve out PO-only exceptions (no MSA for specific cases like Facilities emergencies), create new self-serve Catalogues, and make other global purchase policy updates.
-                    Overall, reduced CM work on ~10% of purchases and `}<b className='text-green-700'>$120m</b>{` in spend `}<b className='text-green-700'>by up to 100%</b>{`, allowing the team to spend more time on Strategic Sourcing.`}</li>
+                      <li className='mt-2 text-xs'>PMed the development of an internal app where anyone could submit and track new vendor requests. This created <b className='text-green-700'>total process visibility</b> by automating data capture for work that used to be manually tracked or not tracked at all (including RFP status, risk scoring, contract value, cycle times by stage, by CM), and saving <b className='text-green-700'> hours</b> of weekly admin time for Category Managers and partners.</li>
+                      <li className='mt-2 text-xs'>{`Led Spend Channel Optimization, working with risk, legal and other relevant partners to carve out PO-only exceptions (no MSA for specific cases like Facilities emergencies), create new self-serve Catalogues, and make other global purchase policy updates.
+                    Overall, reduced CM work on ~10% of purchases and `}<b className='text-green-700'>$120m</b>{` (1%) in spend `}<b className='text-green-700'>by up to 100%</b>{`, allowing the team to spend more time on Strategic Sourcing.`}</li>
                   </div>
                 </div>
             </div>
@@ -248,7 +248,7 @@ export default function Timeline() {
                       <div className='w-4 h-[1px] my-2 bg-black m-auto'/>
                       <li className='mt-2 text-xs'>Handled all procurement-related regulatory reporting, providing the SEC and others with reports to assess conflicts of interest, etc.</li>
                       <li className='mt-2 text-xs'>Partner for Vendor synergies analysis - identifying contractual overlap and obligations, and options for which contracts to renegotiate, terminate, or otherwise prioritize for renewal.</li>
-                      <li className='mt-2 text-xs'>Automated combined Schwab+TDA procurement reporting with Alteryx.</li>
+                      <li className='mt-2 text-xs'>Designed and automated combined Schwab+TDA procurement reporting with Alteryx.</li>
                     </div>
                 </div>
             </div>
@@ -292,12 +292,12 @@ export default function Timeline() {
                 <div className={`${isVercelOpen ? 'z-50' : ''} absolute m-auto my-[25px] left-0 right-0 w-[300px] h-[420px] bg-white border-2 border-black p-3 rounded-lg pointer-events-none text-sm`}>
                 <h3 className='mb-2'>Vercel: CS Ops</h3>
                 <div className='mt-3 mb-3 h-0.5 w-full bg-gradient-to-r from-amber-200 to-white'/>
-                <p className='text-xs'>{`After the Schwab transition was complete, I moved to Vercel, which I had been using to learn to code (and currently use to host this website).`}</p>
-                        <div className='w-4 h-[1px] my-2 bg-black m-auto'/>
-                        <li className='mt-2 text-xs'>{`Led CSM migration to Salesforce - Design, testing, enablement, migration in 30 days (+ post-launch monitoring)`}.</li>
+                <p className='text-xs'>{`After the Schwab transition was complete, I moved to Vercel, which I had been using to learn to code (and currently use to host this website) - to support their Customer Success operations.`}</p>
+                <div className='w-4 h-[1px] my-2 bg-black m-auto'/>
+                        <li className='mt-2 text-xs'>{`Led CSM migration to Salesforce - Design, testing, enablement, migration in 30 days (+ post-launch support and monitoring)`}.</li>
                         <li className='mt-2 text-xs'>Designed and enabled new Renewals process to solve for high-volume of late renewals.</li>
                         <li className='mt-2 text-xs'>Designed and enabled new Customer Tiering to make CS operations scalable.</li>
-                        <li className='mt-2 text-xs'>Solved for a long-standing lack of product-usage data by getting Snowflake + DBT access, and personally creating a schema and end-user views for AEs, CSMs and Executives to better understand customer account usage, see who's on pace for overages or not using what they bought, and generally understand our accounts and product better.</li>
+                        <li className='mt-2 text-xs'>Solved for a long-standing lack of product-usage data by getting Snowflake + DBT access, and personally creating a schema and end-user views for AEs, CSMs and Executives to better understand customer account usage, see who's on pace for overages or not using what they bought, and generally understand our accounts and products better.</li>
                         <li className='mt-2 text-xs'>Platform admin for Salesforce, Gong, Fivetran.</li>
                     </div>
                 </div>
@@ -331,17 +331,13 @@ export default function Timeline() {
                 <div className={`${isVercel2Open ? 'z-50' : ''} absolute m-auto my-[25px] left-0 right-0 w-[300px] h-[490px] bg-white border-2 border-black p-3 rounded-lg pointer-events-none text-sm`}>
                 <h3 className='mb-2'>Vercel: GTM Analytics</h3>
                   <div className='mt-3 mb-3 h-0.5 w-full bg-gradient-to-r from-amber-200 to-white'/>
-                    <p className='text-xs'>Manage a team of 3 analysts, with a mandate to provide analytics and strategic support to the GTM field teams.</p>
-                    <div className='w-4 h-[1px] my-2 bg-black m-auto'/>
-                    <li className='mt-2 text-xs'>Built base views for partners before expanding to views for experiments, lead scoring, new product monitoring and more.</li>
+                  <p className='text-xs'>Inherited a team of 3 analysts, with a mandate to provide analytics and strategic support to the GTM field teams (Marketing, Sales, CS).</p>
+                  <div className='w-4 h-[1px] my-2 bg-black m-auto'/>
+                  <li className='mt-2 text-xs'>Built base views for partners before expanding to support analysis for A/B site experiments, lead scoring and conversions, new product pricing and monitoring, sales activities and territory win rates, account health scoring, and more.</li>
                         
-                        <p className='mt-2 text-xs pl-5'>Marketing (lead conversion, site traffic)</p>
-                        <p className='mt-2 text-xs pl-5'>Sales (win rates, activities, lead lists)</p>
-                        <p className='mt-2 text-xs pl-5'>CS (health scoring, ticket analysis)</p>
-
                         <li className='mt-2 text-xs'>{`Pricing Analyses: Single-product forecasts and a deep-dive for full pricing revamp (April 2024), IDing how many and who would see increases/decreases and helping field teams plan accordingly.`}</li>
                         <li className='mt-2 text-xs'>Developed a model to ID customer production launches for pro-active CS outreach; used Koala and other tools to tweak Lead scoring and partnered with Marketing + SDRs on new Lead Attribution model.</li>
-                        <li className='mt-2 text-xs'>Support needs for Board calls, quarterly planning, pipeline reviews, and regularly present findings to partner teams.</li>
+                        <li className='mt-2 text-xs'>Support needs for Board meetings, quarterly planning, pipeline reviews, and regularly present findings to partner teams.</li>
                   </div>
                 </div>
             </div>
