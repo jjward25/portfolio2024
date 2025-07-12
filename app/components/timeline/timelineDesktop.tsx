@@ -25,7 +25,7 @@ export default function Timeline() {
                         <div className='mt-3 mb-3 h-0.5 w-full bg-gradient-to-r from-amber-200 to-white'/>
                         <p className='text-xs'>As a poli-sci major (aka graduating undecided), TD Ameritrade's rotational program stuck out for the broad exposure it promised.  And I've been building on the tools I learned in this program ever since.</p>
                         <div className='w-4 h-[1px] my-2 bg-black m-auto'/>
-                        <li className='mt-2 text-xs'><b>Lean (Six-Sigma) Consulting: </b>{`Increased Client-facing (call) Time by `}<b className='text-green-700'>~5%</b>{` for national sales teams after analyzing call and response patterns and moving coaching/1:1s to lower volume call times (ie: Friday afternoon).`}</li>
+                        <li className='mt-2 text-xs'><b>Lean (Six-Sigma) Consulting: </b>{`Increased Client-facing (call) Time by `}<b className='text-green-700'>~5%</b>{` for national sales teams after analyzing call and response patterns.`}</li>
                         <li className='mt-2 text-xs'><b>Retail Strategy & Ops: </b>{`Increased Education products' retention by `}<b className='text-green-700'>{`~10%`}</b>{` for new users by IDing correlation between course types and retention. President's Club award.`}</li>
                         <li className='mt-2 text-xs'><b>Project Portfolio Mgt: </b>{`Converted `}<b className='text-green-700'>100%</b>{` of existing reporting from Sharepoint to a SQL schema I managed; visualized data in Tableau. T2 Spot award.`}</li>
                     </div>
@@ -119,7 +119,7 @@ export default function Timeline() {
                     <div className='w-4 h-[1px] my-2 bg-black m-auto'/>
                     <li className='mt-2 text-xs'>PMed the development of an internal app where anyone could submit and track new vendor requests. This created <b className='text-green-700'>total process visibility</b> by automating data capture for work that used to be manually tracked or not tracked at all (including RFP status, risk scoring, contract value, cycle times by stage, by CM), and saving <b className='text-green-700'> hours</b> of weekly admin time for Category Managers and partners.</li>
                     <li className='mt-2 text-xs'>{`Led Spend Channel Optimization, working with risk, legal and other relevant partners to carve out PO-only exceptions (no MSA for specific cases like Facilities emergencies), create new self-serve Catalogues, and make other global purchase policy updates.
-                    Overall, reduced CM work on ~10% of purchases and `}<b className='text-green-700'>$120m</b>{` (1%) in spend `}<b className='text-green-700'>by up to 100%</b>{`, allowing the team to spend more time on Strategic Sourcing.`}</li>
+                    Overall, reduced CM work on ~10% of purchases and `}<b className='text-green-700'>$120m</b>{` (1%) of spend `}<b className='text-green-700'>by up to 100%</b>{`, allowing the team to spend more time on Strategic Sourcing.`}</li>
                   </div>
                 </div>
             </div>

@@ -69,6 +69,23 @@ export default function ProjectCarousel() {
           />
         */}
 
+         {/** Project: Sales Forecasting */}
+         <PrjBoxScroll
+            title="Nutshell News"
+            description="My platonic ideal of a news app, focused on making it easy to stay informed."
+            imageUrls={[
+              "/projects/nutshell/home.png",
+              "/projects/nutshell/ReadingList.png",
+              
+            ]}
+            skills={[{ url: "/skill/nextjs.png", title: "NextJS hosted on Vercel" },
+              { url: "/skill/mongodb.svg", title: "Article data stored in MongoDB" },
+              { url: "/skill/api.png", title: "Pulls public data from multiple sources" }
+            ]}
+            link="/blog/projects/forecasting"
+          />
+          
+
           {/** Project: Sales Forecasting */}
           <PrjBoxScroll
             title="Sales Forecasting"
