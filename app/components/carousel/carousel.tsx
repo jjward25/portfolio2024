@@ -70,6 +70,7 @@ export default function ProjectCarousel() {
         */}
 
          {/** Project: Sales Forecasting */}
+         {/**
          <PrjBoxScroll
             title="Nutshell News"
             description="My platonic ideal of a news app, focused on making it easy to stay informed."
@@ -84,7 +85,7 @@ export default function ProjectCarousel() {
             ]}
             link="/blog/projects/forecasting"
           />
-          
+          */}
 
           {/** Project: Sales Forecasting */}
           <PrjBoxScroll
