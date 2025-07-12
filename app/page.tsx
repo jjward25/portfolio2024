@@ -2,6 +2,7 @@ import TimelineDesktop from './components/timeline/timelineDesktop';
 import TimelineMobile from './components/timeline/timelineMobile';
 import ProjectCarousel from './components/carousel/carousel';
 import DynamicAccordion from './components/accordions/accordion';
+import ContactButton from './components/ContactButton';
 import Link from 'next/link';
 
 export const metadata = {
@@ -9,12 +10,15 @@ export const metadata = {
   description: 'Read my thoughts on operational efficiency, business analytics, and more.',
 };
 
-
 export default function Page() {
   return (
     <section className=''>
       
-      <h1 className="font-medium text-2xl tracking-tighter text-black dark:text-white flex flex-row">Hey <p className='hover:rotate-45 hover:duration-500 transition-all ease-out mx-1'>👋</p> I'm Joe Ward</h1>
+      <div className="flex flex-row justify-between items-center">
+        <h1 className="font-medium text-2xl tracking-tighter text-black dark:text-white flex flex-row">Hey <p className='hover:rotate-45 hover:duration-500 transition-all ease-out mx-1'>👋</p> I'm Joe Ward</h1>
+        <ContactButton />
+      </div>
+      
       <div className='mt-3 mb-3 h-0.5 w-full  bg-gradient-to-r from-amber-200 to-white'/>
 
         <div className='flex my-8 md:my-8 flex-wrap place-content-center md:flex-nowrap '>
