@@ -4,6 +4,7 @@ import ContactButton from './components/ContactButton';
 import RevOps from './components/revOps/revOps';
 import OtherLinks from './components/otherLinks/other';
 import Vibe from './components/vibecoding/vibe';
+import SampleCarousel from './components/sampleCarousel/sampleCar';
 
 export const metadata = {
   title: 'Joe Ward | Home',
@@ -112,6 +113,12 @@ export default function Page() {
         <div className='mt-4 mb-3 h-0.5 w-full bg-gradient-to-r from-amber-200 via-neutral-200 to-cyan-950'/>
         <OtherLinks />
       </div>
+
+      <div className='mt-4 mb-3 h-0.5 w-full bg-gradient-to-r from-amber-200 via-neutral-200 to-cyan-950'/>
+
+      {/* Sample Carousel 
+      <SampleCarousel />
+      */}
 
     </section>
   );
