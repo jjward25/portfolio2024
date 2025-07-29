@@ -5,40 +5,70 @@ interface Skill {
   title: string;
 }
 
+interface TagProps {
+  text: string;
+  color: 'blue' | 'yellow';
+}
+
 interface CardProps {
   title: string;
   description: string;
   imageUrl: string;
   skills: Skill[];
-  link:string;
+  link: string;
+  tag?: string; // Keep for backward compatibility
+  tags?: TagProps[]; // New prop for multiple tags
 }
 
-const PrjBox: React.FC<CardProps> = ({ title, description, imageUrl, skills, link }) => {
+const PrjBox: React.FC<CardProps> = ({ title, description, imageUrl, skills, link, tag, tags }) => {
+  // Combine single tag and multiple tags for rendering
+  const allTags = tags || (tag ? [{ text: tag, color: 'blue' as const }] : []);
+
+  const getTagColors = (color: 'blue' | 'yellow') => {
+    if (color === 'yellow') {
+      return {
+        primary: '#eab308', // yellow-500
+        secondary: '#f59e0b', // yellow-500 lighter
+        dark: '#ca8a04', // yellow-600
+        darker: '#a16207' // yellow-700
+      };
+    }
+    return {
+      primary: '#2563eb', // blue-600
+      secondary: '#3b82f6', // blue-500
+      dark: '#1d4ed8', // blue-700
+      darker: '#1e40af' // blue-800
+    };
+  };
+
   return (
-    <div className="relative w-full min-w-[310px] min-h-[300px] md:min-w-[350px] md:min-h-[250px] h-full overflow-hidden rounded-lg shadow-lg border border-cyan-700">
-      <img src={imageUrl} alt={title} className="absolute inset-0 w-full h-full object-cover" />
-
-      <a href={link} target='_blank'>
-      <div className="relative w-[310px] h-[300px] md:w-[350px] md:h-[250px] z-10 px-10 pt-0 bg-gradient-to-b from-transparent to-black bg-opacity-70 text-white">
-        <div className='h-1/4'/>
-        <h2 className="text-xl font-bold">{title}</h2>
-        <p className="mt-2 text-sm">{description}</p>
-        <div className='mt-4 flex flex-row justify-evenly hover:bg-cyan-800 py-1 hover:rounded-xl hover:bg-opacity-70'>
-          {skills.map((skill, index) => (
-            <img
-              key={index}
-              src={skill.url}
-              alt={skill.title}
-              className="w-6 h-6 object-cover hover:scale-105 cursor-pointer"
-              title={skill.title}
-            />
-          ))}
-        </div>
+    <div className="relative w-full min-w-[310px] min-h-[450px] md:min-w-[350px] md:min-h-[450px] h-full overflow-hidden rounded-lg shadow-lg border border-cyan-700 bg-white dark:bg-gray-800">
+      {/* Image Section */}
+      <div className="relative w-full h-[200px] overflow-hidden">
+        <img src={imageUrl} alt={title} className="w-full h-full object-cover" />
       </div>
-      </a>
 
-
-      <div className="absolute inset-0 bg-black opacity-50"></div>
+      {/* Text Section - Adjusted to fit within rounded container */}
+      <div className="relative p-4 h-[300px] md:h-[280px] bg-white dark:bg-gray-800 border-t border-gray-300">
+        <a href={link} target="_blank" rel="noopener noreferrer" className="block h-full flex flex-col">
+          <h2 className="text-lg font-bold text-black dark:text-white mb-2">{title}</h2>
+          <p className="text-sm text-gray-700 dark:text-gray-300 mb-3 flex-grow">{description}</p>
+          
+          {/* Skills Section - Properly positioned within bounds */}
+          <div className='flex flex-row justify-center gap-3 bg-gray-100 dark:bg-gray-700 py-3 px-3 rounded-lg hover:bg-cyan-100 dark:hover:bg-cyan-900 transition mb-2'>
+            {skills.map((skill, index) => (
+              <div key={index} className="flex flex-col items-center">
+                <img
+                  src={skill.url}
+                  alt={skill.title}
+                  className="w-10 h-10 object-cover hover:scale-110 cursor-pointer transition-transform"
+                  title={skill.title}
+                />
+              </div>
+            ))}
+          </div>
+        </a>
+      </div>
     </div>
   );
 };

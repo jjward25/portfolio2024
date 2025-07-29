@@ -53,40 +53,6 @@ export default function ProjectCarousel() {
         {/** Project Container */}
         <div ref={carouselRef} className="flex flex-row text-black gap-4 overflow-auto md:pb-5 mb-1">
 
-         {/** Project: Local LLMs 
-         <PrjBox
-            title="Local Chatbots with Memory"
-            description="Simple, single-file python scripts for command-line chatbots with memory."
-            imageUrl={
-              "/projects/localLLMs/dualLLMs.png"
-              
-            }
-            skills={[{ url: "/skill/python.png", title: "Python" },
-              { url: "/skill/ollama.png", title: "Ollama" },
-              { url: "/skill/huggingface.png", title: "HuggingFace" }
-            ]}
-            link="/blog/projects/localLLMs"
-          />
-        */}
-
-         {/** Project: Sales Forecasting */}
-         {/**
-         <PrjBoxScroll
-            title="Nutshell News"
-            description="My platonic ideal of a news app, focused on making it easy to stay informed."
-            imageUrls={[
-              "/projects/nutshell/home.png",
-              "/projects/nutshell/ReadingList.png",
-              
-            ]}
-            skills={[{ url: "/skill/nextjs.png", title: "NextJS hosted on Vercel" },
-              { url: "/skill/mongodb.svg", title: "Article data stored in MongoDB" },
-              { url: "/skill/api.png", title: "Pulls public data from multiple sources" }
-            ]}
-            link="/blog/projects/forecasting"
-          />
-          */}
-
           {/** Project: Sales Forecasting */}
           <PrjBoxScroll
             title="Sales Forecasting"
@@ -117,20 +83,7 @@ export default function ProjectCarousel() {
             link="/blog/projects/nbaMVP"
           />
 
-          {/** Project: Web Scrapers */}
-          <PrjBoxScroll
-            title="Daily News Webscrapers"
-            description="Python crawlers for daily headline aggregation from a personally curated selection of sites."
-            imageUrls={[
-              "/projects/scrapers/runAll.png",
-              "/projects/scrapers/scraperSelenium.png",
-              "/projects/scrapers/scraperBeautifulSoup.png",
-              "/projects/scrapers/scraperOutput.png",
-            ]}
-            skills={[{ url: "/skill/python.png", title: "Python: Beautiful Soup, Selenium, Pandas" }]}
-            link="/blog/projects/webScrapers"
-          />
-
+    
           {/** Project: DBTF */}
           <PrjBoxScroll
             title="DBT Fundamentals"
@@ -147,42 +100,6 @@ export default function ProjectCarousel() {
             link="/blog/projects/dbtfundamentals"
           />
 
-          {/** Project: Personal App */}
-          <PrjBoxScroll
-            title="Personal App"
-            description="Feature-rich planner app made with NextJS, MongoDB, and D3."
-            imageUrls={[
-              "/projects/personalApp/appthumb.png",
-              "/projects/personalApp/TaskBacklog.png",
-              "/projects/personalApp/ProjectPage.png",
-              "/projects/personalApp/workout1.png",
-              "/projects/personalApp/workout2.png",
-            ]}
-            skills={[
-              { url: "/skill/nextjs.png", title: "NextJS" },
-              { url: "/skill/mongodb.svg", title: "MongoDB" },
-              { url: "/skill/d3.svg", title: "D3" },
-              { url: "/skill/api.png", title: "APIs" },
-            ]}
-            link="/blog/projects/personalApp"
-          />
-
-          {/** Project: Topic Tournament */}
-          <PrjBoxScroll
-            title="Topic Tournament"
-            description="A NextJS game for debating the best (or worst) of a given topic, hosted on AWS."
-            imageUrls={[
-              "/projects/bracketGame/home.png",
-              "/projects/bracketGame/newGame.png",
-              "/projects/bracketGame/finals.png",
-              "/projects/bracketGame/categories.png",
-            ]}
-            skills={[
-              { url: "/skill/nextjs.png", title: "NextJS" },
-              { url: "/skill/aws.png", title: "AWS" },
-            ]}
-            link="https://topictourny.vercel.app/"
-          />
         </div>
 
         {/** Right Scroll Button */}

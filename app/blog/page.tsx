@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import dynamic from 'next/dynamic';
-import ProjectCarousel from '../components/carousel/carousel';
+import ProjectCarousel from '../components/carousel/carouselOther';
 
 const DynamicAccordion = dynamic(() => import('../components/accordions/accordion'), { ssr: false });
 const DynamicAccordionNested = dynamic(() => import('../components/accordions/accordionNested'), { ssr: false });
