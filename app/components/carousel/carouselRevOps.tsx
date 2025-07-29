@@ -55,7 +55,7 @@ export default function ProjectCarousel() {
 
           {/** Project: Account & CRM Dashboards */}
           <PrjBoxScroll
-            title="Account & CRM Dashboards"
+            title="Mock CRM & Dashboard"
             description="Mock views for Account-based Management, where marketing and sales engagement can be seen together, org charts are visualized, and Nearest Neighbor accounts are shown with their related activity."
             imageUrls={[
               "/revops/crmDash.png",
