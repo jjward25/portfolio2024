@@ -53,6 +53,23 @@ export default function ProjectCarousel() {
         {/** Project Container */}
         <div ref={carouselRef} className="flex flex-row text-black gap-4 overflow-auto md:pb-5 mb-1">
 
+          {/** Project: ClayBI */}
+          <PrjBoxScroll
+            title="Clay Business Intelligence"
+            description="A mock business intelligence app using real data from Clay.com, with v0 used to shape the general front-end layout."
+            imageUrls={[
+              "/projects/clayBI/home.png",
+              "/projects/clayBI/compScreen.png",
+              "/projects/clayBI/splittingField.png",
+            ]}
+            skills={[
+              { url: "/skill/clay.png", title: "Clay" },
+              { url: "/skill/v0.png", title: "v0" },
+              { url: "/skill/nextjs.png", title: "NextJS" }
+            ]}
+            link="/blog/projects/clayBI"
+          />
+          
           {/** Project: Account & CRM Dashboards */}
           <PrjBoxScroll
             title="Mock CRM & Dashboard"
