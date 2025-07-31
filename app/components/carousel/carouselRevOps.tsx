@@ -56,7 +56,7 @@ export default function ProjectCarousel() {
           {/** Project: ClayBI */}
           <PrjBoxScroll
             title="Clay Business Intelligence"
-            description="A mock business intelligence app using real data from Clay.com, with v0 used to shape the general front-end layout."
+            description="A simple business intelligence app using real data from Clay.com, with v0 used to shape the general front-end layout."
             imageUrls={[
               "/projects/clayBI/home.png",
               "/projects/clayBI/compScreen.png",
