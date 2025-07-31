@@ -56,7 +56,7 @@ const Papp = () => {
             <p className="text-neutral-500 text-sm my-0 mt-6 font-bold mb-4">This was a quick, fun project I was able to put together in a couple of hours.  There are numerous ways you could build on something like this, for example:</p>
             <li>Add new features! Like specific certifications in the industry, support plan details, and recent press.</li>
             <li>Build out the workflow: Hook up a button on the website to a Clay webhook to refresh the intellgence.</li>
-            <li>Build out the workflow: Allow users to select an Industry, send that to Clay via API, get a list of Companies returned via webhook, and then approve the list for enrichment for RFP or Competitor Analysis.</li>
+            <li>Build out the workflow: Allow users to select an Industry, send that to Clay via API, receive a list of Companies back from Clay (via webhook or API response), and then approve the list for enrichment for RFP or Competitor Analysis.</li>
             <li>Enhance features: Use additional Clay AI responses or a tool like n8n to use your trained LLMs to parse pricing data more consistently.</li>
             
           </ol>
