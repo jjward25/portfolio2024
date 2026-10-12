@@ -146,7 +146,11 @@ export default function ProjectCarousel() {
           <PrjBox
             title="Full-Body Fundamentals"
             description="How I think about fitness."
-            htmlPreview="/projects/fitness/full-body-fundamentals.html"
+            imageUrls={[
+              '/projects/fitness/overview.png',
+              '/projects/fitness/week.png',
+              '/projects/fitness/assessment.png',
+            ]}
             link="/projects/fitness/full-body-fundamentals.html"
             newTab
             skills={[]}

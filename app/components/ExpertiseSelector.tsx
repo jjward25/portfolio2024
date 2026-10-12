@@ -23,7 +23,7 @@ const specialties = [
     link: '/#experience', linkLabel: 'Explore my experience', metric: 'Strategy', metricLabel: 'grounded in the operating detail' },
 ];
 
-export default function ExpertiseSelector() {
+export default function ExpertiseSelector({ detailsEnabled = false }: { detailsEnabled?: boolean }) {
   const [selectedId, setSelectedId] = useState<string | null>(null);
   const selected = specialties.find((item) => item.id === selectedId);
   const reduceMotion = useReducedMotion();
@@ -42,7 +42,7 @@ export default function ExpertiseSelector() {
           const active = selectedId === item.id;
           const Icon = item.icon;
           return (
-            <motion.button key={item.id} type="button" aria-expanded={active} aria-controls="expertise-detail" onClick={() => setSelectedId(active ? null : item.id)}
+            <motion.button key={item.id} type="button" disabled={!detailsEnabled} aria-expanded={detailsEnabled ? active : undefined} aria-controls="expertise-detail" onClick={() => detailsEnabled && setSelectedId(active ? null : item.id)}
               animate={selected && index >= Math.max(2, selectedIndex) && !reduceMotion ? { boxShadow: ['inset 0 1px 0 rgba(255,255,255,.16), 0 4px 12px rgba(8,51,68,.1)', 'inset 0 0 18px rgba(233,206,120,.2), 0 0 12px rgba(233,206,120,.25)', 'inset 0 1px 0 rgba(255,255,255,.16), 0 4px 12px rgba(8,51,68,.1)'] } : {}}
               transition={{ duration: .45, delay: index === 2 ? .2 : .45 }}
               onPointerMove={(event) => {
@@ -54,7 +54,8 @@ export default function ExpertiseSelector() {
               className={`expertise-control ${index > 1 ? 'expertise-wide' : ''} relative flex items-center gap-2.5 overflow-hidden rounded-lg border bg-cyan-950 px-3 text-left text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-3 focus-visible:outline-cyan-500 ${active ? 'border-amber-200' : 'border-cyan-800'}`}>
               <Icon size={index > 1 ? 16 : 21} strokeWidth={1.5} aria-hidden="true" className={`relative shrink-0 ${active ? 'text-amber-200' : 'text-cyan-200'}`} />
               <span className="relative flex-1 text-xs font-medium leading-5">{item.label}</span>
-              <ChevronDown size={13} aria-hidden="true" className={`expertise-chevron relative shrink-0 ${active ? 'rotate-180 text-amber-200' : 'text-cyan-200/60'}`} />
+              {detailsEnabled && <ChevronDown size={13} aria-hidden="true" className={`expertise-chevron relative shrink-0 ${active ? 'rotate-180 text-amber-200' : 'text-cyan-200/60'}`} />
+            }
             </motion.button>
           );
         })}
@@ -81,4 +82,3 @@ export default function ExpertiseSelector() {
     </div>
   );
 }
-

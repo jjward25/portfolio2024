@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import { careerEntries } from './careerEntries';
 
-export default function CareerTimeline() {
+export default function CareerTimeline({ detailsEnabled = false }: { detailsEnabled?: boolean }) {
   const [selectedEntryId, setSelectedEntryId] = useState<string | null>(null);
   const selected = careerEntries.find((entry) => entry.id === selectedEntryId);
 
@@ -11,7 +11,7 @@ export default function CareerTimeline() {
     <section id="experience" aria-labelledby="experience-heading" className="my-8 text-neutral-900 dark:text-white">
       <div className="flex items-center justify-between gap-4 pb-1">
         <h2 id="experience-heading" className="text-sm font-medium tracking-tight text-cyan-950 dark:text-cyan-200">The journey so far</h2>
-        <p className="text-[10px] text-neutral-500 dark:text-neutral-400">Select a milestone</p>
+        {detailsEnabled && <p className="text-[10px] text-neutral-500 dark:text-neutral-400">Select a milestone</p>}
       </div>
 
       <div className="overflow-x-auto pb-2 pt-3" aria-label="Career milestones">
@@ -23,16 +23,17 @@ export default function CareerTimeline() {
               <li key={entry.id} className="relative flex-1 px-1">
                 <button
                   type="button"
+                  disabled={!detailsEnabled}
                   id={`milestone-${entry.id}`}
                   aria-label={`${entry.company}${entry.role ? `, ${entry.role}` : ''}, ${entry.month ? `${entry.month} ` : ''}${entry.year}`}
                   aria-expanded={active}
                   aria-controls="career-detail"
-                  onClick={() => setSelectedEntryId(entry.id)}
+                  onClick={() => detailsEnabled && setSelectedEntryId(entry.id)}
                   onDoubleClick={() => setSelectedEntryId(null)}
                   onKeyDown={(event) => {
                     if (event.key === 'Escape') setSelectedEntryId(null);
                   }}
-                  className={`group flex w-full flex-col items-center rounded-lg px-1 py-1 text-center transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-500 ${active ? 'text-cyan-800 dark:text-cyan-200' : 'text-neutral-600 hover:text-cyan-800 dark:text-neutral-300 dark:hover:text-cyan-200'}`}
+                  className={`group disabled:cursor-default flex w-full flex-col items-center rounded-lg px-1 py-1 text-center transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-500 ${active ? 'text-cyan-800 dark:text-cyan-200' : 'text-neutral-600 hover:text-cyan-800 dark:text-neutral-300 dark:hover:text-cyan-200'}`}
                 >
                   <span className={`mb-3 text-xs font-medium ${active ? 'text-cyan-800 dark:text-cyan-200' : 'text-neutral-500 dark:text-neutral-400'}`}>{entry.year}</span>
                   <span className={`relative flex h-10 w-10 items-center justify-center rounded-full border bg-white transition-shadow ${active ? 'border-cyan-700 ring-4 ring-cyan-50 dark:ring-cyan-950' : 'border-neutral-200 group-hover:border-cyan-600 group-hover:shadow-sm dark:border-neutral-700'}`}>
@@ -74,4 +75,3 @@ export default function CareerTimeline() {
     </section>
   );
 }
-
