@@ -1,7 +1,7 @@
 "use client"
 import React, { useRef } from 'react';
-import PrjBoxScroll from "./prjBoxScroll";
-import PrjBox from "./prjBox";
+import PrjBoxScroll from "./AnimatedProjectTile";
+import PrjBox from "./AnimatedProjectTile";
 
 export const metadata = {
   title: 'Projects',
@@ -13,13 +13,13 @@ export default function ProjectCarousel() {
 
   const scrollLeft = () => {
     if (carouselRef.current) {
-      carouselRef.current.scrollBy({ left: -326, behavior: 'smooth' });
+      carouselRef.current.scrollBy({ left: -326, behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
     }
   };
 
   const scrollRight = () => {
     if (carouselRef.current) {
-      carouselRef.current.scrollBy({ left: 326, behavior: 'smooth' });
+      carouselRef.current.scrollBy({ left: 326, behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
     }
   };
 
@@ -29,7 +29,7 @@ export default function ProjectCarousel() {
         {/** Left Scroll Button */}
         <button
           className="absolute left-0 md:ml-1 top-1/2 transform -translate-y-1/2  hover:text-yellow-200 text-cyan-700 p-2 h-16 w-8 rounded-l-full transition"
-          onClick={scrollLeft}
+          aria-label="Previous projects" type="button" onClick={scrollLeft}
           style={{
             borderTopRightRadius: "0",
             borderBottomRightRadius: "0",
@@ -51,7 +51,7 @@ export default function ProjectCarousel() {
         </button>
 
         {/** Project Container */}
-        <div ref={carouselRef} className="flex flex-row text-black gap-4 overflow-auto md:pb-5 mb-1">
+        <div ref={carouselRef} className="animated-project-track flex flex-row text-black gap-4 overflow-auto md:pb-5 mb-1">
 
           {/** Project: Sales Forecasting */}
           <PrjBoxScroll
@@ -105,7 +105,7 @@ export default function ProjectCarousel() {
         {/** Right Scroll Button */}
         <button
           className="absolute md:mr-1 right-0 top-1/2 transform -translate-y-1/2  hover:text-yellow-200 text-cyan-700 p-2 h-16 w-8 rounded-r-full transition"
-          onClick={scrollRight}
+          aria-label="Next projects" type="button" onClick={scrollRight}
           style={{
             borderTopLeftRadius: "0",
             borderBottomLeftRadius: "0",

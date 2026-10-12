@@ -1,0 +1,35 @@
+Portfolio contact email: existing Gmail account + Vercel
+
+1. Enable 2-Step Verification on your personal Google account.
+2. Open https://myaccount.google.com/apppasswords and create an app password
+   named Portfolio contact. Some managed or Advanced Protection accounts do
+   not offer app passwords. Never use your main Google password here.
+3. Privately add these values to .env.local in the project folder:
+   GMAIL_USER=your-address@gmail.com
+   GMAIL_APP_PASSWORD=the generated app password
+   Restart development after saving.
+4. When deploying, add the same values to Vercel environment variables and
+   redeploy. Do not paste the password into chat, commit it, or prefix the
+   variable with NEXT_PUBLIC_. No real email was sent during implementation.
+
+The Vercel function validates intake and connects directly to smtp.gmail.com
+over encrypted SMTP on port 465. Gmail sends from your account to
+Joseph.Ward@Outlook.com. Visitor name, message, and reply details are plain
+text. Email replies use Reply-To. Recipient cannot be changed by visitors.
+No Azure, FormSubmit, Resend, or database is required.
+
+Security: an app password is a sensitive Google account credential, not a
+send-only permission. This code only uses SMTP, but possession of the password
+can permit other mail access. Keep it server-only and revoke it in Google
+settings if exposed. Google revokes app passwords when you change your main
+password. Prefer a dedicated mailbox if you want to isolate your personal mail.
+
+Limits: Gmail sending limits and spam checks apply. SMTP acceptance does not
+guarantee inbox arrival. After a timeout, retrying can cause duplicates; the
+stable reference helps identify them but does not guarantee deduplication.
+The current rate limiter is per server instance, not distributed.
+Without credentials dev previews without sending; production returns an
+unavailable message and keeps the direct email fallback.
+
+https://support.google.com/accounts/answer/185833
+https://vercel.com/kb/guide/serverless-functions-and-smtp

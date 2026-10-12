@@ -1,0 +1,44 @@
+{
+  "identity": "GTM Engineer with experience at top-tier growth startups and established companies including Charles Schwab",
+  "style": [
+    "Crafted polish and attention to detail; old-school professionalism with modern frontend capability",
+    "Preserve distinctive glossy glass surfaces and depth",
+    "Minimalism only where beneficial; avoid generic corporate flattening",
+    "Smooth purposeful animations; no overwhelming motion or hover popups"
+  ],
+  "carousel_reference": {
+    "interaction": "Four colorful blocks with smooth engaging animations on hover; support keyboard focus and touch equivalents",
+    "site": "https://www.marco.fyi/",
+    "scope": "Future Vibe Coding and Other Links & Samples carousel tiles"
+  },
+  "expertise_reference": {
+    "interaction": "Tactile expertise buttons reveal relevant accomplishments or projects on selection",
+    "site": "https://www.blunar.cz/"
+  },
+  "contact": {
+    "destination": "Conversational intake form: name, message, phone or email reply info; email sent through existing Gmail SMTP from Vercel to Joseph.Ward@Outlook.com",
+    "requirement": "Review and edit before submitting; confirm only after Gmail accepts email; keep app password server-only; no new service account",
+    "reference": "Marco text-me conversation panel",
+    "portrait": "Keep modal portrait very small"
+  },
+  "motion_reference": {
+    "reject": "Hover popups",
+    "site": "https://dennissnellenberg.com/",
+    "keep": [
+      "Gentle responsive lighting",
+      "Press response",
+      "Restrained magnetic behavior"
+    ]
+  },
+  "signature": {
+    "stages": [
+      "Marketing: awareness to qualified, A/B experiment and outbound mail or paper-cup call",
+      "Sales: qualified to demo to deal, coin and DEMO TV, objection obstacle",
+      "Customer success: deal to friends to growing old together, photo booth prints"
+    ],
+    "concept": "GTM Rube Goldberg machine",
+    "systems": "Expose the backend automation layer: enrichment, deduplication, scoring, routing, CRM updates, usage signals, alerts and feedback loops",
+    "future": "Walkthrough of GTM systems best practices and sample work, leading into other projects and writing; Bruno Simon aspirational reference",
+    "approved_direction": "Crafted tabletop GTM apparatus with glass tubes, brushed metal, paper labels, warm amber indicators, cyan circuitry, and a playful photo-booth ending. Customer journey above; connected automation and systems below. User approved this direction."
+  }
+}

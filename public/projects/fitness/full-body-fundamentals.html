@@ -1,0 +1,494 @@
+<!doctype html>
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><title>Full-Body Fundamentals | Public Training Guide</title>
+<style>
+:root{--bg:#f8f5f2;--ink:#261f29;--muted:#726a75;--line:#e6dee3;--berry:#753d60;--dark:#29202d;--pink:#e86e9a}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:14px/1.45 Inter,ui-sans-serif,system-ui,'Segoe UI',Arial,sans-serif}button{font:inherit;cursor:pointer}button:focus-visible{outline:3px solid #a44c7e;outline-offset:2px}.wrap{max-width:1200px;margin:auto;padding:24px 23px 60px}.topline{display:flex;justify-content:space-between;border-bottom:1px solid #d7cbd3;padding-bottom:12px;margin-bottom:18px;gap:12px}.topline strong{font-size:11px;letter-spacing:.17em}.topline span{font-size:11px;color:var(--muted)}.hero{background:var(--dark);color:#fff;border-radius:22px;padding:32px 35px;display:grid;grid-template-columns:1.5fr .55fr;gap:20px;position:relative;overflow:hidden}.hero:after{content:'';position:absolute;right:-80px;top:-115px;width:370px;height:370px;border:1px solid #ffffff29;border-radius:50%;box-shadow:0 0 0 42px #ffffff08,0 0 0 87px #ffffff06;pointer-events:none}.eyebrow{color:#f6b4d0;font-size:10px;letter-spacing:.2em;font-weight:900}.hero h1{font:700 clamp(34px,4.4vw,56px)/.99 Georgia,serif;letter-spacing:-.04em;margin:12px 0}.hero h1 em{color:#ffa7c7}.hero p{max-width:660px;color:#e7dce5;margin:0}.hero-right{z-index:1;display:flex;flex-direction:column;justify-content:end;gap:8px}.stat{display:flex;align-items:baseline;gap:10px;border-bottom:1px solid #ffffff33;padding:7px 0}.stat b{font:700 34px Georgia,serif;color:#ffb6d0}.stat span{font-size:11px;color:#f0e6ee;text-transform:uppercase;letter-spacing:.1em;font-weight:800}.nav{display:flex;gap:7px;flex-wrap:wrap;margin:20px 0 18px}.nav button{background:transparent;border:1px solid #d7cbd3;color:var(--ink);border-radius:999px;padding:10px 15px;font-size:12px;font-weight:800}.nav button.active{background:var(--dark);border-color:var(--dark);color:#fff}.view{display:none}.view.active{display:block}.section-head{display:flex;align-items:end;justify-content:space-between;gap:12px;margin-bottom:13px}.section-head h2{font:700 30px/1.05 Georgia,serif;letter-spacing:-.02em;margin:0}.section-head p{font-size:12px;color:var(--muted);margin:0}.toolbar{display:flex;gap:9px;align-items:center;flex-wrap:wrap}.toggle{display:flex;border:1px solid #d7cbd3;background:white;border-radius:999px;padding:3px;gap:2px}.toggle button{border:0;border-radius:999px;background:transparent;color:#5c5261;font-size:12px;font-weight:800;padding:7px 13px}.toggle button.active{background:#723d5f;color:#fff}.calendar{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:8px;margin-bottom:13px}.daybutton{text-align:left;display:flex;flex-direction:column;gap:7px;min-height:112px;background:#fff;border:1px solid var(--line);border-top:5px solid var(--accent);border-radius:13px;padding:11px;transition:transform .15s}.daybutton:hover{transform:translateY(-2px)}.daybutton.active{outline:2px solid #643553}.dayname{font-size:10px;font-weight:900;letter-spacing:.12em;color:#736b74}.daytitle{font-weight:900;font-size:13px;line-height:1.2}.daytype{font-size:11px;color:var(--muted);margin-top:auto}.detail{background:#fff;border:1px solid var(--line);border-radius:20px;overflow:hidden}.detail-head{padding:23px 25px;background:linear-gradient(110deg,#fff9fa,#f7f1f6);border-bottom:1px solid var(--line);display:flex;justify-content:space-between;gap:16px}.overline{font-size:10px;font-weight:900;letter-spacing:.16em;color:#7c4b6b;text-transform:uppercase}.detail-head h3{font:700 32px/1.06 Georgia,serif;margin:6px 0}.detail-head p{color:var(--muted);max-width:750px;margin:7px 0 0}.duration{align-self:start;white-space:nowrap;font-size:12px;font-weight:800;color:#714e65;background:#fff;border:1px solid var(--line);padding:8px 10px;border-radius:999px}.detail-body{padding:18px 25px 24px}.block{border:1px solid var(--line);border-radius:13px;margin-bottom:11px;overflow:hidden}.blockhead{background:#f7f3f5;padding:10px 13px;font-size:11px;letter-spacing:.1em;font-weight:900;color:#6a4961}.exercise{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr) minmax(0,1.25fr);gap:12px;align-items:start;padding:11px 13px;border-top:1px solid #f0eaf0}.exercise b{font-size:13px}.rx{font-weight:800;font-size:12px;color:#763f61}.why{font-size:12px;color:var(--muted)}.pill{display:inline-block;font-size:9px;letter-spacing:.06em;font-weight:900;border-radius:999px;background:#f8e9f1;color:#854a6b;padding:4px 7px;margin-top:5px}.mobility{padding:9px 13px;border-top:1px solid #eadde6;background:#fffbf4;color:#67565e;font-size:12px}.note{background:#f2eaf0;border-radius:12px;padding:12px 15px;font-size:12px;color:#66505e;margin-top:12px}.cardgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:11px}.card{background:#fff;border:1px solid var(--line);border-radius:15px;padding:17px}.card .num{font:700 33px Georgia,serif;color:#8c4b71}.card h3{font:700 19px Georgia,serif;margin:8px 0}.card p{color:var(--muted);font-size:12px;margin:6px 0}.label{font-size:10px;font-weight:900;letter-spacing:.13em;color:#8d5377;text-transform:uppercase}.rule{border-top:1px solid var(--line);padding-top:12px;margin-top:13px}.stepflow{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:13px 0}.step{border:1px solid var(--line);border-radius:13px;background:#fff;padding:16px}.step b{font:700 28px Georgia,serif;color:#713e5e}.step strong{display:block;margin:6px 0}.step p{font-size:12px;color:var(--muted);margin:0}.matrix{width:100%;border-collapse:collapse;background:#fff;border:1px solid var(--line);font-size:12px}.matrix th,.matrix td{padding:12px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}.matrix th{background:#f2eaf0;color:#5e3a54}.matrix td:first-child{font-weight:900}.footer{margin-top:19px;font-size:11px;color:var(--muted);text-align:center}.buttonline{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-top:13px}.buttonline button{background:#fff;border:1px solid var(--line);padding:8px 12px;border-radius:999px;font-weight:800;font-size:11px}.small{font-size:12px;color:var(--muted)}@media(max-width:900px){.calendar{grid-template-columns:repeat(4,1fr)}.cardgrid{grid-template-columns:1fr 1fr}.hero{grid-template-columns:1fr}.hero-right{flex-direction:row;gap:18px}.stat{flex:1}}@media(max-width:610px){.wrap{padding:12px}.hero{padding:24px}.calendar{grid-template-columns:repeat(2,1fr)}.detail-head{padding:17px;flex-direction:column}.detail-body{padding:12px}.exercise{grid-template-columns:1fr;gap:4px}.cardgrid,.stepflow{grid-template-columns:1fr}.section-head{align-items:start;flex-direction:column}.hero-right{flex-wrap:wrap}}@media print{.nav,.toolbar,.buttonline{display:none}.wrap{padding:0}.hero{print-color-adjust:exact;-webkit-print-color-adjust:exact}.detail{break-inside:avoid}}
+
+/* Revision 03: compact editorial accordions and independent assessment */
+.plain-action{font-size:11px;font-weight:800;background:#fff;border:1px solid var(--line);border-radius:999px;padding:9px 12px;color:#60394f;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center}
+.principle-stack,.assessment-list{display:grid;gap:9px}.principle-item,.test-item{background:#fff;border:1px solid var(--line);border-radius:15px;overflow:hidden}
+.principle-item summary,.test-item summary{display:flex;align-items:center;gap:15px;padding:16px 19px;cursor:pointer;list-style:none}.principle-item summary::-webkit-details-marker,.test-item summary::-webkit-details-marker{display:none}
+.principle-item[open] summary,.test-item[open] summary{background:#f7f1f5;border-bottom:1px solid var(--line)}
+.pnum{flex:0 0 40px;font:700 23px/1 Georgia,serif;color:#9a6282}.ptext{display:flex;flex:1;flex-direction:column;gap:3px;min-width:0}.ptext b{font:700 19px/1.2 Georgia,serif}.ptext small{font-size:12px;color:var(--muted);line-height:1.45}.chevron{font-size:23px;color:#8a6a7f;transition:transform .2s}.principle-item[open] .chevron,.test-item[open] .chevron{transform:rotate(180deg)}
+.principle-content,.test-content{padding:17px 23px 22px 74px;color:#504551;font-size:13px;line-height:1.65}.principle-content h4,.test-content h4{font:700 17px Georgia,serif;color:#352837;margin:3px 0 8px}.principle-content p,.test-content p{margin:0 0 12px}.principle-content ol{padding-left:19px}.principle-content li{margin-bottom:7px}.mini-table{width:100%;border-collapse:collapse;margin:12px 0 14px;font-size:12px;line-height:1.45;background:#fff}.mini-table td,.mini-table th{padding:9px 10px;text-align:left;vertical-align:top;border:1px solid #ece2e8}.mini-table th{background:#f8f2f6;color:#5c3d54;font-weight:900}.mini-table td:first-child{font-weight:700}
+.assessment-intro{display:grid;grid-template-columns:1.4fr .85fr;gap:13px;margin-bottom:14px}.assessment-intro>div{background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px}.assessment-intro h3{font:700 24px Georgia,serif;margin:6px 0 9px}.assessment-intro p{font-size:12px;color:#625863;line-height:1.6;margin:7px 0}.assessment-intro .assessment-flag{background:#f4ebf1}.assessment-legend{display:flex;gap:9px;flex-wrap:wrap;margin:10px 0 14px}.assessment-legend span{font-size:11px;background:#fff;border:1px solid var(--line);border-radius:999px;padding:7px 11px}
+.test-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.test-grid>div{background:#faf7f9;border:1px solid #efe5eb;border-radius:10px;padding:11px}.test-grid p{margin:4px 0 0}.test-look{background:#fff9ef;border:1px solid #f0e6d8;border-radius:10px;padding:11px;margin:12px 0}.record-fields{display:grid;grid-template-columns:repeat(3,1fr);gap:9px;margin-top:14px}.record-fields label,.full-note{display:flex;flex-direction:column;gap:5px;font-size:11px;font-weight:800;color:#6e4d64}.record-fields input,.full-note textarea{font-size:12px;font-family:inherit;border:1px solid #e0d2db;background:#fff;border-radius:8px;padding:9px;min-width:0;width:100%;color:#241b24}.worksheet{margin-top:18px;background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px}.worksheet h3{font:700 24px Georgia,serif;margin:0}.worksheet p{font-size:12px;color:var(--muted)}.full-note{margin-top:14px}
+@media(max-width:750px){.principle-content,.test-content{padding:15px}.pnum{flex-basis:28px;font-size:19px}.principle-item summary,.test-item summary{gap:10px;padding:13px}.ptext b{font-size:17px}.assessment-intro,.test-grid,.record-fields{grid-template-columns:1fr}}
+@media print{.principle-item,.test-item{break-inside:avoid}.test-item{margin-bottom:9px}.assessment-intro{grid-template-columns:1fr 1fr}.worksheet{break-inside:avoid}}
+</style><style>/* Public edition: gender-neutral, energetic, and compact. No external resources. */
+:root{--bg:#f5f8fa;--ink:#182a38;--muted:#5c6f7d;--line:#dbe5eb;--berry:#226ca5;--dark:#142f47;--pink:#ed7955;--blue:#2777db;--teal:#109b91;--coral:#f17b57;--violet:#6b70d8;--yellow:#efd367;--green:#45a77a}
+body{font-family:ui-sans-serif,system-ui,-apple-system,'Segoe UI',Arial,sans-serif;background:var(--bg);color:var(--ink);font-size:13px}
+.wrap{max-width:1200px;padding:20px 24px 54px}.topline{border-bottom-color:#d5e1e8;margin-bottom:13px;padding-bottom:10px}.topline strong{letter-spacing:.11em;color:#243d52}
+.hero{background:linear-gradient(115deg,#16324c 0%,#15577a 57%,#1a8c87 100%);border-radius:20px;padding:25px 30px;grid-template-columns:1.65fr .95fr;box-shadow:0 14px 35px #0b435b1b}
+.hero:after{right:-100px;top:-155px;border-color:#ffffff29}.hero h1,.section-head h2,.detail-head h3,.ptext b,.assessment-intro h3,.principle-content h4,.test-content h4{font-family:ui-sans-serif,system-ui,-apple-system,'Segoe UI',Arial,sans-serif;letter-spacing:-.035em}
+.hero h1{font-size:clamp(31px,4vw,49px);font-weight:850;line-height:1.02;margin:8px 0 10px}.hero h1 em{color:#ffe58e;font-style:normal}.hero p{max-width:710px;color:#e6f7f8;line-height:1.55;font-size:13px}.eyebrow{color:#a6f1e1;font-size:10px;letter-spacing:.15em}
+.hero-right{display:grid;grid-template-columns:1fr 1fr;gap:7px 14px;align-content:center}.stat{border:1px solid #ffffff38;background:#ffffff0d;border-radius:11px;padding:8px 10px;gap:7px;align-items:center}.stat b{font:850 26px/1 ui-sans-serif,system-ui;color:#ffe58e}.stat span{color:#eaf9f8;font-size:9px;line-height:1.25;letter-spacing:.05em}
+.nav{margin:16px 0 16px;gap:7px}.nav button{font-size:12px;border-color:#d1dfe8;background:#fff;padding:9px 15px}.nav button.active{background:#196da8;border-color:#196da8}
+.section-head h2{font-size:25px;font-weight:850}.section-head p{font-size:12px;margin-top:4px}.plain-action{color:#185d84;border-color:#d3e2e9}
+.principle-stack,.assessment-list{gap:7px}.principle-item,.test-item{border-radius:12px}.principle-item summary,.test-item summary{padding:13px 16px;gap:13px}.principle-item[open] summary,.test-item[open] summary{background:#eff8fa}
+.pnum{flex-basis:35px;color:#198f94;font:850 19px/1 ui-sans-serif,system-ui}.ptext b{font-weight:800;font-size:15px}.ptext small{font-size:12px;line-height:1.4;color:#5b6d79}.chevron{color:#337f94}.principle-content,.test-content{padding:17px 24px 20px 64px;font-size:13px}.principle-content h4,.test-content h4{font-size:15px;font-weight:800}.mini-table th{background:#eaf4f8;color:#26536b}.mini-table td,.mini-table th{border-color:#dce9ee}
+.assessment-intro>div,.test-grid>div{border-color:#dce6ed}.assessment-intro .assessment-flag{background:#eaf5f1}.assessment-intro h3{font-size:21px}
+.toggle{border-color:#cbdde7}.toggle button.active{background:#196da8}.calendar{gap:6px;margin-bottom:10px}.daybutton{min-height:86px;padding:10px;border-radius:11px;border-top-width:4px;gap:4px}.daybutton.active{outline:2px solid #1c74af}.dayname{font-size:10px}.daytitle{font-size:12px}.daytype{font-size:10px}
+.detail{border-radius:16px}.detail-head{padding:18px 22px;background:linear-gradient(105deg,#f3f9fc,#f7fbf8)}.detail-head h3{font-size:25px;font-weight:850;margin:4px 0}.detail-head p{max-width:920px;font-size:12.5px;line-height:1.6}.overline{color:#166d83}.duration{color:#236d87}.detail-body{padding:11px 20px 17px}
+.session-primer{display:flex;align-items:baseline;gap:10px;padding:9px 12px;margin-bottom:10px;border-radius:10px;background:#eef8f8;border-left:3px solid #169f95;flex-wrap:wrap;font-size:11.5px}.session-primer .primer-label{color:#116d68;text-transform:uppercase;font-size:10px;font-weight:900;letter-spacing:.08em;flex:none}.session-primer strong{font-weight:800}.session-primer .primer-dose{font-weight:800;color:#236a7c}.session-primer .primer-why{color:#5d6f7a;flex:1;min-width:190px}
+.compact-block{margin-bottom:8px;border-top:1px solid #dce6ec;padding-top:6px}.compact-block:first-child{border-top:0}.compact-block-head{display:flex;align-items:center;gap:8px;margin:0 0 2px}.compact-block-head b{font-size:10px;text-transform:uppercase;letter-spacing:.08em;color:#397082}.compact-block-head:after{content:'';height:1px;background:#e2ebf0;flex:1}
+.exercise-compact{display:grid;grid-template-columns:minmax(170px,.88fr) minmax(180px,.8fr) minmax(230px,1.5fr);gap:12px;align-items:start;padding:9px 5px;border-bottom:1px solid #edf1f4}.exercise-compact:last-of-type{border-bottom:0}.exercise-compact .ex-name{font-size:12.5px;font-weight:850}.exercise-compact .ex-name-line{display:flex;align-items:center;gap:7px;flex-wrap:wrap}.exercise-compact .ex-dose{font-size:12px;color:#205b74;font-weight:800;line-height:1.45}.exercise-compact .ex-why{font-size:12px;line-height:1.5;color:#526777}
+.core-tag{display:inline-flex;align-items:center;border:1px solid #8fb7ef;background:#e9f2ff;color:#15599f;border-radius:5px;padding:2px 6px;font-size:9px;font-weight:900;cursor:help;position:relative;letter-spacing:.025em}.core-tag:focus-visible{outline:2px solid #2874d5;outline-offset:2px}.core-tag:after{content:attr(data-tip);position:absolute;bottom:calc(100% + 9px);left:0;width:260px;max-width:calc(100vw - 60px);white-space:normal;line-height:1.45;font-size:11px;font-weight:600;letter-spacing:0;padding:10px 12px;border-radius:9px;background:#163a53;color:#fff;box-shadow:0 8px 22px #102d4040;z-index:30;opacity:0;visibility:hidden;pointer-events:none;transition:opacity .1s}.core-tag:hover:after,.core-tag:focus:after,.core-tag.show-tip:after{opacity:1;visibility:visible}
+.rom-cooldown{display:flex;gap:9px;align-items:baseline;padding:8px 10px;margin:6px 0 7px;background:#eff9f4;border-left:3px solid #3eaa7a;border-radius:7px;font-size:11.5px;color:#385b50;line-height:1.5}.rom-cooldown b{color:#1c805a;white-space:nowrap;font-size:10px;text-transform:uppercase;letter-spacing:.05em}.block-foot{font-size:11px;color:#637581;padding:4px 5px 7px;line-height:1.5}
+.note{background:#eaf4fa;color:#315a71;margin-top:10px;padding:11px 13px;border-left:3px solid #2686bb}.footer{margin-top:22px}
+@media(max-width:930px){.calendar{grid-template-columns:repeat(4,minmax(0,1fr))}.hero{grid-template-columns:1fr}.hero-right{grid-template-columns:repeat(4,1fr)}.stat{flex-direction:column;align-items:start}.exercise-compact{grid-template-columns:minmax(140px,.8fr) minmax(160px,1fr)}.exercise-compact .ex-why{grid-column:1/-1}}
+@media(max-width:610px){.wrap{padding:12px}.hero{padding:21px}.hero-right{grid-template-columns:repeat(2,1fr)}.calendar{grid-template-columns:repeat(2,minmax(0,1fr))}.detail-head{padding:15px}.detail-body{padding:10px 13px}.exercise-compact{grid-template-columns:1fr;gap:4px;padding:9px 3px}.exercise-compact .ex-why{grid-column:auto}.principle-content,.test-content{padding:14px 15px}.pnum{flex-basis:27px}.ptext b{font-size:14px}.ptext small{font-size:11px}.rom-cooldown{flex-direction:column;gap:3px}.session-primer{align-items:start}.section-head{align-items:start}}
+@media print{.nav,.toolbar,.buttonline{display:none!important}.view{display:none!important}.view.active{display:block!important}.hero{padding:14px;break-inside:avoid}.calendar{display:none}.detail-head{padding:12px}.detail-body{padding:8px}.exercise-compact{padding:6px 3px}.core-tag:after{display:none!important}}
+
+/* Keep core tooltips visible outside compact panels. */
+.detail{overflow:visible}
+.detail-head{border-radius:16px 16px 0 0}
+.core-tag:after{top:calc(100% + 8px);bottom:auto}
+</style><style>
+/* Principle details: readable nested lists, no redundant card nesting */
+.principle-content .principle-list{margin:8px 0 14px 0;padding-left:23px;list-style-position:outside}
+.principle-content .principle-list li{padding-left:4px;margin:0 0 8px;line-height:1.65}
+.principle-content .principle-list li::marker{color:#168d9b;font-weight:800}
+.principle-content .principle-list b{color:#213a4c}
+.principle-content>p,.principle-content>h4{margin-left:0}
+.principle-content h4{margin-top:2px;margin-bottom:10px}
+@media(max-width:610px){.principle-content .principle-list{padding-left:22px}}
+</style><style>
+/* Public v3: airy, compact and neutral, with minimal separators */
+body{font-family:"Segoe UI",Arial,Helvetica,sans-serif;font-size:14px;line-height:1.55;-webkit-font-smoothing:antialiased}
+.hero h1,.section-head h2,.detail-head h3,.ptext b,.assessment-intro h3,.principle-content h4,.test-content h4{font-family:"Segoe UI",Arial,Helvetica,sans-serif;letter-spacing:-.025em}
+.hero p{font-size:14px;line-height:1.6}
+.section-head p{font-size:13px}
+.calendar{margin-bottom:26px;gap:9px}
+.daybutton{min-height:90px;border-color:#e1eaf0}
+.detail{border:1px solid #e2eaf0;box-shadow:0 12px 30px #173b5610}
+.detail-head{padding:20px 24px;background:#f7fafc;border-bottom:0}
+.detail-head p{font-size:13.5px;line-height:1.65;color:#536b7b}
+.detail-body{padding:10px 22px 20px}
+.session-primer{border:0;background:#eef7f8;padding:9px 13px;border-radius:10px;margin:0 0 14px}
+.compact-block{border:0;border-radius:12px;padding:12px 15px 9px;margin:0 0 11px;background:#f7fafc}
+.compact-block-head{margin:0 0 7px;gap:0}
+.compact-block-head b{font-size:10px;color:#24657e}
+.compact-block-head:after{display:none}
+.exercise-compact{border:0!important;display:grid;grid-template-columns:minmax(175px,.9fr) minmax(180px,.9fr) minmax(230px,1.6fr);gap:14px;align-items:start;padding:8px 3px}
+.exercise-compact+.exercise-compact{margin-top:4px}
+.exercise-compact .ex-name{font-size:13.5px;font-weight:750;color:#233c4c}
+.exercise-compact .ex-dose{font-size:13px;line-height:1.5;font-weight:700;color:#1d5879}
+.exercise-compact .ex-why{font-size:13px;line-height:1.55;color:#516a79}
+.dose-stack{display:flex;flex-direction:column;gap:2px}
+.dose-stack span{display:block}
+.dose-stack span:nth-child(2){font-weight:800;color:#164c74}
+.dose-stack span:nth-child(3){color:#427389}
+.core-tag{font-family:inherit;font-size:10px;padding:3px 7px}
+.rom-cooldown{border:0;background:#e9f6f1;padding:8px 12px;border-radius:8px;margin:8px 0 0;font-size:12.5px;line-height:1.5}
+.rom-cooldown b{font-size:10px}
+.block-foot{border:0;font-size:12px;line-height:1.5;color:#587081;padding:7px 4px 1px}
+.block-foot b{font-weight:800;color:#28758c}
+.note{background:#edf5fa;border:0;border-radius:10px;margin-top:14px;padding:12px 15px;color:#3c6074;font-size:12.5px;line-height:1.55}
+/* More breathing room between calendar and detail without expanding the exercises */
+@media(max-width:930px){
+ .exercise-compact{grid-template-columns:minmax(160px,.8fr) minmax(175px,1fr)}
+ .exercise-compact .ex-why{grid-column:1/-1}
+ .calendar{margin-bottom:21px}
+}
+@media(max-width:610px){
+ .detail-head{padding:16px}
+ .detail-body{padding:9px 12px 15px}
+ .compact-block{padding:12px 12px 9px}
+ .exercise-compact{grid-template-columns:1fr;gap:3px;padding:9px 2px}
+ .exercise-compact .ex-why{grid-column:auto}
+ .calendar{margin-bottom:19px}
+ .exercise-compact+.exercise-compact{margin-top:8px}
+ .rom-cooldown{gap:4px}
+ .core-tag:after{position:fixed;left:12px;right:12px;bottom:12px;top:auto;width:auto;max-width:none}
+}
+</style><style>
+/* Optional cardio: match compact primer design without suggesting a new workout. */
+.session-primer.optional-cardio{
+  margin:13px 0 4px;
+  background:#eef5fb;
+  border:0;
+  border-radius:10px;
+  padding:10px 13px;
+}
+.optional-cardio .primer-label{color:#246a9d}
+.optional-cardio .primer-dose{color:#235c88}
+.optional-cardio .primer-why{color:#556d7c}
+@media(max-width:610px){
+  .session-primer.optional-cardio{margin-top:12px;padding:11px 12px}
+}
+</style><style>
+/* Public v5: quieter typography, subtle separation of supersetted exercises. */
+.topline{justify-content:flex-end}
+.topline span{font-size:11px;letter-spacing:.065em;color:#456376}
+.hero h1{margin-top:0}
+.compact-block .exercise-compact + .exercise-compact{
+  border-top:1px solid #dce6ed !important;
+  margin-top:4px !important;
+  padding-top:12px;
+}
+.exercise-compact .ex-dose,
+.exercise-compact .dose-stack span,
+.exercise-compact .dose-stack span:nth-child(2){
+  font-weight:500 !important;
+}
+.assessment-intro h3{margin-top:0}
+@media(max-width:610px){
+  .compact-block .exercise-compact + .exercise-compact{padding-top:12px}
+}
+</style></head><body><div class="wrap"><div class="topline"><span>STRENGTH · RANGE · SKILL · ATHLETICISM</span></div>
+<section class="hero"><div><h1>Full-Body <em>Fundamentals.</em></h1><p>Build strength at full range, master demanding movements, move with speed and control, and recover well enough to keep progressing.</p></div><div class="hero-right"><div class="stat"><b>3</b><span>Strength sessions</span></div><div class="stat"><b>1</b><span>Gymnastics + ROM Day</span></div><div class="stat"><b>1</b><span>Athletic Conditioning Day</span></div><div class="stat"><b>2</b><span>True rest days</span></div></div></section>
+<nav aria-label="Sections" class="nav"><button class="active" data-view="philosophy">10 principles</button><button data-view="week">Weekly plan</button><button data-view="assessment">Left–right assessment</button></nav>
+<section class="view active" id="philosophy"><div class="section-head"><div><h2>The 10 principles</h2><p>The reasoning behind the program.</p></div><div class="toolbar"><button class="plain-action" id="expandAll">Expand all</button><button class="plain-action" id="collapseAll">Collapse all</button></div></div><div class="principle-stack"><details class="principle-item"><summary><span class="pnum">01</span><span class="ptext"><b>Objective Hierarchy</b><small>Extreme usable ROM → strength through ROM → movement mastery → athletic force → conditioning → aesthetics.</small></span><span aria-hidden="true" class="chevron">⌄</span></summary><div class="principle-content">
+<h4>What We Are Optimizing, in Order</h4>
+<ol class="principle-list hierarchy-list">
+<li><b>Extreme Usable ROM:</b> front and middle splits, full pike/pancake, and capable spinal, hip and shoulder movement.</li>
+<li><b>Strength Through ROM:</b> heavy loading at long muscle lengths and difficult joint angles, alongside deliberate strengthening of often-neglected muscles and supporting functions. Examples include rectus femoris via reverse Nordics; deep knee/ankle control via ATG split squats; hip flexors, adductors, rotator cuff and tibialis work.</li>
+<li><b>Integrated Mastery:</b> handstand push-ups, front levers, muscle-ups and a full gymnastics bridge.</li>
+<li><b>Athletic Force:</b> generate, absorb, redirect and stabilize force in real movement.</li>
+<li><b>Conditioning:</b> sustain repeated efforts and recover between them.</li>
+<li><b>Aesthetics:</b> muscularity, proportions and balanced full-body development.</li>
+</ol>
+<p><b>Joint/tendon comfort, symmetry and recovery are constraints across all six tiers</b>, not objectives to consider only after the others.</p>
+<p>Success is not merely reaching a position. It is entering it actively, owning it under load, transitioning out of it and retaining the ability to move quickly.</p>
+</div></details><details class="principle-item"><summary><span class="pnum">02</span><span class="ptext"><b>The Five Capacities</b><small>Strong short → strong long → actively enter extreme ROM → stabilize there → produce force quickly.</small></span><span aria-hidden="true" class="chevron">⌄</span></summary><div class="principle-content">
+<h4>Design Every Region Around Capabilities, Not An Exercise Checklist</h4>
+<table class="mini-table"><tr><th>Capacity</th><th>What it means</th><th>Example</th></tr>
+<tr><td>Strong shortened</td><td>Force near peak contraction</td><td>Hip thrust; weighted high-knee</td></tr>
+<tr><td>Strong lengthened</td><td>Load a long muscle position</td><td>Deep Bulgarian; RDL; reverse Nordic</td></tr>
+<tr><td>Active end range</td><td>Enter range without assistance</td><td>HSLR; pike compression</td></tr>
+<tr><td>Stable at end range</td><td>Resist collapse/compensation</td><td>Cossack; split control; carry</td></tr>
+<tr><td>Fast and controlled</td><td>Produce, absorb and redirect force</td><td>Jumps, landings, sprint, throws</td></tr></table>
+<p>These five capabilities should be covered <b>across the whole week</b>, not with five isolated movements for every muscle. A deep Bulgarian trains long-length strength, joint ROM and unilateral stability simultaneously.</p>
+<p>Force absorption matters: controlled eccentrics and deceleration help turn strength into usable sport performance rather than just heavy gym numbers.</p></div></details><details class="principle-item"><summary><span class="pnum">03</span><span class="ptext"><b>Integrated Movement Mastery</b><small>Separate muscle qualities only matter when they coordinate into demanding whole-body skills.</small></span><span aria-hidden="true" class="chevron">⌄</span></summary><div class="principle-content">
+<h4>Why Skills Have Dedicated Space</h4>
+<ul class="principle-list">
+<li><b>Handstand Push-Up:</b> inverted pressing, overhead range, scapular elevation and trunk stacking.</li>
+<li><b>Front Lever:</b> straight-arm shoulder and lat strength, body-line rigidity and leverage.</li>
+<li><b>Muscle-Up:</b> high-speed pulling, transition coordination and pressing.</li>
+<li><b>Full Gymnastics Bridge:</b> shoulder flexion, thoracic/spinal extension, hip extension and whole-chain control.</li>
+</ul>
+<p>None is guaranteed by a strong isolated muscle. Skill practice therefore comes <b>fresh, before fatiguing strength work</b>, using regressions that preserve form. Tuesday is deliberately lower fatigue, while Wednesday and Friday host harder progressions.</p>
+<p><b>Good Idea for a Fitness App:</b> track skill milestones (assistance, leverage, hold time, clean ROM and alignment) separately from barbell or dumbbell load.</p>
+</div></details><details class="principle-item"><summary><span class="pnum">04</span><span class="ptext"><b>Effort and Set Architecture</b><small>Track 1–2 heavy strength sets on core lifts; add one lighter hypertrophy cooldown without excess fatigue.</small></span><span aria-hidden="true" class="chevron">⌄</span></summary><div class="principle-content">
+<h4>Why We Adopted The Top-Set / Back-Off Model</h4><p>For <b>2–3 core exercises per strength day</b>: use an easy preparation set and any necessary low-fatigue ramp-up, then <b>1–2 heavy strength sets (~3–6 reps, generally 1–2 RIR)</b>, followed by <b>one controlled hypertrophy cooldown (~8–15 reps, generally 1–2 RIR)</b>. The heavy strength sets are the primary tracked progression; the lighter set adds useful hypertrophy without repeating maximal loading. Aim to recover for the next strength exposure, often 48–72 hours later, while adjusting for individual recovery and sport fatigue.</p>
+<p>We aim to recover for the next strength exposure (often 48–72 hours), but <b>recovery is observed, not guaranteed</b>. Heavy failure can create disproportionate fatigue and compromise extreme-ROM mechanics. A second heavy set is an option only if comparable sessions stall while recovery is good.</p>
+<table class="mini-table"><tr><th>Type</th><th>Prescription</th><th>Reason</th></tr>
+<tr><td>Priority compound</td><td>1 prep → 1–2 × 3–6 strength → 1 × 8–15 hypertrophy</td><td>Strength metric + economical hypertrophy</td></tr>
+<tr><td>Weighted pull-up</td><td><b>3 × 5–8 heavy</b>; no dedicated high-rep warm-up or back-off</td><td>Already very taxing; 2–3 min rest; minimal prep if cold</td></tr>
+<tr><td>Skill</td><td>Short, clean holds/reps; not to failure</td><td>Quality, leverage and alignment</td></tr>
+<tr><td>Loaded ROM</td><td>Controlled reps/holds</td><td>Depth and control before load</td></tr>
+<tr><td>Isolation</td><td>~10–25 reps; selective myo-reps</td><td>Local stimulus with modest systemic cost</td></tr>
+<tr><td>Explosiveness</td><td>2–3 × 2–5 crisp reps, ample rest</td><td>Maximum speed; never a conditioning finisher</td></tr></table>
+<p>We avoid fatiguing 30-rep warm-ups. Instead, rehearse the movement lightly and make a few low-rep load jumps before the top set. Not every exercise gets this format: <b>the adaptation determines the set structure.</b></p></div></details><details class="principle-item"><summary><span class="pnum">05</span><span class="ptext"><b>Tendon and Joint Durability</b><small>Progressive dynamic loading, selective slow reps/holds, healthy shoulder mechanics and force absorption.</small></span><span aria-hidden="true" class="chevron">⌄</span></summary><div class="principle-content">
+<h4>Tendon Emphasis Without Another Workout</h4>
+<p>Normal heavy training and sport already load tendons. We add a modest emphasis to <b>roughly two selected exercises per strength session</b>, not a maximal hold after every exercise. <b>The exercise selection stays the same across Week A and Week B; only the loading emphasis changes.</b></p>
+<ul class="principle-list">
+<li><b>Week A — Slow Loading:</b> one designated set of 5–10 controlled reps with approximately 4-second eccentrics and controlled transitions.</li>
+<li><b>Week B — Isometric Loading:</b> one challenging but tolerable 20–30-second hold at a useful joint angle.</li>
+</ul>
+<p>This alternating pattern is a practical organizational choice, not evidence that alternation itself is superior. The goal is progressive tendon loading that fits within the existing workout. On deloads, remove special tendon work.</p>
+<ul class="principle-list">
+<li><b>Monday:</b> reverse Nordic (knee/rectus femoris) and standing calf raise (Achilles).</li>
+<li><b>Wednesday:</b> ATG split squat (knee) and supported external rotation (rotator cuff/shoulder).</li>
+<li><b>Friday:</b> Cossack (adductors/groin) and tibialis raise (shin/ankle).</li>
+</ul>
+<p>Healthy shoulders need scapular excursion in rows and pulls, overhead control in handstands and presses, and cuff loading. Knees and ankles benefit from gradual deep-range, calf/soleus/tibialis, jump and sprint exposure. Landings and braking train force absorption. Respect symptoms and next-day response; never force tendon pain.</p>
+</div></details><details class="principle-item"><summary><span class="pnum">06</span><span class="ptext"><b>Countering Prolonged Sitting</b><small>Restore underused movement options without assuming every seated person has the same tight or weak muscles.</small></span><span aria-hidden="true" class="chevron">⌄</span></summary><div class="principle-content">
+<h4>How This Plan Counterbalances Long Seated Days</h4>
+<table class="mini-table"><tr><th>Capability</th><th>Where we train it</th></tr>
+<tr><td>Anterior hip length and hip extension</td><td>Long-stance Bulgarian, squared front split, full bridge progression</td></tr>
+<tr><td>Shortened hip-flexor strength</td><td>Supported MonkeyFoot high knee; HSLR for straight-leg compression</td></tr>
+<tr><td>Posterior-chain capacity</td><td>RDL, pike compression, Jefferson curl</td></tr>
+<tr><td>Thoracic and overhead movement</td><td>Bridge, handstand, pull-up, row, external rotation</td></tr>
+<tr><td>Trunk/pelvis under asymmetry</td><td>Suitcase carry, unilateral leg work, lever and rotation</td></tr>
+<tr><td>Lower-leg/foot function</td><td>Calf, tibialis, landing and running work</td></tr></table>
+<p><b>No separate tech-neck block.</b> Rows, overhead work, bridges and well-executed suitcase carries support upper-body/postural capacity. Carries are not a direct neck treatment: keep the head neutral and shoulders level, without shrugging.</p>
+<p>We do not diagnose shortened hip flexors, “inactive” glutes or posture problems simply because someone sits. Assess actual ROM, strength and control. Short walking/standing breaks during work complement training; the gym cannot fully replace daily movement exposure.</p></div></details><details class="principle-item"><summary><span class="pnum">07</span><span class="ptext"><b>Symmetry and Individualization</b><small>Measure left–right differences under standardized conditions; intervene only when the difference is meaningful and repeatable.</small></span><span aria-hidden="true" class="chevron">⌄</span></summary><div class="principle-content">
+<h4>How Asymmetry Changes Programming</h4><p>Use a separate <b>Left–Right Assessment</b> every ~4–6 weeks. Film identical setup and loading for each side. Compare clean reps, depth/angle, pelvic/rib position, control and symptom response. A single awkward repetition or subjective “activation” difference is not proof of dysfunction.</p>
+<p><b>Strength gap:</b> start with the less capable side; have the stronger side match its clean reps/ROM. <b>ROM gap:</b> standardize setup and target controlled access before loading deeper. <b>Control gap:</b> reduce load or leverage until both sides own the same pattern. <b>Persistent repeatable gap:</b> consider one small targeted set if recovery allows. <b>Pain/giving way:</b> stop provocative testing and seek evaluation when warranted.</p>
+<p>A ~10–15% repeatable difference may be worth investigating, but is not a diagnostic cutoff. See the dedicated assessment page for camera positions, individual test protocols, scenarios and adjustments.</p></div></details><details class="principle-item"><summary><span class="pnum">08</span><span class="ptext"><b>Weekly Architecture and Recovery</b><small>Three strength days, one light skill day, one athletic day, and two genuine rest days distribute stimulus without stacking fatigue.</small></span><span aria-hidden="true" class="chevron">⌄</span></summary><div class="principle-content">
+<h4>Why the 3 + 1 + 1 + 2 Structure Works</h4>
+<ul class="principle-list">
+<li><b>Monday — Stretch:</b> fresh after Sunday rest; heavy long-length lower-body and pulling work with front-split and pike transfer.</li>
+<li><b>Tuesday — Gymnastics + ROM:</b> short, low-fatigue handstand, lever, bridge and active-ROM practice between heavy days.</li>
+<li><b>Wednesday — Strength + Gymnastics:</b> second strength exposure with inverted pressing, back development and efficient hip-extension strength.</li>
+<li><b>Thursday — Rest:</b> recover before Friday.</li>
+<li><b>Friday — 360:</b> lateral hip strength, rotation, muscle-up power and upper-body work, with moderate lower-body fatigue before sport.</li>
+<li><b>Saturday — Athletic Conditioning:</b> express strength through speed, coordination and repeat efforts.</li>
+<li><b>Sunday — Rest:</b> recover for Monday.</li>
+</ul>
+<p><b>Recreational sport replaces a scheduled session, not a rest day.</b> Ideally schedule it Saturday in place of sprint/agility. If sport is scheduled Tuesday, it replaces the lighter gymnastics/ROM session; move essential skill practice into short fresh blocks on strength days and make Saturday easy aerobic or recovery-based as appropriate. Thursday and Sunday remain rest days.</p>
+<p><b>Other Saturday Choices:</b> sprint and agility work for acceleration/deceleration; soccer or racket sports for multidirectional reactions; rowing, swimming or cycling for aerobic capacity (these do not fully replace landing/cutting skills). Avoid combining a hard sport session with an additional maximal sprint session by default.</p>
+</div></details><details class="principle-item"><summary><span class="pnum">09</span><span class="ptext"><b>Progression and Measurement</b><small>Prioritize heavier clean core sets, then movement quality, total workload and aesthetics.</small></span><span aria-hidden="true" class="chevron">⌄</span></summary><div class="principle-content">
+<h4>Recommended KPI Hierarchy</h4>
+<ol><li><b>Primary — increase load on the heavy core sets</b>, holding reps, full ROM, technique and RIR comparable. A heavier shallow rep does not count.</li>
+<li><b>Second — how the body feels and functions:</b> mobility, posture, joints/tendons, freedom of movement and symmetry. Support subjective impressions with standardized ROM assessments.</li>
+<li><b>Third — total workload across core sets:</b> track load × reps and completed quality work as a secondary signal, not something to maximize blindly. Compare like-for-like movements and unilateral conventions.</li>
+<li><b>Fourth — aesthetic gains:</b> muscularity and proportions (rounded shoulders, glute shape, back thickness).</li></ol>
+<h4>When To Add A Heavy Set</h4><p>If progressing, change nothing. If stalled for ~3–4 comparable exposures, first check technique, ROM, loading increments, sleep, sport fatigue and soreness. If truly stalled <em>and</em> recovered, consider adding <b>one</b> heavy set to that specific lift. If tired, address fatigue instead. Preserve the smallest dose that keeps progress moving.</p></div></details><details class="principle-item"><summary><span class="pnum">10</span><span class="ptext"><b>Exercise Economy</b><small>Maximize adaptation per minute and unit of recoverable fatigue; every movement must earn its place.</small></span><span aria-hidden="true" class="chevron">⌄</span></summary><div class="principle-content">
+<h4>Why The Program Is Built This Way</h4>
+<table class="mini-table"><tr><th>Decision</th><th>Rationale</th></tr>
+<tr><td>Multifunctional compounds</td><td>One movement can train strength, long-length hypertrophy, ROM and stability, reducing exercise count and recovery cost.</td></tr>
+<tr><td>Noncompeting supersets</td><td>Upper/lower or unrelated patterns reduce idle time while preserving performance, provided heavy sets still get enough rest.</td></tr>
+<tr><td>Strength → related ROM</td><td>Use the preceding movement to prepare a relevant position, then practice the specific split/fold. Keep intermediate ROM exposure non-fatiguing before later heavy sets.</td></tr>
+<tr><td>Keep targeted isolation</td><td>Retain movements where compounds miss a meaningful function: lateral delts, rotator cuff, rectus femoris, hip flexors, tibialis.</td></tr>
+<tr><td>Skills and power while fresh</td><td>High-speed force and precise motor learning deteriorate under fatigue; do not myo-rep or failure-train these.</td></tr>
+<tr><td>Correct only measured gaps</td><td>Do not build a giant corrective routine around assumed desk posture or one subjective left/right sensation.</td></tr></table>
+<p>The exercise filter: <b>(1)</b> Is the function already covered? <b>(2)</b> Can one movement develop strength and ROM together? <b>(3)</b> What capability disappears if we remove it? <b>(4)</b> Does the <em>whole week</em> still cover our goals? Economy is not minimalism for its own sake; it is <b>high-value adaptation with recoverable fatigue</b>.</p></div></details></div></section><section class="view" id="week"><div class="section-head"><div><h2>The weekly plan</h2><p>Select a day to see core lifts, supporting work, ROM cooldowns and recovery intent.</p></div><div class="toolbar"><span class="small">Alternating weeks</span><div aria-label="Week" class="toggle"><button class="active" data-week="A">Week A</button><button data-week="B">Week B</button></div></div></div><div class="calendar" id="calendar"></div><div class="detail" id="detail"></div></section>
+<section class="view" id="assessment"><div class="section-head"><div><h2>Left–right symmetry &amp; ROM assessment</h2><p>A separate periodic assessment—not an additional weekly workout. Retest every 4–6 weeks.</p></div></div>
+<div class="assessment-intro"><div><h3>Protocol</h3><p>Test after the same short warm-up, on a reasonably fresh day—not immediately after hard sport or maximal leg work. Use the same equipment, load, stance, shoes, camera height, distance and lighting on both sides and at every retest.</p><p>Film <b>3–5 seconds before and after</b> each effort, including setup and the whole body. Name clips <b>YYYY-MM-DD · Test · L/R · View</b>. Record reps, load, ROM, control, RIR and symptoms. Take still frames at the deepest/peak controlled position.</p></div><div class="assessment-flag"><b>Decision rule</b><p>Repeatable ~10–15% differences can be a useful investigation flag—not a diagnosis or a universal cutoff. Start the less-capable side first, match the stronger side to its clean ROM/reps, and add a targeted set only when a real gap persists and recovery permits.</p><p><b>Pain, giving way, swelling, tingling or numbness:</b> stop provocative testing; do not force symmetry.</p></div></div>
+<div class="assessment-legend"><span><b>Record:</b> same conditions</span><span><b>Compare:</b> clean performance</span><span><b>Adjust:</b> smallest effective change</span></div><div class="assessment-list"><details class="test-item"><summary><span class="pnum">01</span><span class="ptext"><b>Deep Bulgarian split squat</b><small>Strength · depth · pelvis</small></span><span class="chevron">⌄</span></summary><div class="test-content">
+<div class="test-grid"><div><div class="label">Camera / photo</div><p>Front at hip height + side at hip height; full body, feet visible.</p></div><div><div class="label">Standardized test</div><p>Same bench height, stance, DB load and tempo; perform 5–8 clean reps/side at ~2 RIR.</p></div></div>
+<div class="test-look"><b>What to look for:</b> Compare deepest controlled position, knee path, pelvic drop/rotation, heel contact, rep quality and RIR.</div>
+<h4>Observation → programming adjustment</h4><table class="mini-table"><tr><th>If you see…</th><th>Do this</th></tr><tr><td>Fewer clean reps on one side</td><td>Start that side first; match other side’s clean reps and depth; progress the weaker side’s load only when quality matches.</td></tr><tr><td>Depth differs despite similar strength</td><td>Standardize foot distance/bench height; check ankle/hip contribution; use controlled ROM progression before adding weight.</td></tr><tr><td>Pelvis rotates, hip hikes or knee caves</td><td>Reduce load and slow the eccentric; work within a stable depth; reassess before adding extra volume.</td></tr><tr><td>Pain, buckling or instability</td><td>Stop the provocative test; do not push to failure or force symmetry; obtain clinical assessment if persistent.</td></tr></table>
+<div class="record-fields"><label>Left / first direction <input aria-label="Left result for Deep Bulgarian split squat" placeholder="Load, reps, depth, notes"/></label><label>Right / opposite direction <input aria-label="Right result for Deep Bulgarian split squat" placeholder="Load, reps, depth, notes"/></label><label>Decision <input aria-label="Adjustment for Deep Bulgarian split squat" placeholder="No change / progression / targeted work"/></label></div>
+</div></details><details class="test-item"><summary><span class="pnum">02</span><span class="ptext"><b>Squared front split</b><small>Left/right lead · sagittal hip ROM</small></span><span class="chevron">⌄</span></summary><div class="test-content">
+<div class="test-grid"><div><div class="label">Camera / photo</div><p>True side view at hip height, one video with left lead and one with right; show pelvis and both legs.</p></div><div><div class="label">Standardized test</div><p>Same warm-up and hand supports; square hips, front knee extended comfortably, rear hip directed forward; stop at controlled depth.</p></div></div>
+<div class="test-look"><b>What to look for:</b> Measure pelvis-to-floor distance; note pelvic opening, lumbar arching, rear knee bend, and whether front hamstring or rear anterior hip limits the position.</div>
+<h4>Observation → programming adjustment</h4><table class="mini-table"><tr><th>If you see…</th><th>Do this</th></tr><tr><td>One lead leg remains much higher</td><td>Repeat with identical pelvis square and hand support; bias controlled exposure to the limited configuration.</td></tr><tr><td>Rear hip cannot extend without lumbar arch</td><td>Use a shallower supported split and bridge/hip-extension progression; avoid substituting low-back arch for hip extension.</td></tr><tr><td>Front knee bends or pelvis rotates to gain depth</td><td>Record the honest depth and train controlled hamstring/hip access rather than forcing the lower number.</td></tr><tr><td>Pinching or nerve-like symptoms</td><td>Reduce depth and stop forcing the position; seek evaluation for persistent symptoms.</td></tr></table>
+<div class="record-fields"><label>Left / first direction <input aria-label="Left result for Squared front split" placeholder="Load, reps, depth, notes"/></label><label>Right / opposite direction <input aria-label="Right result for Squared front split" placeholder="Load, reps, depth, notes"/></label><label>Decision <input aria-label="Adjustment for Squared front split" placeholder="No change / progression / targeted work"/></label></div>
+</div></details><details class="test-item"><summary><span class="pnum">03</span><span class="ptext"><b>Weighted Cossack squat</b><small>Adductors · lateral hip · ankle</small></span><span class="chevron">⌄</span></summary><div class="test-content">
+<div class="test-grid"><div><div class="label">Camera / photo</div><p>Front view at hip height with feet, knees and pelvis in frame; add side angle if heel lift occurs.</p></div><div><div class="label">Standardized test</div><p>Use identical stance width, toe angle, DB load and tempo; 5–8 controlled reps each direction.</p></div></div>
+<div class="test-look"><b>What to look for:</b> Compare pelvis depth, heel contact, knee tracking, trunk rotation, adductor tension and control out of the bottom.</div>
+<h4>Observation → programming adjustment</h4><table class="mini-table"><tr><th>If you see…</th><th>Do this</th></tr><tr><td>One direction is shallower</td><td>Reduce load, standardize stance, work controlled depth; compare ankle dorsiflexion and adductor tolerance before assuming cause.</td></tr><tr><td>Heel lifts on one side</td><td>Check stance/toe angle and ankle range; use a tolerable heel setup while progressively building control.</td></tr><tr><td>Pelvis shifts/rotates or knee collapses</td><td>Use slower reps and a lighter load; keep pelvis/foot tripod consistent.</td></tr><tr><td>Same ROM but different muscle sensation</td><td>Log it without inventing a correction; compare actual performance over multiple tests.</td></tr></table>
+<div class="record-fields"><label>Left / first direction <input aria-label="Left result for Weighted Cossack squat" placeholder="Load, reps, depth, notes"/></label><label>Right / opposite direction <input aria-label="Right result for Weighted Cossack squat" placeholder="Load, reps, depth, notes"/></label><label>Decision <input aria-label="Adjustment for Weighted Cossack squat" placeholder="No change / progression / targeted work"/></label></div>
+</div></details><details class="test-item"><summary><span class="pnum">04</span><span class="ptext"><b>Supported MonkeyFoot high knee</b><small>Shortened hip flexor strength</small></span><span class="chevron">⌄</span></summary><div class="test-content">
+<div class="test-grid"><div><div class="label">Camera / photo</div><p>Front and true side at hip height, camera far enough to show pelvis, knees and feet.</p></div><div><div class="label">Standardized test</div><p>Hold a support, same ankle load; stand tall, ribs stacked, bend knee ~90°, lift without leaning back; 8–12 clean reps/side.</p></div></div>
+<div class="test-look"><b>What to look for:</b> Compare peak thigh angle, pelvic hike, torso lean, control at the top and clean rep count.</div>
+<h4>Observation → programming adjustment</h4><table class="mini-table"><tr><th>If you see…</th><th>Do this</th></tr><tr><td>One side reaches lower at same load</td><td>Start weaker side; match clean reps and angle; use a lighter load if the pelvis must hike.</td></tr><tr><td>Both sides lean back to raise higher</td><td>Reduce load and lift height; prioritize true hip flexion with a quiet trunk.</td></tr><tr><td>Hip pinching or groin pain</td><td>Shorten range and stop forcing compression; reassess before adding load.</td></tr></table>
+<div class="record-fields"><label>Left / first direction <input aria-label="Left result for Supported MonkeyFoot high knee" placeholder="Load, reps, depth, notes"/></label><label>Right / opposite direction <input aria-label="Right result for Supported MonkeyFoot high knee" placeholder="Load, reps, depth, notes"/></label><label>Decision <input aria-label="Adjustment for Supported MonkeyFoot high knee" placeholder="No change / progression / targeted work"/></label></div>
+</div></details><details class="test-item"><summary><span class="pnum">05</span><span class="ptext"><b>Single-leg calf raise</b><small>Gastrocnemius/Achilles · ankle control</small></span><span class="chevron">⌄</span></summary><div class="test-content">
+<div class="test-grid"><div><div class="label">Camera / photo</div><p>Side view for heel height; rear view for heel alignment and ankle collapse; barefoot or same shoes.</p></div><div><div class="label">Standardized test</div><p>Same step/flat-floor setup and fingertip support; straight knee; 10–20 full-height controlled reps per side.</p></div></div>
+<div class="test-look"><b>What to look for:</b> Compare full heel height, rep count at that height, tempo, foot tripod, ankle drift and symptom response.</div>
+<h4>Observation → programming adjustment</h4><table class="mini-table"><tr><th>If you see…</th><th>Do this</th></tr><tr><td>One side loses height earlier</td><td>Count only full-height reps; start weaker side and cap stronger side at the same clean number.</td></tr><tr><td>Ankle rolls or arch collapses</td><td>Reduce load; control foot tripod and alignment before raising intensity.</td></tr><tr><td>Achilles pain/swelling</td><td>Do not force repeated loaded reps or end-range holds; adjust load and seek evaluation if persistent.</td></tr></table>
+<div class="record-fields"><label>Left / first direction <input aria-label="Left result for Single-leg calf raise" placeholder="Load, reps, depth, notes"/></label><label>Right / opposite direction <input aria-label="Right result for Single-leg calf raise" placeholder="Load, reps, depth, notes"/></label><label>Decision <input aria-label="Adjustment for Single-leg calf raise" placeholder="No change / progression / targeted work"/></label></div>
+</div></details><details class="test-item"><summary><span class="pnum">06</span><span class="ptext"><b>Overhead shoulder reach</b><small>Shoulder flexion · scapular motion · rib control</small></span><span class="chevron">⌄</span></summary><div class="test-content">
+<div class="test-grid"><div><div class="label">Camera / photo</div><p>Side view at shoulder height plus front view; capture both arms individually and together.</p></div><div><div class="label">Standardized test</div><p>Stand with ribs stacked, pelvis neutral, elbows straight, thumbs up; slowly reach overhead without forcing.</p></div></div>
+<div class="test-look"><b>What to look for:</b> Compare upper-arm angle, rib flare/lumbar arch, scapular upward rotation, shrug asymmetry and elbow bend.</div>
+<h4>Observation → programming adjustment</h4><table class="mini-table"><tr><th>If you see…</th><th>Do this</th></tr><tr><td>One arm stops earlier without compensation</td><td>Use pain-free overhead progressions and cuff/scapular control; standardize rib position.</td></tr><tr><td>Reach only possible by arching lower back</td><td>Record true shoulder/thoracic access; progress bridge/overhead work without lumbar substitution.</td></tr><tr><td>Painful arc or pronounced winging</td><td>Do not force overhead loading; consider a qualified evaluation if repeatable or symptomatic.</td></tr></table>
+<div class="record-fields"><label>Left / first direction <input aria-label="Left result for Overhead shoulder reach" placeholder="Load, reps, depth, notes"/></label><label>Right / opposite direction <input aria-label="Right result for Overhead shoulder reach" placeholder="Load, reps, depth, notes"/></label><label>Decision <input aria-label="Adjustment for Overhead shoulder reach" placeholder="No change / progression / targeted work"/></label></div>
+</div></details><details class="test-item"><summary><span class="pnum">07</span><span class="ptext"><b>Half-kneeling trunk rotation</b><small>Thoracic rotation · rib/pelvis separation</small></span><span class="chevron">⌄</span></summary><div class="test-content">
+<div class="test-grid"><div><div class="label">Camera / photo</div><p>Front/three-quarter view with hips and shoulders visible; repeat same camera and kneeling side.</p></div><div><div class="label">Standardized test</div><p>Half-kneel, pelvis facing front; rotate torso slowly both ways with arms crossed; test both kneeling configurations.</p></div></div>
+<div class="test-look"><b>What to look for:</b> Compare shoulder-line rotation relative to pelvis, hip shift, rib flare, lumbar side-bend and discomfort.</div>
+<h4>Observation → programming adjustment</h4><table class="mini-table"><tr><th>If you see…</th><th>Do this</th></tr><tr><td>One rotation direction smaller</td><td>Keep pelvis quiet; practice controlled chops/rotations in the limited direction without forcing range.</td></tr><tr><td>Pelvis turns with the shoulders</td><td>Reduce rotation range and load; train rib/pelvis dissociation.</td></tr><tr><td>Pain or catching</td><td>Stop the provocative direction and assess rather than adding aggressive twisting.</td></tr></table>
+<div class="record-fields"><label>Left / first direction <input aria-label="Left result for Half-kneeling trunk rotation" placeholder="Load, reps, depth, notes"/></label><label>Right / opposite direction <input aria-label="Right result for Half-kneeling trunk rotation" placeholder="Load, reps, depth, notes"/></label><label>Decision <input aria-label="Adjustment for Half-kneeling trunk rotation" placeholder="No change / progression / targeted work"/></label></div>
+</div></details><details class="test-item"><summary><span class="pnum">08</span><span class="ptext"><b>Full gymnastics bridge</b><small>Integrated hip · thoracic · shoulder extension</small></span><span class="chevron">⌄</span></summary><div class="test-content">
+<div class="test-grid"><div><div class="label">Camera / photo</div><p>True side view and view from head/feet along the body; capture full position and entry/exit.</p></div><div><div class="label">Standardized test</div><p>After warm-up, use a safe regression (elevated hands or supported bridge) if needed; only attempt floor bridge when comfortable and controlled.</p></div></div>
+<div class="test-look"><b>What to look for:</b> Look for even hand/foot pressure, elbow lock as tolerated, shoulder opening, hip height/extension, symmetry, and excessive localized lumbar hinging.</div>
+<h4>Observation → programming adjustment</h4><table class="mini-table"><tr><th>If you see…</th><th>Do this</th></tr><tr><td>Hips remain flexed despite adequate shoulder opening</td><td>Train rear-hip extension/front split and glute-driven hip extension; progress bridge height gradually.</td></tr><tr><td>Arms cannot open without lumbar arch</td><td>Use elevated-hand bridge and overhead shoulder/thoracic progressions; do not force a floor bridge.</td></tr><tr><td>Weight shifts or torso twists</td><td>Use a simpler supported bridge, center load and retest left/right support.</td></tr><tr><td>Back/shoulder pain or neurological symptoms</td><td>Stop and avoid forcing the position; seek assessment if symptoms persist.</td></tr></table>
+<div class="record-fields"><label>Left / first direction <input aria-label="Left result for Full gymnastics bridge" placeholder="Load, reps, depth, notes"/></label><label>Right / opposite direction <input aria-label="Right result for Full gymnastics bridge" placeholder="Load, reps, depth, notes"/></label><label>Decision <input aria-label="Adjustment for Full gymnastics bridge" placeholder="No change / progression / targeted work"/></label></div>
+</div></details><details class="test-item"><summary><span class="pnum">09</span><span class="ptext"><b>Suitcase carry</b><small>Lateral trunk · gait · shoulder/pelvic symmetry</small></span><span class="chevron">⌄</span></summary><div class="test-content">
+<div class="test-grid"><div><div class="label">Camera / photo</div><p>Front and rear walking video, camera ~hip/chest height; record 20–30 m or 30–45 sec each side.</p></div><div><div class="label">Standardized test</div><p>Use the same DB load, route, pace and distance; switch hands; walk tall with neutral head and relaxed, level shoulders.</p></div></div>
+<div class="test-look"><b>What to look for:</b> Compare side-bend, shoulder hiking, pelvic drop, stride length, grip failure and neck tension.</div>
+<h4>Observation → programming adjustment</h4><table class="mini-table"><tr><th>If you see…</th><th>Do this</th></tr><tr><td>Leans more with load on one side</td><td>Reduce weight until upright; train equal-distance carries with clean posture, then add load.</td></tr><tr><td>One shoulder hikes or neck tightens</td><td>Lower load and relax shoulder without collapsing; avoid turning carries into a shrug.</td></tr><tr><td>One side’s grip fails first</td><td>Track grip separately from trunk quality; use shorter bouts to maintain the intended trunk stimulus.</td></tr><tr><td>Pain or numbness</td><td>Stop the provoking load; investigate rather than pushing through.</td></tr></table>
+<div class="record-fields"><label>Left / first direction <input aria-label="Left result for Suitcase carry" placeholder="Load, reps, depth, notes"/></label><label>Right / opposite direction <input aria-label="Right result for Suitcase carry" placeholder="Load, reps, depth, notes"/></label><label>Decision <input aria-label="Adjustment for Suitcase carry" placeholder="No change / progression / targeted work"/></label></div>
+</div></details></div><div class="worksheet"><h3>Assessment summary</h3><p>Record your observations or transfer them into your training log. This page does not store results automatically.</p><div class="record-fields"><label>Test date <input placeholder="YYYY-MM-DD"/></label><label>Previous date <input placeholder="YYYY-MM-DD"/></label><label>Next check <input placeholder="~4–6 weeks later"/></label></div><label class="full-note">Top repeatable differences / next training adjustment<textarea placeholder="One change at a time; include any symptoms and whether they improved" rows="3"></textarea></label></div></section></div>
+<script>
+const DAYS=[
+{day:'MON',name:'Stretch + Strength',type:'Strength',time:'~60 min',color:'#ac8ac3',intent:'Own the long position.',why:'Heavy long-length strength with precise ROM transfer. Bulgarian → front split, RDL → pike/compression.',blocks:[
+['POWER PRIMER · FRESH',[
+['Broad Jump','2 × 3 · full recovery','Explosive hip extension and clean landing; stop when speed or mechanics fade.','POWER']],
+'After the warm-up, before heavy lifting. Not a morning-mobility exercise.'],
+['A · NONCOMPETING SUPERSET',[
+['Deep Deficit Bulgarian','Prep + 1 × 5–8 top + 1 × 8–12 back-off','Deep glute/quad strength. Keep depth identical across loads.','TOP + BACK-OFF'],
+['Weighted Pull-Up','3 × 5–8 heavy · 1–2 RIR','No dedicated high-rep warm-up or back-off. Full ROM, 2–3 min rest.','3 HEAVY SETS']],
+'ROM: Squared front split, 30–60 sec/side after final Bulgarian set; earlier exposures only moderate.'],
+['B · NONCOMPETING SUPERSET',[
+['Standard RDL','Prep + 1 × 4–6 top + 1 × 8–12 back-off','Long-length hamstrings/glutes; controlled hinge, no forced depth.','TOP + BACK-OFF'],
+['Incline DB Press','Prep + 1 × 3–6 top + 1 × 8–12 back-off','Deep pec/shoulder strength with clean bottom position.','TOP + BACK-OFF']],
+'ROM: Pike 30–60 sec → pike compression 2 × 8–15, after the heavy work.'],
+['C · TENDON PAIR',[
+['Reverse Nordic','2 × 6–10 controlled','Long-length rectus femoris and knee capacity.','KNEE TENDON'],
+['Standing Calf Raise','2 × 10–15','Full heel drop/rise, gastroc and Achilles capacity.','ACHILLES']],
+'Tendon A: one slow-eccentric set. Tendon B: one 20–30 sec controlled hold; no maximal failure.'],
+['FINISH',[
+['Jefferson Curl','2 × 6 slow/light','Segmental spinal flexion; emphasize thoracic control.','ROM']],
+'Quality of articulation, not weight or depth, is the goal. Power is done fresh at the start of this session.']]},
+{day:'TUE',name:'Gymnastics + ROM',type:'Skill',time:'30–40 min',color:'#82b9bd',intent:'Learn the positions.',why:'Low-fatigue handstand, lever, full-bridge and compression practice. A scheduled sport session can replace this session when necessary.',blocks:[
+['SKILL · FRESH',[
+['Wall-Facing Handstand','3 × 20–30 sec','Stack wrists/shoulders/ribs/pelvis; scapular elevation.','SKILL'],
+['Tuck Front Lever','3 × 8–15 sec OR 3 × 4–6 tuck rows','Straight-arm shoulder, lat and trunk control.','SKILL'],
+['Supported Full Bridge Progression','2 × 15–25 sec or 2–4 clean reps','Elevated-hand or floor bridge as tolerated; shoulder/thoracic extension + hip extension without forcing lumbar hinge.','BRIDGE']],
+'End before technical breakdown; rest enough for quality.'],
+['ACTIVE ROM',[
+['Pike Compression','2 × 8–12','Straight-leg hip flexion; no leaning back to fake lift height.','ROM'],
+['Front Split + Pancake','5–10 min controlled total','Specific sagittal and horizontal hip ranges.','ROM']],
+'Low intensity; do not chase a loaded stretching PR today.']]},
+{day:'WED',name:'Strength + Gymnastics',type:'Strength',time:'~60 min',color:'#ac8ac3',intent:'Turn strength into skill.',why:'Inverted pressing, front-lever strength, a strong upper back and targeted hip-extension strength without unnecessary fatigue.',blocks:[
+['SKILLS FIRST · NOT TO FAILURE',[
+['Handstand Push-Up Progression','3 × 4–8 clean','Elevated pike → wall-assisted HSPU; log depth/assistance.','SKILL'],
+['Tuck Front Lever Hold / Row','3 × 8–15 sec OR 3 × 4–6 reps','Progress leverage and alignment, not sloppy duration.','SKILL']],
+'Do these fresh. No fatigue supersets.'],
+['A · STRENGTH SUPERSET',[
+['Hip Thrust','Prep + 1 × 5–8 top + 1 × 10–15 back-off','Hip-extension strength and glute-max development.','TOP + BACK-OFF'],
+['Chest-Supported Row','Prep + 1 × 5–8 top + 1 × 8–12 back-off','Upper-back thickness with full scapular excursion.','TOP + BACK-OFF']],
+'Noncompeting pair; preserve heavy-set performance.'],
+['B · ROM / COMPRESSION PAIR',[
+['ATG Split Squat','2 × 6–8/leg · 2–3 RIR','Deep knee/ankle/hip strength and rear-hip opening.','KNEE TENDON'],
+['Hanging Straight-Leg Raise','2 × 6–10','Active compression; measure clean maximum leg angle.','ROM']],
+'Optional brief squared front-split exposure after ATG if recovery permits.'],
+['FINISH · DELTS / CUFF / HIP FLEXOR',[
+['Cable/DB Lateral Raise','2 × 12–20','Shoulder width/roundness without more heavy pressing.','HYPERTROPHY'],
+['Supported External Rotation','2 × 10–15/side','Rotator cuff capacity with small controlled loads.','CUFF TENDON'],
+['Supported MonkeyFoot High-Knee','2 × 8–12/side','Shortened hip-flexor strength with bent knee; ribs stacked, no torso lean.','HIP FLEXOR']],
+'Tendon A: slow controlled ATG/cuff. Tendon B: comfortable holds; no maximal cuff failure. High knees fill the shortened hip-flexion gap.']]},
+{day:'THU',name:'Rest',type:'Rest',time:'No training',color:'#8fb69e',intent:'Adaptation is training.',why:'First true rest day. No prescribed gym, sport or skills. Walking and comfortable mobility are optional.',blocks:[]},
+{day:'FRI',name:'360 Strength + Rotation',type:'Strength',time:'~60 min',color:'#ac8ac3',intent:'Own every direction.',why:'Muscle-up power, lateral hips, rotation and upper-back strength, without exhausting legs before Saturday sport.',blocks:[
+['POWER / SKILL FIRST',[
+['Explosive Chest-to-Bar / Muscle-Up Progression','2–3 × 2–4 clean','High pull, transition and dip mechanics; full recovery.','POWER + SKILL'],
+['Rotational Med-Ball Throw','2 × 3–5/side · if available','Rotate forcefully, control the finish; if unavailable use a crisp light cable rotation.','ROTATIONAL POWER']],
+'Warm up first, then explosive work before heavy sets. No fatigue supersets; stop when speed drops.'],
+['A · STRENGTH + LATERAL ROM',[
+['Weighted Cossack','3 × 6–10/side · 1–2 RIR','Strong long adductors and deep lateral hip range.','ADDUCTOR TENDON'],
+['Weighted Dip / Deep DB Bench','Prep + 1 × 3–6 top + 1 × 8–12 back-off','Upper-body pushing strength through controlled ROM.','TOP + BACK-OFF']],
+'ROM: Pancake 45–60 sec → supported middle split 30–45 sec after final Cossack round.'],
+['B · BACK + ROTATION SUPERSET',[
+['Chest-Supported Row','Prep + 1 × 5–8 top + 1 × 8–12 back-off','Back thickness, scapular control and strength.','TOP + BACK-OFF'],
+['Cable Chop / Rotation','2 × 8–12/side','Produce and resist transverse-plane force with controlled trunk.','ROTATION']],
+'Keep the rotational reps crisp.'],
+['C · CARRY + REAR DELT',[
+['Suitcase Carry','2 × 30–60 sec/side','Anti-lateral-flexion, grip, level pelvis and shoulders; neutral neck, no shrugging.','ASYMMETRIC STABILITY'],
+['Rear-Delt Fly','2 × 12–20','Rear shoulder and scapular balance.','HYPERTROPHY']],
+'Hip extension is covered by Monday hinge/Bulgarian, Wednesday thrust and Tuesday bridge. Shorten this block if sport recovery is compromised.'],
+['FINISH · ACTIVE ROM + LOWER LEG',[
+['Pike Compression','2 × 8–15','Extreme active fold; progress height and control.','ROM'],
+['Tibialis Raise','2 × 15–25','Dorsiflexion and shin/ankle capacity.','SHIN TENDON']],
+'Tendon A: slow Cossack/tibialis reps. Tendon B: moderate controlled holds.']]},
+{day:'SAT',name:'Athletic Day',type:'Sport',time:'Variable',color:'#d9ab65',intent:'Express the strength.',why:'Week A offers a sport or agility session; Week B emphasizes sprinting. If sport is scheduled Tuesday, it replaces the lighter skills day, never a rest day.',blocks:[]},
+{day:'SUN',name:'Rest',type:'Rest',time:'No training',color:'#8fb69e',intent:'Arrive fresh on Monday.',why:'Second true rest day. Let heavy full-ROM lifting and sport adaptations consolidate.',blocks:[]}
+];
+
+let selected=0,week='A';
+const CORE=new Set(['Deep Deficit Bulgarian','Weighted Pull-Up','Standard RDL','Incline DB Press','Hip Thrust','Chest-Supported Row','Weighted Dip / Deep DB Bench']);
+const CORE_TIP='Core exercises are measured for goal tracking. Use 1 warm-up set, 1–2 hard strength sets for tracking, then a lighter hypertrophy cooldown. Ramp gradually as needed.';
+const PULL_TIP='Core* exception: Since warm-ups are not really a thing here, use 3 heavy sets. Skip the separate high-rep warm-up and hypertrophy cooldown; prepare briefly if starting cold.';
+const DAY_INTRO={
+ MON:'Start the week with strength at long muscle lengths. Deep Bulgarians and RDLs load the hips and posterior chain, while weighted pull-ups and incline pressing build the upper body without directly competing for the same muscles. Front-split and pike ROM cooldowns reinforce the ranges trained by the lifts; reverse Nordics and calf raises provide focused knee and Achilles work.',
+ TUE:'Practice technical positions while relatively fresh, without turning a lighter day into another heavy session. Handstands develop inverted alignment, tuck levers build straight-arm pulling control, and bridges integrate shoulder, thoracic and hip extension. Finish with active compression and split work. If a sport session falls on Tuesday, it replaces this session.',
+ WED:'Develop gymnastic pushing and pulling strength, then support it with efficient hypertrophy. Handstand push-up and lever progressions lead while technique is fresh; hip thrusts and chest-supported rows provide efficient posterior-chain and upper-back strength. Deep split squats and hanging raises pair lower-body ROM with active compression, while lateral delts, cuff work and high-knee raises cover useful gaps.',
+ THU:'This is a real rest day, not a hidden mobility workout. It separates Wednesday strength from Friday rotation and power, keeping technique, joints and connective tissues ready for another productive session. Easy walking is optional, not prescribed.',
+ FRI:'Train strength and control across more directions while preserving enough leg freshness for Saturday sport. Explosive pulling and rotational power come first, followed by lateral hip strength, pressing, rows and cable rotation. Suitcase carries connect grip, trunk and pelvic stability; pike compression and tibialis work close the remaining ROM and lower-leg gaps.',
+ SAT:'Express the week’s strength through movement. Recreational sport can combine acceleration, jumping, braking, lateral cuts and repeat-effort conditioning; sprint and agility sessions emphasize speed, landing control and aerobic capacity. Choose one primary athletic exposure, not two maximal sessions stacked together.',
+ SUN:'A second genuine rest day makes it more likely that Monday’s heavy long-length training is high quality. Adaptation requires sufficient recovery; optional gentle activity should not become another workout.'
+};
+const EXPLAIN={
+ 'Broad Jump':'A few fast, clean jumps develop hip-extension power and landing control before heavy lifting. Full recovery matters more than accumulating reps.',
+ 'Deep Deficit Bulgarian':'High-return unilateral glute/quad strength in deep hip and knee flexion. Use the same depth, stance and pelvic control on every tracked heavy set.',
+ 'Weighted Pull-Up':'High-tension vertical pulling for lats, upper back and elbow-flexor strength. Use full overhead reach and controlled reps; three heavy sets are the dedicated exception to the core-set format.',
+ 'Standard RDL':'Progressive hamstring and glute strength at long muscle lengths. Hinge with controlled pelvis and spine, stopping at the deepest repeatable position rather than forcing extra depth.',
+ 'Incline DB Press':'Develops upper-chest, anterior-shoulder and triceps strength through a comfortable deep pressing range. Paired with RDLs to minimize competing fatigue.',
+ 'Reverse Nordic':'Knee-extensor strength with particular emphasis on the rectus femoris at long length. Build knee tendon tolerance gradually through smooth, pain-tolerable reps.',
+ 'Standing Calf Raise':'Straight-knee plantarflexion for gastrocnemius strength and progressive Achilles tendon capacity. Control the heel drop and rise rather than bouncing.',
+ 'Jefferson Curl':'Controlled segment-by-segment spinal flexion and strength in the folding pattern. Use light loading, especially when the upper/mid back is the movement limitation.',
+ 'Wall-Facing Handstand':'Inverted shoulder flexion, scapular elevation and stacked trunk alignment. Record clean position and control rather than simply longer holds.',
+ 'Tuck Front Lever':'Straight-arm lat/shoulder and trunk strength for lever progressions. Advance leverage only while keeping the ribs and pelvis controlled.',
+ 'Supported Full Bridge Progression':'Integrates hip extension, thoracic extension and overhead shoulder mobility. Use elevated hands or another suitable progression; avoid dumping all motion into the lower back.',
+ 'Pike Compression':'Active straight-leg hip flexion at increasingly closed hip angles. Build height without leaning the torso backward to fake compression.',
+ 'Front Split + Pancake':'Specific exposure for front-split and straddle range, with control and repeatable positioning. Use tolerable holds; no forcing end range.',
+ 'Handstand Push-Up Progression':'Overhead pushing strength with balance, shoulder elevation and trunk control. Progress assistance and depth before harder leverage.',
+ 'Tuck Front Lever Hold / Row':'Progressive lever strength for lats, straight-arm shoulder capacity and midline control. Stop when body alignment breaks.',
+ 'Hip Thrust':'Glute-max strength near lockout, complementing the deep hip positions trained on Monday. Maintain rib and pelvic control through the top of each rep.',
+ 'Chest-Supported Row':'Builds upper-back thickness while allowing complete scapular reach and retraction. Chest support minimizes fatigue from trunk bracing.',
+ 'ATG Split Squat':'Deep knee, ankle and hip strength with controlled rear-hip extension. Also supplies gradual patellar tendon exposure when progressed sensibly.',
+ 'Hanging Straight-Leg Raise':'Active hip flexion and trunk compression while hamstring length can limit the available angle. Track clean leg height before adding reps or load.',
+ 'Cable/DB Lateral Raise':'Direct lateral-delt hypertrophy for rounded shoulders with little systemic fatigue. Stay controlled and avoid torso swinging.',
+ 'Supported External Rotation':'Specific rotator-cuff external-rotation strength for shoulder durability. Use manageable resistance and smooth, comfortable angles.',
+ 'Supported MonkeyFoot High-Knee':'Bent-knee hip-flexor strengthening in the shortened position, independent of straight-leg hamstring restrictions. Cable or band resistance is an alternative.',
+ 'Explosive Chest-to-Bar / Muscle-Up Progression':'Explosive pulling and the transition toward a muscle-up. Low reps, full rest, and strict technical quality make this skill/power work rather than conditioning.',
+ 'Rotational Med-Ball Throw':'Fast transverse-plane force production and controlled finishing positions. Choose a medicine ball light enough to preserve speed.',
+ 'Weighted Cossack':'Adductor strength at long length, lateral hip mobility and deep unilateral control. A useful bridge between middle-split flexibility and athletic side-to-side force.',
+ 'Weighted Dip / Deep DB Bench':'A tracked horizontal/vertical pushing pattern through a repeatable, comfortable range. Choose the option that supports shoulder control and progression.',
+ 'Cable Chop / Rotation':'Controlled transverse-plane force and resistance to unwanted rib/pelvis rotation. Train both directions without substituting lower-back twisting.',
+ 'Suitcase Carry':'Heavy one-sided carry for grip, obliques, anti-side-bending, pelvic control and level shoulders. Keep the head neutral rather than shrugging under load.',
+ 'Rear-Delt Fly':'Direct posterior-shoulder work to complement pressing and support scapular control, with low recovery cost.',
+ 'Tibialis Raise':'Dorsiflexor strength and shin/ankle capacity to complement calf and running work. Progress smoothly rather than bouncing.',
+ 'Sport / Agility':'Choose a recreational sport with acceleration, braking and direction changes, or use a structured agility circuit. Warm up thoroughly; this replaces, rather than supplements, the athletic session.',
+ 'Dynamic Sprint Warm-Up':'Prepare ankles, calves, hamstrings and hips with progressively faster movement before maximal accelerations.',
+ 'Short Accelerations':'Short, high-quality sprints develop rapid force production. Rest fully so speed and mechanics remain the training target.',
+ 'Landing / Braking Practice':'Low-volume deceleration drills build the ability to absorb force and stabilize through the hips, knees and ankles.',
+ 'Optional Easy Zone 2':'Easy aerobic work for repeat-effort capacity and recovery, provided it does not compromise the next heavy session.'
+};
+const safe=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const calendar=document.getElementById('calendar'),detail=document.getElementById('detail');
+function doseText(s,name){
+ if(name==='Weighted Pull-Up')return '3 × 5–8 heavy · 1–2 RIR';
+ return s.replace(/^Prep \+ /,'1 warm-up · ').replace(/\btop\b/g,'strength').replace(/\bback-off\b/g,'hypertrophy');
+}
+function blockHeading(head){
+ return head.replace(/ · NONCOMPETING SUPERSET/g,' · Strength superset').replace(/ · STRENGTH SUPERSET/g,' · Strength superset')
+ .replace(/ · STRENGTH \+ LATERAL ROM/g,' · Strength + lateral ROM').replace(/ · BACK \+ ROTATION SUPERSET/g,' · Back + rotation')
+ .replace(/ · ROM \/ COMPRESSION PAIR/g,' · ROM + compression').replace(/ · TENDON PAIR/g,' · Tendon strength')
+ .replace(/ · CARRY \+ REAR DELT/g,' · Carry + rear delts').replace(/ · ACTIVE ROM \+ LOWER LEG/g,' · Active ROM + lower leg')
+ .replace(/FINISH · DELTS \/ CUFF \/ HIP FLEXOR/g,'Finish · Delts / cuff / hip flexors')
+ .replace(/FINISH · ACTIVE ROM \+ LOWER LEG/g,'Finish · Active ROM + lower leg')
+ .replace(/^ACTIVE ROM$/,'ROM Cooldowns · active control');
+}
+function exerciseRow(ex){
+ const [name,rx,why]=ex, core=CORE.has(name);
+ const tag=core?`<button type="button" class="core-tag" data-tip="${safe(name==='Weighted Pull-Up'?PULL_TIP:CORE_TIP)}" aria-label="${safe(name==='Weighted Pull-Up'?PULL_TIP:CORE_TIP)}">${name==='Weighted Pull-Up'?'Core*':'Core'}</button>`:'';
+ const dose=doseText(rx,name);
+ // The strength prescription has three distinct phases; keep them scannable.
+ const match=name!=='Weighted Pull-Up'&&dose.match(/^1 warm-up · (.+?) strength \+ (.+?) hypertrophy$/);
+ const doseHTML=match?`<div class="dose-stack"><span>1 warm-up</span><span>${safe(match[1])} strength</span><span>${safe(match[2])} hypertrophy</span></div>`:safe(dose);
+ return `<div class="exercise-compact"><div class="ex-name-line"><span class="ex-name">${safe(name)}</span>${tag}</div><div class="ex-dose">${doseHTML}</div><div class="ex-why">${safe(EXPLAIN[name]||why)}</div></div>`;
+}
+const TENDON_WEEK_NOTES={
+ 'C · TENDON PAIR':{
+  A:'Slow eccentric loading on reverse Nordics (knee) and calf raises (Achilles).',
+  B:'Controlled 20–30 sec holds for the knee and Achilles at tolerable angles.'
+ },
+ 'FINISH · DELTS / CUFF / HIP FLEXOR':{
+  A:'Slow controlled ATG split squat (knee) and external rotation (shoulder) reps; high knees target hip flexors.',
+  B:'Comfortable ATG (knee) and cuff/shoulder holds; high knees target hip flexors.'
+ },
+ 'FINISH · ACTIVE ROM + LOWER LEG':{
+  A:'Slow Cossack (adductors) and tibialis (shin/ankle) reps.',
+  B:'Controlled Cossack (adductors) and tibialis (shin/ankle) holds.'
+ }
+};
+function groupHTML([head,exs,note]){
+ const primer=/POWER PRIMER|POWER \/ SKILL FIRST/.test(head);
+ if(primer)return `<div class="session-primer"><span class="primer-label">${head.includes('SKILL')?'Power + skill primer':'Power primer'}</span>${exs.map(([n,rx,why])=>`<strong>${safe(n)}</strong><span class="primer-dose">${safe(rx)}</span><span class="primer-why">${safe(EXPLAIN[n]||why)}</span>`).join('')}</div>`;
+ let foot='';
+ if(note){
+  if(/^ROM:/.test(note))foot=`<div class="rom-cooldown"><b>ROM Cooldown</b><span>${safe(note.replace(/^ROM:\s*/,''))}</span></div>`;
+  else if(/Optional brief squared front-split/.test(note))foot=`<div class="rom-cooldown"><b>ROM Cooldown</b><span>${safe(note)}</span></div>`;
+  else if(TENDON_WEEK_NOTES[head])foot=`<div class="block-foot"><b>Week ${week}:</b> ${safe(TENDON_WEEK_NOTES[head][week])}</div>`;
+  else foot=`<div class="block-foot">${safe(note.replace(/Tendon A:/g,'Week A:').replace(/Tendon B:/g,'Week B:'))}</div>`;
+ }
+ return `<section class="compact-block"><div class="compact-block-head"><b>${safe(blockHeading(head))}</b></div>${exs.map(exerciseRow).join('')}${foot}</section>`;
+}
+function sportGroups(){
+ return week==='A'?[['SPORT · WEEK A', [['Sport / Agility','1 session · ~30–60 min','Choose a recreational sport or agility practice involving acceleration, braking and lateral movement.','SPORT']], 'This is the primary athletic session. Avoid stacking maximal sprints. If sport occurs Tuesday, replace Tuesday skills and keep Saturday easy.']]:
+ [['RUNNING · WEEK B', [['Dynamic Sprint Warm-Up','8–12 min','Prepare gradually.','WARM-UP'],['Short Accelerations','6–8 × 30–60 m · long rest','Explosive acceleration with clean mechanics.','SPEED'],['Landing / Braking Practice','2 × 3–5 clean reps','Low-volume force absorption.','BRAKING'],['Optional Easy Zone 2','10–20 min','Only when recovered.','OPTIONAL']], 'Speed endurance alternative: original 4 × 400 m at ~85–90% with 200 m walks. Choose one running format; do not stack both.']];
+}
+function render(){
+ calendar.innerHTML=DAYS.map((d,i)=>`<button class="daybutton ${i===selected?'active':''}" style="--accent:${d.color}" data-day="${i}" aria-pressed="${i===selected}"><span class="dayname">${d.day}</span><span class="daytitle">${safe(d.name)}</span><span class="daytype">${i===5?(week==='A'?'Sport / Agility':'Sprints'):d.type}</span></button>`).join('');
+ calendar.querySelectorAll('button').forEach(b=>b.addEventListener('click',()=>{selected=Number(b.dataset.day);render()}));
+ const d=DAYS[selected],groups=selected===5?sportGroups():d.blocks;
+ let body=groups.length?groups.map(groupHTML).join(''):'<div class="note"><b>Full rest.</b> No prescribed session. Optional easy walking or comfortable mobility only.</div>';
+ // Optional aerobic work is attached to existing training days, never rest days.
+ // Like the power primer, this is a compact inline exercise rather than a full workout block.
+ if(selected===1 || selected===2){
+   const isTuesday=selected===1;
+   const cardioNote=isTuesday
+     ? 'Easy conversational effort after skills. Brisk incline walk, bike, row or swim. Skip if a sport session replaces Tuesday.'
+     : 'Easy conversational effort after strength only when recovery is good. Avoid making this another hard interval session.';
+   body+=`<div class="session-primer optional-cardio"><span class="primer-label">Optional cardio</span><strong>Zone 2</strong><span class="primer-dose">20–30 min</span><span class="primer-why">${safe(cardioNote)}</span></div>`;
+ }
+ if([0,2,4].includes(selected))body+=`<div class="note"><b>Heavy-set rule:</b> Keep core strength sets at ~1–2 RIR with consistent, full controlled ROM. Add heavy-set volume only when progress stalls and recovery supports it. Tendon work is built into the designated exercises—not an extra failure circuit.</div>`;
+ detail.innerHTML=`<div class="detail-head"><div><div class="overline">${d.day} / ${safe(d.type)} / ${safe(d.intent)}</div><h3>${safe(d.name)}</h3><p>${safe(DAY_INTRO[d.day])}</p></div><span class="duration">${safe(d.time)}</span></div><div class="detail-body">${body}</div>`;
+ detail.querySelectorAll('.core-tag').forEach(b=>b.addEventListener('click',e=>{e.stopPropagation();const was=b.classList.contains('show-tip');detail.querySelectorAll('.core-tag').forEach(x=>x.classList.remove('show-tip'));if(!was)b.classList.add('show-tip')}));
+}
+document.addEventListener('click',()=>document.querySelectorAll('.core-tag.show-tip').forEach(x=>x.classList.remove('show-tip')));
+document.querySelectorAll('[data-week]').forEach(b=>b.addEventListener('click',()=>{week=b.dataset.week;document.querySelectorAll('[data-week]').forEach(x=>x.classList.toggle('active',x.dataset.week===week));render()}));
+render();
+
+document.querySelectorAll('[data-view]').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('[data-view]').forEach(x=>x.classList.toggle('active',x===b));document.querySelectorAll('.view').forEach(v=>v.classList.toggle('active',v.id===b.dataset.view))}));
+render();
+const principleItems=[...document.querySelectorAll('.principle-item')];
+document.getElementById('expandAll').addEventListener('click',()=>principleItems.forEach(d=>d.open=true));
+document.getElementById('collapseAll').addEventListener('click',()=>principleItems.forEach(d=>d.open=false));
+</script></body></html>

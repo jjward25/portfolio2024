@@ -1,98 +1,70 @@
-"use client"
-import { useState } from 'react';
+'use client';
+
+import { useEffect, useRef, useState } from 'react';
+import { ArrowUpRight, Check, Copy, Github, Linkedin, Mail, X } from 'lucide-react';
+import ContactIntake from './ContactIntake';
+
+const email = 'Joseph.Ward@Outlook.com';
+const action = 'contact-action flex items-center justify-center gap-2 rounded-xl px-4 py-3 text-sm font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-cyan-600';
 
 export default function ContactButton() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const dialog = useRef<HTMLDialogElement>(null);
+  const trigger = useRef<HTMLButtonElement>(null);
+  const [open, setOpen] = useState(false);
+  const [copyState, setCopyState] = useState<'idle' | 'copied' | 'error'>('idle');
 
-  const toggleContactMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
+  useEffect(() => {
+    if (!open) return;
+    const overflow = document.body.style.overflow;
+    document.body.style.overflow = 'hidden';
+    dialog.current?.showModal();
+    return () => {
+      document.body.style.overflow = overflow;
+      dialog.current?.close();
+      trigger.current?.focus();
+    };
+  }, [open]);
+
+  useEffect(() => {
+    if (copyState !== 'copied') return;
+    const timer = window.setTimeout(() => setCopyState('idle'), 2500);
+    return () => window.clearTimeout(timer);
+  }, [copyState]);
+
+  async function copyEmail() {
+    try { await navigator.clipboard.writeText(email); setCopyState('copied'); }
+    catch { setCopyState('error'); }
   }
-
-  const emailAddress = "Joseph.Ward@Outlook.com";
-  const subject = "I saw your site";
-  const body = "I wanted to get in touch with you about your car's extended warranty.";
-
-  const handleCopyEmail = () => {
-    navigator.clipboard.writeText(emailAddress);
-    alert('Email copied to clipboard, talk soon!');
-  };
 
   return (
     <>
-      {/* Contact Me Button */}
-      <div className="hover:scale-105 focus:scale-95 cursor-pointer relative rounded-lg overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-tr from-cyan-300 via-neutral-300 to-cyan-300 rounded-lg opacity-90"></div>
-        <div className="relative rounded-lg flex justify-center border-2 border-cyan-200 px-3 py-1">
-          <p className="font-semibold text-cyan-700 hover:text-cyan-900 text-sm transition-colors"
-              onClick={toggleContactMenu}>
-            Contact Me
-          </p>
-        </div>
-      </div>
-      
-      {/* Contact Modal */}
-      <div className={`fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex items-center justify-center ${isMenuOpen ? 'z-50 opacity-100 transition-all ease-in' : '-z-50 opacity-0 transition-all ease-in'}`}
-           onClick={toggleContactMenu}>
-        <div className="bg-gradient-to-tr from-neutral-200 via-white to-neutral-200 rounded-lg shadow-2xl p-8 max-w-md w-full mx-4 relative"
-             onClick={(e) => e.stopPropagation()}>
-
-          <div className='absolute top-4 right-4 cursor-pointer font-semibold text-black hover:text-cyan-700 transition-all ease-in-out' onClick={toggleContactMenu}>✕</div>
-
-          <div className='flex flex-col gap-4 text-center'>
-            
-            <div className="flex-none w-16 h-16 mx-auto rounded-full overflow-hidden border-black dark:border-white border-2">
-              <img
-                src='/prof.jpg'
-                alt='prof'
-                className="w-full h-full object-cover hover:rotate-180 hover:duration-500 transition-all ease-out"
-              />
-            </div>
-
-            <a href="#" 
-              onClick={(e) => { e.preventDefault(); handleCopyEmail(); }}
-              className="text-black hover:text-cyan-500 font-semibold w-auto m-auto flex items-center gap-2"
-              title="Joseph.Ward@Outlook.com"
-            >
-              <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/>
-              </svg>
-              Copy Email
-            </a>
-
-            <a href={`mailto:${emailAddress}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`}
-              className="text-black hover:text-cyan-500 font-semibold w-auto m-auto flex items-center gap-2"
-            >
-              <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
-              </svg>
-              Send Email
-            </a>
-
-            <a href="https://www.linkedin.com/in/joe-ward1/"
-              target='_blank' 
-              className="text-black hover:text-cyan-500 font-semibold w-auto m-auto flex items-center gap-2"
-              title="LinkedIn"
-            >
-              <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
-              </svg>
-              LinkedIn
-            </a>
-
-            <a href="https://github.com/jjward25"
-              target='_blank' 
-              className="text-black hover:text-cyan-500 font-semibold w-auto m-auto flex items-center gap-2"
-              title="Github"
-            >
-              <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-              </svg>
-              Github
-            </a>
-
+      <button ref={trigger} type="button" onClick={() => { setCopyState('idle'); setOpen(true); }} aria-haspopup="dialog" className="contact-trigger group relative inline-flex shrink-0 overflow-hidden rounded-lg px-3 py-1 text-sm font-semibold text-cyan-700 hover:text-cyan-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-cyan-600" style={{ color: '#FFF', border: '2px solid #42798b', background: 'linear-gradient(180deg, rgba(255,255,255,.22), transparent 55%), linear-gradient(135deg, #366b7d, #0b3544 65%, #195369)', backgroundClip: 'padding-box', boxShadow: '0 3px 10px rgba(8,51,68,.18)' }}>
+        <span className="relative">Contact Me</span>
+      </button>
+      <dialog ref={dialog} onCancel={() => setOpen(false)} onClose={() => setOpen(false)} onClick={(event) => { if (event.target === event.currentTarget) setOpen(false); }} aria-labelledby="contact-title"  className="contact-dialog fixed inset-0 m-auto max-h-[calc(100dvh-2rem)] w-[calc(100%-2rem)] max-w-md overflow-y-auto rounded-2xl border border-neutral-200 bg-white p-0 text-neutral-900 shadow-2xl dark:border-neutral-700 dark:bg-neutral-950 dark:text-white">
+        <div className="relative p-6 sm:p-7">
+          <button type="button" autoFocus onClick={() => setOpen(false)} aria-label="Close contact dialog" className="contact-action absolute right-4 top-4 flex h-8 w-8 items-center justify-center rounded-full text-neutral-500 hover:bg-neutral-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-cyan-600 dark:hover:bg-neutral-800"><X size={18} /></button>
+          <h2 id="contact-title" className="pr-8 text-xl font-medium tracking-tight">Let’s connect.</h2>
+          <p className="mt-1 text-xs text-neutral-500 dark:text-neutral-400">A quick introduction, then we can connect.</p>
+          <ContactIntake />
+          <section aria-label="Other ways to connect" style={{ marginTop: 24, paddingTop: 20, borderTop: '1px solid rgba(128,128,128,.18)' }}>
+          <div className="rounded-xl border border-neutral-200 bg-neutral-50 dark:border-neutral-800 dark:bg-neutral-900" style={{ borderRadius: 14, overflow: 'hidden' }}>
+          <div className="contact-email-row" style={{ display: 'flex', flexWrap: 'nowrap', alignItems: 'center', justifyContent: 'center', gap: 8, padding: '8px 12px' }}>
+              <a href={`mailto:${email}`} style={{ minWidth: 0, flex: '0 1 auto', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis', fontSize: 14, fontWeight: 500, lineHeight: '20px' }} className="text-xs font-medium text-cyan-800 underline-offset-4 hover:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-cyan-600 dark:text-cyan-200">{email}</a>
+              <button type="button" onClick={copyEmail} aria-label={copyState === 'copied' ? 'Email copied' : 'Copy email address'} style={{ display: 'inline-flex', flex: '0 0 32px', width: 32, height: 32, padding: 0, alignItems: 'center', justifyContent: 'center' }} className="contact-action rounded-lg text-cyan-800 hover:bg-cyan-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-cyan-600 dark:text-cyan-200 dark:hover:bg-cyan-950">{copyState === 'copied' ? <Check size={16} /> : <Copy size={16} />}</button>
           </div>
+          {copyState !== 'idle' && <p role="status" className="mt-1 text-[11px] text-neutral-500 dark:text-neutral-400">{copyState === 'copied' ? 'Email copied.' : 'Please select and copy the address above.'}</p>}
+          <div style={{ margin: '0 12px', borderTop: '1px solid rgba(128,128,128,.15)' }}>
+            <a href={`mailto:${email}?subject=${encodeURIComponent('I saw your site')}`} style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 8, padding: '12px 8px', fontSize: 14, fontWeight: 500, lineHeight: '20px' }} className="contact-action text-cyan-800 hover:text-cyan-950 focus-visible:outline focus-visible:outline-2 focus-visible:outline-cyan-600 dark:text-cyan-200"><Mail size={16} aria-hidden="true" /> Send an email <ArrowUpRight size={15} aria-hidden="true" /></a>
+          </div>
+          </div>
+          <div className="contact-socials grid grid-cols-2 gap-3" style={{ display: 'grid', gridTemplateColumns: 'repeat(2, minmax(0, 1fr))', gap: 10, paddingTop: 12 }}>
+            <a href="https://www.linkedin.com/in/joe-ward1/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn (opens in a new tab)" className={`${action} text-neutral-600 hover:bg-neutral-50 hover:text-cyan-800 dark:text-neutral-300 dark:hover:bg-neutral-900`}><Linkedin size={15} aria-hidden="true" /> LinkedIn <ArrowUpRight size={12} aria-hidden="true" /></a>
+            <a href="https://github.com/jjward25" target="_blank" rel="noopener noreferrer" aria-label="GitHub (opens in a new tab)" className={`${action} text-neutral-600 hover:bg-neutral-50 hover:text-cyan-800 dark:text-neutral-300 dark:hover:bg-neutral-900`}><Github size={15} aria-hidden="true" /> GitHub <ArrowUpRight size={12} aria-hidden="true" /></a>
+          </div>
+          </section>
         </div>
-      </div>
+      </dialog>
     </>
   );
-} 
+}
