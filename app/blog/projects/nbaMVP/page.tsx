@@ -1,5 +1,5 @@
-import dynamic from 'next/dynamic';
-const DynamicAccordion = dynamic(() => import('../../../components/accordions/accordionAlt'), { ssr: false });
+
+import DynamicAccordion from '../../../components/accordions/accordionAlt';
 
 function formatDate(date) {
       
@@ -130,4 +130,3 @@ export default function TestBlogPost() {
     </section>
   );
 }
-

@@ -8,7 +8,14 @@ const json = (body: object, status = 200) => Response.json(body, { status, heade
 
 export async function POST(request: Request) {
   const origin = request.headers.get('origin');
-  if (!origin || origin !== new URL(request.url).origin) return json({ error: 'Please send your message from the portfolio contact form.' }, 403);
+  // Next.js may rewrite the internal URL host; Host retains the visitor-facing host.
+  const host = request.headers.get('host') || new URL(request.url).host;
+  let sameOrigin = false;
+  try {
+    const parsed = new URL(origin || '');
+    sameOrigin = parsed.host === host && ['http:', 'https:'].includes(parsed.protocol) && parsed.origin === origin;
+  } catch { /* A missing or malformed origin is rejected. */ }
+  if (!sameOrigin) return json({ error: 'Please send your message from the portfolio contact form.' }, 403);
   if (!request.headers.get('content-type')?.startsWith('application/json')) return json({ error: 'Invalid request.' }, 415);
   const now = Date.now();
   attempts.forEach((entry, key) => { if (entry.expires <= now) attempts.delete(key); });

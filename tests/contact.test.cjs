@@ -72,6 +72,13 @@ test('API rejects cross-origin and malformed requests before sending', async () 
   assert.equal((await POST(request({ ...valid, reply: 'bad' }, 'https://joeward.me'))).status, 400);
 });
 
+test('API checks the public Host when Next rewrites the internal URL', async () => {
+  const request = (origin) => new Request('http://localhost:3001/api/contact', { method: 'POST', headers: { host: '127.0.0.1:3001', origin, 'content-type': 'application/json' }, body: '{}' });
+  assert.equal((await POST(request('http://127.0.0.1:3001'))).status, 400);
+  assert.equal((await POST(request('https://other.example'))).status, 403);
+  assert.equal((await POST(request('not-an-origin'))).status, 403);
+});
+
 test('missing services produce honest dev preview and production unavailable', async () => {
   const saved = { key: process.env.GMAIL_USER, from: process.env.GMAIL_APP_PASSWORD, mode: process.env.NODE_ENV };
   const originalFetch = global.fetch;

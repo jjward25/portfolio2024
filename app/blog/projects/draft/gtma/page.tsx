@@ -1,6 +1,6 @@
-import dynamic from 'next/dynamic';
+
 import Link from 'next/link';
-const DynamicAccordion = dynamic(() => import('../../../../components/accordions/accordionAlt'), { ssr: false });
+import DynamicAccordion from '../../../../components/accordions/accordionAlt';
 
 function formatDate(date) {
       
@@ -99,4 +99,3 @@ export default function TestBlogPost() {
     </section>
   );
 }
-
